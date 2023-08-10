@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+.__gradientBg {
+    background: rgb(158, 75, 255);
+    background: -moz-radial-gradient(circle, rgba(158, 75, 255, 1) 0%, rgba(83, 40, 134, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(158, 75, 255, 1) 0%, rgba(83, 40, 134, 1) 100%);
+    background: radial-gradient(circle, rgba(158, 75, 255, 1) 0%, rgba(83, 40, 134, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9e4bff", endColorstr="#532886", GradientType=1);
+}
+
+.__gradientBg2 {
+    background: rgb(16, 61, 117);
+    background: -moz-radial-gradient(circle, rgba(16, 61, 117, 1) 0%, rgba(15, 40, 71, 1) 99%);
+    background: -webkit-radial-gradient(circle, rgba(16, 61, 117, 1) 0%, rgba(15, 40, 71, 1) 99%);
+    background: radial-gradient(circle, rgba(16, 61, 117, 1) 0%, rgba(15, 40, 71, 1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#103d75", endColorstr="#0f2847", GradientType=1);
+}
+
+.__reviewsCmp button.slick-arrow.slick-next {
+    top: inherit;
+    right: 0;
+    bottom: 5px;
+    width: max-content;
+    height: 25px;
+    transform: inherit;
+    z-index: 2;
+}
+
+.__reviewsCmp button.slick-arrow.slick-next::before {
+    content: url(../../public/rightArrowSlick.svg);
+}
+
+.__reviewsCmp button.slick-arrow.slick-prev {
+    top: inherit;
+    right: 70px;
+    left: inherit;
+    bottom: 5px;
+    width: max-content;
+    height: 25px;
+    transform: inherit;
+    z-index: 2;
+}
+
+.__reviewsCmp button.slick-arrow.slick-prev::before {
+    content: url(../../public/leftArrowSlick.svg);
+}
+
+.__reviewsCmp .slick-slide {
+    min-height: 300px;
+}
+
+.__reviewsCmp ul.slick-dots {
+    bottom: 10px;
+    width: max-content;
+    left: 0;
+    display: flex !important;
+    gap: 1rem;
+}
+
+.__reviewsCmp ul.slick-dots li {
+    display: block;
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid grey;
+}
+
+.__reviewsCmp ul.slick-dots li button {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    opacity: 1;
+}
+
+.__reviewsCmp ul.slick-dots li button::before,
+.__reviewsCmp ul.slick-dots li button::after {
+    display: none;
+}
+
+.__reviewsCmp ul.slick-dots li.slick-active {
+    background-color: #0F2847;
+}
+
+.__reviewsCmp ul.slick-dots::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    display: block;
+    background-color: #707070;
+    width: 380px;
+    height: 2px;
+    margin-left: 16px;
+}
+
+@media (max-width: 1299px) {
+    .__reviewsCmp ul.slick-dots::after {
+        width: 240px;
+    }
+}
+@media (max-width: 1023px) {
+    .__reviewsCmp ul.slick-dots::after {
+        display: none;
+    }
+}

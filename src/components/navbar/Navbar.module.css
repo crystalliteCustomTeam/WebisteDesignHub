@@ -1,0 +1,21 @@
+/* Custom Scroll Bar */
+/* width */
+.__naviagtionWrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.__naviagtionWrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.__naviagtionWrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.__naviagtionWrapper::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
