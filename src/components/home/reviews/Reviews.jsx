@@ -48,7 +48,7 @@ const Reviews = () => {
                                         <p className="text-sm text-gray-400 font-light">CTO of JamsosTech</p>
                                     </div>
                                 </div>
-                                <p className="text-sm font-normal text-white mt-3 hidden lg:blcok">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
+                                <p className="text-sm font-normal text-white mt-3 hidden lg:block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
                             </div>
                             <div className="bg-[#F9F9FB] p-6 rounded-3xl cursor-pointer">
                                 <div className="flex items-center gap-4">
@@ -58,7 +58,7 @@ const Reviews = () => {
                                         <p className="text-sm text-gray-400 font-light">CTO of JamsosTech</p>
                                     </div>
                                 </div>
-                                <p className="text-sm font-normal text-black mt-3 hidden lg:blcok">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
+                                <p className="text-sm font-normal text-black mt-3 hidden lg:block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
                             </div>
                             <div className="bg-[#F9F9FB] p-6 rounded-3xl cursor-pointer">
                                 <div className="flex items-center gap-4">
@@ -68,7 +68,7 @@ const Reviews = () => {
                                         <p className="text-sm text-gray-400 font-light">CTO of JamsosTech</p>
                                     </div>
                                 </div>
-                                <p className="text-sm font-normal text-black mt-3 hidden lg:blcok">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
+                                <p className="text-sm font-normal text-black mt-3 hidden lg:block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
                             </div>
                         </div>
                     </div>
