@@ -13,7 +13,7 @@ const Letstalk = () => {
                     <div className="flex items-end lg:items-center lg:gap-5 flex-wrap lg:flex-nowrap">
                         <div className="basis-full lg:basis-[40%] mb-8 lg:mb-0">
                             <h3 className="text-2xl lg:text-4xl leading-none xltext-5xl font-megat text-white font-normal">LET'S TALK</h3>
-                            <p className="text-base text-white font-normal">Let us know how we can assist you with your business goal. Let’s sort them out together</p>
+                            <p className="text-base text-white font-normal">Let us know how we can assist you with your business goal. Let`s sort them out together</p>
                         </div>
                         <div className="basis-[50%] lg:basis-[35%] mb-8 md:mb-0">
                             <Link href="tel:(123)456-7890" className="text-2xl lg:text-4xl leading-none xltext-5xl font-normal font-megat  text-white block mb-4">(323) 286-4383</Link>

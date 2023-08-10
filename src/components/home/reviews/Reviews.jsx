@@ -26,7 +26,7 @@ const Reviews = () => {
                     <div className="flex gap-5 items-center flex-wrap md:flex-nowrap">
                         <div className="basis-full md:basis-2/4 overflow-hidden">
                             <Image src={quote} alt={quote} className="mb-10" />
-                            <h2 className="text-4xl lg:text-5xl font-megat text-black font-normal mb-5">Our Client's Review</h2>
+                            <h2 className="text-4xl lg:text-5xl font-megat text-black font-normal mb-5">Our Client`s Review</h2>
                             <Slider {...settings}>
                                 <div>
                                     <p className="text-sm lg:text-base font-normal text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam. Maecenas porttitor, felis vel iaculis volutpat, nibh dolor vulputate ex, nec consectetur dui felis id nisl. Suspendisse porta iaculis malesuada. Curabitur nec orci lobortis, viverra nibh porta, lobortis mi</p>
