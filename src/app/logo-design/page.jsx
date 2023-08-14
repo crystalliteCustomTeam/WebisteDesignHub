@@ -5,7 +5,7 @@ import Services from "@/components/services/services";
 import Portfolios from "@/components/porfolios/porfolios";
 import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/Weare";
-import Contact from "@/components/contact/Contact";
+import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 import Packages from "@/components/packages/packages";
 // Import Images

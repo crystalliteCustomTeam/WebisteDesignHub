@@ -4,7 +4,7 @@ import Services from "@/components/digital-marketing/services/services";
 import SmallBanner from "@/components/smallbanner/smallbanner";
 import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/Weare";
-import Contact from "@/components/contact/Contact";
+import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 // Import Images
 import banner from "media/digital-marketing/hero/hand.png";
