@@ -13,7 +13,7 @@ import banner from "media/home/hero/chair.png";
 import bannerIconOne from "media/home/hero/iconOne.png";
 import bannerIconTwo from "media/home/hero/iconTwo.png";
 import bannerIconThree from "media/home/hero/iconThree.png";
-import smallBannerImage from "media/home/smallbanner.png";
+import smallBannerImage from "media/home/smallBanner.png";
 import serviceTabOne from "media/home/services/serviceTabOne.png";
 import portfolioOne from "media/home/portfolios/one.png";
 import portfolioTwo from "media/home/portfolios/two.png";
