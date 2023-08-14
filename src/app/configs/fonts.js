@@ -1,11 +1,12 @@
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 
-const poppins = Poppins({
-    weight: ['300', '400', '500', '600', '700'],
+const primary = Poppins({
+    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
     style: ['normal', 'italic'],
-    subsets: ['latin'],
     display: 'swap',
+    subsets: ['latin'],
+    variable: '--font-primary',
 });
 
 const megatFont = localFont({
@@ -19,4 +20,4 @@ const megatFont = localFont({
     display: 'swap',
 });
 
-export { poppins, megatFont }
+export { primary, megatFont }

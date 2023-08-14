@@ -1,3 +1,4 @@
+// Import Components
 import Image from "next/image";
 import Link from "next/link";
 // Import Css
@@ -8,7 +9,7 @@ import application from "media/home/designs/application.png";
 import branding from "media/home/designs/branding.png";
 import socialMedia from "media/home/designs/socialMedia.png";
 import brandColors from "media/home/designs/brandColors.png";
-import btn from "media/btn.svg";
+import btn from "media/home/designs/btn.svg";
 
 const Designs = () => {
     return (

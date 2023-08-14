@@ -7,6 +7,9 @@ module.exports = withMT({
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -30,10 +33,11 @@ module.exports = withMT({
       },
       fontFamily: {
         megat: ['var(--font-megat)'],
-        sans: ['Poppins', 'sans-serif']
+        sans: ['var(--font-primary)']
       },
       colors: {
         black: "#202020",
+        "purple-blue": "#5750E4"
       }
     }
   },

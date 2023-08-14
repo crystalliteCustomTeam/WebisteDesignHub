@@ -3,15 +3,39 @@
 @tailwind utilities;
 
 * {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s;
 }
 
-.__gradientBg {
+.__homeHeroGradientBg {
     background: rgb(158, 75, 255);
     background: -moz-radial-gradient(circle, rgba(158, 75, 255, 1) 0%, rgba(83, 40, 134, 1) 100%);
     background: -webkit-radial-gradient(circle, rgba(158, 75, 255, 1) 0%, rgba(83, 40, 134, 1) 100%);
     background: radial-gradient(circle, rgba(158, 75, 255, 1) 0%, rgba(83, 40, 134, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9e4bff", endColorstr="#532886", GradientType=1);
+}
+
+.__logoDesignHeroGradientBg {
+    background: rgb(72, 229, 250);
+    background: -moz-radial-gradient(circle, rgba(72, 229, 250, 1) 0%, rgba(87, 80, 228, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(72, 229, 250, 1) 0%, rgba(87, 80, 228, 1) 100%);
+    background: radial-gradient(circle, rgba(72, 229, 250, 1) 0%, rgba(87, 80, 228, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#48e5fa", endColorstr="#5750e4", GradientType=1);
+}
+
+.__creativeCopywritingHeroGradientBg {
+    background: rgb(142, 138, 237);
+    background: -moz-radial-gradient(circle, rgba(142, 138, 237, 1) 0%, rgba(87, 80, 228, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(142, 138, 237, 1) 0%, rgba(87, 80, 228, 1) 100%);
+    background: radial-gradient(circle, rgba(142, 138, 237, 1) 0%, rgba(87, 80, 228, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8e8aed", endColorstr="#5750e4", GradientType=1);
+}
+
+.__digitalMarketingHeroGradientBg {
+    background: rgb(181, 108, 175);
+    background: -moz-radial-gradient(circle, rgba(181, 108, 175, 1) 0%, rgba(48, 0, 52, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(181, 108, 175, 1) 0%, rgba(48, 0, 52, 1) 100%);
+    background: radial-gradient(circle, rgba(181, 108, 175, 1) 0%, rgba(48, 0, 52, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b56caf", endColorstr="#300034", GradientType=1);
 }
 
 .__gradientBg2 {
@@ -107,8 +131,30 @@
         width: 240px;
     }
 }
+
 @media (max-width: 1023px) {
     .__reviewsCmp ul.slick-dots::after {
         display: none;
     }
+}
+
+@media (max-width: 767px) {
+    br {
+        display: none;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #8C85FF;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
 }
