@@ -20,7 +20,7 @@ const Services = ({ content }) => {
                                 dangerouslySetInnerHTML={{ __html: title.replace(/\n/g, "<br />") }} />
                             <p className="text-base text-[#202020] font-normal text-center mb-10"
                                 dangerouslySetInnerHTML={{ __html: desc.replace(/\n/g, "<br className='hidden md:block' />") }} />
-                            <Tabs value="logoDesign" orientation="vertical" className="block">
+                            <Tabs value={activeTab} orientation="vertical" className="block">
                                 <div className="flex items-end gap-x-5 flex-wrap md:flex-nowrap">
                                     <div className="basis-full md:w-3/6 mb-5 md:mb-0">
                                         <TabsHeader indicatorProps={{ className: "shadow-none bg-transparent rounded-none" }} className="p-0">
@@ -50,7 +50,7 @@ const Services = ({ content }) => {
                                     </div>
                                 </div>
                             </Tabs>
-                            <div className="flex items-center gap-3 justify-center mt-10">
+                            <div className="flex items-center gap-3 justify-center mt-10 relative z-10">
                                 <Button text="Start Live Chat"
                                     icon={true}
                                     color="bg-[#7337BB] text-white"

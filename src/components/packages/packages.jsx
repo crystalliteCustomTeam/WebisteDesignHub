@@ -14,6 +14,11 @@ const Packages = () => {
                 variant: "outlined",
             },
             styles: {
+                base: {
+                    input: {
+                        bg: "bg-[#7972F9]"
+                    }
+                },
                 variants: {
                     outlined: {
                         base: {
@@ -24,7 +29,6 @@ const Packages = () => {
                                     borderWidth: "border-2 focus:border-2",
                                     borderColor: "border-t-transparent focus:border-t-transparent",
                                 },
-                                bg: "bg-[#7972F9]"
                             },
                             label: {
                                 before: {
@@ -140,7 +144,7 @@ const Packages = () => {
             styles: {
                 base: {
                     textarea: {
-
+                        bg: "bg-[#7972F9]"
                     }
                 },
                 variants: {
@@ -153,7 +157,6 @@ const Packages = () => {
                                     borderWidth: "border-2 focus:border-2",
                                     borderColor: "border-t-transparent focus:border-t-transparent",
                                 },
-                                bg: "bg-[#7972F9]"
                             },
                             label: {
                                 before: {

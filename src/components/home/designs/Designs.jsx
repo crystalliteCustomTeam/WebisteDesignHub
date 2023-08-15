@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // Import Css
-import styles from "./Designs.module.css";
+import styles from "./designs.module.css";
 // Import Images
 import uiux from "media/home/designs/uiux.png";
 import application from "media/home/designs/application.png";
