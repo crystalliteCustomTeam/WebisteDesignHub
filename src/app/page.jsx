@@ -1,6 +1,6 @@
 // Import Page Components
 import Hero from "@/components/hero/hero";
-// import Designs from "@/components/home/designs/designs";
+import Designs from "@/components/home/designs/designs";
 import SmallBanner from "@/components/smallbanner/smallbanner";
 import Services from "@/components/services/services";
 import Portfolios from "@/components/porfolios/porfolios";
@@ -85,7 +85,7 @@ const Page = () => {
     return (
         <>
             <Hero content={hero} />
-            {/* <Designs /> */}
+            <Designs />
             <SmallBanner content={smallbanner} />
             <Services content={services} />
             <Portfolios content={portfolios} />

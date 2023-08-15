@@ -6,6 +6,10 @@
     transition: all 0.1s;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .__homeHeroGradientBg {
     background: rgb(158, 75, 255);
     background: -moz-radial-gradient(circle, rgba(158, 75, 255, 1) 0%, rgba(83, 40, 134, 1) 100%);
