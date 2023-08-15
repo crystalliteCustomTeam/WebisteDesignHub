@@ -1,6 +1,6 @@
 // Import Page Components
 import Hero from "@/components/hero/hero";
-import Designs from "@/components/home/designs/designs";
+// import Designs from "@/components/home/designs/designs";
 import SmallBanner from "@/components/smallbanner/smallbanner";
 import Services from "@/components/services/services";
 import Portfolios from "@/components/porfolios/porfolios";
@@ -13,7 +13,7 @@ import banner from "media/home/hero/chair.png";
 import bannerIconOne from "media/home/hero/iconOne.png";
 import bannerIconTwo from "media/home/hero/iconTwo.png";
 import bannerIconThree from "media/home/hero/iconThree.png";
-import smallBannerImage from "media/home/smallBanner.png";
+// import smallBannerImage from "media/home/smallBanner.png";
 import serviceTabOne from "media/home/services/serviceTabOne.png";
 import portfolioOne from "media/home/portfolios/one.png";
 import portfolioTwo from "media/home/portfolios/two.png";
@@ -37,7 +37,7 @@ const Page = () => {
         page: "home",
         title: "Allow us to assist you in \n developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals \n through the creation of an interesting and functional website.",
-        img: smallBannerImage
+        img: bannerIconTwo
     };
     // Array for Services Component Props
     const services = {
@@ -85,7 +85,7 @@ const Page = () => {
     return (
         <>
             <Hero content={hero} />
-            <Designs />
+            {/* <Designs /> */}
             <SmallBanner content={smallbanner} />
             <Services content={services} />
             <Portfolios content={portfolios} />
