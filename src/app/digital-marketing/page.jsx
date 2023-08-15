@@ -3,7 +3,7 @@ import Hero from "@/components/hero/hero";
 import Services from "@/components/digital-marketing/services/services";
 import SmallBanner from "@/components/smallbanner/smallbanner";
 import Reviews from "@/components/reviews/reviews";
-import Weare from "@/components/weare/Weare";
+import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 // Import Images
