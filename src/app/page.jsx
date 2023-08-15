@@ -26,7 +26,7 @@ const Page = () => {
     const hero = {
         page: "home",
         subtitle: "A Place Where",
-        title: "100% Original and \n Creative Websites",
+        title: "50% Original and \n Creative Websites",
         desc: "Urban Web Designers works with a team of enthusiastic designers and \n developers who are dedicated professionals in delivering the best \n websites for any business. Our websites are:",
         points: ["Customized", "Optimized", "Result Driven", "Measurable"],
         banner,
