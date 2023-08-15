@@ -2,16 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 // Import Css
-import styles from "./designs.module.css";
+import styles from "./approach.module.css";
 // Import Images
-import uiux from "media/home/designs/uiux.png";
-import application from "media/home/designs/application.png";
-import branding from "media/home/designs/branding.png";
-import socialMedia from "media/home/designs/socialMedia.png";
-import brandColors from "media/home/designs/brandColors.png";
-import btn from "media/home/designs/btn.svg";
+import uiux from "media/home/approach/uiux.png";
+import application from "media/home/approach/application.png";
+import branding from "media/home/approach/branding.png";
+import socialMedia from "media/home/approach/socialMedia.png";
+import brandColors from "media/home/approach/brandColors.png";
+import btn from "media/home/approach/btn.svg";
 
-const Designs = () => {
+const Approach = () => {
     return (
         <section>
             <div className="bg-[#EBEBEB] overflow-hidden py-10 lg:py-16 xl:py-20">
@@ -77,4 +77,4 @@ const Designs = () => {
     );
 }
 
-export default Designs;
+export default Approach;
