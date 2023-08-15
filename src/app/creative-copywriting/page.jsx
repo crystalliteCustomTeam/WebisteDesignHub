@@ -8,7 +8,7 @@ import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 // Import Images
 import banner from "media/creative-copywriting/hero/deskGirl.png";
-import smallBannerImage from "media/creative-copywriting/smallbanner.png";
+import smallBannerImage from "media/creative-copywriting/smallBanner.png";
 
 const Page = () => {
     // Array for Hero Component Props
