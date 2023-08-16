@@ -15,17 +15,24 @@ const Page = () => {
     const hero = {
         page: "creativeCopywriting",
         subtitle: "Writing for Publicationt",
-        title: "Going Above and Beyond \n for Our Customers",
-        desc: "Content that not only satisfies but also surpasses the needs of \n our clients is what our team of devoted specialists excels at \n providing. One of the defining features of our copywriting is:",
+        title: "Going Above and Beyond for Our Customers",
+        desc: "Content that not only satisfies but also surpasses the needs of our clients is what our team of devoted specialists excels at providing. One of the defining features of our copywriting is:",
         points: ["Prompt", "Exceptional", "Insightful", "Competitive Edge"],
         banner,
+        bg: "__creativeCopywritingHeroGradientBg"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
         page: "creativeCopywriting",
-        title: "Allow us to assist you in \n developing a web presence.",
-        desc: "Our web development team is here to assist you in reaching your business goals \n through the creation of an interesting and functional website.",
-        img: smallBannerImage
+        title: "Allow us to assist you in developing a web presence.",
+        desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
+        img: smallBannerImage,
+        bgColor: "bg-[#B8C1FB]",
+        btnBg: "bg-[#0F2847]",
+        btnBorder: "border-[#0F2847]",
+        btnHover: "hover:bg-[#0F2847]",
+        btnColor: "text-[#0F2847]",
+        theme: "light"
     };
     return (
         <>

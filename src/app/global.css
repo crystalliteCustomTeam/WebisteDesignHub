@@ -42,6 +42,14 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b56caf", endColorstr="#300034", GradientType=1);
 }
 
+.__ecommerceHeroGradientBg {
+    background: rgb(167, 185, 255);
+    background: -moz-radial-gradient(circle, rgba(167, 185, 255, 1) 0%, rgba(16, 45, 64, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(167, 185, 255, 1) 0%, rgba(16, 45, 64, 1) 100%);
+    background: radial-gradient(circle, rgba(167, 185, 255, 1) 0%, rgba(16, 45, 64, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a7b9ff", endColorstr="#102d40", GradientType=1);
+}
+
 .__gradientBg2 {
     background: rgb(16, 61, 117);
     background: -moz-radial-gradient(circle, rgba(16, 61, 117, 1) 0%, rgba(15, 40, 71, 1) 99%);

@@ -192,7 +192,7 @@ const From = () => {
         <ThemeProvider value={theme}>
             <div className="lg:absolute lg:top-[95%] lg:left-0 lg:right-0 z-10 pb-10 lg:pb-0">
                 <div className="container">
-                    <div className="bg-[#5a5a5a33] backdrop-blur-sm py-10 md:p-10 rounded-[50px] brightness-[-4]">
+                    <div className="bg-[#0000006b] backdrop-blur-sm py-10 md:p-10 rounded-[50px] brightness-[-4]">
                         <form action="">
                             <div className="flex flex-col gap-y-3 lg:gap-y-0 lg:flex-row lg:gap-5 mb-3 w-[90%] lg:w-full m-auto">
                                 <div className="basis-full lg:basis-1/3">

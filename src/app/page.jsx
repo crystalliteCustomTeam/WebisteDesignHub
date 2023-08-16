@@ -26,18 +26,24 @@ const Page = () => {
     const hero = {
         page: "home",
         subtitle: "A Place Where",
-        title: "50% Original and \n Creative Websites",
-        desc: "Urban Web Designers works with a team of enthusiastic designers and \n developers who are dedicated professionals in delivering the best \n websites for any business. Our websites are:",
+        title: "100% Original and Creative Websites",
+        desc: "Urban Web Designers works with a team of enthusiastic designers and developers who are dedicated professionals in delivering the best websites for any business. Our websites are:",
         points: ["Customized", "Optimized", "Result Driven", "Measurable"],
         banner,
-        icons: [bannerIconOne, bannerIconTwo, bannerIconThree]
+        icons: [bannerIconOne, bannerIconTwo, bannerIconThree],
+        bg: "__homeHeroGradientBg"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
         page: "home",
-        title: "Allow us to assist you in \n developing a web presence.",
-        desc: "Our web development team is here to assist you in reaching your business goals \n through the creation of an interesting and functional website.",
-        img: smallBannerImage
+        title: "Allow us to assist you in developing a web presence.",
+        desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
+        img: smallBannerImage,
+        bgColor: "bg-[#0F2847]",
+        btnBg: "bg-[#216385]",
+        btnBorder: "border-[#216385]",
+        btnHover: "hover:bg-[#216385]",
+        theme: "dark"
     };
     // Array for Services Component Props
     const services = {

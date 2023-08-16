@@ -26,18 +26,25 @@ const Page = () => {
     const hero = {
         page: "logoDesign",
         subtitle: "Distinctive Logos",
-        title: "Crafting Your Vision \n into Memorable Icons",
-        desc: "Are you looking to make a lasting impression with your brand? \n Our logo design services blend creativity and strategy to create \n powerful visual identities that resonate with your audience.",
+        title: "Crafting Your Vision into Memorable Icons",
+        desc: "Are you looking to make a lasting impression with your brand? Our logo design services blend creativity and strategy to create powerful visual identities that resonate with your audience.",
         points: ["Brand Recognition", "Brand Identity", "Brand Loyalty", "Competitive Edge"],
         banner,
-        icons: [bannerIconOne, bannerIconTwo, bannerIconThree]
+        icons: [bannerIconOne, bannerIconTwo, bannerIconThree],
+        bg: "__logoDesignHeroGradientBg"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
         page: "logoDesign",
-        title: "Allow us to assist you in \n developing a web presence.",
+        title: "Allow us to assist you in developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
-        img: smallBannerImage
+        img: smallBannerImage,
+        bgColor: "bg-[#ABF0FC]",
+        btnBg: "bg-[#0F2847]",
+        btnBorder: "border-[#0F2847]",
+        btnHover: "hover:bg-[#0F2847]",
+        btnColor: "text-[#0F2847]",
+        theme: "light"
     };
     // Array for Services Component Props
     const services = {

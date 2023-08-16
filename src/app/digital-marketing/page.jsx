@@ -15,17 +15,23 @@ const Page = () => {
     const hero = {
         page: "digitalMarketing",
         subtitle: "Expert in Marketing",
-        title: "Controlling the Client's \n Digital Expansion",
-        desc: "The goal of our digital services is to facilitate and oversee \n the expansion of our customers' digital presence. We test out and \n make use of a wide variety of tools that produce excellent \n outcomes for both private and commercial endeavors.",
+        title: "Controlling the Client's Digital Expansion",
+        desc: "The goal of our digital services is to facilitate and oversee the expansion of our customers' digital presence. We test out and make use of a wide variety of tools that produce excellent outcomes for both private and commercial endeavors.",
         points: ["Relevant", "Flexible", "Measurable", "Interactive"],
         banner,
+        bg: "__digitalMarketingHeroGradientBg"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
         page: "digitalMarketing",
-        title: "Allow us to assist you in \n developing a web presence.",
+        title: "Allow us to assist you in developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
-        img: smallBannerImage
+        img: smallBannerImage,
+        bgColor: "bg-[#829E05]",
+        btnBg: "bg-[#C5DF00]",
+        btnBorder: "border-[#C5DF00]",
+        btnHover: "hover:bg-[#C5DF00]",
+        theme: "dark"
     };
     return (
         <>
