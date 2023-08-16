@@ -12,7 +12,7 @@ const Services = () => {
                     <div className="text-center mb-10">
                         <span className="text-base font-normal text-[#00B4FF]">Internet merchant creators</span>
                         <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">Developing E-Commerce Platforms</h2>
-                        <p className="text-base text-black font-normal">Our team is well-versed in providing safe e-commerce options for businesses like yours. If you're a new company in need of an e-commerce platform, or an established company trying to expand into new markets, Urban Web Designers can help.</p>
+                        <p className="text-base text-black font-normal">Our team is well-versed in providing safe e-commerce options for businesses like yours. If you`re a new company in need of an e-commerce platform, or an established company trying to expand into new markets, Urban Web Designers can help.</p>
                     </div>
                     <Image src={shoe} alt="shoe" className="block m-auto" />
                     <div className="flex items-center gap-3 justify-center mt-10 relative z-10">
