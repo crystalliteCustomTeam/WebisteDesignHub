@@ -7,7 +7,7 @@ import shoe from "media/ecommerce/services/shoe.png";
 const Services = () => {
     return (
         <section>
-            <div className="bg-[#EBEBEB] py-10 lg:pb-20 lg:pt-[200px]">
+            <div className="bg-[#EBEBEB] py-10 lg:py-[200px]">
                 <div className="container">
                     <div className="text-center mb-10">
                         <span className="text-base font-normal text-[#00B4FF]">Internet Merchant Creators</span>

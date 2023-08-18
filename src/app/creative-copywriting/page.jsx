@@ -19,7 +19,8 @@ const Page = () => {
         desc: "Content that not only satisfies but also surpasses the needs of our clients is what our team of devoted specialists excels at providing. One of the defining features of our copywriting is:",
         points: ["Prompt", "Exceptional", "Insightful", "Competitive Edge"],
         banner,
-        bg: "__creativeCopywritingHeroGradientBg"
+        bg: "__creativeCopywritingHeroGradientBg",
+        isForm: true
     };
     // Array for Small Banner Component Props
     const smallbanner = {

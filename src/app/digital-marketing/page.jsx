@@ -6,6 +6,7 @@ import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
+import Packages from "@/components/packages/packages";
 // Import Images
 import banner from "media/digital-marketing/hero/hand.png";
 import smallBannerImage from "media/digital-marketing/smallBanner.png";
@@ -19,7 +20,8 @@ const Page = () => {
         desc: "The goal of our digital services is to facilitate and oversee the expansion of our customers' digital presence. We test out and make use of a wide variety of tools that produce excellent outcomes for both private and commercial endeavors.",
         points: ["Relevant", "Flexible", "Measurable", "Interactive"],
         banner,
-        bg: "__digitalMarketingHeroGradientBg"
+        bg: "__digitalMarketingHeroGradientBg",
+        isForm: true
     };
     // Array for Small Banner Component Props
     const smallbanner = {
@@ -38,6 +40,7 @@ const Page = () => {
             <Hero content={hero} />
             <Services />
             <SmallBanner content={smallbanner} />
+            <Packages />
             <Reviews />
             <Letstalk />
             <Weare />

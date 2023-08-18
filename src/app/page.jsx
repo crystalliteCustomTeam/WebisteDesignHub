@@ -3,7 +3,7 @@ import Hero from "@/components/hero/hero";
 import Approach from "@/components/home/approach/approach";
 import SmallBanner from "@/components/smallbanner/smallbanner";
 import Services from "@/components/services/services";
-import Portfolios from "@/components/porfolios/porfolios";
+import Portfolios from "@/components/portfolios/portfolios";
 import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";

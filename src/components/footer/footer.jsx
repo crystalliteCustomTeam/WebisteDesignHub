@@ -9,6 +9,7 @@ import facebook from "media/social/facebook.svg";
 import twitter from "media/social/twitter.svg";
 import instagram from "media/social/instagram.svg";
 import linkedin from "media/social/linkedin.svg";
+import paymentMethods from "media/paymentMethods.png";
 
 const Footer = () => {
     const quickLinks = [
@@ -147,7 +148,7 @@ const Footer = () => {
                                 {
                                     contactLinks.map((e, i) => {
                                         return (
-                                            <li key={i} className="flex items-center gap-2 mb-5 last:mb-0">
+                                            <li key={i} className="flex items-center gap-2 mb-3 last:mb-0">
                                                 <Image src={e.icon} alt={e.icon} />
                                                 <Link href={e.link} className="text-sm xl:text-base text-white font-normal hover:opacity-50">
                                                     {e.text}
@@ -157,6 +158,7 @@ const Footer = () => {
                                     })
                                 }
                             </ul>
+                            <Image src={paymentMethods} alt="paymentMethods" className="mt-3" />
                         </div>
                     </div>
                     <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-5 sm:gap-y-0 items-center">

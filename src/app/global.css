@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    transition: all 0.1s;
+    transition: all 0.3s;
 }
 
 body {
@@ -48,6 +48,30 @@ body {
     background: -webkit-radial-gradient(circle, rgba(167, 185, 255, 1) 0%, rgba(16, 45, 64, 1) 100%);
     background: radial-gradient(circle, rgba(167, 185, 255, 1) 0%, rgba(16, 45, 64, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a7b9ff", endColorstr="#102d40", GradientType=1);
+}
+
+.__motionGraphicsHeroGradientBg {
+    background: rgb(115, 129, 0);
+    background: -moz-radial-gradient(circle, rgba(115, 129, 0, 1) 0%, rgba(11, 34, 24, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(115, 129, 0, 1) 0%, rgba(11, 34, 24, 1) 100%);
+    background: radial-gradient(circle, rgba(115, 129, 0, 1) 0%, rgba(11, 34, 24, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#738100", endColorstr="#0b2218", GradientType=1);
+}
+
+.__mobileApplicationHeroGradientBg {
+    background: rgb(214, 236, 71);
+    background: -moz-radial-gradient(circle, rgba(214, 236, 71, 1) 0%, rgba(54, 87, 28, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(214, 236, 71, 1) 0%, rgba(54, 87, 28, 1) 100%);
+    background: radial-gradient(circle, rgba(214, 236, 71, 1) 0%, rgba(54, 87, 28, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d6ec47", endColorstr="#36571c", GradientType=1);
+}
+
+.__seoServicesHeroGradientBg {
+    background: rgb(68, 73, 84);
+    background: -moz-radial-gradient(circle, rgba(68, 73, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(68, 73, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(68, 73, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444954", endColorstr="#000000", GradientType=1);
 }
 
 .__gradientBg2 {

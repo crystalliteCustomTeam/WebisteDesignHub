@@ -11,10 +11,17 @@ import circleCheck from "media/hero/circleCheck.svg";
 import reviewPlatforms from "media/hero/reviewPlatforms.svg";
 
 const Hero = ({ content }) => {
-    const { subtitle, title, desc, points, banner, page, icons, bg } = content;
+    const { subtitle, title, desc, points, banner, page, icons, bg, video, isForm } = content;
     return (
         <section>
-            <div className={`${bg ?? "bg-blue-gray-700"} pt-44 lg:pt-0 relative`}>
+            <div className={`${bg ?? "bg-transparent"} pt-44 lg:pt-0 relative z-[1]`}>
+                {/* For Motion Graphics Page */}
+                {page === "motionGraphics" ?
+                    <video src={video} autoPlay loop muted
+                        className="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-contain object-right-top z-[-2] hidden lg:block"></video> : null}
+                {/* For Motion Graphics Page */}
+                {page === "seoServices" ?
+                    <div className="bg-[url('../../public/seo-services/hero/handle.png')] bg-contain bg-no-repeat bg-right-top absolute right-0 hidden lg:block bottom-0 w-full h-full"></div> : null}
                 <div className="container relative z-[1]">
                     {/* For Home Page */}
                     {page === "home" ? <div className="absolute bottom-0 md:right-0 lg:right-[-50px] xl:right-[-50px] z-[-1] hidden md:block">
@@ -44,7 +51,6 @@ const Hero = ({ content }) => {
                         <div className={`absolute lg:top-[550px] xl:top-[600px] lg:right-[-10px] xl:right-0 hidden lg:block ${styles.__fadeInDown}`}>
                             <Image src={icons[2]} alt="icon" />
                         </div></> : null}
-                    {/* For Creative Copywriting Page */}
                     {page === "creativeCopywriting" ? <div className="absolute right-0 bottom-0 z-[-1] hidden md:block">
                         <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-10/12 block ml-auto xl:w-full" />
                     </div> : null}
@@ -55,6 +61,18 @@ const Hero = ({ content }) => {
                     {/* For Ecommerce Page */}
                     {page === "ecommerce" ? <div className="absolute right-0 xl:right-[-300px] bottom-0 z-[-1] hidden md:block">
                         <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-1/2 block ml-auto xl:w-full" />
+                    </div> : null}
+                    {/* For Illustration Design Page */}
+                    {page === "illustrationDesign" ? <div className="absolute right-0 bottom-0 z-[-1] hidden md:block">
+                        <Image src={banner} alt="banner" priority className="object-cover h-auto w-2/4 lg:w-4/5 block ml-auto xl:w-full" />
+                    </div> : null}
+                    {/* For Marketing Collateral Page */}
+                    {page === "marketingCollateral" ? <div className="absolute right-0 bottom-0 lg:bottom-[100px] z-[-1] hidden md:block">
+                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-3/5 block ml-auto xl:w-full" />
+                    </div> : null}
+                    {/* For Mobile Application Page */}
+                    {page === "mobileApplication" ? <div className="absolute right-0 bottom-0 z-[-1] hidden md:block">
+                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-4/5 block ml-auto xl:w-full" />
                     </div> : null}
                     <div className="flex lg:h-[750px] xl:h-[820px] lg:items-end lg:pb-20">
                         <div className="basis-full md:basis-[80%] lg:basis-[60%] xl:basis-[50%]">
@@ -117,7 +135,7 @@ const Hero = ({ content }) => {
                     </div>
                 </div>
                 {
-                    page === "digitalMarketing" || page === "creativeCopywriting" || page === "ecommerce" ? <From /> : null
+                    isForm ? <From /> : null
                 }
             </div>
         </section>

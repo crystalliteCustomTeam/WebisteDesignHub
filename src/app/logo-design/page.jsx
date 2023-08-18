@@ -2,7 +2,7 @@
 import Hero from "@/components/hero/hero";
 import SmallBanner from "@/components/smallbanner/smallbanner";
 import Services from "@/components/services/services";
-import Portfolios from "@/components/porfolios/porfolios";
+import Portfolios from "@/components/portfolios/portfolios";
 import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
@@ -82,7 +82,8 @@ const Page = () => {
     const portfolios = {
         title: "See it. You Must Have Faith",
         desc: "Urban Web Designers counts itself incredibly fortunate to have worked with such wonderful customers and provided \n them with excellent service.",
-        images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive]
+        images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive],
+        theme: "light"
     };
     return (
         <>

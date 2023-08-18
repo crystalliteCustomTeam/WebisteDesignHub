@@ -28,9 +28,9 @@ const Services = ({ content }) => {
                                                 <Tab key={value}
                                                     value={value}
                                                     onClick={() => setActiveTab(value)}
-                                                    className="border-b-2 border-[#e3e3e3] px-0 py-4 lg:py-2 xl:py-5 block">
+                                                    className="border-b-2 border-[#e3e3e3] px-0 py-4 lg:py-2 xl:py-3 block">
                                                     <div className="flex items-center justify-between gap-2">
-                                                        <h3 className={`text-3xl xl:text-5xl font-light leading-none ${activeTab === value ? "text-[#7337BB]" : "text-[#202020]"}`}>
+                                                        <h3 className={`text-3xl xl:text-4xl font-light leading-none ${activeTab === value ? "text-[#7337BB]" : "text-[#202020]"}`}>
                                                             {label}
                                                         </h3>
                                                         <Image src={serviceTabArrow} alt="icon" className={`${activeTab === value ? "brightness-100" : "brightness-0"} hidden lg:block`} />
