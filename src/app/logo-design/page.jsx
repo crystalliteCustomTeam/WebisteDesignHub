@@ -8,6 +8,7 @@ import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 import Packages from "@/components/packages/packages";
+import Combo from "@/components/logo-design/combo/combo";
 // Import Images
 import banner from "media/logo-design/hero/screen.png";
 import bannerIconOne from "media/logo-design/hero/iconOne.png";
@@ -92,6 +93,7 @@ const Page = () => {
             <SmallBanner content={smallbanner} />
             <Packages />
             <Portfolios content={portfolios} />
+            <Combo />
             <Letstalk />
             <Reviews />
             <Weare />

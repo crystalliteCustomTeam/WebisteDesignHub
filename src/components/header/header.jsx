@@ -15,6 +15,7 @@ import marketingCollateral from "media/menu/marketingCollateral.png";
 import mobileApplication from "media/menu/mobileApplication.png";
 import motionGraphics from "media/menu/motionGraphics.png";
 import seoServices from "media/menu/seoServices.png";
+import websiteDevelopment from "media/menu/websiteDevelopment.png";
 import down from "media/menu/down.png";
 import { useState } from "react";
 
@@ -49,11 +50,15 @@ const Header = () => {
                             <Link className="text-base" href="/ecommerce">Ecommerce Web Solutions</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Image src={motionGraphics} alt="motionGraphics" />
-                            <Link className="text-base" href="/motion-graphics">Motion Graphics</Link>
+                            <Image src={websiteDevelopment} alt="websiteDevelopment" />
+                            <Link className="text-base" href="/website-development">Website Development</Link>
                         </li>
                     </ul>
                     <ul className="hidden lg:block w-1/2">
+                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
+                            <Image src={motionGraphics} alt="motionGraphics" />
+                            <Link className="text-base" href="/motion-graphics">Motion Graphics</Link>
+                        </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={illustrationDesign} alt="illustrationDesign" />
                             <Link className="text-base" href="/illustration-design">Illustration Design</Link>
@@ -90,6 +95,10 @@ const Header = () => {
                                 <Link className="text-base" href="/ecommerce">Ecommerce Web Solutions</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
+                                <Image src={websiteDevelopment} alt="websiteDevelopment" />
+                                <Link className="text-base" href="/website-development">Website Development</Link>
+                            </li>
+                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={motionGraphics} alt="motionGraphics" />
                                 <Link className="text-base" href="/motion-graphics">Motion Graphics</Link>
                             </li>
@@ -114,7 +123,6 @@ const Header = () => {
                     </Collapse>
                 </div>
             </li>
-            <li className="lg:h-full lg:flex lg:items-center"><Link href="/" className="text-lg font-medium leading-10">FAQ</Link></li>
             <li className="lg:h-full lg:flex lg:items-center"><Link href="/" className="text-lg font-medium leading-10">Pricing/Packages</Link></li>
             <li className="lg:h-full lg:flex lg:items-center"><Link href="/" className="text-lg font-medium leading-10">Contact</Link></li>
         </ul>

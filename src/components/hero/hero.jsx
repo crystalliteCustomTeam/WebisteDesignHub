@@ -14,12 +14,16 @@ const Hero = ({ content }) => {
     const { subtitle, title, desc, points, banner, page, icons, bg, video, isForm } = content;
     return (
         <section>
-            <div className={`${bg ?? "bg-transparent"} pt-44 lg:pt-0 relative z-[1]`}>
+            <div className={`${bg ?? "bg-transparent"} pt-28 lg:pt-0 relative z-[1]`}>
                 {/* For Motion Graphics Page */}
                 {page === "motionGraphics" ?
                     <video src={video} autoPlay loop muted
                         className="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-contain object-right-top z-[-2] hidden lg:block"></video> : null}
-                {/* For Motion Graphics Page */}
+                {/* For Website Development Page */}
+                {page === "websiteDevelopment" ?
+                    <video src={video} autoPlay loop muted
+                        className="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-contain object-right-top z-[-2] hidden lg:block"></video> : null}
+                {/* For Seo Services Page */}
                 {page === "seoServices" ?
                     <div className="bg-[url('../../public/seo-services/hero/handle.png')] bg-contain bg-no-repeat bg-right-top absolute right-0 hidden lg:block bottom-0 w-full h-full"></div> : null}
                 <div className="container relative z-[1]">

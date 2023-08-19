@@ -1,0 +1,180 @@
+// Import Components
+import Image from "next/image";
+import Button from "@/components/button/Button";
+// Import Images
+import checkCircle from "media/packages/checkCircle.png";
+import comboImage from "media/packages/combo.png";
+
+const Combo = () => {
+    // Array for Logo Design List
+    const listLogoDesign = [
+        "Unlimited Logo Design Concepts",
+        "By 8 Dedicated Logo Designers",
+        "Unlimited Revisions",
+        "Branded Document",
+        "Corporate Profile",
+        "Turnaround Time 2 Business Days"
+    ];
+    // Array for Stationary Design List
+    const listStationaryDesign = [
+        "Free Business Card Design",
+        "Free Letterhead Design",
+        "Free Envelope Design",
+        "Free Compliment Slip Design",
+        "Free Corporate Brochure (up-to 6 Pages)"
+    ];
+    // Array for Social Media Design List
+    const listSocialMediaDesign = [
+        "Facebook, Twitter, Youtube, Linkedin"
+    ];
+    // Array for Banner Design List
+    const listBannerDesign = [
+        "2 Design Concepts",
+        "2 Stock Photos for Banners"
+    ];
+    // Array for Video Animation List
+    const listVideoAnimation = [
+        "30 Seconds 2D Video Animation",
+        "Script Writing",
+        "Story Board",
+        "Voice Over",
+        "Animation with Sound Effect"
+    ];
+    // Array for Website Design List
+    const listWebsiteDesign = [
+        "Unlimited Packages Website",
+        "5 Stock Photos",
+        "1 Year Free Domain Name Registration.",
+        "1 Year Free Hosting",
+        "Content Management System ( CMS )",
+        "Contact Us From",
+        "Search Engine Submission",
+        "1 Landing Page SDi",
+        "1 Blog Theme Design"
+    ];
+    return (
+        <section>
+            <div className="__gradientBg3 py-10 lg:py-20">
+                <div className="container relative z-10">
+                    <span className="text-base font-normal text-white">
+                        Everything You Need To Save Time
+                    </span>
+                    <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-white mb-5">
+                        All In One Combo
+                    </h2>
+                    <div className="bg-[url('../../public/packages/comboBg.png')] bg-cover bg-no-repeat bg-center p-5 w-max">
+                        <div className="flex">
+                            <div className="w-max">
+                                <div className="border-r-2 w-max border-dashed pr-10 pb-3">
+                                    <h4 className="font-megat font-normal text-white text-2xl mb-2">Professional Logo</h4>
+                                    <ul>
+                                        {
+                                            listLogoDesign.map((e, i) => {
+                                                return (
+                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                        <Image src={checkCircle} alt="checkCircle" />
+                                                        <span>{e}</span>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="w-max border-dashed pr-10 border-t-2 border-b-2 py-3">
+                                    <h4 className="font-megat font-normal text-white text-2xl mb-2">Stationery Design</h4>
+                                    <ul>
+                                        {
+                                            listStationaryDesign.map((e, i) => {
+                                                return (
+                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                        <Image src={checkCircle} alt="checkCircle" />
+                                                        <span>{e}</span>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="w-max border-dashed pr-10 border-b-2 py-3">
+                                    <h4 className="font-megat font-normal text-white text-2xl mb-2">Social Media Designs</h4>
+                                    <ul>
+                                        {
+                                            listSocialMediaDesign.map((e, i) => {
+                                                return (
+                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                        <Image src={checkCircle} alt="checkCircle" />
+                                                        <span>{e}</span>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="border-r-2 w-max border-dashed pr-10 border-b-2 py-3">
+                                    <h4 className="font-megat font-normal text-white text-2xl mb-2">Banner Design</h4>
+                                    <ul>
+                                        {
+                                            listBannerDesign.map((e, i) => {
+                                                return (
+                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                        <Image src={checkCircle} alt="checkCircle" />
+                                                        <span>{e}</span>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="w-max">
+                                <div className="border-r-2 w-max border-dashed pb-3 pr-10">
+                                    <h4 className="font-megat font-normal text-white text-2xl mb-2">Video Animation</h4>
+                                    <ul>
+                                        {
+                                            listVideoAnimation.map((e, i) => {
+                                                return (
+                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                        <Image src={checkCircle} alt="checkCircle" />
+                                                        <span>{e}</span>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="border-r-2 w-max border-dashed border-t-2 py-3 px-10 border-l-2 border-b-2">
+                                    <h4 className="font-megat font-normal text-white text-2xl mb-2">Website Design</h4>
+                                    <ul>
+                                        {
+                                            listWebsiteDesign.map((e, i) => {
+                                                return (
+                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                        <Image src={checkCircle} alt="checkCircle" />
+                                                        <span>{e}</span>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="w-max">
+                                    <h5 className="font-sans text-center font-bold text-5xl text-white mt-5 mb-5">
+                                        $99 <sup className="text-[#A497F5] text-4xl"><del>$198</del></sup>
+                                    </h5>
+                                    <Button text="Order Now"
+                                        color="bg-[#067AC8] text-white"
+                                        border="border-2 border-[#067AC8]"
+                                        hover="hover:bg-transparent"
+                                        link="tel:123654789" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <Image src={comboImage} alt="comboImage" className="absolute z-[2] bottom-0 right-0" />
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Combo;

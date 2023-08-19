@@ -240,7 +240,7 @@ const Packages = () => {
                     <div className="container">
                         <div className="text-center mb-10">
                             <span className="text-base font-normal text-[#A497F5]">Reasonable Prices</span>
-                            <h2 className="font-megat font-normal text-5xl text-white mb-2">That Fits Your Budget</h2>
+                            <h2 className="font-megat font-normal text-4xl lg:text-5xl text-white mb-2">That Fits Your Budget</h2>
                             <p className="text-base text-white font-normal">With affordable prices, we have exclusive digital art and design facilities, <br /> customized for your individual needs</p>
                         </div>
                         <div className="bg-[#665FF3] py-10 px-3 lg:px-5 xl:p-20 rounded-[50px]">
@@ -264,7 +264,28 @@ const Packages = () => {
                                             })
                                         }
                                     </ul>
-                                    <button type="button" className="text-sm sm:text-lg font-medium border-[#96E1EE] pr-8 pl-8 h-12 rounded-md bg-transparent border-2 w-full text-white hover:bg-[#96E1EE] mt-5">Select Package</button>
+                                    <p className="text-sm text-white font-normal my-5 text-center lg:text-left">
+                                        Send us a message below & we’ll get in touch!
+                                    </p>
+                                    <form action="">
+                                        <div className="flex flex-col gap-y-4">
+                                            <div className="basis-full">
+                                                <Input label="Name" type="text" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <Input label="Email" type="email" id="" name="" />
+                                            </div>
+                                            <div className="basis-full lg:basis-1/3">
+                                                <Input label="Telephone Number" type="tel" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <Input label="Meesage..." type="text" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <button type="button" className="text-sm sm:text-lg font-medium border-[#96E1EE] h-11 rounded-md bg-transparent border-2 w-full text-white hover:bg-[#96E1EE]">Select Package</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div className="basis-full px-5 mt-4 md:mt-0 lg:p-0 md:basis-6/12 lg:basis-1/3 lg:pl-3 xl:pl-5">
                                     <div className="bg-gradient-to-b from-[#94DFEC] to-[#007488] h-16 flex items-center justify-center rounded-xl">
@@ -285,7 +306,28 @@ const Packages = () => {
                                             })
                                         }
                                     </ul>
-                                    <button type="button" className="text-sm sm:text-lg font-medium border-[#96E1EE] pr-8 pl-8 h-12 rounded-md bg-transparent border-2 w-full text-white hover:bg-[#96E1EE] mt-5">Select Package</button>
+                                    <p className="text-sm text-white font-normal my-5 text-center lg:text-left">
+                                        Send us a message below & we’ll get in touch!
+                                    </p>
+                                    <form action="">
+                                        <div className="flex flex-col gap-y-4">
+                                            <div className="basis-full">
+                                                <Input label="Name" type="text" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <Input label="Email" type="email" id="" name="" />
+                                            </div>
+                                            <div className="basis-full lg:basis-1/3">
+                                                <Input label="Telephone Number" type="tel" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <Input label="Meesage..." type="text" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <button type="button" className="text-sm sm:text-lg font-medium border-[#96E1EE] h-11 rounded-md bg-transparent border-2 w-full text-white hover:bg-[#96E1EE]">Select Package</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div className="basis-full px-5 mt-4 lg:mt-0 lg:p-0 md:basis-6/12 lg:basis-1/3 lg:pl-3 xl:pl-5">
                                     <div className="bg-gradient-to-b from-[#0F2847] to-[#03080E] h-16 flex items-center justify-center rounded-xl">
@@ -306,11 +348,31 @@ const Packages = () => {
                                             })
                                         }
                                     </ul>
-                                    <button type="button" className="text-sm sm:text-lg font-medium border-[#96E1EE] pr-8 pl-8 h-12 rounded-md bg-transparent border-2 w-full text-white hover:bg-[#96E1EE] mt-5">Select Package</button>
+                                    <p className="text-sm text-white font-normal my-5 text-center lg:text-left">
+                                        Send us a message below & we’ll get in touch!
+                                    </p>
+                                    <form action="">
+                                        <div className="flex flex-col gap-y-4">
+                                            <div className="basis-full">
+                                                <Input label="Name" type="text" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <Input label="Email" type="email" id="" name="" />
+                                            </div>
+                                            <div className="basis-full lg:basis-1/3">
+                                                <Input label="Telephone Number" type="tel" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <Input label="Meesage..." type="text" id="" name="" />
+                                            </div>
+                                            <div className="basis-full">
+                                                <button type="button" className="text-sm sm:text-lg font-medium border-[#96E1EE] h-11 rounded-md bg-transparent border-2 w-full text-white hover:bg-[#96E1EE]">Select Package</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                            <p className="text-base text-white font-normal my-5 text-center lg:text-left">Send us a message below and we’ll get in touch!</p>
-                            <form action="">
+                            {/* <form action="">
                                 <div className="flex flex-col gap-y-3 lg:gap-y-0 lg:flex-row lg:gap-5 mb-3 w-[90%] lg:w-full m-auto">
                                     <div className="basis-full lg:basis-1/3">
                                         <Input label="Name" type="text" id="" name="" />
@@ -338,7 +400,7 @@ const Packages = () => {
                                         <button type="button" className="text-sm sm:text-lg font-medium border-[#96E1EE] pr-8 pl-8 h-11 rounded-md bg-transparent border-2 w-full text-white hover:bg-[#96E1EE]">Submit Form</button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> */}
                         </div>
                     </div>
                 </div>

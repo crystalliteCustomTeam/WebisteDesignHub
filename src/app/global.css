@@ -81,6 +81,13 @@ body {
     background: radial-gradient(circle, rgba(16, 61, 117, 1) 0%, rgba(15, 40, 71, 1) 99%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#103d75", endColorstr="#0f2847", GradientType=1);
 }
+.__gradientBg3 {
+    background: rgb(22,65,117);
+background: -moz-radial-gradient(circle, rgba(22,65,117,1) 0%, rgba(3,8,14,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(22,65,117,1) 0%, rgba(3,8,14,1) 100%);
+background: radial-gradient(circle, rgba(22,65,117,1) 0%, rgba(3,8,14,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#164175",endColorstr="#03080e",GradientType=1);
+}
 
 .__reviewsCmp button.slick-arrow.slick-next {
     top: inherit;

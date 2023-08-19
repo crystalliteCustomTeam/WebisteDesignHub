@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // Import Images
+import logo from "media/logo.svg";
 import mapmarker from "media/mapmarker.svg";
 import telephone from "media/telephone.svg";
 import envelope from "media/envelope.svg";
@@ -107,7 +108,9 @@ const Footer = () => {
                 <div className="container">
                     <div className="flex gap-x-5 pb-10 xl:pb-20 border-b-[1px] border-[#707070] flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                         <div className="basis-full sm:basis-[48%] lg:basis-[30%]">
-                            <h4 className="text-3xl font-megat font-normal text-white leading-none mb-3">Logo</h4>
+                            <Link href="/" className="mb-5 block">
+                                <Image src={logo} alt="logo" />
+                            </Link>
                             <p className="text-sm xl:text-base font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam. Maecenas porttitor, felis vel iaculis volutpat, nibh dolor vulputate ex, nec consectetur dui felis id nisl.</p>
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-[20%]">
