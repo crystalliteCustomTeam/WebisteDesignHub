@@ -1,6 +1,7 @@
 // Imports Components
 import Image from "next/image";
 import Link from "next/link";
+import Sidebuttons from "../sidebuttons/sidebuttons";
 // Import Images
 import logo from "media/logo.svg";
 import mapmarker from "media/mapmarker.svg";
@@ -186,6 +187,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <Sidebuttons />
         </footer>
     );
 }

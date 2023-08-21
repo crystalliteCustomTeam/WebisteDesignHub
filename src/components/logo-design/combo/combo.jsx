@@ -62,16 +62,16 @@ const Combo = () => {
                     <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-white mb-5">
                         All In One Combo
                     </h2>
-                    <div className="bg-[url('../../public/packages/comboBg.png')] bg-cover bg-no-repeat bg-center p-5 w-max">
-                        <div className="flex">
-                            <div className="w-max">
-                                <div className="border-r-2 w-max border-dashed pr-10 pb-3">
+                    <div className="bg-[url('../../public/packages/comboBg.png')] bg-cover bg-no-repeat bg-center p-5 lg:w-max">
+                        <div className="flex flex-wrap lg:flex-nowrap">
+                            <div className="basis-full lg:w-max">
+                                <div className="lg:border-r-2 lg:w-max border-dashed lg:pr-10 pb-3">
                                     <h4 className="font-megat font-normal text-white text-2xl mb-2">Professional Logo</h4>
                                     <ul>
                                         {
                                             listLogoDesign.map((e, i) => {
                                                 return (
-                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                    <li className="text-sm md:text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
                                                         <Image src={checkCircle} alt="checkCircle" />
                                                         <span>{e}</span>
                                                     </li>
@@ -80,13 +80,13 @@ const Combo = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div className="w-max border-dashed pr-10 border-t-2 border-b-2 py-3">
+                                <div className="lg:w-max border-dashed lg:pr-10 border-t-2 border-b-2 py-3">
                                     <h4 className="font-megat font-normal text-white text-2xl mb-2">Stationery Design</h4>
                                     <ul>
                                         {
                                             listStationaryDesign.map((e, i) => {
                                                 return (
-                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                    <li className="text-sm md:text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
                                                         <Image src={checkCircle} alt="checkCircle" />
                                                         <span>{e}</span>
                                                     </li>
@@ -95,13 +95,13 @@ const Combo = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div className="w-max border-dashed pr-10 border-b-2 py-3">
+                                <div className="lg:w-max border-dashed lg:pr-10 border-b-2 py-3">
                                     <h4 className="font-megat font-normal text-white text-2xl mb-2">Social Media Designs</h4>
                                     <ul>
                                         {
                                             listSocialMediaDesign.map((e, i) => {
                                                 return (
-                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                    <li className="text-sm md:text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
                                                         <Image src={checkCircle} alt="checkCircle" />
                                                         <span>{e}</span>
                                                     </li>
@@ -110,13 +110,13 @@ const Combo = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div className="border-r-2 w-max border-dashed pr-10 border-b-2 py-3">
+                                <div className="lg:border-r-2 lg:w-max border-dashed lg:pr-10 border-b-2 py-3">
                                     <h4 className="font-megat font-normal text-white text-2xl mb-2">Banner Design</h4>
                                     <ul>
                                         {
                                             listBannerDesign.map((e, i) => {
                                                 return (
-                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                    <li className="text-sm md:text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
                                                         <Image src={checkCircle} alt="checkCircle" />
                                                         <span>{e}</span>
                                                     </li>
@@ -126,14 +126,14 @@ const Combo = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="w-max">
-                                <div className="border-r-2 w-max border-dashed pb-3 pr-10">
+                            <div className="basis-full lg:w-max">
+                                <div className="lg:border-r-2 lg:w-max border-dashed pb-3 pt-3 lg:pt-0 lg:pr-10">
                                     <h4 className="font-megat font-normal text-white text-2xl mb-2">Video Animation</h4>
                                     <ul>
                                         {
                                             listVideoAnimation.map((e, i) => {
                                                 return (
-                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                    <li className="text-sm md:text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
                                                         <Image src={checkCircle} alt="checkCircle" />
                                                         <span>{e}</span>
                                                     </li>
@@ -142,13 +142,13 @@ const Combo = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div className="border-r-2 w-max border-dashed border-t-2 py-3 px-10 border-l-2 border-b-2">
+                                <div className="lg:border-r-2 lg:w-max border-dashed border-t-2 py-3 lg:px-10 lg:border-l-2 border-b-2">
                                     <h4 className="font-megat font-normal text-white text-2xl mb-2">Website Design</h4>
                                     <ul>
                                         {
                                             listWebsiteDesign.map((e, i) => {
                                                 return (
-                                                    <li className="text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
+                                                    <li className="text-sm md:text-base text-white font-normal flex items-center gap-2 leading-8" key={i}>
                                                         <Image src={checkCircle} alt="checkCircle" />
                                                         <span>{e}</span>
                                                     </li>
@@ -157,8 +157,8 @@ const Combo = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div className="w-max">
-                                    <h5 className="font-sans text-center font-bold text-5xl text-white mt-5 mb-5">
+                                <div className="lg:w-max">
+                                    <h5 className="font-sans font-bold text-5xl text-white mt-5 mb-5">
                                         $99 <sup className="text-[#A497F5] text-4xl"><del>$198</del></sup>
                                     </h5>
                                     <Button text="Order Now"
@@ -170,7 +170,7 @@ const Combo = () => {
                             </div>
                         </div>
                     </div>
-                    <Image src={comboImage} alt="comboImage" className="absolute z-[2] bottom-0 right-0" />
+                    <Image src={comboImage} alt="comboImage" className="absolute z-[2] xl:bottom-0 bottom-[-75px] w-2/5 xl:w-auto hidden lg:block right-0" />
                 </div>
             </div>
         </section>
