@@ -8,7 +8,7 @@ import Button from "@/components/button/Button";
 import serviceTabArrow from "media/serviceTabArrow.svg";
 
 const Services = ({ content }) => {
-    const { title, desc, tabs } = content;
+    const { title, desc, tabs, btnBg, btnColor, btnBorder, btnHover } = content;
     const [activeTab, setActiveTab] = useState(String(tabs[0].value));
     return (
         <section>
@@ -51,7 +51,7 @@ const Services = ({ content }) => {
                                 </div>
                             </Tabs>
                             <div className="flex items-center gap-3 justify-center mt-10 relative z-10">
-                                <Button text="Start Live Chat"
+                                {/* <Button text="Start Live Chat"
                                     icon={true}
                                     color="bg-[#7337BB] text-white"
                                     hover="hover:bg-[#000000]"
@@ -60,6 +60,16 @@ const Services = ({ content }) => {
                                     color="bg-transparent text-[#202020]"
                                     border="border-2 border-[#7337BB]"
                                     hover="hover:bg-[#7337BB] hover:text-white"
+                                    link="tel:123654789" /> */}
+                                <Button text="Start Live Chat"
+                                    icon={true}
+                                    color={`${btnBg ?? "bg-transparent"} text-white`}
+                                    hover="hover:bg-[#000000]"
+                                    link="#" />
+                                <Button text="Book Demo"
+                                    color={`${btnColor ?? "text-white"} bg-transparent`}
+                                    border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
+                                    hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"}`}
                                     link="tel:123654789" />
                             </div>
                         </div>

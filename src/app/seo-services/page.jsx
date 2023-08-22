@@ -19,7 +19,10 @@ const Page = () => {
         desc: "Urban Web Designers has the greatest content writers and marketers in the business, so you can count on them to create engaging material and distribute it effectively to retain and grow.",
         points: ["Personalized", "Uniquely", "Interesting", "Disseminated"],
         bg: "__seoServicesHeroGradientBg",
-        isForm: true
+        isForm: true,
+        btnBg: "bg-[#577981]",
+        btnBorder: "border-[#577981]",
+        btnHover: "hover:bg-[#577981]"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
@@ -27,10 +30,10 @@ const Page = () => {
         title: "Allow us to assist you in developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
         img: smallBannerImage,
-        bgColor: "bg-[#1B1A28]",
-        btnBg: "bg-[#2A9EF4]",
-        btnBorder: "border-[#2A9EF4]",
-        btnHover: "hover:bg-[#2A9EF4]",
+        bgColor: "__seoServicesHeroGradientBg",
+        btnBg: "bg-[#577981]",
+        btnBorder: "border-[#577981]",
+        btnHover: "hover:bg-[#577981]",
         theme: "dark"
     };
     return (

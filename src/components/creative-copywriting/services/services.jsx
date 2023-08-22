@@ -18,13 +18,13 @@ const Services = () => {
                     <div className="flex items-center gap-3 justify-center mt-10 relative z-10">
                         <Button text="Start Live Chat"
                             icon={true}
-                            color="bg-[#7337BB] text-white"
+                            color="bg-[#768DF1] text-white"
                             hover="hover:bg-[#000000]"
                             link="#" />
                         <Button text="Book Demo"
                             color="bg-transparent text-[#202020]"
-                            border="border-2 border-[#7337BB]"
-                            hover="hover:bg-[#7337BB] hover:text-white"
+                            border="border-2 border-[#768DF1]"
+                            hover="hover:bg-[#768DF1] hover:text-white"
                             link="tel:123654789" />
                     </div>
                 </div>

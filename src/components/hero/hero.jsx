@@ -11,7 +11,7 @@ import circleCheck from "media/hero/circleCheck.svg";
 import reviewPlatforms from "media/hero/reviewPlatforms.svg";
 
 const Hero = ({ content }) => {
-    const { subtitle, title, desc, points, banner, page, icons, bg, video, isForm } = content;
+    const { subtitle, title, desc, points, banner, page, icons, bg, video, isForm, btnBg, btnColor, btnBorder, btnHover, } = content;
     return (
         <section>
             <div className={`${bg ?? "bg-transparent"} pt-28 lg:pt-0 relative z-[1]`}>
@@ -78,6 +78,10 @@ const Hero = ({ content }) => {
                     {page === "mobileApplication" ? <div className="absolute right-0 bottom-0 z-[-1] hidden md:block">
                         <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-4/5 block ml-auto xl:w-full" />
                     </div> : null}
+                    {/* For Single Page */}
+                    {page === "single" ? <div className="absolute right-0 bottom-[100px] z-[-1] hidden md:block">
+                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-4/5 block ml-auto xl:w-full" />
+                    </div> : null}
                     <div className="flex lg:h-[750px] xl:h-[820px] lg:items-end lg:pb-20">
                         <div className="basis-full md:basis-[80%] lg:basis-[60%] xl:basis-[50%]">
                             <div className="relative w-max mb-10">
@@ -92,7 +96,7 @@ const Hero = ({ content }) => {
                             <p className="text-sm sm:text-base xl:text-lg text-white font-normal mb-3 sm:mb-5">
                                 {desc}
                             </p>
-                            <div className="flex mb-5 xl:mb-8">
+                            {points && <div className="flex mb-5 xl:mb-8">
                                 <div className="basis-full">
                                     <div className="flex flex-wrap">
                                         <div className="basis-6/12 md:basis-[40%] p-3 border-brown-10 px-0 border-r-2 border-b-2">
@@ -121,10 +125,10 @@ const Hero = ({ content }) => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>}
                             <Image src={reviewPlatforms} alt="reviewPlatforms" />
                             <div className="flex items-center gap-3 mt-5 xl:mt-8 pb-8 lg:pb-0">
-                                <Button text="Start Live Chat"
+                                {/* <Button text="Start Live Chat"
                                     icon={true}
                                     color="bg-[#7E6BC6] text-white"
                                     hover="hover:bg-[#000000]"
@@ -133,6 +137,16 @@ const Hero = ({ content }) => {
                                     color="bg-transparent text-white"
                                     border="border-2 border-[#7E6BC6]"
                                     hover="hover:bg-[#7E6BC6]"
+                                    link="tel:123654789" /> */}
+                                <Button text="Start Live Chat"
+                                    icon={true}
+                                    color={`${btnBg ?? "bg-transparent"} text-white`}
+                                    hover="hover:bg-[#000000]"
+                                    link="#" />
+                                <Button text="Book Demo"
+                                    color={`${btnColor ?? "text-white"} bg-transparent`}
+                                    border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
+                                    hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"}`}
                                     link="tel:123654789" />
                             </div>
                         </div>

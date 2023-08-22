@@ -26,7 +26,10 @@ const Page = () => {
         points: ["Interactive", "Mobile Friendly", "Optimized", "Responsive"],
         bg: "bg-[#0f1013]",
         video: "videos/websiteDevelopment.mp4",
-        isForm: true
+        isForm: true,
+        btnBg: "bg-[#283C3C]",
+        btnBorder: "border-[#283C3C]",
+        btnHover: "hover:bg-[#283C3C]"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
@@ -34,10 +37,10 @@ const Page = () => {
         title: "Allow us to assist you in developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
         img: smallBannerImage,
-        bgColor: "bg-[#1B1A28]",
-        btnBg: "bg-[#22D0F3]",
-        btnBorder: "border-[#22D0F3]",
-        btnHover: "hover:bg-[#22D0F3]",
+        bgColor: "bg-[#0f1013]",
+        btnBg: "bg-[#283C3C]",
+        btnBorder: "border-[#283C3C]",
+        btnHover: "hover:bg-[#283C3C]",
         theme: "dark"
     };
     // Array for Portfolios Component Props

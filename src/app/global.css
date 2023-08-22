@@ -73,6 +73,13 @@ body {
     background: radial-gradient(circle, rgba(68, 73, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444954", endColorstr="#000000", GradientType=1);
 }
+.__marketingCollateralHeroGradientBg {
+    background: rgb(64,75,143);
+background: -moz-radial-gradient(circle, rgba(64,75,143,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(64,75,143,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgba(64,75,143,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404b8f",endColorstr="#000000",GradientType=1);
+}
 
 .__gradientBg2 {
     background: rgb(16, 61, 117);

@@ -32,7 +32,10 @@ const Page = () => {
         points: ["Brand Recognition", "Brand Identity", "Brand Loyalty", "Competitive Edge"],
         banner,
         icons: [bannerIconOne, bannerIconTwo, bannerIconThree],
-        bg: "__logoDesignHeroGradientBg"
+        bg: "__logoDesignHeroGradientBg",
+        btnBg: "bg-[#7598F2]",
+        btnBorder: "border-[#7598F2]",
+        btnHover: "hover:bg-[#7598F2]"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
@@ -40,17 +43,20 @@ const Page = () => {
         title: "Allow us to assist you in developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
         img: smallBannerImage,
-        bgColor: "bg-[#ABF0FC]",
-        btnBg: "bg-[#0F2847]",
-        btnBorder: "border-[#0F2847]",
-        btnHover: "hover:bg-[#0F2847]",
-        btnColor: "text-[#0F2847]",
-        theme: "light"
+        bgColor: "__logoDesignHeroGradientBg",
+        btnBg: "bg-[#7598F2]",
+        btnBorder: "border-[#7598F2]",
+        btnHover: "hover:bg-[#7598F2]",
+        theme: "dark"
     };
     // Array for Services Component Props
     const services = {
         title: "Our Approach",
         desc: "Urban Web Designers works with a team of enthusiastic designers and developers who \n  are dedicated professionals in delivering the best websites for any business. Our \n websites are:",
+        btnBg: "bg-[#7598F2]",
+        btnBorder: "border-[#7598F2]",
+        btnHover: "hover:bg-[#7598F2]",
+        btnColor: "text-black",
         tabs: [
             {
                 value: "abstractLogoMarks",

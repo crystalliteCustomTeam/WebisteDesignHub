@@ -22,7 +22,10 @@ const Page = () => {
         points: ["Relevant", "Flexible", "Measurable", "Interactive"],
         banner,
         bg: "__digitalMarketingHeroGradientBg",
-        isForm: true
+        isForm: true,
+        btnBg: "bg-[#8A6EA5]",
+        btnBorder: "border-[#8A6EA5]",
+        btnHover: "hover:bg-[#8A6EA5]"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
@@ -30,10 +33,10 @@ const Page = () => {
         title: "Allow us to assist you in developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
         img: smallBannerImage,
-        bgColor: "bg-[#829E05]",
-        btnBg: "bg-[#C5DF00]",
-        btnBorder: "border-[#C5DF00]",
-        btnHover: "hover:bg-[#C5DF00]",
+        bgColor: "__digitalMarketingHeroGradientBg",
+        btnBg: "bg-[#8A6EA5]",
+        btnBorder: "border-[#8A6EA5]",
+        btnHover: "hover:bg-[#8A6EA5]",
         theme: "dark"
     };
     return (

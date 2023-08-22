@@ -27,7 +27,10 @@ const Page = () => {
         points: ["Secure", "Reliable", "Scalable", "Mobile Friendly"],
         banner,
         bg: "__ecommerceHeroGradientBg",
-        isForm: true
+        isForm: true,
+        btnBg: "bg-[#005368]",
+        btnBorder: "border-[#005368]",
+        btnHover: "hover:bg-[#005368]"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
@@ -35,10 +38,10 @@ const Page = () => {
         title: "Allow us to assist you in developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
         img: smallBannerImage,
-        bgColor: "bg-[#94A7E7]",
-        btnBg: "bg-[#ABCDF2]",
-        btnBorder: "border-[#ABCDF2]",
-        btnHover: "hover:bg-[#ABCDF2]",
+        bgColor: "__ecommerceHeroGradientBg",
+        btnBg: "bg-[#005368]",
+        btnBorder: "border-[#005368]",
+        btnHover: "hover:bg-[#005368]",
         theme: "dark"
     };
     // Array for Portfolios Component Props

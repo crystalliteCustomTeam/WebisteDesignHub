@@ -26,7 +26,10 @@ const Page = () => {
         points: ["Specially original", "Imaginatively", "Bursting with life", "Utterly original"],
         isForm: true,
         banner,
-        bg: "bg-[url('../../public/illustration-design/hero/bg.png')] bg-cover bg-no-repeat bg-left-top"
+        bg: "bg-[url('../../public/illustration-design/hero/bg.png')] bg-cover bg-no-repeat bg-left-top",
+        btnBg: "bg-[#A4637A]",
+        btnBorder: "border-[#A4637A]",
+        btnHover: "hover:bg-[#A4637A]"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
@@ -35,9 +38,9 @@ const Page = () => {
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
         img: smallBannerImage,
         bgColor: "bg-[#241C1B] lg:bg-[url('../../public/illustration-design/smallBannerClip.png')] bg-contain bg-no-repeat bg-right-top",
-        btnBg: "bg-[#414F4D]",
-        btnBorder: "border-[#414F4D]",
-        btnHover: "hover:bg-[#414F4D]",
+        btnBg: "bg-[#A4637A]",
+        btnBorder: "border-[#A4637A]",
+        btnHover: "hover:bg-[#A4637A]",
         theme: "dark"
     };
     // Array for Portfolios Component Props

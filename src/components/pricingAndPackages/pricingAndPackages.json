@@ -1,0 +1,109 @@
+[
+    {
+        "value": "logo",
+        "label": "Logo",
+        "packages": [
+            {
+                "name": "Basic Logo",
+                "discountedPrice": "45",
+                "originalPrice": "80",
+                "list": [
+                    "3 Custom Logo Design Concepts",
+                    "1 Dedicated Designer",
+                    "4 Revisions",
+                    "48 to 72 hours TAT",
+                    "100% Unique Design Guarantee",
+                    "100% Satisfaction Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "name": "Startup Logo",
+                "discountedPrice": "80",
+                "originalPrice": "170",
+                "list": [
+                    "5 Custom Logo Design Concepts",
+                    "By 2 Designers",
+                    "UNLIMITED Revisions",
+                    "48 to 72 hours TAT",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "name": "Professional Logo",
+                "discountedPrice": "125",
+                "originalPrice": "249",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 4 Designers",
+                    "UNLIMITED Revisions",
+                    "Stationary Design (Business Card, Letterhead, Envelope)",
+                    "FREE MS Word Letterhead",
+                    "48 to 72 hours TAT",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)*",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            }
+        ]
+    },
+    {
+        "value": "illustrationDesign",
+        "label": "Illustration Design",
+        "packages": [
+            {
+                "name": "Basic Illustrative",
+                "discountedPrice": "294",
+                "originalPrice": "588",
+                "list": [
+                    "3 Custom Design Concepts",
+                    "By 2 Designers",
+                    "UNLIMITED Revisions",
+                    "48 to 72 hours TAT",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Ownership Rights",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "name": "Startup Illustrative",
+                "discountedPrice": "394",
+                "originalPrice": "788",
+                "list": [
+                    "4 Custom Design Concepts",
+                    "By 3 Designers",
+                    "48 to 72 hours TAT",
+                    "UNLIMITED Revisions",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Ownership Rights",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "name": "Professional Illustrative",
+                "discountedPrice": "594",
+                "originalPrice": "1188",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 4 Designers",
+                    "UNLIMITED Revisions",
+                    "Stationary Design (Business Card, Letterhead, Envelope)",
+                    "FREE MS Word Letterhead",
+                    "48 to 72 hours TAT",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)*",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            }
+        ]
+    }
+]

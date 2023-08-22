@@ -1,40 +1,39 @@
 // Import Page Components
 import Hero from "@/components/hero/hero";
-import Services from "@/components/creative-copywriting/services/services";
+import Services from "@/components/about-us/services/services";
 import SmallBanner from "@/components/smallbanner/smallbanner";
 import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 // Import Images
-import banner from "media/creative-copywriting/hero/deskGirl.png";
-import smallBannerImage from "media/creative-copywriting/smallBanner.png";
+import banner from "media/about-us/hero/banner.png";
+import smallBannerImage from "media/home/smallBanner.png";
 
 const Page = () => {
     // Array for Hero Component Props
     const hero = {
-        page: "creativeCopywriting",
-        subtitle: "Writing for Publicationt",
-        title: "Going Above and Beyond for Our Customers",
-        desc: "Content that not only satisfies but also surpasses the needs of our clients is what our team of devoted specialists excels at providing. One of the defining features of our copywriting is:",
-        points: ["Prompt", "Exceptional", "Insightful", "Competitive Edge"],
+        page: "single",
+        subtitle: "Top Notch",
+        title: "Web Developers and Designers",
+        desc: "For all of your company's web development needs, you can count on us. Our online platforms flaunt nimbleness, quickness, uniqueness, and high quality.",
+        bg: "__homeHeroGradientBg",
         banner,
-        bg: "__creativeCopywritingHeroGradientBg",
-        isForm: true,
-        btnBg: "bg-[#768DF1]",
-        btnBorder: "border-[#768DF1]",
-        btnHover: "hover:bg-[#768DF1]"
+        points: ["Customized", "Optimized", "Result Driven", "Measurable"],
+        btnBg: "bg-[#7F6CC7]",
+        btnBorder: "border-[#7F6CC7]",
+        btnHover: "hover:bg-[#7F6CC7]"
     };
     // Array for Small Banner Component Props
     const smallbanner = {
-        page: "creativeCopywriting",
+        page: "home",
         title: "Allow us to assist you in developing a web presence.",
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
         img: smallBannerImage,
-        bgColor: "__creativeCopywritingHeroGradientBg",
-        btnBg: "bg-[#768DF1]",
-        btnBorder: "border-[#768DF1]",
-        btnHover: "hover:bg-[#768DF1]",
+        bgColor: "__homeHeroGradientBg",
+        btnBg: "bg-[#7F6CC7]",
+        btnBorder: "border-[#7F6CC7]",
+        btnHover: "hover:bg-[#7F6CC7]",
         theme: "dark"
     };
     return (
@@ -43,9 +42,9 @@ const Page = () => {
             <Services />
             <SmallBanner content={smallbanner} />
             <Reviews />
-            <Letstalk />
             <Weare />
             <Contact />
+            <Letstalk />
         </>
     );
 }

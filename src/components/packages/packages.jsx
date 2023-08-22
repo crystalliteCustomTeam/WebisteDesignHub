@@ -1,7 +1,7 @@
 "use client"
 // Import Components
 import Image from "next/image";
-import { Input, Option, Select, Textarea, ThemeProvider } from "@material-tailwind/react";
+import { Input, ThemeProvider } from "@material-tailwind/react";
 // Import Images
 import checkCircle from "media/packages/checkCircle.png";
 
