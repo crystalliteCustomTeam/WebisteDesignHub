@@ -218,7 +218,7 @@ const From = () => {
                                     <Textarea label="leave your message" variant="outlined" size="lg" id="" name="" rows={1} className="min-h-full backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <button type="button" className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white">Submit Form</button>
+                                    <button type="button" className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white ">Submit Form</button>
                                 </div>
                             </div>
                         </form>

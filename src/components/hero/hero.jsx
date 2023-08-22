@@ -43,44 +43,44 @@ const Hero = ({ content }) => {
                         </div></> : null}
                     {/* For Logo Design Page */}
                     {page === "logoDesign" ? <div className="absolute right-0 lg:right-[40px] xl:right-[100px] bottom-[50px] z-[-1] hidden md:block">
-                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-10/12 block ml-auto xl:w-full" />
+                        <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[80%] xl:max-w-full block ml-auto" />
                     </div> : null}
                     {page === "logoDesign" ? <>
                         <div className={`absolute lg:top-[420px] xl:top-[450px] lg:right-[430px] xl:right-[590px] 2xl:right-[610px] hidden lg:block ${styles.__fadeInDown}`}>
                             <Image src={icons[0]} alt="icon" />
                         </div>
-                        <div className={`absolute lg:top-[250px] xl:top-[350px] lg:right-[5px] xl:right-[50px] hidden lg:block ${styles.__fadeInDown}`}>
+                        <div className={`absolute lg:top-[250px] xl:top-[350px] lg:right-[5px] xl:right-[70px] hidden lg:block ${styles.__fadeInDown}`}>
                             <Image src={icons[1]} alt="icon" />
                         </div>
-                        <div className={`absolute lg:top-[550px] xl:top-[600px] lg:right-[-10px] xl:right-0 hidden lg:block ${styles.__fadeInDown}`}>
+                        <div className={`absolute lg:top-[550px] xl:top-[600px] lg:right-[-10px] xl:right-[30px] hidden lg:block ${styles.__fadeInDown}`}>
                             <Image src={icons[2]} alt="icon" />
                         </div></> : null}
                     {page === "creativeCopywriting" ? <div className="absolute right-0 bottom-0 z-[-1] hidden md:block">
-                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-10/12 block ml-auto xl:w-full" />
+                        <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[70%] block ml-auto xl:max-w-full" />
                     </div> : null}
                     {/* For Digital Marketing Page */}
                     {page === "digitalMarketing" ? <div className="absolute right-0 bottom-0 z-[-1] hidden md:block">
-                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-10/12 block ml-auto xl:w-full" />
+                        <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[70%] block ml-auto xl:max-w-full" />
                     </div> : null}
                     {/* For Ecommerce Page */}
                     {page === "ecommerce" ? <div className="absolute right-0 xl:right-[-300px] bottom-0 z-[-1] hidden md:block">
-                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-1/2 block ml-auto xl:w-full" />
+                        <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[70%] block ml-auto xl:max-w-full" />
                     </div> : null}
                     {/* For Illustration Design Page */}
                     {page === "illustrationDesign" ? <div className="absolute right-0 bottom-0 z-[-1] hidden md:block">
-                        <Image src={banner} alt="banner" priority className="object-cover h-auto w-2/4 lg:w-4/5 block ml-auto xl:w-full" />
+                        <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[70%] block ml-auto xl:max-w-full" />
                     </div> : null}
                     {/* For Marketing Collateral Page */}
                     {page === "marketingCollateral" ? <div className="absolute right-0 bottom-0 lg:bottom-[100px] z-[-1] hidden md:block">
-                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-3/5 block ml-auto xl:w-full" />
+                        <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[70%] block ml-auto xl:max-w-full" />
                     </div> : null}
                     {/* For Mobile Application Page */}
                     {page === "mobileApplication" ? <div className="absolute right-0 bottom-0 z-[-1] hidden md:block">
-                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-4/5 block ml-auto xl:w-full" />
+                        <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[70%] block ml-auto xl:max-w-full" />
                     </div> : null}
                     {/* For Single Page */}
                     {page === "single" ? <div className="absolute right-0 bottom-[100px] z-[-1] hidden md:block">
-                        <Image src={banner} alt="banner" priority className="object-cover h-auto md:w-80 lg:w-4/5 block ml-auto xl:w-full" />
+                        <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[70%] block ml-auto xl:max-w-full" />
                     </div> : null}
                     <div className="flex lg:h-[750px] xl:h-[820px] lg:items-end lg:pb-20">
                         <div className="basis-full md:basis-[80%] lg:basis-[60%] xl:basis-[50%]">

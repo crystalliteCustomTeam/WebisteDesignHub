@@ -49,19 +49,20 @@ const Sidebuttons = () => {
         }
     }
     return (
-        <div className="fixed right-0 bottom-0 top-0 z-50 gap-y-4 hidden lg:flex flex-col justify-center w-[245px]">
-            <Link href="/" className="cursor-pointer flex items-center rounded-tl-[50px] rounded-bl-[50px] py-2 px-4 gap-4 translate-x-[70%] hover:translate-x-[1%] bg-[#0F2847]">
+        // <div className="fixed right-0 bottom-0 top-0 z-50 gap-y-4 hidden lg:flex flex-col justify-center w-[245px]">
+        <>
+            <Link href="/" className="cursor-pointer hidden lg:flex items-center rounded-tl-[50px] rounded-bl-[50px] py-2 px-4 gap-4 translate-x-[68%] hover:translate-x-[1%] bg-[#0F2847] fixed top-[25%] right-0 z-50">
                 <Image src={chat} alt="chat" />
                 <span className="text-white font-semibold text-lg block" href="#">Start Live Chat</span>
             </Link>
-            <Link href="tel:(123)456-7890" className="cursor-pointer flex items-center rounded-tl-[50px] rounded-bl-[50px] py-2 px-4 gap-4 translate-x-[70%] hover:translate-x-[1%] bg-[#0F2847]">
+            <Link href="tel:(123)456-7890" className="cursor-pointer hidden lg:flex items-center rounded-tl-[50px] rounded-bl-[50px] py-2 px-4 gap-4 translate-x-[68%] hover:translate-x-[1%] bg-[#0F2847] fixed top-[37%] right-0 z-50">
                 <Image src={call} alt="call" />
                 <span className="text-white font-semibold text-lg">(123) 456-7890</span>
             </Link>
-            <div className="cursor-pointer flex items-center relative translate-x-[100%] hover:translate-x-[1%]">
-                <span className="text-white font-normal text-lg bg-[#0F2847] tracking-wide rotate-[-90deg] absolute left-[-137px] rounded-tr-[30px] rounded-tl-[30px] py-2 px-3 ">60% off on all services</span>
+            <div className="cursor-pointer hidden lg:flex items-center translate-x-[100%] hover:translate-x-[1%] fixed top-[49%] right-0 z-50">
+                <span className="text-white font-normal text-lg bg-[#0F2847] tracking-wide rotate-[-90deg] absolute top-[45%] left-[-137px] rounded-tr-[30px] rounded-tl-[30px] py-2 px-3 ">60% off on all services</span>
                 <ThemeProvider value={theme}>
-                    <form className="w-full p-4 bg-black">
+                    <form className="w-[400px] p-4 bg-black">
                         <div className="mb-3">
                             <Input label="Name" type="text" id="" name="" />
                         </div>
@@ -78,7 +79,7 @@ const Sidebuttons = () => {
                     </form>
                 </ThemeProvider>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -43,9 +43,9 @@ const Page = () => {
         desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
         img: smallBannerImage,
         bgColor: "__homeHeroGradientBg",
-        btnBg: "bg-[#216385]",
-        btnBorder: "border-[#216385]",
-        btnHover: "hover:bg-[#216385]",
+        btnBg: "bg-[#7F6CC7]",
+        btnBorder: "border-[#7F6CC7]",
+        btnHover: "hover:bg-[#7F6CC7]",
         theme: "dark"
     };
     // Array for Services Component Props
