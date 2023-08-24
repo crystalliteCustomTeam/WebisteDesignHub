@@ -15,6 +15,9 @@ const Page = () => {
         desc: "For all of your company's web development needs, you can count on us. Our online platforms flaunt nimbleness, quickness, uniqueness, and high quality.",
         bg: "__digitalMarketingHeroGradientBg",
         banner,
+        btnBg: "bg-[#8A6EA5]",
+        btnBorder: "border-[#8A6EA5]",
+        btnHover: "hover:bg-[#8A6EA5]"
     };
     return (
         <>

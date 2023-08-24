@@ -125,7 +125,7 @@ const Header = () => {
                     </Collapse>
                 </div>
             </li>
-            <li className="lg:h-full lg:flex lg:items-center"><Link href="/" className="text-lg font-medium leading-10">Pricing/Packages</Link></li>
+            <li className="lg:h-full lg:flex lg:items-center"><Link href="/pricing-and-packages" className="text-lg font-medium leading-10">Pricing/Packages</Link></li>
             <li className="lg:h-full lg:flex lg:items-center"><Link href="/contact-us" className="text-lg font-medium leading-10">Contact</Link></li>
         </ul>
     );
@@ -167,6 +167,8 @@ const Header = () => {
                                             return "bg-[#577981]"
                                         case '/contact-us':
                                             return "bg-[#005368]"
+                                        case '/pricing-and-packages':
+                                            return "bg-[#8A6EA5]"
                                         default:
                                             return "bg-[#9E7DE9]"
                                     }
@@ -199,6 +201,8 @@ const Header = () => {
                                             return "border-[#577981]"
                                         case '/contact-us':
                                             return "border-[#005368]"
+                                        case '/pricing-and-packages':
+                                            return "border-[#8A6EA5]"
                                         default:
                                             return " border-[#9E7DE9]"
                                     }
@@ -227,6 +231,8 @@ const Header = () => {
                                             return "hover:bg-[#577981]"
                                         case '/contact-us':
                                             return "hover:bg-[#005368]"
+                                        case '/pricing-and-packages':
+                                            return "hover:bg-[#8A6EA5]"
                                         default:
                                             return "hover:bg-[#9E7DE9]"
                                     }

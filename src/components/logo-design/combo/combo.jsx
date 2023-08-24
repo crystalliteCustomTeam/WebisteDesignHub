@@ -170,7 +170,7 @@ const Combo = () => {
                             </div>
                         </div>
                     </div>
-                    <Image src={comboImage} alt="comboImage" className="absolute z-[2] xl:bottom-0 bottom-[-75px] w-2/5 xl:w-auto hidden lg:block right-0" />
+                    <Image src={comboImage} alt="comboImage" className="absolute z-[2] xl:bottom-0 bottom-[-75px] w-2/5 xl:max-w-max hidden lg:block right-0" />
                 </div>
             </div>
         </section>
