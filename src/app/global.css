@@ -125,9 +125,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#164175",endCo
     content: url(../../public/leftArrowSlick.svg);
 }
 
-.__reviewsCmp .slick-slide {
+/* .__reviewsCmp .slick-slide {
     min-height: 300px;
-}
+} */
 
 .__reviewsCmp ul.slick-dots {
     bottom: 10px;

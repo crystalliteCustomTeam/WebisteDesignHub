@@ -21,50 +21,71 @@ const Footer = () => {
         },
         {
             text: "About",
-            link: "/"
+            link: "/about-us"
         },
-
         {
-            text: "Services",
-            link: "/"
+            text: "Blogs",
+            link: "/contact-us"
         },
-
         {
-            text: "Reviews",
-            link: "/"
+            text: "Pricing/Packages",
+            link: "/pricing-and-packages"
         },
-
         {
             text: "Contact",
-            link: "/"
+            link: "/contact-us"
+        },
+        {
+            text: "Privacy Policy",
+            link: "/contact-us"
+        },
+        {
+            text: "Terms & Conditions",
+            link: "/contact-us"
         },
     ];
     const servicesLinks = [
         {
+            text: "Logo Design",
+            link: "/"
+        },
+        {
+            text: "Creative Copywriting",
+            link: "/"
+        },
+
+        {
+            text: "Digital Marketing",
+            link: "/"
+        },
+
+        {
+            text: "Ecommerce Web Solutions",
+            link: "/"
+        },
+
+        {
+            text: "Website Development",
+            link: "/"
+        },
+        {
+            text: "Motion Graphics",
+            link: "/"
+        },
+        {
+            text: "Illustration Design",
+            link: "/"
+        },
+        {
+            text: "Marketing Collateral",
+            link: "/"
+        },
+        {
+            text: "App Design",
+            link: "/"
+        },
+        {
             text: "SEO Services",
-            link: "/"
-        },
-        {
-            text: "Website Services",
-            link: "/"
-        },
-
-        {
-            text: "Social Media Marketing",
-            link: "/"
-        },
-
-        {
-            text: "Content Writing",
-            link: "/"
-        },
-
-        {
-            text: "Pay per Click",
-            link: "/"
-        },
-        {
-            text: "Reputation Services",
             link: "/"
         },
     ];
@@ -112,7 +133,7 @@ const Footer = () => {
                             <Link href="/" className="mb-5 block">
                                 <Image src={logo} alt="logo" />
                             </Link>
-                            <p className="text-sm xl:text-base font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam. Maecenas porttitor, felis vel iaculis volutpat, nibh dolor vulputate ex, nec consectetur dui felis id nisl.</p>
+                            <p className="text-sm xl:text-base font-normal text-white">We are a team of creative thinkers and problem solvers dedicated to expanding the limits of what is possible by helping brands achieve their goals.</p>
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-[20%]">
                             <h4 className="text-3xl font-megat font-normal text-white leading-none mb-3">Quick Links</h4>

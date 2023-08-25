@@ -4,6 +4,7 @@ import Button from "@/components/button/Button";
 // Import Images
 import checkCircle from "media/packages/checkCircle.png";
 import comboImage from "media/packages/combo.png";
+import moneyBack from "media/packages/moneyBack.png";
 
 const Combo = () => {
     // Array for Logo Design List
@@ -170,7 +171,8 @@ const Combo = () => {
                             </div>
                         </div>
                     </div>
-                    <Image src={comboImage} alt="comboImage" className="absolute z-[2] xl:bottom-0 bottom-[-75px] w-2/5 xl:max-w-max hidden lg:block right-0" />
+                    <Image src={comboImage} alt="comboImage" className="absolute z-[2] bottom-[-100px] xl:bottom-0  w-2/5 xl:max-w-max hidden lg:block right-0" />
+                    <Image src={moneyBack} alt="moneyBack" className="absolute z-[2] md:max-w-max lg:top-[150px] xl:top-[50px] right-[50px] lg:right-0 xl:right-[150px] lg:bottom-[inherit] bottom-[20px] top-[inherit] max-w-[40%]" />
                 </div>
             </div>
         </section>
