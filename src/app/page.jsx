@@ -60,32 +60,74 @@ const Page = () => {
             {
                 value: "logoDesign",
                 label: "logo design",
-                image: serviceTabOne,
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
                 value: "websiteDevelopment",
                 label: "website development",
-                image: serviceTabOne,
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
                 value: "digitalMarketing",
                 label: "digital marketing",
-                image: serviceTabOne,
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
                 value: "seoServices",
                 label: "seo services",
-                image: serviceTabOne,
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
                 value: "applicationDesign",
                 label: "application design",
-                image: serviceTabOne,
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
                 value: "creativeCopywriting",
                 label: "creative copywriting",
-                image: serviceTabOne,
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             }
         ]
     };

@@ -51,37 +51,84 @@ const Page = () => {
     };
     // Array for Services Component Props
     const services = {
-        title: "Our Approach",
+        title: "SERVICES WE PROVIDE",
         desc: "Urban Web Designers works with a team of enthusiastic designers and developers who \n  are dedicated professionals in delivering the best websites for any business. Our \n websites are:",
-        btnBg: "bg-[#7598F2]",
-        btnBorder: "border-[#7598F2]",
-        btnHover: "hover:bg-[#7598F2]",
+        btnBg: "bg-[#7F6CC7]",
+        btnBorder: "border-[#7F6CC7]",
+        btnHover: "hover:bg-[#7F6CC7]",
         btnColor: "text-black",
         tabs: [
             {
-                value: "abstractLogoMarks",
-                label: "abstract logo marks",
-                image: serviceTabOne,
+                value: "logoDesign",
+                label: "logo design",
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
-                value: "mascotLogos",
-                label: "mascot logos",
-                image: serviceTabOne,
+                value: "websiteDevelopment",
+                label: "website development",
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
-                value: "combinationLogos",
-                label: "combination logos",
-                image: serviceTabOne,
+                value: "digitalMarketing",
+                label: "digital marketing",
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
-                value: "emblemLogos",
-                label: "emblem logos",
-                image: serviceTabOne,
+                value: "seoServices",
+                label: "seo services",
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             },
             {
-                value: "lettermarksLogos",
-                label: "lettermarks logos",
-                image: serviceTabOne,
+                value: "applicationDesign",
+                label: "application design",
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
+            },
+            {
+                value: "creativeCopywriting",
+                label: "creative copywriting",
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
             }
         ]
     };
