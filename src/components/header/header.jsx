@@ -4,7 +4,7 @@ import { Collapse, IconButton, MobileNav, Navbar } from "@material-tailwind/reac
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/button/Button";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 // Import Images
 import logo from "media/logo.svg";
 import logoDesign from "media/menu/logoDesign.png";
@@ -19,6 +19,7 @@ import seoServices from "media/menu/seoServices.png";
 import websiteDevelopment from "media/menu/websiteDevelopment.png";
 import down from "media/menu/down.png";
 import { useState } from "react";
+import logo2 from "media/landing-pages/website-design-develop/logo.svg";
 
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
@@ -135,7 +136,7 @@ const Header = () => {
                 <div className="container">
                     <div className="flex items-center h-24">
                         <Link href="/">
-                            <Image src={logo} alt="logo" />
+                                {router !== "/website-design-develop-landing" ? <Image src={logo} alt="logo" /> : <Image src={logo2} alt="logo2" />}
                         </Link>
                         <div className="hidden lg:flex ml-auto xl:m-auto h-full items-center">
                             {navList}
@@ -169,13 +170,15 @@ const Header = () => {
                                             return "bg-[#005368]"
                                         case '/pricing-and-packages':
                                             return "bg-[#8A6EA5]"
+                                        case '/website-design-develop-landing':
+                                            return "bg-[#3283FF] pl-4 pr-4"
                                         default:
                                             return "bg-[#9E7DE9]"
                                     }
                                 })()} text-white`}
                                 hover="hover:bg-[#000000]"
                                 link="#" />
-                            <Button text="Book Demo"
+                            <Button text="(123)-000-0000"
                                 color="bg-transparent text-white"
                                 border={`border-2 ${(() => {
                                     switch (router) {
@@ -203,6 +206,8 @@ const Header = () => {
                                             return "border-[#005368]"
                                         case '/pricing-and-packages':
                                             return "border-[#8A6EA5]"
+                                        case '/website-design-develop-landing':
+                                            return "border-[#00FFEF] pl-4 pr-4"
                                         default:
                                             return " border-[#9E7DE9]"
                                     }
@@ -233,11 +238,13 @@ const Header = () => {
                                             return "hover:bg-[#005368]"
                                         case '/pricing-and-packages':
                                             return "hover:bg-[#8A6EA5]"
+                                        case '/website-design-develop-landing':
+                                            return "hover:bg-[#00FFEF]"
                                         default:
                                             return "hover:bg-[#9E7DE9]"
                                     }
                                 })()}`}
-                                link="tel:123654789" />
+                                link="tel:123654789" rounded="rounded-[100px]" />
                         </div>
                         <IconButton
                             variant="text"

@@ -133,7 +133,7 @@ const Hero = ({ content }) => {
                                     color="bg-[#7E6BC6] text-white"
                                     hover="hover:bg-[#000000]"
                                     link="#" />
-                                <Button text="Book Demo"
+                                <Button text="(123)-000-0000"
                                     color="bg-transparent text-white"
                                     border="border-2 border-[#7E6BC6]"
                                     hover="hover:bg-[#7E6BC6]"
@@ -143,7 +143,7 @@ const Hero = ({ content }) => {
                                     color={`${btnBg ?? "bg-transparent"} text-white`}
                                     hover="hover:bg-[#000000]"
                                     link="#" />
-                                <Button text="Book Demo"
+                                <Button text="(123)-000-0000"
                                     color={`${btnColor ?? "text-white"} bg-transparent`}
                                     border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
                                     hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"}`}

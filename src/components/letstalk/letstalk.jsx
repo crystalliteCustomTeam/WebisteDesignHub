@@ -23,7 +23,7 @@ const Letstalk = () => {
                                     color="bg-[#AE86F9] text-white"
                                     hover="hover:bg-[#000000]"
                                     link="#" />
-                                <Button text="Book Demo"
+                                <Button text="(123)-000-0000"
                                     color="bg-transparent text-white"
                                     border="border-2 border-[#AE86F9]"
                                     hover="hover:bg-[#AE86F9]"

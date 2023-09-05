@@ -1,3 +1,4 @@
+"use client"
 // Import Fonts
 import { megatFont, primary } from "./configs/fonts";
 // Import Css
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${primary.className} ${megatFont.variable}`}>
         <Header />
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

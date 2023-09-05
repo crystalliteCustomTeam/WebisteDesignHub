@@ -21,7 +21,7 @@ const Services = () => {
                             color="bg-[#7337BB] text-white"
                             hover="hover:bg-[#000000]"
                             link="#" />
-                        <Button text="Book Demo"
+                        <Button text="(123)-000-0000"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#7337BB]"
                             hover="hover:bg-[#7337BB] hover:text-white"

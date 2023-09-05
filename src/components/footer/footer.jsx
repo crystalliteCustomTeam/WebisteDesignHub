@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Sidebuttons from "../sidebuttons/sidebuttons";
+import { usePathname } from "next/navigation";
 // Import Images
 import logo from "media/logo.svg";
 import mapmarker from "media/mapmarker.svg";
@@ -11,9 +12,12 @@ import facebook from "media/social/facebook.svg";
 import twitter from "media/social/twitter.svg";
 import instagram from "media/social/instagram.svg";
 import linkedin from "media/social/linkedin.svg";
-import paymentMethods from "media/paymentMethods.png";
+import cards from "media/footer/cards.svg";
+import certification from "media/footer/certification.svg";
+import logo2 from "media/landing-pages/website-design-develop/logo.svg";
 
 const Footer = () => {
+    const path = usePathname();
     const quickLinks = [
         {
             text: "Home",
@@ -131,9 +135,10 @@ const Footer = () => {
                     <div className="flex gap-x-5 pb-10 xl:pb-20 border-b-[1px] border-[#707070] flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                         <div className="basis-full sm:basis-[48%] lg:basis-[30%]">
                             <Link href="/" className="mb-5 block">
-                                <Image src={logo} alt="logo" />
+                                {path !== "/website-design-develop-landing" ? <Image src={logo} alt="logo" /> : <Image src={logo2} alt="logo2" />}
                             </Link>
                             <p className="text-sm xl:text-base font-normal text-white">We are a team of creative thinkers and problem solvers dedicated to expanding the limits of what is possible by helping brands achieve their goals.</p>
+                            <Image src={certification} alt="certification" className="mt-3" />
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-[20%]">
                             <h4 className="text-3xl font-megat font-normal text-white leading-none mb-3">Quick Links</h4>
@@ -183,7 +188,7 @@ const Footer = () => {
                                     })
                                 }
                             </ul>
-                            <Image src={paymentMethods} alt="paymentMethods" className="mt-3" />
+                            <Image src={cards} alt="cards" className="mt-3" />
                         </div>
                     </div>
                     <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-5 sm:gap-y-0 items-center">

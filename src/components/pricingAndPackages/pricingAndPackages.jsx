@@ -31,7 +31,7 @@ const PricingAndPackages = () => {
                             <TabsBody>
                                 {data.map(({ value, packages }) => {
                                     return <TabPanel key={value} value={value}>
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
                                             {packages.map(({ name, discountedPrice, originalPrice, list, note }, i) => {
                                                 return <div key={i} className="shadow-lg bg-[#B8C5FA] p-4 rounded-xl">
                                                     <div className="bg-[#665FF3] rounded-xl text-center py-5 shadow-lg">
