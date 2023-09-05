@@ -648,38 +648,39 @@ const Page = () => {
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
-                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#000] rounded-xl" }} />
+                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl " }} />
                                         </div>
                                         <div>
                                             <Input placeholder="Enter Your Email*" type="email"
-                                                className="border-none placeholder:text-white text-white rounded-xl font-[300]"
+                                                className="border-none placeholder:text-white text-white font-[300]"
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
-                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px]" }} />
+                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
                                         </div>
                                         <div>
                                             <Input placeholder="Phone*" type="text"
-                                                className="border-none placeholder:text-white text-white rounded-xl font-[300]"
+                                                className="border-none placeholder:text-white text-white font-[300]"
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
-                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px]" }} />
+                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
                                         </div>
                                         <div>
                                             <Input placeholder="Subject*" type="text"
-                                                className="border-none placeholder:text-white text-white rounded-xl font-[300]"
+                                                className="border-none placeholder:text-white text-white font-[300]"
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
-                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px]" }} />
+                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
                                         </div>
                                     </div>
                                     <Textarea placeholder="Enter Your Message"
-                                        className="border-none my-5 placeholder:text-white text-white rounded-xl font-[300]"
+                                        className="border-none placeholder:text-white text-white font-[300]"
                                         labelProps={{
                                             className: "hidden",
-                                        }}>
+                                        }}
+                                        containerProps={{ className: "bg-[#00296B]/30 rounded-xl my-5" }}>
                                     </Textarea>
                                     <button type="button" className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5">Submit Now</button>
                                 </form>
