@@ -1,4 +1,3 @@
-"use client"
 // Import Fonts
 import { megatFont, primary } from "./configs/fonts";
 // Import Css
