@@ -542,24 +542,26 @@ const Page = () => {
                                 <h3 className="text-2xl font-sans font-normal text-white mt-5">E-Commerce <br /> Solutions</h3>
                             </div>
                         </div>
-                        <Slider {...topServicesSlider} className="lg:hidden ">
-                            <div className="text-center">
-                                <Image src={topServiceOne} alt="topServiceOne" className="m-auto" />
-                                <h3 className="text-xl sm:text-2xl font-sans font-normal text-white mt-5">Web <br /> Development</h3>
-                            </div>
-                            <div className="text-center">
-                                <Image src={topServiceTwo} alt="topServiceTwo" className="m-auto" />
-                                <h3 className="text-xl sm:text-2xl font-sans font-normal text-white mt-5">Web <br /> Designing</h3>
-                            </div>
-                            <div className="text-center">
-                                <Image src={topServiceThree} alt="topServiceThree" className="m-auto" />
-                                <h3 className="text-xl sm:text-2xl font-sans font-normal text-white mt-5">Graphics <br /> Designing</h3>
-                            </div>
-                            <div className="text-center">
-                                <Image src={topServiceFour} alt="topServiceFour" className="m-auto" />
-                                <h3 className="text-xl sm:text-2xl font-sans font-normal text-white mt-5">E-Commerce <br /> Solutions</h3>
-                            </div>
-                        </Slider>
+                        <div className="lg:hidden">
+                            <Slider {...topServicesSlider}>
+                                <div className="text-center">
+                                    <Image src={topServiceOne} alt="topServiceOne" className="m-auto" />
+                                    <h3 className="text-xl sm:text-2xl font-sans font-normal text-white mt-5">Web <br /> Development</h3>
+                                </div>
+                                <div className="text-center">
+                                    <Image src={topServiceTwo} alt="topServiceTwo" className="m-auto" />
+                                    <h3 className="text-xl sm:text-2xl font-sans font-normal text-white mt-5">Web <br /> Designing</h3>
+                                </div>
+                                <div className="text-center">
+                                    <Image src={topServiceThree} alt="topServiceThree" className="m-auto" />
+                                    <h3 className="text-xl sm:text-2xl font-sans font-normal text-white mt-5">Graphics <br /> Designing</h3>
+                                </div>
+                                <div className="text-center">
+                                    <Image src={topServiceFour} alt="topServiceFour" className="m-auto" />
+                                    <h3 className="text-xl sm:text-2xl font-sans font-normal text-white mt-5">E-Commerce <br /> Solutions</h3>
+                                </div>
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </section> {/* Top Services Section */}
@@ -642,7 +644,7 @@ const Page = () => {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div>
                                             <Input placeholder="Enter Your Full Name*" type="text"
-                                                className="border-none bg-[#00296B]/30 placeholder:text-white text-white rounded-xl font-[300]"
+                                                className="border-none placeholder:text-white text-white rounded-xl font-[300] bg-[#000]"
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
@@ -650,7 +652,7 @@ const Page = () => {
                                         </div>
                                         <div>
                                             <Input placeholder="Enter Your Email*" type="email"
-                                                className="border-none bg-[#00296B]/30 placeholder:text-white text-white rounded-xl font-[300]"
+                                                className="border-none placeholder:text-white text-white rounded-xl font-[300]"
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
@@ -658,7 +660,7 @@ const Page = () => {
                                         </div>
                                         <div>
                                             <Input placeholder="Phone*" type="text"
-                                                className="border-none bg-[#00296B]/30 placeholder:text-white text-white rounded-xl font-[300]"
+                                                className="border-none placeholder:text-white text-white rounded-xl font-[300]"
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
@@ -666,7 +668,7 @@ const Page = () => {
                                         </div>
                                         <div>
                                             <Input placeholder="Subject*" type="text"
-                                                className="border-none bg-[#00296B]/30 placeholder:text-white text-white rounded-xl font-[300]"
+                                                className="border-none placeholder:text-white text-white rounded-xl font-[300]"
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
@@ -674,7 +676,7 @@ const Page = () => {
                                         </div>
                                     </div>
                                     <Textarea placeholder="Enter Your Message"
-                                        className="border-none my-5 bg-[#00296B]/30 placeholder:text-white text-white rounded-xl font-[300]"
+                                        className="border-none my-5 placeholder:text-white text-white rounded-xl font-[300]"
                                         labelProps={{
                                             className: "hidden",
                                         }}>
