@@ -15,11 +15,11 @@ import heroDesigns from "media/landing-pages/website-design-develop/hero/designs
 import heroAwards from "media/landing-pages/website-design-develop/hero/awards.png";
 import heroStars from "media/landing-pages/website-design-develop/hero/stars.png";
 // Awards
-import awardsOne from "media/landing-pages/website-design-develop/awards/One.svg";
-import awardsTwo from "media/landing-pages/website-design-develop/awards/Two.svg";
-import awardsThree from "media/landing-pages/website-design-develop/awards/Three.svg";
-import awardsFour from "media/landing-pages/website-design-develop/awards/Four.svg";
-import awardsFive from "media/landing-pages/website-design-develop/awards/Five.svg";
+import awardsOne from "media/landing-pages/website-design-develop/awards/one.svg";
+import awardsTwo from "media/landing-pages/website-design-develop/awards/two.svg";
+import awardsThree from "media/landing-pages/website-design-develop/awards/three.svg";
+import awardsFour from "media/landing-pages/website-design-develop/awards/four.svg";
+import awardsFive from "media/landing-pages/website-design-develop/awards/five.svg";
 // Third
 import thirdDeskLaptop from "media/landing-pages/website-design-develop/third/deskLaptop.png";
 // Portfolios
