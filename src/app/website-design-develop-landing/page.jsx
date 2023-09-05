@@ -644,11 +644,11 @@ const Page = () => {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div>
                                             <Input placeholder="Enter Your Full Name*" type="text"
-                                                className="border-none placeholder:text-white text-white rounded-xl font-[300] bg-[#000]"
+                                                className="border-none placeholder:text-white text-white font-[300]"
                                                 labelProps={{
                                                     className: "hidden",
                                                 }}
-                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px]" }} />
+                                                containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#000] rounded-xl" }} />
                                         </div>
                                         <div>
                                             <Input placeholder="Enter Your Email*" type="email"
