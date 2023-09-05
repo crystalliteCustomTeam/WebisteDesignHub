@@ -227,7 +227,7 @@ const Page = () => {
                                             </h3>
                                             <form>
                                                 <Input placeholder="Enter Your Full Name*" type="text"
-                                                    className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300] focus:ring-4"
+                                                    className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                     labelProps={{
                                                         className: "hidden",
                                                     }}
@@ -634,7 +634,7 @@ const Page = () => {
                                         Contact Us
                                     </h2>
                                     <p className="text-sm md:text-base text-white font-normal">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
                                         suscipit odio. Etiam nunc nisl, fermentum quis sagittis non.
                                     </p>
                                 </div>
