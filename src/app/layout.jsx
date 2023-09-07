@@ -14,11 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${primary.className} ${megatFont.variable}`}>
-        <Header />
         <main>
           {children}
         </main>
-        <Footer />
       </body>
     </html>
   );
