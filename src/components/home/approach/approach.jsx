@@ -19,9 +19,9 @@ const Approach = () => {
                     <div className="flex">
                         <div className="basis-full">
                             <h2 className="text-2xl sm:text-4xl xl:text-5xl font-megat text-[#202020] text-center font-normal leading-none mb-3">
-                                Sparks of imagination <br className="hidden sm:block" /> light up every design
+                                Our Web Design Agency Takes Center <br className="hidden sm:block" /> Stage in Every Field of Design
                             </h2>
-                            <p className="text-base text-[#202020] font-normal text-center mb-10">Urban Web Designers works with a team of enthusiastic designers and developers who <br className="hidden md:block" /> are dedicated professionals in delivering the best websites for any business. Our <br className="hidden md:block" /> websites are:</p>
+                            <p className="text-base text-[#202020] font-normal text-center mb-10">Web Design Hub has an In-house team of devoted professional web designers and developers, <br className="hidden md:block" /> who are dedicated  to delivering top-tier websites for businesses. <br className="hidden md:block" /> Our website solutions include:</p>
                             <div className={`${styles.__cardsWrapper}`}>
                                 <div className="flex justify-evenly md:gap-4 flex-wrap md:flex-nowrap">
                                     <div className="basis-[45%] md:basis-5/12 lg:basis-1/5">

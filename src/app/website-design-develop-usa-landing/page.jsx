@@ -52,6 +52,8 @@ import comprehensivePlatformbannerScreens from "media/landing-pages/website-desi
 // Reviewss
 import quoteReviews from "media/landing-pages/website-design-develop/reviews/quote.png";
 import googleReviews from "media/landing-pages/website-design-develop-usa/reviews/google.png";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 
 
 
@@ -1007,7 +1009,7 @@ const Page = () => {
                                         <option value="3">Item 3</option>
                                     </select>
                                     <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[16px] text-black my-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"></textarea>
-                                    <button type="submit" className="w-full h-[40px] bg-[#f17724] text-black text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724]">
+                                    <button type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724]">
                                         Get A Free Consultation
                                     </button>
                                 </form>
@@ -1064,6 +1066,7 @@ const Page = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </main>
     );
 }

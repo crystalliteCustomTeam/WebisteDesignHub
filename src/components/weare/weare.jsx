@@ -16,40 +16,42 @@ const Weare = () => {
                     <div className="flex">
                         <div className="basis-full">
                             <h2 className="text-2xl sm:text-4xl xl:text-5xl font-megat text-white text-center font-normal leading-none mb-3">
-                                We are here to rock the stage with <br className="hidden lg:block" /> innovation and creativity of all sorts.
+                                We Make 'Wow' Happen at Web Design Hub
                             </h2>
-                            <p className="text-base text-white text-center font-normal mb-10 lg:mb-20">We believe in utter professionalism, communication, innovation and client satisfaction. We stick to this code and serve you with the best of our <br className="hidden xl:block" /> abilities. We do not only cater successful business, we also work for small business logo design services.</p>
+                            <p className="text-base text-white text-center font-normal mb-10 lg:mb-20">Our professional web designers and developers prioritize communication, innovation, and your satisfaction. <br className="hidden xl:block" /> We serve  both large and small businesses with top-tier logo design services.</p>
                             <div className="flex lg:divide-x lg:divide-[#1E73DB] mb-10 lg:mb-20 gap-5 flex-wrap lg:flex-nowrap justify-center">
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={one} alt={one} className="block m-auto mb-3" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Constant Client <br /> Coordination</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Responsive Customer <br /> Support</h3>
                                 </div>
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={two} alt={two} className="block m-auto mb-3" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Supreme Customer <br /> Satisfaction</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Customer Satisfaction <br /> Guaranteed</h3>
                                 </div>
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={three} alt={three} className="block m-auto" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">100% Ownership <br /> Rights</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Ownership <br /> Protection</h3>
                                 </div>
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5 border-l-5">
                                     <Image src={four} alt={four} className="block m-auto mb-3" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Secure Money Back <br /> Guarantee</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Budget-Friendly <br /> Pricing</h3>
                                 </div>
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={five} alt={five} className="block m-auto mb-3" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Industry Proven <br /> Professionals</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Industry <br /> Professionalss</h3>
                                 </div>
                             </div>
                             <div className="flex border-2 rounded-2xl border-[#1E73DB] items-center justify-evenly py-5 flex-wrap md:flex-nowrap text-center md:text-left flex-col md:flex-row gap-5">
                                 <div className="basis-full md:basis-[30%]">
-                                    <h3 className="text-xl lg:text-2xl font-medium font-sans text-white">Call Us And Discuss <br /> Your Project With <br /> Our Experts Today.</h3>
+                                    <h3 className="text-xl lg:text-2xl font-medium font-sans text-white">You Are Just A Call <br /> Away From Securing <br /> A Spectacular Design</h3>
                                 </div>
                                 <div className="basis-full md:basis-[30%]">
-                                    <Link href="tel:(123)456-7890" className="text-xl lg:text-2xl font-medium font-sans text-white">Call Us (TOLL FREE) <br /> (123) 456-7890</Link>
+                                    <Link href="tel:XXX-XXX-XXXX" className="text-xl lg:text-2xl font-medium font-sans text-white">
+                                        Call Us (TOLL FREE) <br /> XXX-XXX-XXXX
+                                    </Link>
                                 </div>
                                 <div className="basis-full md:basis-[30%]">
-                                    <Link href="mailto:info@buisnessname.com" className="text-xl lg:text-2xl font-medium font-sans text-white">Discuss Your Ideas <br />Info@Buisnessname.Com</Link>
+                                    <Link href="mailto:info@webdesignhub.co" className="text-xl lg:text-2xl font-medium font-sans text-white">Discuss Your Ideas <br />Info@WebDesignHub.Co</Link>
                                 </div>
                             </div>
                         </div>

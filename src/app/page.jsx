@@ -8,6 +8,8 @@ import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Images
 import banner from "media/home/hero/chair.png";
 import bannerIconOne from "media/home/hero/iconOne.png";
@@ -25,10 +27,10 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "home",
-        subtitle: "A Place Where",
-        title: "100% Original and Creative Websites",
-        desc: "Urban Web Designers works with a team of enthusiastic designers and developers who are dedicated professionals in delivering the best websites for any business. Our websites are:",
-        points: ["Customized", "Optimized", "Result Driven", "Measurable"],
+        subtitle: "Top Web Design Company",
+        title: "Creating 100% Original Custom Website Designs",
+        desc: "Frustrated by underperforming web designs? It's time for a change and we can help. Website Design Hub is trusted by businesses nationwide. We are a top-rated and affordable web design company, known for creating websites that are:",
+        points: ["Interactive", "Responsive", "Conversion-Focused", "SEO-Optimized"],
         banner,
         icons: [bannerIconOne, bannerIconTwo, bannerIconThree],
         bg: "__homeHeroGradientBg",
@@ -39,8 +41,8 @@ const Page = () => {
     // Array for Small Banner Component Props
     const smallbanner = {
         page: "home",
-        title: "Allow us to assist you in developing a web presence.",
-        desc: "Our web development team is here to assist you in reaching your business goals through the creation of an interesting and functional website.",
+        title: "Let us develop a responsive website to help you attract more visitors",
+        desc: "Our professional web development team is at your service, dedicated to design and develop dynamic websites that urges visitors to take your desired action on the website.",
         img: smallBannerImage,
         bgColor: "__homeHeroGradientBg",
         btnBg: "bg-[#7F6CC7]",
@@ -50,8 +52,8 @@ const Page = () => {
     };
     // Array for Services Component Props
     const services = {
-        title: "SERVICES WE PROVIDE",
-        desc: "Urban Web Designers works with a team of enthusiastic designers and developers who \n  are dedicated professionals in delivering the best websites for any business. Our \n websites are:",
+        title: "Designing & Developing Digital Delights",
+        desc: "We specialize in custom logo design, mobile application design and website development. Our diverse team at Web \n Design Hub excels in digital marketing, SEO, and delivering persuasive copywriting. ",
         btnBg: "bg-[#7F6CC7]",
         btnBorder: "border-[#7F6CC7]",
         btnHover: "hover:bg-[#7F6CC7]",
@@ -133,21 +135,25 @@ const Page = () => {
     };
     // Array for Portfolios Component Props
     const portfolios = {
-        title: "See it. You Must Have Faith",
-        desc: "Urban Web Designers counts itself incredibly fortunate to have worked with such wonderful customers and provided \n them with excellent service.",
+        title: "Explore Our Design Portfolio",
+        desc: "At Web Design Hub, our designers are committed  to excellence in every aspect of \n design, from logos to web, mobile apps, and illustrations.",
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive]
     };
     return (
         <>
-            <Hero content={hero} />
-            <Approach />
-            <SmallBanner content={smallbanner} />
-            <Services content={services} />
-            <Portfolios content={portfolios} />
-            <Reviews />
-            <Weare />
-            <Contact />
-            <Letstalk />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Approach />
+                <SmallBanner content={smallbanner} />
+                <Services content={services} />
+                <Portfolios content={portfolios} />
+                <Reviews />
+                <Weare />
+                <Contact />
+                <Letstalk />
+                <Footer />
+            </main>
         </>
     );
 }

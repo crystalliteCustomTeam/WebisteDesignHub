@@ -21,11 +21,11 @@ const Services = () => {
                             color="bg-[#223C5A] text-white"
                             hover="hover:bg-[#000000]"
                             link="#" />
-                        <Button text="(123)-000-0000"
+                        <Button text="XXX-XXX-XXXX"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#223C5A]"
                             hover="hover:bg-[#223C5A] hover:text-white"
-                            link="tel:123654789" />
+                            link="tel:XXX-XXX-XXXX" />
                     </div>
                 </div>
             </div>

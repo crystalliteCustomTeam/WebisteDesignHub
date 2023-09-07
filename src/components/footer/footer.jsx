@@ -101,13 +101,13 @@ const Footer = () => {
             icon: mapmarker
         },
         {
-            text: "(123)-000-0000",
-            link: "tel:(123)-000-0000",
+            text: "XXX-XXX-XXXX",
+            link: "tel:XXX-XXX-XXXX",
             icon: telephone
         },
         {
-            text: "info@gmail.com",
-            link: "mailto:info@gmail.com",
+            text: "info@webdesignhub.co",
+            link: "mailto:info@webdesignhub.co",
             icon: envelope
         },
     ];
@@ -138,7 +138,7 @@ const Footer = () => {
                             <Link href="/" className="mb-5 block">
                                 {path !== "/website-design-develop-landing" ? <Image src={logo} alt="logo" /> : <Image src={logo2} alt="logo2" />}
                             </Link>
-                            <p className="text-sm xl:text-base font-normal text-white">We are a team of creative thinkers and problem solvers dedicated to expanding the limits of what is possible by helping brands achieve their goals.</p>
+                            <p className="text-sm xl:text-base font-normal text-white">Web Design Hub excels in making custom logos, responsive website design and development. Our expert UI/UX designers contribute to your brand’s success with visually stunning and functional designs.</p>
                             <Image src={certification} alt="certification" className="mt-3" />
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-[20%]">

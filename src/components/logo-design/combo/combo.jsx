@@ -58,10 +58,10 @@ const Combo = () => {
             <div className="__gradientBg3 py-10 lg:py-20">
                 <div className="container relative z-10">
                     <span className="text-base font-normal text-white">
-                        Everything You Need To Save Time
+                        Logo Branding Services All-in-One Package
                     </span>
                     <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-white mb-5">
-                        All In One Combo
+                        Complete Solution for Time & Value
                     </h2>
                     <div className="bg-[url('../../public/packages/comboBg.png')] bg-cover bg-no-repeat bg-center p-5 lg:w-max">
                         <div className="flex flex-wrap lg:flex-nowrap">

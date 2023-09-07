@@ -110,9 +110,9 @@ const Contact = () => {
                         <div className="flex">
                             <div className="basis-full md:basis-10/12 lg:basis-8/12">
                                 <h2 className="text-2xl sm:text-4xl xl:text-5xl font-megat text-black font-normal leading-none mb-3">
-                                    If you`d  like to schedule a call, <br className="hidden lg:block" /> you can do so at your convenience.
+                                    Schedule  a Call at Your Convenience with Us!
                                 </h2>
-                                <p className="text-base text-black font-normal mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, <br className="hidden xl:block" /> fermentum quis sagittis non.</p>
+                                <p className="text-base text-black font-normal mb-10">Do not miss this chance to take the first step toward discussing a custom design solution for your website, logo and mobile application. Book a call now!</p>
                                 <form>
                                     <div className="flex gap-5 flex-wrap md:flex-nowrap">
                                         <div className="basis-full md:basis-6/12 lg:basis-5/12  xl:basis-6/12 flex space-y-6 flex-col">

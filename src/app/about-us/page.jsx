@@ -6,6 +6,8 @@ import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Images
 import banner from "media/about-us/hero/banner.png";
 import smallBannerImage from "media/home/smallBanner.png";
@@ -14,12 +16,12 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "single",
-        subtitle: "Top Notch",
-        title: "Web Developers and Designers",
-        desc: "For all of your company's web development needs, you can count on us. Our online platforms flaunt nimbleness, quickness, uniqueness, and high quality.",
-        bg: "__homeHeroGradientBg",
+        subtitle: "Top Web Design Company",
+        title: "Creating 100% Original Custom Website Designs",
+        desc: "Frustrated by underperforming web designs? It's time for a change and we can help. Website Design Hub is trusted by businesses nationwide. We are a top-rated and affordable web design company, known for creating websites that are:",
+        points: ["Interactive", "Responsive", "Conversion-Focused", "SEO-Optimized"],
         banner,
-        points: ["Customized", "Optimized", "Result Driven", "Measurable"],
+        bg: "__homeHeroGradientBg",
         btnBg: "bg-[#7F6CC7]",
         btnBorder: "border-[#7F6CC7]",
         btnHover: "hover:bg-[#7F6CC7]"
@@ -38,13 +40,17 @@ const Page = () => {
     };
     return (
         <>
-            <Hero content={hero} />
-            <Services />
-            <SmallBanner content={smallbanner} />
-            <Reviews />
-            <Weare />
-            <Contact />
-            <Letstalk />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Services />
+                <SmallBanner content={smallbanner} />
+                <Reviews />
+                <Weare />
+                <Contact />
+                <Letstalk />
+                <Footer />
+            </main>
         </>
     );
 }

@@ -9,6 +9,8 @@ import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 import Packages from "@/components/packages/packages";
 import Combo from "@/components/logo-design/combo/combo";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Images
 import banner from "media/logo-design/hero/screen.png";
 import bannerIconOne from "media/logo-design/hero/iconOne.png";
@@ -26,10 +28,10 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "logoDesign",
-        subtitle: "Distinctive Logos",
-        title: "Crafting Your Vision into Memorable Icons",
-        desc: "Are you looking to make a lasting impression with your brand? Our logo design services blend creativity and strategy to create powerful visual identities that resonate with your audience.",
-        points: ["Brand Recognition", "Brand Identity", "Brand Loyalty", "Competitive Edge"],
+        subtitle: "Custom Logo Designs",
+        title: "Logo Design Company That's Designing & Creating Your Brand’s",
+        desc: "At Web Design Hub, we employ the best logo designers and illustrators to make creative logos for big companies and small businesses. As an affordable logo design company, we promise to create a logo that delivers impressive outcomes for your brand.",
+        points: ["Visual Identity", "Brand Recognition", "Increased Credibility", "Brand Identification"],
         banner,
         icons: [bannerIconOne, bannerIconTwo, bannerIconThree],
         bg: "__logoDesignHeroGradientBg",
@@ -51,8 +53,8 @@ const Page = () => {
     };
     // Array for Services Component Props
     const services = {
-        title: "SERVICES WE PROVIDE",
-        desc: "Urban Web Designers works with a team of enthusiastic designers and developers who \n  are dedicated professionals in delivering the best websites for any business. Our \n websites are:",
+        title: "Our Logo Design Agency Shines \n Across All Design Territories",
+        desc: "Our logo designers offer a diverse range of premium design solutions to enhance your brand's \n visual identity. We create logos that capture your brand's unique spirit and also grab \n the attention of your target audience.",
         btnBg: "bg-[#7F6CC7]",
         btnBorder: "border-[#7F6CC7]",
         btnHover: "hover:bg-[#7F6CC7]",
@@ -134,23 +136,27 @@ const Page = () => {
     };
     // Array for Portfolios Component Props
     const portfolios = {
-        title: "See it. You Must Have Faith",
-        desc: "Urban Web Designers counts itself incredibly fortunate to have worked with such wonderful customers and provided \n them with excellent service.",
+        title: "A Glimpse into Our Corporate Logo Designs",
+        desc: "At Web Design Hub, we are passionately devoted to achieving excellence across the spectrum of design \n including creative logo design, logo redesign, web design, and many more.",
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive],
         theme: "light"
     };
     return (
         <>
-            <Hero content={hero} />
-            <Services content={services} />
-            <SmallBanner content={smallbanner} />
-            <Packages />
-            <Portfolios content={portfolios} />
-            <Combo />
-            <Letstalk />
-            <Reviews />
-            <Weare />
-            <Contact />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Services content={services} />
+                <SmallBanner content={smallbanner} />
+                <Packages />
+                <Portfolios content={portfolios} />
+                <Combo />
+                <Letstalk />
+                <Reviews />
+                <Weare />
+                <Contact />
+                <Footer />
+            </main>
         </>
     );
 }

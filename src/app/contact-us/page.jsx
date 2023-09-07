@@ -2,6 +2,8 @@
 import Hero from "@/components/hero/hero";
 import Letstalk from "@/components/letstalk/letstalk";
 import Contact from "@/components/contact/contact";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Images
 import banner from "media/about-us/hero/banner.png";
 
@@ -21,9 +23,13 @@ const Page = () => {
     };
     return (
         <>
-            <Hero content={hero} />
-            <Contact />
-            <Letstalk />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Contact />
+                <Letstalk />
+                <Footer />
+            </main>
         </>
     );
 }

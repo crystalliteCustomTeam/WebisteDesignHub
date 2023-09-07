@@ -22,11 +22,11 @@ const SmallBanner = ({ content }) => {
                                     color={`${btnBg ?? "bg-transparent"} text-white`}
                                     hover="hover:bg-[#000000]"
                                     link="#" />
-                                <Button text="(123)-000-0000"
+                                <Button text="XXX-XXX-XXXX"
                                     color={`${btnColor ?? "text-white"} bg-transparent`}
                                     border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
                                     hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"}`}
-                                    link="tel:123654789" />
+                                    link="tel:XXX-XXX-XXXX" />
                             </div>
                         </div>
                     </div>

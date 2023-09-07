@@ -71,9 +71,8 @@ const Services = ({ content }) => {
             <div className="bg-[#EFEFEF] py-10 md:py-20">
                 <div className="container">
                     <div className="text-center mb-10">
-                        <h2 className="text-2xl sm:text-4xl xl:text-5xl font-megat text-[#202020] font-normal leading-none mb-3">
-                            {title}
-                        </h2>
+                        <h2 className="text-2xl sm:text-4xl xl:text-5xl font-megat text-[#202020] font-normal leading-none mb-3"
+                            dangerouslySetInnerHTML={{ __html: title.replace(/\n/g, "<br className='hidden md:block' />") }} />
                         <p className="text-base text-[#202020] font-normal"
                             dangerouslySetInnerHTML={{ __html: desc.replace(/\n/g, "<br className='hidden md:block' />") }} />
                     </div>
@@ -111,11 +110,11 @@ const Services = ({ content }) => {
                             color={`${btnBg ?? "bg-transparent"} text-white`}
                             hover="hover:bg-[#000000]"
                             link="#" />
-                        <Button text="(123)-000-0000"
+                        <Button text="XXX-XXX-XXXX"
                             color={`${btnColor ?? "text-white"} bg-transparent`}
                             border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
                             hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"}`}
-                            link="tel:123654789" />
+                            link="tel:XXX-XXX-XXXX" />
                     </div>
                 </div>
             </div>

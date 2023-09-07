@@ -7,6 +7,8 @@ import Letstalk from "@/components/letstalk/letstalk";
 import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Images
 import banner from "media/illustration-design/hero/man.png";
 import smallBannerImage from "media/illustration-design/smallBanner.png";
@@ -20,10 +22,10 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "illustrationDesign",
-        subtitle: "Supplier of Digital Illustrationsr",
-        title: "Bringing Concepts to Fruition",
-        desc: "We make hard-to-grasp concepts and material more interesting and accessible through clear visual representations. At Urban Web Designers, our goal is to create visual representations of concepts that complement the written material for which they were created.",
-        points: ["Specially original", "Imaginatively", "Bursting with life", "Utterly original"],
+        subtitle: "Best Illustration Designers",
+        title: "5-Star Rated Illustration Design Company",
+        desc: "When you hire Web Design Hub,  you gain access to the best character illustrators, and gaming artwork. We make custom character designs, immersive gaming illustrations, and any related creative illustrations. Our skill in illustration design combines unique qualities that make us a distinctive illustration company. ",
+        points: ["Unique Artistry", "Time Efficiency", "Attention to Detail", "Original Art"],
         isForm: true,
         banner,
         bg: "bg-[url('../../public/illustration-design/hero/bg.png')] bg-cover bg-no-repeat bg-left-top",
@@ -45,21 +47,25 @@ const Page = () => {
     };
     // Array for Portfolios Component Props
     const portfolios = {
-        title: "See it. You Must Have Faith",
-        desc: "Urban Web Designers counts itself incredibly fortunate to have worked with such wonderful customers and provided \n them with excellent service.",
+        title: "Our Illustration Agency’s Artwork Creation",
+        desc: "Our illustration artists work closely with clients to capture a design's personality, conveying emotions, and brand identity. \n We create character designs with depth and meaning.",
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive],
         theme: "light"
     };
     return (
         <>
-            <Hero content={hero} />
-            <Services />
-            <SmallBanner content={smallbanner} />
-            <Portfolios content={portfolios} />
-            <Letstalk />
-            <Reviews />
-            <Weare />
-            <Contact />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Services />
+                <SmallBanner content={smallbanner} />
+                <Portfolios content={portfolios} />
+                <Letstalk />
+                <Reviews />
+                <Weare />
+                <Contact />
+                <Footer />
+            </main>
         </>
     );
 }

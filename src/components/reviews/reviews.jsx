@@ -29,32 +29,32 @@ const Reviews = () => {
                             <h2 className="text-4xl lg:text-5xl font-megat text-black font-normal mb-5">Our Client`s Review</h2>
                             <Slider {...settings} className="pb-8">
                                 <div>
-                                    <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam. Maecenas porttitor, felis vel iaculis volutpat, nibh dolor vulputate ex, nec consectetur dui felis id nisl. Suspendisse porta iaculis malesuada. Curabitur nec orci lobortis, viverra nibh porta, lobortis mi</p>
+                                    <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">"Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills."</p>
                                     <div className="flex items-center gap-5 mt-5">
-                                        <Image src={avatarOne} alt={avatarOne} className="mt-5 shadow-md rounded-full" />
+                                        <Image src={avatarOne} alt={avatarOne} className="shadow-md rounded-full" />
                                         <div >
-                                            <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Kylie Madona</h5>
-                                            <p className="text-sm text-black font-light">CTO of JamsosTech</p>
+                                            <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Jennifer Mitchell</h5>
+                                            <p className="text-sm text-black font-light">Senior Financial Advisor</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam. Maecenas porttitor, felis vel iaculis volutpat, nibh dolor vulputate ex, nec consectetur dui felis id nisl. Suspendisse porta iaculis malesuada. Curabitur nec orci lobortis, viverra nibh porta, lobortis mi</p>
+                                    <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">“Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Design Hub is the best web design company I have ever worked with.”</p>
                                     <div className="flex items-center gap-5 mt-5">
                                         <Image src={avatarTwo} alt={avatarTwo} className="shadow-md rounded-full" />
                                         <div>
-                                            <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Kylie Madona</h5>
-                                            <p className="text-sm text-black font-light">CTO of JamsosTech</p>
+                                            <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Sarah Johnson</h5>
+                                            <p className="text-sm text-black font-light">E-commerce Manager</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam. Maecenas porttitor, felis vel iaculis volutpat, nibh dolor vulputate ex, nec consectetur dui felis id nisl. Suspendisse porta iaculis malesuada. Curabitur nec orci lobortis, viverra nibh porta, lobortis mi</p>
+                                    <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">“Hiring Web Design Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.”</p>
                                     <div className="flex items-center gap-5 mt-5">
                                     <Image src={avatarThree} alt={avatarThree} className="mt-5 shadow-md rounded-full" />
                                     <div>
-                                        <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Kylie Madona</h5>
-                                        <p className="text-sm text-black font-light">CTO of JamsosTech</p>
+                                        <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Emily Parker</h5>
+                                        <p className="text-sm text-black font-light">Co-founder - InnovateTech Solutions</p>
                                     </div>
                                     </div>
                                 </div>

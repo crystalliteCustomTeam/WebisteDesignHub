@@ -178,7 +178,7 @@ const Header = () => {
                                 })()} text-white`}
                                 hover="hover:bg-[#000000]"
                                 link="#" />
-                            <Button text="(123)-000-0000"
+                            <Button text="XXX-XXX-XXXX"
                                 color="bg-transparent text-white"
                                 border={`border-2 ${(() => {
                                     switch (router) {
@@ -244,7 +244,7 @@ const Header = () => {
                                             return "hover:bg-[#9E7DE9]"
                                     }
                                 })()}`}
-                                link="tel:123654789" rounded="rounded-[100px]" />
+                                link="tel:XXX-XXX-XXXX" rounded="rounded-[100px]" />
                         </div>
                         <IconButton
                             variant="text"

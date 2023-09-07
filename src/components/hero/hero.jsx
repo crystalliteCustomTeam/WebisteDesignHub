@@ -90,34 +90,34 @@ const Hero = ({ content }) => {
                                 </span>
                                 <Image src={downArrow} alt="downArrow" className="absolute top-2/4 left-full ml-5 sm:ml-10" />
                             </div>
-                            <h1 className="text-4xl sm:text-5xl xl:text-6xl font-megat text-white font-normal leading-none mb-2">
+                            <h1 className="text-4xl sm:text-5xl xl:text-5xl 2xl:text-6xl font-megat text-white font-normal leading-none mb-2">
                                 {title}
                             </h1>
-                            <p className="text-sm sm:text-base xl:text-lg text-white font-normal mb-3 sm:mb-5">
+                            <p className="text-sm sm:text-base 2xl:text-lg text-white font-normal mb-3 sm:mb-5">
                                 {desc}
                             </p>
                             {points && <div className="flex mb-5 xl:mb-8">
                                 <div className="basis-full">
                                     <div className="flex flex-wrap">
-                                        <div className="basis-6/12 md:basis-[40%] p-3 border-brown-10 px-0 border-r-2 border-b-2">
+                                        <div className="basis-6/12 md:basis-[45%] p-3 border-brown-10 px-0 border-r-2 border-b-2">
                                             <div className="flex items-center gap-x-3">
                                                 <Image src={circleCheck} alt="circleCheck" />
                                                 <p className="text-xs sm:text-lg xl:text-xl text-white font-normal">{points[0]}</p>
                                             </div>
                                         </div>
-                                        <div className="basis-6/12 md:basis-[40%] p-3 border-brown-100 pr-0 border-b-2">
+                                        <div className="basis-6/12 md:basis-[45%] p-3 border-brown-100 pr-0 border-b-2">
                                             <div className="flex items-center gap-x-3">
                                                 <Image src={circleCheck} alt="circleCheck" />
                                                 <p className="text-xs sm:text-lg xl:text-xl text-white font-normal">{points[1]}</p>
                                             </div>
                                         </div>
-                                        <div className="basis-6/12 md:basis-[40%] p-3 border-brown-100 pl-0 border-r-2">
+                                        <div className="basis-6/12 md:basis-[45%] p-3 border-brown-100 pl-0 border-r-2">
                                             <div className="flex items-center gap-x-3">
                                                 <Image src={circleCheck} alt="circleCheck" />
                                                 <p className="text-xs sm:text-lg xl:text-xl text-white font-normal">{points[2]}</p>
                                             </div>
                                         </div>
-                                        <div className="basis-6/12 md:basis-[40%] p-3 pr-0">
+                                        <div className="basis-6/12 md:basis-[45%] p-3 pr-0">
                                             <div className="flex items-center gap-x-3">
                                                 <Image src={circleCheck} alt="circleCheck" />
                                                 <p className="text-xs sm:text-lg xl:text-xl text-white font-normal">{points[3]}</p>
@@ -143,11 +143,11 @@ const Hero = ({ content }) => {
                                     color={`${btnBg ?? "bg-transparent"} text-white`}
                                     hover="hover:bg-[#000000]"
                                     link="#" />
-                                <Button text="(123)-000-0000"
+                                <Button text="XXX-XXX-XXXX"
                                     color={`${btnColor ?? "text-white"} bg-transparent`}
                                     border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
                                     hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"}`}
-                                    link="tel:123654789" />
+                                    link="tel:XXX-XXX-XXXX" />
                             </div>
                         </div>
                     </div>

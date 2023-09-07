@@ -16,6 +16,8 @@ import portfolioTwo from "media/ecommerce/portfolios/two.png";
 import portfolioThree from "media/ecommerce/portfolios/three.png";
 import portfolioFour from "media/ecommerce/portfolios/four.png";
 import portfolioFive from "media/ecommerce/portfolios/five.png";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 
 const Page = () => {
     // Array for Hero Component Props
@@ -53,15 +55,19 @@ const Page = () => {
     };
     return (
         <>
-            <Hero content={hero} />
-            <Services />
-            <SmallBanner content={smallbanner} />
-            <Portfolios content={portfolios} />
-            <Packages />
-            <Reviews />
-            <Letstalk />
-            <Weare />
-            <Contact />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Services />
+                <SmallBanner content={smallbanner} />
+                <Portfolios content={portfolios} />
+                <Packages />
+                <Reviews />
+                <Letstalk />
+                <Weare />
+                <Contact />
+                <Footer />
+            </main>
         </>
     );
 }

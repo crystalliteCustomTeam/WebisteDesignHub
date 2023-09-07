@@ -239,9 +239,9 @@ const Packages = () => {
                 <div className="bg-purple-blue py-10 md:py-20">
                     <div className="container">
                         <div className="text-center mb-10">
-                            <span className="text-base font-normal text-[#A497F5]">Reasonable Prices</span>
-                            <h2 className="font-megat font-normal text-4xl lg:text-5xl text-white mb-2">That Fits Your Budget</h2>
-                            <p className="text-base text-white font-normal">With affordable prices, we have exclusive digital art and design facilities, <br /> customized for your individual needs</p>
+                            <span className="text-lg font-sans font-normal text-[#A497F5] mb-3 block">Logo Design Packages</span>
+                            <h2 className="font-megat font-normal text-4xl lg:text-5xl text-white mb-2">Gain the Upper Hand with Our Creative <br /> Logo Designs</h2>
+                            <p className="text-base text-white font-normal">Our top logo design service packages are thoughtfully customized to match your brand's <br /> voice and budget, giving you a competitive edge in the market. </p>
                         </div>
                         <div className="bg-[#665FF3] py-10 px-3 lg:px-5 xl:p-20 rounded-[50px]">
                             <div className="flex lg:divide-x-2 lg:gap-3 xl:gap-5 lg:divide-[#9EE7F3] flex-wrap lg:flex-nowrap justify-center lg:justify-normal">

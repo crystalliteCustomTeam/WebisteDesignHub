@@ -8,6 +8,8 @@ import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Images
 import smallBannerImage from "media/website-development/smallBanner.png";
 import portfolioOne from "media/logo-design/portfolios/one.png";
@@ -52,15 +54,19 @@ const Page = () => {
     };
     return (
         <>
-            <Hero content={hero} />
-            <Services />
-            <SmallBanner content={smallbanner} />
-            <Packages />
-            <Portfolios content={portfolios} />
-            <Letstalk />
-            <Reviews />
-            <Weare />
-            <Contact />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Services />
+                <SmallBanner content={smallbanner} />
+                <Packages />
+                <Portfolios content={portfolios} />
+                <Letstalk />
+                <Reviews />
+                <Weare />
+                <Contact />
+                <Footer />
+            </main>
         </>
     );
 }

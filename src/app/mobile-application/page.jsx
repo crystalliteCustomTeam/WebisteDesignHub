@@ -7,6 +7,8 @@ import Letstalk from "@/components/letstalk/letstalk";
 import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Images
 import banner from "media/mobile-application/hero/mobile.png";
 import smallBannerImage from "media/mobile-application/smallBanner.png";
@@ -20,10 +22,10 @@ const page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "mobileApplication",
-        subtitle: "Software Engineering and Design",
-        title: "Leaders in Mobile App Creation",
-        desc: "By providing developers with the tools they need, Urban Web Designers helps businesses and individuals find unique and effective mobile app solutions.",
-        points: ["Easily Navigable", "Rapidly", "Converging", "Interactive"],
+        subtitle: "Mobile App Design Company",
+        title: "Experience Building A Mobile App At Its Finest",
+        desc: "Web Design Hub is leading the way in mobile app design and development innovation. Our expertise extends beyond  design, and we provide mobile app developers with the essential resources, enabling them to build efficient mobile applications for businesses.  ",
+        points: ["Multi Device Integration", "Scalability", "Easy Monetization", "Interactivity"],
         banner,
         bg: "__mobileApplicationHeroGradientBg",
         isForm: true,
@@ -45,21 +47,25 @@ const page = () => {
     };
     // Array for Portfolios Component Props
     const portfolios = {
-        title: "See it. You Must Have Faith",
-        desc: "Urban Web Designers counts itself incredibly fortunate to have worked with such wonderful customers and provided \n them with excellent service.",
+        title: "Creativity Knows No Bounds At Our Mobile App Agency",
+        desc: "At Web Design Hub, our expertise shine through custom layouts and interactive designs, ensuring a superlative user \n experience with our responsive mobile app designs.",
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive],
         theme: "light"
     };
     return (
         <>
-            <Hero content={hero} />
-            <Services />
-            <SmallBanner content={smallbanner} />
-            <Portfolios content={portfolios} />
-            <Letstalk />
-            <Reviews />
-            <Weare />
-            <Contact />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Services />
+                <SmallBanner content={smallbanner} />
+                <Portfolios content={portfolios} />
+                <Letstalk />
+                <Reviews />
+                <Weare />
+                <Contact />
+                <Footer />
+            </main>
         </>
     );
 }

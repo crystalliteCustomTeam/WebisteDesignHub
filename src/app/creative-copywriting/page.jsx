@@ -6,6 +6,8 @@ import Reviews from "@/components/reviews/reviews";
 import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Images
 import banner from "media/creative-copywriting/hero/deskGirl.png";
 import smallBannerImage from "media/creative-copywriting/smallBanner.png";
@@ -39,13 +41,17 @@ const Page = () => {
     };
     return (
         <>
-            <Hero content={hero} />
-            <Services />
-            <SmallBanner content={smallbanner} />
-            <Reviews />
-            <Letstalk />
-            <Weare />
-            <Contact />
+            <main>
+                <Header />
+                <Hero content={hero} />
+                <Services />
+                <SmallBanner content={smallbanner} />
+                <Reviews />
+                <Letstalk />
+                <Weare />
+                <Contact />
+                <Footer />
+            </main>
         </>
     );
 }
