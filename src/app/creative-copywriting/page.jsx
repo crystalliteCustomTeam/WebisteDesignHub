@@ -8,6 +8,7 @@ import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import Packages from "@/components/packages/packages";
 // Import Images
 import banner from "media/creative-copywriting/hero/deskGirl.png";
 import smallBannerImage from "media/creative-copywriting/smallBanner.png";
@@ -39,6 +40,13 @@ const Page = () => {
         btnHover: "hover:bg-[#768DF1]",
         theme: "dark"
     };
+    // Array for Packages Component Props
+    const packages = {
+        subtitle: "Reasonable Prices",
+        title: "That Fits Your Budget",
+        desc: "With affordable prices, we have exclusive digital art and design facilities, customized for your individual needs",
+        key: 9
+    }
     return (
         <>
             <main>
@@ -46,11 +54,12 @@ const Page = () => {
                 <Hero content={hero} />
                 <Services />
                 <SmallBanner content={smallbanner} />
+                <Packages content={packages} />
                 <Reviews />
-                <Letstalk />
                 <Weare />
                 <Contact />
                 <Footer />
+                <Letstalk />
             </main>
         </>
     );

@@ -9,6 +9,7 @@ import Weare from "@/components/weare/weare";
 import Contact from "@/components/contact/contact";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import Packages from "@/components/packages/packages";
 // Import Images
 import banner from "media/mobile-application/hero/mobile.png";
 import smallBannerImage from "media/mobile-application/smallBanner.png";
@@ -52,6 +53,13 @@ const page = () => {
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive],
         theme: "light"
     };
+    // Array for Packages Component Props
+    const packages = {
+        subtitle: "Reasonable Prices",
+        title: "That Fits Your Budget",
+        desc: "With affordable prices, we have exclusive digital art and design facilities, customized for your individual needs",
+        key: 2
+    }
     return (
         <>
             <main>
@@ -60,10 +68,11 @@ const page = () => {
                 <Services />
                 <SmallBanner content={smallbanner} />
                 <Portfolios content={portfolios} />
-                <Letstalk />
+                <Packages content={packages} />
                 <Reviews />
                 <Weare />
                 <Contact />
+                <Letstalk />
                 <Footer />
             </main>
         </>

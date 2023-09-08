@@ -38,6 +38,13 @@ const Page = () => {
         btnHover: "hover:bg-[#577981]",
         theme: "dark"
     };
+    // Array for Packages Component Props
+    const packages = {
+        subtitle: "Reasonable Prices",
+        title: "That Fits Your Budget",
+        desc: "With affordable prices, we have exclusive digital art and design facilities, customized for your individual needs",
+        key: 5
+    }
     return (
         <>
             <main>
@@ -45,11 +52,11 @@ const Page = () => {
                 <Hero content={hero} />
                 <Services />
                 <SmallBanner content={smallbanner} />
-                <Packages />
-                <Letstalk />
+                <Packages content={packages} />
                 <Reviews />
                 <Weare />
                 <Contact />
+                <Letstalk />
                 <Footer />
             </main>
         </>

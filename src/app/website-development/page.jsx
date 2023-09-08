@@ -52,6 +52,13 @@ const Page = () => {
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive],
         theme: "light"
     };
+    // Array for Packages Component Props
+    const packages = {
+        subtitle: "Reasonable Prices",
+        title: "That Fits Your Budget",
+        desc: "With affordable prices, we have exclusive digital art and design facilities, customized for your individual needs",
+        key: 6
+    }
     return (
         <>
             <main>
@@ -59,12 +66,12 @@ const Page = () => {
                 <Hero content={hero} />
                 <Services />
                 <SmallBanner content={smallbanner} />
-                <Packages />
                 <Portfolios content={portfolios} />
-                <Letstalk />
+                <Packages content={packages} />
                 <Reviews />
                 <Weare />
                 <Contact />
+                <Letstalk />
                 <Footer />
             </main>
         </>
