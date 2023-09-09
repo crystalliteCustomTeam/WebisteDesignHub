@@ -255,3 +255,8 @@ body {
     background-color: #3283FF;
     border: inherit;
 }
+
+.slick-track {
+    align-items: center;
+    display: flex !important;
+}

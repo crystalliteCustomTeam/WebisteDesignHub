@@ -5,10 +5,12 @@ import Link from "next/link";
 import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from "@material-tailwind/react";
 import { useState } from "react";
 import Slider from "react-slick";
+import Footer from "@/components/footer/footer";
 // Import Css
 import styles from "./page.module.css";
 // JSON Data
 import ultimatepackage from "./ultimatepackage.json"
+import affordablepackages from "./affordablepackages.json"
 import processData from "./process.json"
 import whatweData from "./whatwe.json"
 // Import Images
@@ -52,8 +54,6 @@ import comprehensivePlatformbannerScreens from "media/landing-pages/website-desi
 // Reviewss
 import quoteReviews from "media/landing-pages/website-design-develop/reviews/quote.png";
 import googleReviews from "media/landing-pages/website-design-develop-usa/reviews/google.png";
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
 
 
 
@@ -110,47 +110,128 @@ const Page = () => {
         autoplaySpeed: 3000,
         adaptiveHeight: true
     };
+    // Hero Numbers
+    let smallDeviceSliderOne = {
+        dots: false,
+        arrows: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        fade: false,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 3000,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+    let smallDeviceSliderTwo = {
+        dots: true,
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        fade: false,
+        autoplay: false,
+        speed: 500,
+        autoplaySpeed: 3000,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1299,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+    // Hero Points Array
+    let heroPoints = [
+        "Fully Responsive Websites",
+        "Conversion Driven Designs",
+        "Ready for SEO & Google Ads",
+        "Reliable 24/7 Support",
+        "Hosting Plans Available",
+        "100% Satisfaction Gurantee"
+    ]
+    // Hero Counter Array
+    let heroCounter = [
+        {
+            number: "4000+",
+            content: "Projects Completed \n Successfully"
+        },
+        {
+            number: "2000+",
+            content: "Websites \n Developed"
+        },
+        {
+            number: "1000’s",
+            content: "of Brand Logos \n Designed"
+        },
+        {
+            number: "10+",
+            content: "Years in Web \n Development"
+        },
+        {
+            number: "100%",
+            content: "Satisfaction \n Guaranteed"
+        },
+    ]
+    // Top Rated Logos Array 
+    let topRatedLogos = [
+        topRatedOne,
+        topRatedTwo,
+        topRatedThree,
+        topRatedFour,
+        topRatedFive,
+        topRatedSix
+    ]
     return (
         <main>
             <section>
                 <div className="bg-[#15233b] py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/hero/bg.png')] bg-cover">
                     <div className="container">
-                        <div className="flex">
-                            <div className="basis-3/5">
-                                <h1 className="text-[50px] leading-[60px] text-[#ffffff] font-megat font-normal mb-5">
+                        <div className="flex flex-wrap lg:flex-nowrap gap-y-10 lg:gap-y-0">
+                            <div className="basis-full lg:basis-3/5">
+                                <h1 className="text-[35px] sm:text-[50px] lg:text-[40px] xl:text-[50px] leading-[45px] sm:leading-[60px] lg:leading-[50px] xl:leading-[60px] text-[#ffffff] font-megat font-normal mb-5">
                                     Stunning, <span className="text-[#f17724]">Responsive <br /> Websites</span> That Drive Sales!
                                 </h1>
-                                <ul className="grid grid-cols-2 w-max gap-x-5 gap-y-4">
-                                    <li className="text-[16px] text-[#ffffff] font-sans font-medium flex items-center gap-x-3">
-                                        <Image src={heroCheck} alt="heroCheck" />
-                                        <span>Fully Responsive Websites</span>
-                                    </li>
-                                    <li className="text-[16px] text-[#ffffff] font-sans font-medium flex items-center gap-x-3">
-                                        <Image src={heroCheck} alt="heroCheck" />
-                                        <span>Conversion Driven Designs</span>
-                                    </li>
-                                    <li className="text-[16px] text-[#ffffff] font-sans font-medium flex items-center gap-x-3">
-                                        <Image src={heroCheck} alt="heroCheck" />
-                                        <span>Ready for SEO & Google Ads</span>
-                                    </li>
-                                    <li className="text-[16px] text-[#ffffff] font-sans font-medium flex items-center gap-x-3">
-                                        <Image src={heroCheck} alt="heroCheck" />
-                                        <span>Reliable 24/7 Support</span>
-                                    </li>
-                                    <li className="text-[16px] text-[#ffffff] font-sans font-medium flex items-center gap-x-3">
-                                        <Image src={heroCheck} alt="heroCheck" />
-                                        <span>Hosting Plans Available</span>
-                                    </li>
-                                    <li className="text-[16px] text-[#ffffff] font-sans font-medium flex items-center gap-x-3">
-                                        <Image src={heroCheck} alt="heroCheck" />
-                                        <span>100% Satisfaction Gurantee</span>
-                                    </li>
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 w-max gap-x-5 gap-y-4">
+                                    {
+                                        heroPoints.map((e, i) => {
+                                            return (<li key={i} className="text-[14px] sm:text-[16px] lg:text-[14px] xl:text-[16px] text-[#ffffff] font-sans font-medium flex items-center gap-x-3">
+                                                <Image src={heroCheck} alt="heroCheck" />
+                                                <span>{e}</span>
+                                            </li>
+                                            )
+                                        })
+                                    }
                                 </ul>
                                 <div className="flex items-center gap-x-3 mt-5">
-                                    <h3 className="text-[30px] leading-none text-[#ffffff] font-sans font-semibold">
+                                    <h3 className="text-[20px] sm:text-[25px] xl:text-[30px] leading-none text-[#ffffff] font-sans font-semibold">
                                         Packages Start From
                                     </h3>
-                                    <span className={`py-3 px-6 bg-[#f17724] text-[30px] leading-none font-sans font-bold text-[#ffffff] ${styles.__pulse}`}
+                                    <span className={`py-3 px-6 bg-[#f17724] text-[20px] sm:text-[25px] xl:text-[30px] leading-none font-sans font-bold text-[#ffffff] ${styles.__pulse}`}
                                         style={{ clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)' }}>
                                         $299
                                     </span>
@@ -158,22 +239,22 @@ const Page = () => {
                                 <div className="flex items-center gap-x-3 mt-5">
                                     <Image src={heroCallEnvelope} alt="heroCallEnvelope" />
                                     <div>
-                                        <Link href="tel:XXX-XXX-XXXX" className="text-[40px] leading-7 text-[#ffffff] font-sans font-bold block mb-3">
+                                        <Link href="tel:XXX-XXX-XXXX" className="text-[20px] sm:text-[40px] leading-7 text-[#ffffff] font-sans font-bold block mb-3">
                                             XXX-XXX-XXXX
                                         </Link>
                                         <div className="flex items-center gap-x-3">
-                                            <Link href="/" className="text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
+                                            <Link href="/" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
                                                 Start Live Chat
                                             </Link>
-                                            <Link href="/" className="text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
+                                            <Link href="/" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
                                                 Request A Quote
                                             </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="basis-2/5 relative">
-                                <div className="bg-[#2069ae] p-5 w-[80%] ml-auto">
+                            <div className="basis-full lg:basis-2/5 relative">
+                                <div className="bg-[#2069ae] p-5 xl:w-[80%] ml-auto">
                                     <h2 className="text-[20px] leading-none text-[#ffffff] font-sans font-light text-center mb-3">
                                         CALL: <span className="text-[#f17724]">XXX-XXX-XXXX</span>
                                     </h2>
@@ -190,60 +271,44 @@ const Page = () => {
                                         </button>
                                     </form>
                                 </div>
-                                <Image src={heroPointingGirl} alt="heroPointingGirl" className="absolute top-[50px] left-[-130px]" />
+                                <Image src={heroPointingGirl} alt="heroPointingGirl" className="absolute top-[50px] left-[-130px] hidden xl:block" />
                             </div>
                         </div>
-                        <div className="flex divide-x-2 divide-[#2069ae] mt-10">
-                            <div className="basis-1/5">
-                                <div className="text-center">
-                                    <h4 className="text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
-                                        4000+
-                                    </h4>
-                                    <p className="text-[16px] text-[#ffffff] font-sans font-light">
-                                        Projects Completed <br /> Successfully
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="basis-1/5">
-                                <div className="text-center">
-                                    <h4 className="text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
-                                        2000+
-                                    </h4>
-                                    <p className="text-[16px] text-[#ffffff] font-sans font-light">
-                                        Websites <br /> Developed
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="basis-1/5">
-                                <div className="text-center">
-                                    <h4 className="text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
-                                        1000’s
-                                    </h4>
-                                    <p className="text-[16px] text-[#ffffff] font-sans font-light">
-                                        of Brand Logos <br /> Designed
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="basis-1/5">
-                                <div className="text-center">
-                                    <h4 className="text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
-                                        10+
-                                    </h4>
-                                    <p className="text-[16px] text-[#ffffff] font-sans font-light">
-                                        Years in Web <br /> Development
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="basis-1/5">
-                                <div className="text-center">
-                                    <h4 className="text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
-                                        100%
-                                    </h4>
-                                    <p className="text-[16px] text-[#ffffff] font-sans font-light">
-                                        Satisfaction <br /> Guaranteed
-                                    </p>
-                                </div>
-                            </div>
+                        {/* For Desktop */}
+                        <div className="hidden lg:flex lg:divide-x-2 lg:divide-[#2069ae] lg:mt-10">
+                            {
+                                heroCounter.map((e, i) => {
+                                    return (<div key={i} className="lg:basis-1/5">
+                                        <div className="text-center">
+                                            <h4 className="text-[40px] xl:text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
+                                                {e.number}
+                                            </h4>
+                                            <p className="text-[16px] text-[#ffffff] font-sans font-light"
+                                                dangerouslySetInnerHTML={{ __html: e.content.replace(/\n/g, "<br />") }} />
+                                        </div>
+                                    </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        {/* For Mobile */}
+                        <div className="lg:hidden mt-10">
+                            <Slider {...smallDeviceSliderOne} className="w-full">
+                                {
+                                    heroCounter.map((e, i) => {
+                                        return (<div key={i}>
+                                            <div className="text-center">
+                                                <h4 className="text-[40px] xl:text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
+                                                    {e.number}
+                                                </h4>
+                                                <p className="text-[16px] text-[#ffffff] font-sans font-light"
+                                                    dangerouslySetInnerHTML={{ __html: e.content.replace(/\n/g, "<br />") }} />
+                                            </div>
+                                        </div>
+                                        )
+                                    })
+                                }
+                            </Slider>
                         </div>
                     </div>
                 </div>
@@ -252,29 +317,28 @@ const Page = () => {
                 <div className={`py-[100px] ${styles.__topRatedBg}`}>
                     <div className="container">
                         <div className="text-center mb-10">
-                            <h2 className="text-[40px] leading-[50px] text-[#0d3163] font-megat font-normal">
-                                Hire Top Rated Website <span className="text-[#f17724]">Designers & Developers</span>
+                            <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-[#0d3163] font-megat font-normal">
+                                Hire Top Rated Website <br className="lg:hidden" /> <span className="text-[#f17724]">Designers & Developers</span>
                             </h2>
                         </div>
-                        <div className="grid grid-cols-6 items-center gap-x-10">
-                            <div>
-                                <Image src={topRatedOne} alt="topRatedOne" />
-                            </div>
-                            <div>
-                                <Image src={topRatedTwo} alt="topRatedTwo" />
-                            </div>
-                            <div>
-                                <Image src={topRatedThree} alt="topRatedThree" />
-                            </div>
-                            <div>
-                                <Image src={topRatedFour} alt="topRatedFour" />
-                            </div>
-                            <div>
-                                <Image src={topRatedFive} alt="topRatedFive" />
-                            </div>
-                            <div>
-                                <Image src={topRatedSix} alt="topRatedSix" />
-                            </div>
+                        <div className="hidden lg:grid lg:grid-cols-6 lg:items-center lg:gap-x-10">
+                            {
+                                topRatedLogos.map((e, i) => {
+                                    return (<div key={i}>
+                                        <Image src={e} alt={e} className="block m-auto" />
+                                    </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className="lg:hidden">
+                            <Slider {...smallDeviceSliderOne} className="w-full text-center">
+                                {
+                                    topRatedLogos.map((e, i) => {
+                                        return (<Image key={i} src={e} alt={e} className="max-w-[50%]" />)
+                                    })
+                                }
+                            </Slider>
                         </div>
                     </div>
                 </div>
@@ -283,288 +347,177 @@ const Page = () => {
                 <div className="py-[100px]">
                     <div className="container">
                         <div className="text-center mb-10">
-                            <h2 className="text-[40px] leading-[50px] text-black font-megat font-normal mb-3">
+                            <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-megat font-normal mb-3">
                                 Affordable Web <span className="text-[#f17724]">Design & Development <br /> Packages</span> At Your Fingertips!
                             </h2>
                             <p className="text-[16px] leading-[26px] text-black font-sans font-normal">
                                 Get beautifully designed, conversion driven websites at competitive pricing.
                             </p>
                         </div>
-                        <h2 className="text-[25px] leading-none text-[#2069ae] text-center font-sans font-semibold underline mb-10">
-                            STANDARD PACKAGES
-                        </h2>
-                        <div className="flex gap-x-5">
-                            <div className="basis-1/3">
-                                <div className="p-5 border-2 border-[#0d3163] rounded-2xl overflow-hidden relative">
-                                    <h4 className="text-[30px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[50px] py-[15px]">
-                                        Templated
-                                        <span className="absolute top-0 right-0 bottom-0 left-0 bg-[#0d3163] -z-10 rounded-r-full ml-[-30px]"></span>
-                                    </h4>
-                                    <h5 className="text-[40px] leading-none text-[#0d3163] font-sans font-bold my-5">
-                                        $299 <sup className="font-medium text-[#747474]"><del>$599</del></sup>
-                                    </h5>
-                                    <p className="text-[16px] leading-none text-black font-sans font-semibold">
-                                        Great for Individuals & Startups!
-                                    </p>
-                                    <div className={`overflow-y-auto h-52 my-10 ${styles.__packagesBlueScroll}`}>
-                                        <span className="text-[20px] leading-none text-[#0d3163] font-sans font-semibold">
-                                            Deliverables
-                                        </span>
-                                        <ul className="mt-5">
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>3 Page Website</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Theme Based Design</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Stock Photography</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Responsive Design</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Turnaround 3 Days</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Social Media Integration</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Contact Forms Included</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Content Not Included!</span>
-                                            </li>
-                                        </ul>
+                        {
+                            affordablepackages.map(({ title, packages }) => {
+                                return (<div key={title}>
+                                    <h2 className="text-[25px] leading-none text-[#2069ae] text-center font-sans font-semibold underline mb-10">
+                                        {title}
+                                    </h2>
+                                    <div className="xl:hidden">
+                                        <Slider {...smallDeviceSliderTwo} className="w-full">
+                                            {
+                                                packages.map((e, i) => {
+                                                    return (<div key={i}><div className="md:w-[95%] lg:w-[80%] m-auto">
+                                                        <div className={`p-5 md:p-3 lg:p-5 border-2 ${e.borderColor} rounded-2xl overflow-hidden relative`}>
+                                                            <h4 className="text-[24px] md:text-[30px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[50px] py-[15px]">
+                                                                {e.name}
+                                                                <span className={`absolute top-0 right-0 bottom-0 left-0 ${e.bgColor} -z-10 rounded-r-full ml-[-30px]`}></span>
+                                                            </h4>
+                                                            <h5 className={`text-[40px] leading-none ${e.textColor} font-sans font-bold my-5`}>
+                                                                ${e.discountedPrice} <sup className="font-medium text-[#747474]"><del>${e.originalPrice}</del></sup>
+                                                            </h5>
+                                                            <p className="text-[16px] leading-none text-black font-sans font-semibold">
+                                                                Great for Individuals & Startups!
+                                                            </p>
+                                                            <div className={`overflow-y-auto h-52 my-10 ${e.theme === "blue" ? styles.__packagesBlueScroll : styles.__packagesOrangeScroll}`}>
+                                                                <span className={`text-[20px] leading-none ${e.textColor} font-sans font-semibold`}>
+                                                                    Deliverables
+                                                                </span>
+                                                                <ul className="mt-5">
+                                                                    {
+                                                                        e.list.map((a, i) => {
+                                                                            return (<li key={i}
+                                                                                className="text-[14px] text-black font-normal flex items-start gap-2 leading-[22px] mb-3">
+                                                                                <Image src={e.icon} alt={e.icon} width={23} height={23} />
+                                                                                <span>{a}</span>
+                                                                            </li>)
+                                                                        })
+                                                                    }
+                                                                </ul>
+                                                            </div>
+                                                            <button type="button"
+                                                                className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#000000] mx-auto hover:${e.textColor} mb-5`}>
+                                                                Order Now!
+                                                            </button>
+                                                            <span className="block h-[2px] bg-[#eaeaea]"></span>
+                                                            <div className="flex justify-between mt-5 divide-x-2 divide-[#eaeaea] gap-x-5">
+                                                                <div className="basis-1/2">
+                                                                    <p className={`text-[10px] lg:text-[12px] leading-[22px] ${e.textColor} font-semibold`}>
+                                                                        Hosting Plans Available
+                                                                    </p>
+                                                                    <p className="text-[10px] lg:text-[12px] leading-[22px] text-black font-semibold">
+                                                                        Call for Maintenance Plans
+                                                                    </p>
+                                                                    <Link href="/" className={`flex items-center gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                        <Image src={e.chatIcon} alt="packagesChatIconBlue" width={30} height={30} />
+                                                                        <span>Live Chat Now</span>
+                                                                    </Link>
+                                                                </div>
+                                                                <div className="basis-1/2 text-end">
+                                                                    <p className={`text-[10px] lg:text-[12px] leading-[22px] ${e.textColor} font-semibold`}>
+                                                                        Call for Custom Pricing
+                                                                    </p>
+                                                                    <p className="text-[10px] lg:text-[12px] leading-[22px] text-black font-semibold">
+                                                                        Free 30 Min Consultation
+                                                                    </p>
+                                                                    <Link href="/" className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                        <span>XXX-XXX-XXXX</span>
+                                                                        <Image src={e.callIcon} alt="packagesCallIconBlue" width={30} height={30} />
+                                                                    </Link>
+                                                                </div>
+                                                            </div>
+                                                            <Image src={e.badge} alt="badge" width={120} height={121} className="absolute top-3 right-3" />
+                                                        </div>
+                                                    </div></div>)
+                                                })
+                                            }
+                                        </Slider>
+                                        {
+                                            packages.map((e, i) => {
+                                                return (<div className="hidden xl:block xl:basis-1/3" key={i}>
+                                                    <div className={`p-5 border-2 ${e.borderColor} rounded-2xl overflow-hidden relative`}>
+                                                        <h4 className="text-[30px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[50px] py-[15px]">
+                                                            {e.name}
+                                                            <span className={`absolute top-0 right-0 bottom-0 left-0 ${e.bgColor} -z-10 rounded-r-full ml-[-30px]`}></span>
+                                                        </h4>
+                                                        <h5 className={`text-[40px] leading-none ${e.textColor} font-sans font-bold my-5`}>
+                                                            ${e.discountedPrice} <sup className="font-medium text-[#747474]"><del>${e.originalPrice}</del></sup>
+                                                        </h5>
+                                                        <p className="text-[16px] leading-none text-black font-sans font-semibold">
+                                                            Great for Individuals & Startups!
+                                                        </p>
+                                                        <div className={`overflow-y-auto h-52 my-10 ${e.theme === "blue" ? styles.__packagesBlueScroll : styles.__packagesOrangeScroll}`}>
+                                                            <span className={`text-[20px] leading-none ${e.textColor} font-sans font-semibold`}>
+                                                                Deliverables
+                                                            </span>
+                                                            <ul className="mt-5">
+                                                                {
+                                                                    e.list.map((a, i) => {
+                                                                        return (<li key={i}
+                                                                            className="text-[14px] text-black font-normal flex items-start gap-2 leading-[22px] mb-3">
+                                                                            <Image src={e.icon} alt={e.icon} width={23} height={23} />
+                                                                            <span>{a}</span>
+                                                                        </li>)
+                                                                    })
+                                                                }
+                                                            </ul>
+                                                        </div>
+                                                        <button type="button"
+                                                            className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#000000] mx-auto hover:${e.textColor} mb-5`}>
+                                                            Order Now!
+                                                        </button>
+                                                        <span className="block h-[2px] bg-[#eaeaea]"></span>
+                                                        <div className="flex justify-between mt-5 divide-x-2 divide-[#eaeaea] gap-x-5">
+                                                            <div className="basis-1/2">
+                                                                <p className={`text-[12px] leading-[22px] ${e.textColor} font-semibold`}>
+                                                                    Hosting Plans Available
+                                                                </p>
+                                                                <p className="text-[12px] leading-[22px] text-black font-semibold">
+                                                                    Call for Maintenance Plans
+                                                                </p>
+                                                                <Link href="/" className={`flex items-center gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                    <Image src={e.chatIcon} alt="packagesChatIconBlue" width={30} height={30} />
+                                                                    <span>Live Chat Now</span>
+                                                                </Link>
+                                                            </div>
+                                                            <div className="basis-1/2 text-end">
+                                                                <p className={`text-[12px] leading-[22px] ${e.textColor} font-semibold`}>
+                                                                    Call for Custom Pricing
+                                                                </p>
+                                                                <p className="text-[12px] leading-[22px] text-black font-semibold">
+                                                                    Free 30 Min Consultation
+                                                                </p>
+                                                                <Link href="/" className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                    <span>XXX-XXX-XXXX</span>
+                                                                    <Image src={e.callIcon} alt="packagesCallIconBlue" width={30} height={30} />
+                                                                </Link>
+                                                            </div>
+                                                        </div>
+                                                        <Image src={e.badge} alt="badge" width={120} height={121} className="absolute top-3 right-3" />
+                                                    </div>
+                                                </div>)
+                                            })
+                                        }
                                     </div>
-                                    <button type="button" className="w-max px-10 rounded-full h-[50px] block bg-[#0d3163] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#0d3163] mx-auto hover:text-[#0d3163] mb-5">
-                                        Order Now!
-                                    </button>
-                                    <span className="block h-[2px] bg-[#eaeaea]"></span>
-                                    <div className="flex justify-between mt-5 divide-x-2 divide-[#eaeaea] gap-x-5">
-                                        <div className="basis-1/2">
-                                            <p className="text-[12px] leading-[22px] text-[#0d3163] font-semibold">
-                                                Hosting Plans Available
-                                            </p>
-                                            <p className="text-[12px] leading-[22px] text-black font-semibold">
-                                                Call for Maintenance Plans
-                                            </p>
-                                            <Link href="/" className="flex items-center gap-1 text-[12px] leading-[22px] font-semibold text-[#0d3163]">
-                                                <Image src={packagesChatIconBlue} alt="packagesChatIconBlue" />
-                                                <span>Live Chat Now</span>
-                                            </Link>
-                                        </div>
-                                        <div className="basis-1/2 text-end">
-                                            <p className="text-[12px] leading-[22px] text-[#0d3163] font-semibold">
-                                                Call for Custom Pricing
-                                            </p>
-                                            <p className="text-[12px] leading-[22px] text-black font-semibold">
-                                                Free 30 Min Consultation
-                                            </p>
-                                            <Link href="/" className="flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold text-[#0d3163]">
-                                                <span>XXX-XXX-XXXX</span>
-                                                <Image src={packagesCallIconBlue} alt="packagesCallIconBlue" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    <Image src={packagesBadge} alt="packagesBadge" className="absolute top-3 right-3" />
                                 </div>
-                            </div>
-                            <div className="basis-1/3">
-                                <div className="p-5 border-2 border-[#f17724] rounded-2xl overflow-hidden relative">
-                                    <h4 className="text-[30px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[50px] py-[15px]">
-                                        Professional
-                                        <span className="absolute top-0 right-0 bottom-0 left-0 bg-[#f17724] -z-10 rounded-r-full ml-[-30px]"></span>
-                                    </h4>
-                                    <h5 className="text-[40px] leading-none text-[#f17724] font-sans font-bold my-5">
-                                        $299 <sup className="font-medium text-[#747474]"><del>$599</del></sup>
-                                    </h5>
-                                    <p className="text-[16px] leading-none text-black font-sans font-semibold">
-                                        Great for Individuals & Startups!
-                                    </p>
-                                    <div className={`overflow-y-auto h-52 my-10 ${styles.__packagesOrangeScroll}`}>
-                                        <span className="text-[20px] leading-none text-[#f17724] font-sans font-semibold">
-                                            Deliverables
-                                        </span>
-                                        <ul className="mt-5">
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
-                                                <span>3 Page Website</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
-                                                <span>Theme Based Design</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
-                                                <span>Stock Photography</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
-                                                <span>Responsive Design</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
-                                                <span>Turnaround 3 Days</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
-                                                <span>Social Media Integration</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
-                                                <span>Contact Forms Included</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
-                                                <span>Content Not Included!</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <button type="button" className="w-max px-10 rounded-full h-[50px] block bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] mx-auto hover:text-[#f17724] mb-5">
-                                        Order Now!
-                                    </button>
-                                    <span className="block h-[2px] bg-[#eaeaea]"></span>
-                                    <div className="flex justify-between mt-5 divide-x-2 divide-[#eaeaea] gap-x-5">
-                                        <div className="basis-1/2">
-                                            <p className="text-[12px] leading-[22px] text-[#f17724] font-semibold">
-                                                Hosting Plans Available
-                                            </p>
-                                            <p className="text-[12px] leading-[22px] text-black font-semibold">
-                                                Call for Maintenance Plans
-                                            </p>
-                                            <Link href="/" className="flex items-center gap-1 text-[12px] leading-[22px] font-semibold text-[#f17724]">
-                                                <Image src={packagesChatIconOrange} alt="packagesChatIconOrange" />
-                                                <span>Live Chat Now</span>
-                                            </Link>
-                                        </div>
-                                        <div className="basis-1/2 text-end">
-                                            <p className="text-[12px] leading-[22px] text-[#f17724] font-semibold">
-                                                Call for Custom Pricing
-                                            </p>
-                                            <p className="text-[12px] leading-[22px] text-black font-semibold">
-                                                Free 30 Min Consultation
-                                            </p>
-                                            <Link href="/" className="flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold text-[#f17724]">
-                                                <span>XXX-XXX-XXXX</span>
-                                                <Image src={packagesCallIconOrange} alt="packagesCallIconOrange" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    <Image src={packagesBadge} alt="packagesBadge" className="absolute top-3 right-3" />
-                                </div>
-                            </div>
-                            <div className="basis-1/3">
-                                <div className="p-5 border-2 border-[#0d3163] rounded-2xl overflow-hidden relative">
-                                    <h4 className="text-[30px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[50px] py-[15px]">
-                                        Templated
-                                        <span className="absolute top-0 right-0 bottom-0 left-0 bg-[#0d3163] -z-10 rounded-r-full ml-[-30px]"></span>
-                                    </h4>
-                                    <h5 className="text-[40px] leading-none text-[#0d3163] font-sans font-bold my-5">
-                                        $299 <sup className="font-medium text-[#747474]"><del>$599</del></sup>
-                                    </h5>
-                                    <p className="text-[16px] leading-none text-black font-sans font-semibold">
-                                        Great for Individuals & Startups!
-                                    </p>
-                                    <div className={`overflow-y-auto h-52 my-10 ${styles.__packagesBlueScroll}`}>
-                                        <span className="text-[20px] leading-none text-[#0d3163] font-sans font-semibold">
-                                            Deliverables
-                                        </span>
-                                        <ul className="mt-5">
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>3 Page Website</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Theme Based Design</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Stock Photography</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Responsive Design</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Turnaround 3 Days</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Social Media Integration</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Contact Forms Included</span>
-                                            </li>
-                                            <li className="text-[16px] text-black font-normal flex items-start gap-2 leading-[24px] mb-3">
-                                                <Image src={packagesCheckBlue} alt="packagesCheckBlue" />
-                                                <span>Content Not Included!</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <button type="button" className="w-max px-10 rounded-full h-[50px] block bg-[#0d3163] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#0d3163] mx-auto hover:text-[#0d3163] mb-5">
-                                        Order Now!
-                                    </button>
-                                    <span className="block h-[2px] bg-[#eaeaea]"></span>
-                                    <div className="flex justify-between mt-5 divide-x-2 divide-[#eaeaea] gap-x-5">
-                                        <div className="basis-1/2">
-                                            <p className="text-[12px] leading-[22px] text-[#0d3163] font-semibold">
-                                                Hosting Plans Available
-                                            </p>
-                                            <p className="text-[12px] leading-[22px] text-black font-semibold">
-                                                Call for Maintenance Plans
-                                            </p>
-                                            <Link href="/" className="flex items-center gap-1 text-[12px] leading-[22px] font-semibold text-[#0d3163]">
-                                                <Image src={packagesChatIconBlue} alt="packagesChatIconBlue" />
-                                                <span>Live Chat Now</span>
-                                            </Link>
-                                        </div>
-                                        <div className="basis-1/2 text-end">
-                                            <p className="text-[12px] leading-[22px] text-[#0d3163] font-semibold">
-                                                Call for Custom Pricing
-                                            </p>
-                                            <p className="text-[12px] leading-[22px] text-black font-semibold">
-                                                Free 30 Min Consultation
-                                            </p>
-                                            <Link href="/" className="flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold text-[#0d3163]">
-                                                <span>XXX-XXX-XXXX</span>
-                                                <Image src={packagesCallIconBlue} alt="packagesCallIconBlue" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    <Image src={packagesBadge} alt="packagesBadge" className="absolute top-3 right-3" />
-                                </div>
-                            </div>
-                        </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </section>
             <section>
                 <div className="container">
-                    <div className="py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/packages/bg.jpg')] bg-cover overflow-hidden rounded-2xl px-5">
-                        <div className="flex gap-x-5">
-                            <div className="basis-3/4">
-                                <h2 className="text-[40px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[50px] py-[15px] z-10 mb-10">
+                    <div className="py-[50px] md:py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/packages/bg.jpg')] bg-cover overflow-hidden rounded-2xl px-5 relative">
+                        <div className="xl:flex xl:gap-x-5">
+                            <div className="xl:basis-3/4">
+                                <h2 className="text-[30px] lg:text-[40px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[50px] py-[15px] z-10 mb-10">
                                     The Ultimate
                                     <span className="absolute top-0 right-0 bottom-0 left-0 bg-[#f17724] -z-10 rounded-r-full ml-[-30px]"></span>
                                 </h2>
-                                <p className="text-[16px] leading-[26px] text-[#ffffff] font-sans font-normal">
+                                <p className="text-[16px] leading-[26px] text-[#ffffff] font-sans font-normal text-justify md:text-left">
                                     Experience the ultimate internet marketing package available! From SEO and PPC to Social Media and Branding, our all-inclusive solution provides website owners with the tools to maximize and monetize every facet of their digital marketing strategy, resulting in a surge of leads and revenue.
                                 </p>
-                                <div className="flex gap-x-2 mt-10">
+                                <div className="hidden xl:flex gap-x-2 mt-10">
                                     <div className="basis-1/3">
-                                        <h5 className="text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
+                                        <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
                                             {ultimatepackage[0].name}
                                         </h5>
                                         <ul>
@@ -582,7 +535,7 @@ const Page = () => {
                                         </ul>
                                     </div>
                                     <div className="basis-1/3">
-                                        <h5 className="text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
+                                        <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
                                             {ultimatepackage[1].name}
                                         </h5>
                                         <ul>
@@ -598,7 +551,7 @@ const Page = () => {
                                                 })
                                             }
                                         </ul>
-                                        <h5 className="text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
+                                        <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
                                             {ultimatepackage[2].name}
                                         </h5>
                                         <ul>
@@ -616,7 +569,7 @@ const Page = () => {
                                         </ul>
                                     </div>
                                     <div className="basis-1/3">
-                                        <h5 className="text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
+                                        <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
                                             {ultimatepackage[3].name}
                                         </h5>
                                         <ul>
@@ -632,7 +585,7 @@ const Page = () => {
                                                 })
                                             }
                                         </ul>
-                                        <h5 className="text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
+                                        <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
                                             {ultimatepackage[4].name}
                                         </h5>
                                         <ul>
@@ -648,7 +601,7 @@ const Page = () => {
                                                 })
                                             }
                                         </ul>
-                                        <h5 className="text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
+                                        <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
                                             {ultimatepackage[5].name}
                                         </h5>
                                         <ul>
@@ -666,11 +619,117 @@ const Page = () => {
                                         </ul>
                                     </div>
                                 </div>
+                                <div className="xl:hidden my-10">
+                                    <Slider {...smallDeviceSliderTwo} className="w-full">
+                                        <div>
+                                            <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
+                                                {ultimatepackage[0].name}
+                                            </h5>
+                                            <ul>
+                                                {
+                                                    ultimatepackage[0].lists.map((e, i) => {
+                                                        return (
+                                                            <li key={i}
+                                                                className="text-[14px] text-[#ffffff] font-normal flex items-start gap-2 leading-[22px] mb-2">
+                                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
+                                                                <span>{e}</span>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
+                                                {ultimatepackage[1].name}
+                                            </h5>
+                                            <ul>
+                                                {
+                                                    ultimatepackage[1].lists.map((e, i) => {
+                                                        return (
+                                                            <li key={i}
+                                                                className="text-[14px] text-[#ffffff] font-normal flex items-start gap-2 leading-[22px] mb-2">
+                                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
+                                                                <span>{e}</span>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                            <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
+                                                {ultimatepackage[2].name}
+                                            </h5>
+                                            <ul>
+                                                {
+                                                    ultimatepackage[2].lists.map((e, i) => {
+                                                        return (
+                                                            <li key={i}
+                                                                className="text-[14px] text-[#ffffff] font-normal flex items-start gap-2 leading-[22px] mb-2">
+                                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
+                                                                <span>{e}</span>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
+                                                {ultimatepackage[3].name}
+                                            </h5>
+                                            <ul>
+                                                {
+                                                    ultimatepackage[3].lists.map((e, i) => {
+                                                        return (
+                                                            <li key={i}
+                                                                className="text-[14px] text-[#ffffff] font-normal flex items-start gap-2 leading-[22px] mb-2">
+                                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
+                                                                <span>{e}</span>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                            <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
+                                                {ultimatepackage[4].name}
+                                            </h5>
+                                            <ul>
+                                                {
+                                                    ultimatepackage[4].lists.map((e, i) => {
+                                                        return (
+                                                            <li key={i}
+                                                                className="text-[14px] text-[#ffffff] font-normal flex items-start gap-2 leading-[22px] mb-2">
+                                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
+                                                                <span>{e}</span>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                            <h5 className="text-[18px] xl:text-[22px] leading-none text-[#ffffff] font-sans font-semibold my-3">
+                                                {ultimatepackage[5].name}
+                                            </h5>
+                                            <ul>
+                                                {
+                                                    ultimatepackage[5].lists.map((e, i) => {
+                                                        return (
+                                                            <li key={i}
+                                                                className="text-[14px] text-[#ffffff] font-normal flex items-start gap-2 leading-[22px] mb-2">
+                                                                <Image src={packagesCheckOrange} alt="packagesCheckOrange" />
+                                                                <span>{e}</span>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                        </div>
+                                    </Slider>
+                                </div>
                             </div>
-                            <div className="basis-3/12">
-                                <Image src={packagesBadgeTwo} alt="packagesBadgeTwo" className="block mx-auto mb-10" />
+                            <div className="xl:basis-3/12 sm:grid xl:block sm:grid-cols-2 sm:gap-5">
+                                <Image src={packagesBadgeTwo} alt="packagesBadgeTwo" className="block mx-auto mb-10 md:absolute xl:relative top-3 right-5" />
                                 <div className="relative z-10 p-5 pr-0 mb-5">
-                                    <h5 className="text-[22px] leading-none text-[#ffffff] font-sans font-semibold mb-3">
+                                    <h5 className="text-[18px] xl: leading-none text-[#ffffff] font-sans font-semibold mb-3">
                                         {ultimatepackage[6].name}
                                     </h5>
                                     <ul>
@@ -686,25 +745,27 @@ const Page = () => {
                                             })
                                         }
                                     </ul>
-                                    <span className="absolute top-0 right-0 bottom-0 left-0 bg-[#0e2d63] -z-10  mr-[-30px]"></span>
+                                    <span className="absolute top-0 right-0 bottom-0 left-0 bg-[#0e2d63] -z-10  xl:mr-[-30px]"></span>
                                 </div>
-                                <h5 className="text-[22px] leading-[32px] text-[#ffffff] font-sans font-semibold mb-5">
-                                    CALL FOR CUSTOM <br /> PRICING & STRATEGY
-                                </h5>
-                                <p className="text-[16px] leading-[22px] text-[#f17724] font-semibold mb-3">
-                                    Free 30 Min Consultation
-                                </p>
-                                <Link href="/" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
-                                    <Image src={packagesChatIconOrange} alt="packagesChatIconOrange" />
-                                    <span>Live Chat Now</span>
-                                </Link>
-                                <Link href="/" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
-                                    <Image src={packagesCallIconOrange} alt="packagesCallIconOrange" />
-                                    <span>XXX-XXX-XXXX</span>
-                                </Link>
-                                <button type="button" className="w-full rounded-full h-[50px] block bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] mx-auto hover:text-[#f17724] mb-5">
-                                    Request A Quote Now
-                                </button>
+                                <div>
+                                    <h5 className="text-[18px] xl:text-[22px] leading-[32px] text-[#ffffff] font-sans font-semibold mb-5">
+                                        CALL FOR CUSTOM <br /> PRICING & STRATEGY
+                                    </h5>
+                                    <p className="text-[16px] leading-[22px] text-[#f17724] font-semibold mb-3">
+                                        Free 30 Min Consultation
+                                    </p>
+                                    <Link href="/" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
+                                        <Image src={packagesChatIconOrange} alt="packagesChatIconOrange" />
+                                        <span>Live Chat Now</span>
+                                    </Link>
+                                    <Link href="/" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
+                                        <Image src={packagesCallIconOrange} alt="packagesCallIconOrange" />
+                                        <span>XXX-XXX-XXXX</span>
+                                    </Link>
+                                    <button type="button" className="w-full rounded-full h-[50px] block bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] mx-auto hover:text-[#f17724] mb-5">
+                                        Request A Quote Now
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -714,7 +775,7 @@ const Page = () => {
                 <div className="bg-[#E9E9E9] py-[100px] mt-[100px]">
                     <div className="container">
                         <div className="text-center mb-10">
-                            <h2 className="text-[40px] leading-[50px] text-black font-megat font-normal mb-3">
+                            <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-megat font-normal mb-3">
                                 Explore Our Collection of <span className="text-[#f17724]">Web <br /> Design & Development</span> Projects!
                             </h2>
                             <p className="text-[16px] leading-[26px] text-black font-sans font-normal">
@@ -1002,7 +1063,7 @@ const Page = () => {
                                         <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
                                         <input type="text" placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
                                     </div>
-                                    <select name="" id="" className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]">
+                                    <select name="" id="" defaultValue="Home" className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]">
                                         <option disabled selected>Desired Services.*</option>
                                         <option value="1">Item 1</option>
                                         <option value="2">Item 2</option>
