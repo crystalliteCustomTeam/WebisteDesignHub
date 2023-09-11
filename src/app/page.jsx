@@ -84,20 +84,8 @@ const Page = () => {
                 ],
             },
             {
-                value: "digitalMarketing",
-                label: "digital marketing",
-                images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
-                ],
-            },
-            {
-                value: "seoServices",
-                label: "seo services",
+                value: "uiux",
+                label: "UI/UX",
                 images: [
                     "https://www.logodesignscenter.com/images/sample1.jpg",
                     "https://www.logodesignscenter.com/images/sample2.jpg",
@@ -110,18 +98,6 @@ const Page = () => {
             {
                 value: "applicationDesign",
                 label: "application design",
-                images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
-                ],
-            },
-            {
-                value: "creativeCopywriting",
-                label: "creative copywriting",
                 images: [
                     "https://www.logodesignscenter.com/images/sample1.jpg",
                     "https://www.logodesignscenter.com/images/sample2.jpg",

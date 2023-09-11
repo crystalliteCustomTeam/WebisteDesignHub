@@ -522,7 +522,7 @@ const Page = () => {
                                                             </ul>
                                                         </div>
                                                         <button type="button"
-                                                            className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#000000] mx-auto hover:${e.textColor} mb-5`}>
+                                                            className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold ${e.textColorHover} hover:ring-4 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
                                                             Order Now!
                                                         </button>
                                                         <span className="block h-[2px] bg-[#eaeaea]"></span>
