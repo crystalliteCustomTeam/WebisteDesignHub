@@ -108,7 +108,7 @@ const Page = () => {
         autoplay: true,
         speed: 500,
         autoplaySpeed: 3000,
-        adaptiveHeight: true
+        adaptiveHeight: false
     };
     // Hero Numbers
     let smallDeviceSliderOne = {
@@ -165,6 +165,33 @@ const Page = () => {
             }
         ]
     };
+    let smallDeviceSliderThree = {
+        dots: true,
+        arrows: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        fade: false,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 3000,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     // Hero Points Array
     let heroPoints = [
         "Fully Responsive Websites",
@@ -205,6 +232,14 @@ const Page = () => {
         topRatedFour,
         topRatedFive,
         topRatedSix
+    ]
+    // Top Rated Logos Array 
+    let awardsLogo = [
+        topRatedSeven,
+        topRatedEight,
+        topRatedNine,
+        topRatedTen,
+        topRatedEleven
     ]
     return (
         <main>
@@ -429,6 +464,8 @@ const Page = () => {
                                                 })
                                             }
                                         </Slider>
+                                    </div>
+                                    <div className="hidden xl:flex xl:gap-5">
                                         {
                                             packages.map((e, i) => {
                                                 return (<div className="hidden xl:block xl:basis-1/3" key={i}>
@@ -830,27 +867,27 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/banner/bg.jpg')] bg-cover bg-no-repeat">
+                <div className="py-[50px] md:py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/banner/bg.jpg')] bg-cover bg-no-repeat">
                     <div className="container">
-                        <h2 className="text-[40px] leading-[50px] text-[#ffffff] font-sans font-bold text-center">
+                        <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-[#ffffff] font-sans font-bold text-center">
                             Connect With Us to Get <span className="text-[#f17724]">Custom Quote</span> <br />
                             On Your Web Project <span className="text-[#f17724]">Today!</span>
                         </h2>
-                        <div className="flex items-center justify-center w-[80%] m-auto mt-10 divide-x-2 divide-[#2069ae]">
-                            <div className="basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                        <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#2069ae]">
+                            <div className="basis-full sm:basis-1/2 md:basis-1/3">
+                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerCallIcon} alt="bannerCallIcon" />
                                     <span>XXX-XXX-XXXX</span>
                                 </Link>
                             </div>
-                            <div className="basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                            <div className="basis-full sm:basis-1/2 md:basis-1/3">
+                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerChatIcon} alt="bannerChatIcon" />
                                     <span>Live Chat Now</span>
                                 </Link>
                             </div>
-                            <div className="basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                            <div className="basis-full sm:basis-1/2 md:basis-1/3">
+                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerArrowIcon} alt="bannerArrowIcon" />
                                     <span>Request A Quote</span>
                                 </Link>
@@ -860,29 +897,29 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="py-[100px]">
+                <div className="py-[50px] md:py-[100px]">
                     <div className="container">
                         <div className="text-center mb-10">
-                            <h2 className="text-[40px] leading-[50px] text-black font-megat font-normal mb-3">
+                            <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-megat font-normal mb-3">
                                 Here is how our <span className="text-[#f17724]">Web Design <br /> & Development</span> Process Works!
                             </h2>
                             <p className="text-[16px] leading-[26px] text-black font-sans font-normal">
                                 We'll have your new website up-and-running within a master of weeks! Here's how the process works:
                             </p>
                         </div>
-                        <div className="grid gap-5 grid-cols-3">
+                        <div className="hidden lg:grid lg:gap-5 lg:grid-cols-3">
                             {
                                 processData.map(({ title, content, image }, i) => {
                                     return (
                                         <div className="text-center" key={i}>
                                             <Image src={image} alt={title} width={128} height={128} className="inline-block mb-3" />
-                                            <h4 className="text-[20px] leading-[30px] w-max mx-auto text-black font-sans font-semibold mb-3 relative z-10">
+                                            <h4 className="text-[18px] xl:text-[20px] leading-[28px] xl:leading-[30px] w-max mx-auto text-black font-sans font-semibold mb-3 relative z-10">
                                                 {title}
                                                 <span className="absolute top-0 left-[-40px] bg-[#f17724] -z-10 rounded-[100px] text-white w-[30px] h-[30px] leading-[30px]">
                                                     {i + 1}
                                                 </span>
                                             </h4>
-                                            <p className="text-[16px] leading-[26px] text-[#747474] font-sans font-normal">
+                                            <p className="text-[14px] xl:text-[16px] leading-[26px] text-[#747474] font-sans font-normal">
                                                 {content}
                                             </p>
                                         </div>
@@ -890,18 +927,42 @@ const Page = () => {
                                 })
                             }
                         </div>
+                        <div className="lg:hidden">
+                            <Slider {...smallDeviceSliderThree}>
+                                {
+                                    processData.map(({ title, content, image }, i) => {
+                                        return (
+                                            <div className="text-center" key={i}>
+                                                <div className="w-[80%] m-auto mb-5">
+                                                    <Image src={image} alt={title} width={128} height={128} className="inline-block mx-auto mb-3" />
+                                                    <h4 className="text-[20px] leading-[30px] w-max mx-auto text-black font-sans font-semibold mb-3 relative z-10">
+                                                        {title}
+                                                        <span className="absolute top-0 left-[-40px] bg-[#f17724] -z-10 rounded-[100px] text-white w-[30px] h-[30px] leading-[30px]">
+                                                            {i + 1}
+                                                        </span>
+                                                    </h4>
+                                                    <p className="text-[16px] leading-[26px] text-[#747474] font-sans font-normal">
+                                                        {content}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div className="py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/comprehensive-platform/bg.jpg')] bg-cover bg-no-repeat">
+                <div className="py-[50px] md:py-[100px] bg-[#123380] md:bg-[url('../../public/landing-pages/website-design-develop-usa/comprehensive-platform/bg.jpg')] bg-cover bg-no-repeat">
                     <div className="container">
                         <div className="text-center mb-10">
-                            <h2 className="text-[40px] leading-[50px] text-[#ffffff] font-megat font-normal mb-3">
+                            <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-[#ffffff] font-megat font-normal mb-3">
                                 A Comprehensive <span className="text-[#f17724]">Web Design & Development</span> Process <br />
                                 to Rule Every Platform
                             </h2>
-                            <p className="text-[16px] leading-[26px] text-[#ffffff] font-sans font-normal">
+                            <p className="text-[14px] lg:text-[16px] leading-[26px] text-[#ffffff] font-sans font-normal">
                                 Your target audience will have a smooth and positive user experience on all <br />
                                 platforms including mobile devices, tablets and desktop PC's
                             </p>
@@ -911,14 +972,14 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="bg-[#f6f6f6] py-[100px]">
+                <div className="bg-[#f6f6f6] py-[50px] md:py-[100px]">
                     <div className="container relative z-10">
                         <div className="grid grid-cols-1 md:grid-cols-6 items-center gap-5 xl:gap-0">
                             <div className="hidden md:block md:col-span-2">
                                 <Image src={googleReviews} alt="googleReviews" />
                             </div>
                             <div className="md:col-span-4 xl:px-10">
-                                <h2 className="text-[40px] leading-[50px] text-black font-sans font-bold mb-3">
+                                <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-sans font-bold mb-3">
                                     Check Out What Our <span className="text-[#f17724]">Clients <br /> Say About Us!</span>
                                 </h2>
                                 <Slider {...reviewsSlider} className="__reviewsSlider">
@@ -954,27 +1015,27 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/banner/bg.jpg')] bg-cover bg-no-repeat">
+                <div className="py-[50px] md:py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/banner/bg.jpg')] bg-cover bg-no-repeat">
                     <div className="container">
-                        <h2 className="text-[40px] leading-[50px] text-[#ffffff] font-sans font-bold text-center">
+                        <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-[#ffffff] font-sans font-bold text-center">
                             Connect With Us to Get <span className="text-[#f17724]">Custom Quote</span> <br />
                             On Your Web Project <span className="text-[#f17724]">Today!</span>
                         </h2>
-                        <div className="flex items-center justify-center w-[80%] m-auto mt-10 divide-x-2 divide-[#2069ae]">
-                            <div className="basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                        <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#2069ae]">
+                            <div className="basis-full sm:basis-1/2 md:basis-1/3">
+                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerCallIcon} alt="bannerCallIcon" />
                                     <span>XXX-XXX-XXXX</span>
                                 </Link>
                             </div>
-                            <div className="basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                            <div className="basis-full sm:basis-1/2 md:basis-1/3">
+                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerChatIcon} alt="bannerChatIcon" />
                                     <span>Live Chat Now</span>
                                 </Link>
                             </div>
-                            <div className="basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                            <div className="basis-full sm:basis-1/2 md:basis-1/3">
+                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerArrowIcon} alt="bannerArrowIcon" />
                                     <span>Request A Quote</span>
                                 </Link>
@@ -984,27 +1045,27 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="py-[100px]">
+                <div className="py-[50px] md:py-[100px]">
                     <div className="container">
                         <div className="text-center mb-10">
-                            <h2 className="text-[40px] leading-[50px] text-black font-megat font-normal mb-3">
+                            <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-megat font-normal mb-3">
                                 we build websites that bring <br /> <span className="text-[#f17724]">new visitors & increase sales!</span>
                             </h2>
                             <p className="text-[16px] leading-[26px] text-black font-sans font-normal">
                                 We'll have your new website up-and-running within a master of weeks! Here's how the process works:
                             </p>
                         </div>
-                        <div className="grid gap-5 grid-cols-3">
+                        <div className="hidden lg:grid lg:gap-5 lg:grid-cols-3">
                             {
                                 whatweData.map(({ title, content, image }, i) => {
                                     return (
                                         <div className="flex gap-5 items-start" key={i}>
                                             <Image src={image} alt={title} width={65} height={65} />
                                             <div>
-                                                <h4 className="text-[20px] leading-none text-black font-sans font-semibold mb-3">
+                                                <h4 className="text-[18px] xl:text-[20px] leading-none text-black font-sans font-semibold mb-3">
                                                     {title}
                                                 </h4>
-                                                <p className="text-[16px] leading-[26px] text-[#747474] font-sans font-normal">
+                                                <p className="text-[14px] xl:text-[16px] leading-[26px] text-[#747474] font-sans font-normal">
                                                     {content}
                                                 </p>
                                             </div>
@@ -1013,23 +1074,46 @@ const Page = () => {
                                 })
                             }
                         </div>
+                        <div className="lg:hidden">
+                            <Slider {...smallDeviceSliderThree}>
+                                {
+                                    whatweData.map(({ title, content, image }, i) => {
+                                        return (
+                                            <div key={i}>
+                                                <div className="w-[80%] m-auto mb-5 text-center">
+                                                    <Image src={image} alt={title} width={65} height={65} className="m-auto" />
+                                                    <div>
+                                                        <h4 className="text-[18px] leading-none text-black font-sans font-semibold my-3">
+                                                            {title}
+                                                        </h4>
+                                                        <p className="text-[14px leading-[24px] text-[#747474] font-sans font-normal">
+                                                            {content}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div className="py-[100px] bg-[#f6f6f6]">
+                <div className="py-[50px] md:py-[100px] bg-[#f6f6f6]">
                     <div className="container">
                         <div className="text-center mb-10">
-                            <h2 className="text-[40px] leading-[50px] text-black font-megat font-normal mb-3">
+                            <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-megat font-normal mb-3">
                                 Ready to Start Your <span className="text-[#f17724]">FREE 30 Min</span> Session
                             </h2>
                             <p className="text-[16px] leading-[26px] text-black font-sans font-normal">
                                 We'd love to hear from you. Fill out the form and well be in touch within 24 hours.
                             </p>
                         </div>
-                        <div className="flex gap-x-5">
-                            <div className="basis-1/2">
-                                <h3 className="text-[30px] leading-[40px] text-[#0d3163] font-sans font-semibold">
+                        <div className="flex flex-wrap lg:flex-nowrap gap-5">
+                            <div className="basis-full lg:basis-1/2">
+                                <h3 className="text-[20px] xl:text-[30px] leading-[30px] xl:leading-[40px] text-[#0d3163] font-sans font-semibold">
                                     Get A Free Digital Marketing <br /> Consultation & Get More Leads, Grow <br /> Revenue and Increase Sales
                                 </h3>
                                 <ul className="grid grid-cols-1 gap-y-5 mt-5">
@@ -1055,21 +1139,21 @@ const Page = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="basis-1/2">
+                            <div className="basis-full lg:basis-1/2">
                                 <form>
-                                    <div className="grid grid-cols-2 gap-3">
-                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="text" placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
+                                    <div className="grid grid-cols-1  md:grid-cols-2 gap-3">
+                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="text" placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
                                     </div>
-                                    <select name="" id="" defaultValue="Home" className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]">
-                                        <option disabled selected>Desired Services.*</option>
+                                    <select defaultValue="Desired Services.*" className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]">
+                                        <option disabled>Desired Services.*</option>
                                         <option value="1">Item 1</option>
                                         <option value="2">Item 2</option>
                                         <option value="3">Item 3</option>
                                     </select>
-                                    <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[16px] text-black my-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"></textarea>
+                                    <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black my-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"></textarea>
                                     <button type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724]">
                                         Get A Free Consultation
                                     </button>
@@ -1083,46 +1167,50 @@ const Page = () => {
                 <div className={`py-[100px] ${styles.__topRatedBg}`}>
                     <div className="container">
                         <div className="text-center mb-10">
-                            <h2 className="text-[40px] leading-[50px] text-[#0d3163] font-megat font-normal">
+                            <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-[#0d3163] font-megat font-normal">
                                 our awards & <span className="text-[#f17724]">partnerships</span>
                             </h2>
                         </div>
-                        <div className="grid grid-cols-6 items-center gap-x-10">
-                            <div>
-                                <Image src={topRatedOne} alt="topRatedOne" />
-                            </div>
-                            <div>
-                                <Image src={topRatedTwo} alt="topRatedTwo" />
-                            </div>
-                            <div>
-                                <Image src={topRatedThree} alt="topRatedThree" />
-                            </div>
-                            <div>
-                                <Image src={topRatedFour} alt="topRatedFour" />
-                            </div>
-                            <div>
-                                <Image src={topRatedFive} alt="topRatedFive" />
-                            </div>
-                            <div>
-                                <Image src={topRatedSix} alt="topRatedSix" />
-                            </div>
+                        <div className="hidden lg:grid lg:grid-cols-6 lg:items-center lg:gap-x-10">
+                            {
+                                topRatedLogos.map((e, i) => {
+                                    return (<div key={i}>
+                                        <Image src={e} alt={e} className="block m-auto" />
+                                    </div>
+                                    )
+                                })
+                            }
                         </div>
-                        <div className="grid grid-cols-5 items-center gap-x-10 mt-10">
-                            <div>
-                                <Image src={topRatedSeven} alt="topRatedSeven" className="block m-auto" />
-                            </div>
-                            <div>
-                                <Image src={topRatedEight} alt="topRatedEight" className="block m-auto" />
-                            </div>
-                            <div>
-                                <Image src={topRatedNine} alt="topRatedNine" className="block m-auto" />
-                            </div>
-                            <div>
-                                <Image src={topRatedTen} alt="topRatedTen" className="block m-auto" />
-                            </div>
-                            <div>
-                                <Image src={topRatedEleven} alt="topRatedEleven" className="block m-auto" />
-                            </div>
+                        <div className="lg:hidden">
+                            <Slider {...smallDeviceSliderOne} className="w-full text-center">
+                                {
+                                    topRatedLogos.map((e, i) => {
+                                        return (<Image key={i} src={e} alt={e} className="max-w-[50%]" />)
+                                    })
+                                }
+                            </Slider>
+                        </div>
+                        <div className="hidden lg:grid lg:grid-cols-5 items-center gap-x-10 mt-10">
+                            {
+                                awardsLogo.map((e, i) => {
+                                    return (<div key={i}>
+                                        <Image src={e} alt={e} className="block m-auto" />
+                                    </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className="lg:hidden">
+                            <Slider {...smallDeviceSliderOne}>
+                                {
+                                    awardsLogo.map((e, i) => {
+                                        return (<div key={i}>
+                                            <Image src={e} alt={e} className="block m-auto max-w-[80%]" />
+                                        </div>
+                                        )
+                                    })
+                                }
+                            </Slider>
                         </div>
                     </div>
                 </div>
