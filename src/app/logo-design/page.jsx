@@ -61,8 +61,8 @@ const Page = () => {
         btnColor: "text-black",
         tabs: [
             {
-                value: "logoDesign",
-                label: "logo design",
+                value: "abstractmark",
+                label: "Abstract Mark",
                 images: [
                     "https://www.logodesignscenter.com/images/sample1.jpg",
                     "https://www.logodesignscenter.com/images/sample2.jpg",
@@ -73,8 +73,8 @@ const Page = () => {
                 ],
             },
             {
-                value: "websiteDevelopment",
-                label: "website development",
+                value: "emblem",
+                label: "Emblem",
                 images: [
                     "https://www.logodesignscenter.com/images/sample1.jpg",
                     "https://www.logodesignscenter.com/images/sample2.jpg",
@@ -85,8 +85,8 @@ const Page = () => {
                 ],
             },
             {
-                value: "digitalMarketing",
-                label: "digital marketing",
+                value: "letter",
+                label: "Letter",
                 images: [
                     "https://www.logodesignscenter.com/images/sample1.jpg",
                     "https://www.logodesignscenter.com/images/sample2.jpg",
@@ -97,8 +97,8 @@ const Page = () => {
                 ],
             },
             {
-                value: "seoServices",
-                label: "seo services",
+                value: "wordmark",
+                label: "Wordmark",
                 images: [
                     "https://www.logodesignscenter.com/images/sample1.jpg",
                     "https://www.logodesignscenter.com/images/sample2.jpg",
@@ -109,8 +109,8 @@ const Page = () => {
                 ],
             },
             {
-                value: "applicationDesign",
-                label: "application design",
+                value: "mascot",
+                label: "Mascot",
                 images: [
                     "https://www.logodesignscenter.com/images/sample1.jpg",
                     "https://www.logodesignscenter.com/images/sample2.jpg",
@@ -121,8 +121,32 @@ const Page = () => {
                 ],
             },
             {
-                value: "creativeCopywriting",
-                label: "creative copywriting",
+                value: "2dlogos",
+                label: "2D Logos",
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
+            },
+            {
+                value: "3dlogos",
+                label: "3D Logos",
+                images: [
+                    "https://www.logodesignscenter.com/images/sample1.jpg",
+                    "https://www.logodesignscenter.com/images/sample2.jpg",
+                    "https://www.logodesignscenter.com/images/sample3.jpg",
+                    "https://www.logodesignscenter.com/images/sample%204.jpg",
+                    "https://www.logodesignscenter.com/images/sample5.jpg",
+                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                ],
+            },
+            {
+                value: "illustrative",
+                label: "Illustrative",
                 images: [
                     "https://www.logodesignscenter.com/images/sample1.jpg",
                     "https://www.logodesignscenter.com/images/sample2.jpg",

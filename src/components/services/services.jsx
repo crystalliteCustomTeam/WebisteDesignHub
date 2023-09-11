@@ -77,18 +77,17 @@ const Services = ({ content }) => {
                             dangerouslySetInnerHTML={{ __html: desc.replace(/\n/g, "<br className='hidden md:block' />") }} />
                     </div>
                     <Tabs value={activeTab} className="block">
-                        <TabsHeader indicatorProps={{ className: "shadow-none bg-transparent rounded-none" }} className="justify-center p-0 pb-10">
-                            {tabs.map(({ value, label }) => (
-                                <Tab key={value}
-                                    value={value}
-                                    onClick={() => setActiveTab(value)} className="w-max">
-                                    <div className="flex items-center justify-between">
-                                        <h3 className={`text-xl font-semiBold ${activeTab === value ? "text-[#7337BB]" : "text-[#202020]"}`}>
+                        <TabsHeader indicatorProps={{ className: "hidden" }} className="bg-transparent p-0 flex justify-center gap-3 md:gap-0 flex-wrap md:flex-nowrap md:justify-between mb-10">
+                            {
+                                tabs.map(({ value, label }) => {
+                                    return (
+                                        <Tab value={value} key={value} onClick={() => setActiveTab(value)}
+                                            className={`${activeTab === value ? "text-white border-[#0d3163] bg-[#0d3163]" : "border-[#707070]"} border-2 font-sans font-medium text-base rounded-[50px] w-max lg:w-[130px] xl:w-[150px] py-[0.5rem] px-[0.6rem] lg:px-0 hover:bg-[#0d3163] hover:border-[#0d3163] hover:text-white`}>
                                             {label}
-                                        </h3>
-                                    </div>
-                                </Tab>
-                            ))}
+                                        </Tab>
+                                    );
+                                })
+                            }
                         </TabsHeader>
                         <TabsBody>
                             {tabs.map(({ value, images }) => (

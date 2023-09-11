@@ -45,6 +45,31 @@ import allOne from "media/landing-pages/website-design-develop/portfolios/all/on
 import allTwo from "media/landing-pages/website-design-develop/portfolios/all/two.png";
 import allThree from "media/landing-pages/website-design-develop/portfolios/all/three.png";
 import allFour from "media/landing-pages/website-design-develop/portfolios/all/four.png";
+// E-Commerce 
+import ecommerceOne from "media/landing-pages/website-design-develop/portfolios/ecommerce/one.png";
+import ecommerceTwo from "media/landing-pages/website-design-develop/portfolios/ecommerce/two.png";
+import ecommerceThree from "media/landing-pages/website-design-develop/portfolios/ecommerce/three.png";
+import ecommerceFour from "media/landing-pages/website-design-develop/portfolios/ecommerce/four.png";
+// Fashion 
+import fashionOne from "media/landing-pages/website-design-develop/portfolios/fashion/one.png";
+import fashionTwo from "media/landing-pages/website-design-develop/portfolios/fashion/two.png";
+import fashionThree from "media/landing-pages/website-design-develop/portfolios/fashion/three.png";
+import fashionFour from "media/landing-pages/website-design-develop/portfolios/fashion/four.png";
+// Food 
+import foodOne from "media/landing-pages/website-design-develop/portfolios/food/one.png";
+import foodTwo from "media/landing-pages/website-design-develop/portfolios/food/two.png";
+import foodThree from "media/landing-pages/website-design-develop/portfolios/food/three.png";
+import foodFour from "media/landing-pages/website-design-develop/portfolios/food/four.png";
+// Real Estate 
+import realestateOne from "media/landing-pages/website-design-develop/portfolios/realestate/one.png";
+import realestateTwo from "media/landing-pages/website-design-develop/portfolios/realestate/two.png";
+import realestateThree from "media/landing-pages/website-design-develop/portfolios/realestate/three.png";
+import realestateFour from "media/landing-pages/website-design-develop/portfolios/realestate/four.png";
+// Automotive 
+import automotiveOne from "media/landing-pages/website-design-develop/portfolios/automotive/one.png";
+import automotiveTwo from "media/landing-pages/website-design-develop/portfolios/automotive/two.png";
+import automotiveThree from "media/landing-pages/website-design-develop/portfolios/automotive/three.png";
+import automotiveFour from "media/landing-pages/website-design-develop/portfolios/automotive/four.png";
 // Banner
 import bannerCallIcon from "media/landing-pages/website-design-develop-usa/banner/callIcon.svg";
 import bannerChatIcon from "media/landing-pages/website-design-develop-usa/banner/chatIcon.svg";
@@ -65,37 +90,37 @@ const Page = () => {
             value: "all",
             label: "All Portfolio",
             desc: "All Portfolio",
-            images: [allOne, allTwo, allThree, allFour]
+            images: [ecommerceOne, fashionTwo, foodThree, realestateThree]
         },
         {
             value: "ecommerce",
             label: "E-Commerce",
             desc: "E-Commerce",
-            images: [allOne, allTwo, allThree, allFour]
+            images: [ecommerceOne, ecommerceTwo, ecommerceThree, ecommerceFour]
         },
         {
             value: "fashion",
             label: "Fashion",
             desc: "Fashion",
-            images: [allOne, allTwo, allThree, allFour]
+            images: [fashionOne, fashionTwo, fashionThree, fashionFour]
         },
         {
             value: "food",
             label: "Food",
             desc: "Food",
-            images: [allOne, allTwo, allThree, allFour]
+            images: [foodOne, foodTwo, foodThree, foodFour]
         },
         {
             value: "real-estate",
             label: "Real Estate",
             desc: "Real Estate",
-            images: [allOne, allTwo, allThree, allFour]
+            images: [realestateOne, realestateTwo, realestateThree, realestateFour]
         },
         {
             value: "automotive",
             label: "Automotive",
             desc: "Automotive",
-            images: [allOne, allTwo, allThree, allFour]
+            images: [automotiveOne, automotiveTwo, automotiveThree, automotiveFour]
         }
     ]
     // Reviewss
