@@ -6,6 +6,7 @@ import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from "@material-tailwind/re
 import { useState } from "react";
 import Slider from "react-slick";
 import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
 // Import Css
 import styles from "./page.module.css";
 // JSON Data
@@ -268,6 +269,7 @@ const Page = () => {
     ]
     return (
         <main>
+            <Header />
             <section>
                 <div className="bg-[#15233b] py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/hero/bg.png')] bg-cover">
                     <div className="container">
@@ -453,7 +455,7 @@ const Page = () => {
                                                                 </ul>
                                                             </div>
                                                             <button type="button"
-                                                                className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#000000] mx-auto hover:${e.textColor} mb-5`}>
+                                                                className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto hover:${e.textColor} mb-5`}>
                                                                 Order Now!
                                                             </button>
                                                             <span className="block h-[2px] bg-[#eaeaea]"></span>
@@ -522,7 +524,7 @@ const Page = () => {
                                                             </ul>
                                                         </div>
                                                         <button type="button"
-                                                            className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold ${e.textColorHover} hover:ring-4 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
+                                                            className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold ${e.textColorHover} hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
                                                             Order Now!
                                                         </button>
                                                         <span className="block h-[2px] bg-[#eaeaea]"></span>

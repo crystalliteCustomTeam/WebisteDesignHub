@@ -29,7 +29,7 @@ const Header = () => {
         <ul className="lg:flex lg:items-center gap-6 lg:h-full rounded-2xl bg-black lg:bg-transparent lg:rounded-none py-5 lg:py-0 px-5 lg:px-0">
             <li className="lg:h-full lg:flex lg:items-center"><Link href="/" className="text-lg font-medium leading-10">Home</Link></li>
             <li className="lg:h-full lg:flex lg:items-center"><Link href="/about-us" className="text-lg font-medium leading-10">About</Link></li>
-            <li className="lg:h-full lg:flex lg:items-center group relative">
+            {router !== '/website-design-develop-usa-landing' ? <li className="lg:h-full lg:flex lg:items-center group relative">
                 <button href="/" className="text-lg font-medium leading-10 flex items-center gap-3">
                     Services
                     <Image src={down} alt="down" className="brightness-0 invert" onClick={() => setOpenSubMenu((prev) => !prev)} />
@@ -125,7 +125,7 @@ const Header = () => {
                         </ul>
                     </Collapse>
                 </div>
-            </li>
+            </li> : null}
             <li className="lg:h-full lg:flex lg:items-center"><Link href="/pricing-and-packages" className="text-lg font-medium leading-10">Pricing/Packages</Link></li>
             <li className="lg:h-full lg:flex lg:items-center"><Link href="/contact-us" className="text-lg font-medium leading-10">Contact</Link></li>
         </ul>
@@ -136,7 +136,14 @@ const Header = () => {
                 <div className="container">
                     <div className="flex items-center h-24">
                         <Link href="/">
-                                {router !== "/website-design-develop-landing" ? <Image src={logo} alt="logo" /> : <Image src={logo2} alt="logo2" />}
+                            {(() => {
+                                switch (router) {
+                                    case '/website-design-develop-landing':
+                                        return <Image src={logo2} alt="logo2" />
+                                    default:
+                                        return <Image src={logo} alt="logo" />
+                                }
+                            })()}
                         </Link>
                         <div className="hidden lg:flex ml-auto xl:m-auto h-full items-center">
                             {navList}
@@ -172,6 +179,8 @@ const Header = () => {
                                             return "bg-[#8A6EA5]"
                                         case '/website-design-develop-landing':
                                             return "bg-[#3283FF] pl-4 pr-4"
+                                        case '/website-design-develop-usa-landing':
+                                            return "bg-[#f17724] pl-4 pr-4"
                                         default:
                                             return "bg-[#9E7DE9]"
                                     }
@@ -208,6 +217,8 @@ const Header = () => {
                                             return "border-[#8A6EA5]"
                                         case '/website-design-develop-landing':
                                             return "border-[#00FFEF] pl-4 pr-4"
+                                        case '/website-design-develop-usa-landing':
+                                            return "border-[#f17724] pl-4 pr-4"
                                         default:
                                             return " border-[#9E7DE9]"
                                     }
@@ -240,6 +251,8 @@ const Header = () => {
                                             return "hover:bg-[#8A6EA5]"
                                         case '/website-design-develop-landing':
                                             return "hover:bg-[#00FFEF]"
+                                        case '/website-design-develop-usa-landing':
+                                            return "hover:bg-[#f17724]"
                                         default:
                                             return "hover:bg-[#9E7DE9]"
                                     }
