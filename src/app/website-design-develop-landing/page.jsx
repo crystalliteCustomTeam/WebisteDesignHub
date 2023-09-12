@@ -330,12 +330,12 @@ const Page = () => {
                                         icon={true}
                                         color="bg-[#3283FF] text-white"
                                         hover="hover:bg-[#000000]"
-                                        link="#" />
-                                    <Button text="(123)-000-0000"
+                                        link="livechat" />
+                                    <Button text="(855) 888-8399"
                                         color="text-white bg-transparent"
                                         border="border-2 border-[#00FFEF]"
                                         hover="hover:bg-[#00FFEF]"
-                                        link="tel:123654789" />
+                                        link="tel:(855)888-8399" />
                                 </div>
                             </div>
                         </div>
@@ -412,12 +412,12 @@ const Page = () => {
                                     icon={true}
                                     color="btnBg bg-[#00FFEF] text-white"
                                     hover="hover:bg-[#000000]"
-                                    link="#" />
-                                <Button text="(123)-000-0000"
+                                    link="livechat" />
+                                <Button text="(855) 888-8399"
                                     color="btnColor text-white bg-transparent"
                                     border="border-2 border-[#00FFEF]"
                                     hover="hover:bg-[#00FFEF]"
-                                    link="tel:123654789" />
+                                    link="tel:(855)888-8399" />
                             </div>
                             <div className="absolute right-0 bottom-[-2rem] xl:bottom-[-4rem]">
                                 <Image src={bannerOne} alt="bannerOne" className="max-w-[60%] lg:max-w-[80%] xl:max-w-full hidden md:block ml-auto" />
@@ -467,12 +467,12 @@ const Page = () => {
                                                         icon={true}
                                                         color="btnBg bg-[#3283FF] text-white"
                                                         hover="hover:bg-[#000000]"
-                                                        link="#" />
-                                                    <Button text="(123)-000-0000"
+                                                        link="livechat" />
+                                                    <Button text="(855) 888-8399"
                                                         color="btnColor text-white bg-transparent"
                                                         border="border-2 border-[#3283FF]"
                                                         hover="hover:bg-[#3283FF]"
-                                                        link="tel:123654789" />
+                                                        link="tel:(855)888-8399" />
                                                 </div>
                                             </div>
                                         )
@@ -527,12 +527,12 @@ const Page = () => {
                                             $4999
                                         </h5>
                                         <div className="flex gap-4 items-center">
-                                            <a href="tel:123654789" className="bg-[#3283FF] rounded-[50px] text-white inline-flex group items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-transparent font-medium border-2 border-[#3283FF] hover:text-[#3283FF]">
+                                            <a href="tel:(855)888-8399" className="bg-[#3283FF] rounded-[50px] text-white inline-flex group items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-transparent font-medium border-2 border-[#3283FF] hover:text-[#3283FF]">
                                                 <Image src={checkCircle} alt="checkCircle" className="brightness-0 invert group-hover:brightness-100 group-hover:invert-0" />
                                                 <span>Order Now</span>
                                             </a>
-                                            <a href="tel:123654789" className="bg-transparent rounded-[50px] text-black inline-flex items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-[#3283FF] hover:text-white hover:border-[#3283FF] font-medium border-2 border-black">
-                                                <span>(123)-000-0000</span>
+                                            <a href="tel:(855)888-8399" className="bg-transparent rounded-[50px] text-black inline-flex items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-[#3283FF] hover:text-white hover:border-[#3283FF] font-medium border-2 border-black">
+                                                <span>(855) 888-8399</span>
                                             </a>
                                         </div>
                                         <Image src={comboLaptop} alt="comboLaptop" className="relative bottom-[-50px] hidden lg:block m-auto" />

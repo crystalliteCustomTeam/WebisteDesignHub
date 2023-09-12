@@ -21,12 +21,12 @@ const SmallBanner = ({ content }) => {
                                     icon={true}
                                     color={`${btnBg ?? "bg-transparent"} text-white`}
                                     hover="hover:bg-[#000000]"
-                                    link="#" />
-                                <Button text="XXX-XXX-XXXX"
+                                    link="livechat" />
+                                <Button text="(855) 888-8399"
                                     color={`${btnColor ?? "text-white"} bg-transparent`}
                                     border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
                                     hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"}`}
-                                    link="tel:XXX-XXX-XXXX" />
+                                    link="tel:(855)888-8399" />
                             </div>
                         </div>
                     </div>

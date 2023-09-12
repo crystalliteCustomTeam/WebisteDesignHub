@@ -18,11 +18,11 @@ const Services = () => {
                             color="bg-[#195A47] text-white"
                             hover="hover:bg-[#000000]"
                             link="#" />
-                        <Button text="(123)-000-0000"
+                        <Button text="(855) 888-8399"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#195A47]"
                             hover="hover:bg-[#195A47] hover:text-white"
-                            link="tel:123654789" />
+                            link="tel:(855)888-8399" />
                     </div>
                 </div>
             </div>

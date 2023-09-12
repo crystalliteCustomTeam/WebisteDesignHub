@@ -166,7 +166,7 @@ const Combo = () => {
                                         color="bg-[#067AC8] text-white"
                                         border="border-2 border-[#067AC8]"
                                         hover="hover:bg-transparent"
-                                        link="tel:123654789" />
+                                        link="tel:(855)888-8399" />
                                 </div>
                             </div>
                         </div>

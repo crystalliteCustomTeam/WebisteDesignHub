@@ -6,6 +6,12 @@
     transition: all 0.3s;
 }
 
+html,
+body {
+
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }

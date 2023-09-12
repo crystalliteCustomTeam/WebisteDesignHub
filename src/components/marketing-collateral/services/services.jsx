@@ -20,12 +20,12 @@ const Services = () => {
                             icon={true}
                             color="bg-[#223C5A] text-white"
                             hover="hover:bg-[#000000]"
-                            link="#" />
-                        <Button text="XXX-XXX-XXXX"
+                            link="livechat" />
+                        <Button text="(855) 888-8399"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#223C5A]"
                             hover="hover:bg-[#223C5A] hover:text-white"
-                            link="tel:XXX-XXX-XXXX" />
+                            link="tel:(855)888-8399" />
                     </div>
                 </div>
             </div>

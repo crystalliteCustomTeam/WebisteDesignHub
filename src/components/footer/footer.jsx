@@ -52,46 +52,46 @@ const Footer = () => {
     const servicesLinks = [
         {
             text: "Logo Design",
-            link: "/"
+            link: "/logo-design"
         },
         {
             text: "Creative Copywriting",
-            link: "/"
+            link: "/creative-copywriting"
         },
 
         {
             text: "Digital Marketing",
-            link: "/"
+            link: "/digital-marketing"
         },
 
         {
             text: "Ecommerce Web Solutions",
-            link: "/"
+            link: "/ecommerce"
         },
 
         {
             text: "Website Development",
-            link: "/"
+            link: "/website-development"
         },
         {
             text: "Motion Graphics",
-            link: "/"
+            link: "/motion-graphics"
         },
         {
             text: "Illustration Design",
-            link: "/"
+            link: "/illustration-design"
         },
         {
             text: "Marketing Collateral",
-            link: "/"
+            link: "/marketing-collateral"
         },
         {
             text: "App Design",
-            link: "/"
+            link: "/mobile-application"
         },
         {
             text: "SEO Services",
-            link: "/"
+            link: "/seo-services"
         },
     ];
     const contactLinks = [
@@ -101,8 +101,8 @@ const Footer = () => {
             icon: mapmarker
         },
         {
-            text: "XXX-XXX-XXXX",
-            link: "tel:XXX-XXX-XXXX",
+            text: "(855) 888-8399",
+            link: "tel:(855)888-8399",
             icon: telephone
         },
         {

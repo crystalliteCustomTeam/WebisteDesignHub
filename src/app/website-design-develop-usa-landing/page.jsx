@@ -80,6 +80,8 @@ import comprehensivePlatformbannerScreens from "media/landing-pages/website-desi
 // Reviewss
 import quoteReviews from "media/landing-pages/website-design-develop/reviews/quote.png";
 import googleReviews from "media/landing-pages/website-design-develop-usa/reviews/google.png";
+import logo from "media/logo.svg";
+import liveChatIcon from "media/liveChatIcon.svg";
 
 
 
@@ -268,10 +270,43 @@ const Page = () => {
         topRatedEleven
     ]
     return (
-        <main>
-            <Header />
+        <main className="scroll-smooth">
+            <header>
+                <div className="py-[20px] absolute top-0 left-0 right-0 z-[9999]">
+                    <div className="container">
+                        <nav className="flex items-center">
+                            <Link href="/">
+                                <Image src={logo} alt="logo" />
+                            </Link>
+                            <ul className="m-auto hidden lg:flex gap-3 xl:gap-5">
+                                <li>
+                                    <Link className="text-sm xl:text-lg font-medium leading-10 text-white" href="#OurProcess">Our Process</Link>
+                                </li>
+                                <li>
+                                    <Link className="text-sm xl:text-lg font-medium leading-10 text-white" href="#Pricing&Packages">Pricing & Packages</Link>
+                                </li>
+                                <li>
+                                    <Link className="text-sm xl:text-lg font-medium leading-10 text-white" href="#Portfolios">Portfolios</Link>
+                                </li>
+                                <li>
+                                    <Link className="text-sm xl:text-lg font-medium leading-10 text-white" href="#ContactUs">Contact Us</Link>
+                                </li>
+                            </ul>
+                            <div className="hidden sm:flex items-center gap-3 ml-auto">
+                                <Link href="livechat" className="flex items-center gap-3 w-max xl:w-[195px] justify-center pr-3.5 pl-3.5 h-12 bg-[#7598F2] text-white rounded-full">
+                                    <span className="text-sm xl:text-lg font-medium">Start Live Chat</span>
+                                    <Image src={liveChatIcon} alt="liveChatIcon" />
+                                </Link>
+                                <Link href="tel:(855) 888-8399" className="flex  items-center gap-3 w-max xl:w-[195px] justify-center pr-3.5 pl-3.5 h-12 bg-transparent border-2 border-[#7598F2] text-white rounded-full">
+                                    <span className="text-sm xl:text-lg font-medium">(855)888-8399</span>
+                                </Link>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
             <section>
-                <div className="bg-[#15233b] py-[100px] bg-[url('../../public/landing-pages/website-design-develop-usa/hero/bg.png')] bg-cover">
+                <div className="pt-[130px] pb-[100px] __logoDesignHeroGradientBg">
                     <div className="container">
                         <div className="flex flex-wrap lg:flex-nowrap gap-y-10 lg:gap-y-0">
                             <div className="basis-full lg:basis-3/5">
@@ -301,14 +336,14 @@ const Page = () => {
                                 <div className="flex items-center gap-x-3 mt-5">
                                     <Image src={heroCallEnvelope} alt="heroCallEnvelope" />
                                     <div>
-                                        <Link href="tel:XXX-XXX-XXXX" className="text-[20px] sm:text-[40px] leading-7 text-[#ffffff] font-sans font-bold block mb-3">
-                                            XXX-XXX-XXXX
+                                        <Link href="tel:(855)888-8399" className="text-[20px] sm:text-[40px] leading-7 text-[#ffffff] font-sans font-bold block mb-3">
+                                            (855) 888-8399
                                         </Link>
                                         <div className="flex items-center gap-x-3">
                                             <Link href="/" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
                                                 Start Live Chat
                                             </Link>
-                                            <Link href="/" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
+                                            <Link href="livechat" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
                                                 Request A Quote
                                             </Link>
                                         </div>
@@ -316,9 +351,9 @@ const Page = () => {
                                 </div>
                             </div>
                             <div className="basis-full lg:basis-2/5 relative">
-                                <div className="bg-[#2069ae] p-5 xl:w-[80%] ml-auto">
+                                <div className="bg-[#0F2847] p-5 xl:w-[80%] ml-auto">
                                     <h2 className="text-[20px] leading-none text-[#ffffff] font-sans font-light text-center mb-3">
-                                        CALL: <span className="text-[#f17724]">XXX-XXX-XXXX</span>
+                                        CALL: <span className="text-[#f17724]">(855) 888-8399</span>
                                     </h2>
                                     <p className="text-[16px] text-[#ffffff] font-sans font-light text-center mb-3">
                                         Or fill in the form below & we'll call you
@@ -337,7 +372,7 @@ const Page = () => {
                             </div>
                         </div>
                         {/* For Desktop */}
-                        <div className="hidden lg:flex lg:divide-x-2 lg:divide-[#2069ae] lg:mt-10">
+                        <div className="hidden lg:flex lg:divide-x-2 lg:divide-[#ffffff] lg:mt-10">
                             {
                                 heroCounter.map((e, i) => {
                                     return (<div key={i} className="lg:basis-1/5">
@@ -408,7 +443,7 @@ const Page = () => {
             <section>
                 <div className="py-[100px]">
                     <div className="container">
-                        <div className="text-center mb-10">
+                        <div className="text-center mb-10" id="Pricing&Packages">
                             <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-megat font-normal mb-3">
                                 Affordable Web <span className="text-[#f17724]">Design & Development <br /> Packages</span> At Your Fingertips!
                             </h2>
@@ -419,7 +454,7 @@ const Page = () => {
                         {
                             affordablepackages.map(({ title, packages }) => {
                                 return (<div key={title}>
-                                    <h2 className="text-[25px] leading-none text-[#2069ae] text-center font-sans font-semibold underline mb-10">
+                                    <h2 className="text-[25px] leading-none text-[#0F2847] text-center font-sans font-semibold underline my-10">
                                         {title}
                                     </h2>
                                     <div className="xl:hidden">
@@ -432,11 +467,14 @@ const Page = () => {
                                                                 {e.name}
                                                                 <span className={`absolute top-0 right-0 bottom-0 left-0 ${e.bgColor} -z-10 rounded-r-full ml-[-30px]`}></span>
                                                             </h4>
-                                                            <h5 className={`text-[40px] leading-none ${e.textColor} font-sans font-bold my-5`}>
-                                                                ${e.discountedPrice} <sup className="font-medium text-[#747474]"><del>${e.originalPrice}</del></sup>
+                                                            <h5 className={`text-[25px] leading-none w-[80%] ${e.textColor} font-sans font-semibold my-5`}>
+                                                                {e.discountedPrice}
+                                                                <sup className="font-medium text-[#747474]">
+                                                                    <del>{e.originalPrice}</del>
+                                                                </sup>
                                                             </h5>
                                                             <p className="text-[16px] leading-none text-black font-sans font-semibold">
-                                                                Great for Individuals & Startups!
+                                                                {e.note}
                                                             </p>
                                                             <div className={`overflow-y-auto h-52 my-10 ${e.theme === "blue" ? styles.__packagesBlueScroll : styles.__packagesOrangeScroll}`}>
                                                                 <span className={`text-[20px] leading-none ${e.textColor} font-sans font-semibold`}>
@@ -480,7 +518,7 @@ const Page = () => {
                                                                         Free 30 Min Consultation
                                                                     </p>
                                                                     <Link href="/" className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
-                                                                        <span>XXX-XXX-XXXX</span>
+                                                                        <span>(855) 888-8399</span>
                                                                         <Image src={e.callIcon} alt="packagesCallIconBlue" width={30} height={30} />
                                                                     </Link>
                                                                 </div>
@@ -501,11 +539,14 @@ const Page = () => {
                                                             {e.name}
                                                             <span className={`absolute top-0 right-0 bottom-0 left-0 ${e.bgColor} -z-10 rounded-r-full ml-[-30px]`}></span>
                                                         </h4>
-                                                        <h5 className={`text-[40px] leading-none ${e.textColor} font-sans font-bold my-5`}>
-                                                            ${e.discountedPrice} <sup className="font-medium text-[#747474]"><del>${e.originalPrice}</del></sup>
+                                                        <h5 className={`text-[30px] leading-none ${e.textColor} font-sans font-semibold my-5`}>
+                                                            {e.discountedPrice}
+                                                            <sup className="font-medium text-[#747474]">
+                                                                <del>{e.originalPrice}</del>
+                                                            </sup>
                                                         </h5>
                                                         <p className="text-[16px] leading-none text-black font-sans font-semibold">
-                                                            Great for Individuals & Startups!
+                                                            {e.note}
                                                         </p>
                                                         <div className={`overflow-y-auto h-52 my-10 ${e.theme === "blue" ? styles.__packagesBlueScroll : styles.__packagesOrangeScroll}`}>
                                                             <span className={`text-[20px] leading-none ${e.textColor} font-sans font-semibold`}>
@@ -549,7 +590,7 @@ const Page = () => {
                                                                     Free 30 Min Consultation
                                                                 </p>
                                                                 <Link href="/" className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
-                                                                    <span>XXX-XXX-XXXX</span>
+                                                                    <span>(855) 888-8399</span>
                                                                     <Image src={e.callIcon} alt="packagesCallIconBlue" width={30} height={30} />
                                                                 </Link>
                                                             </div>
@@ -824,7 +865,7 @@ const Page = () => {
                                     </Link>
                                     <Link href="/" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
                                         <Image src={packagesCallIconOrange} alt="packagesCallIconOrange" />
-                                        <span>XXX-XXX-XXXX</span>
+                                        <span>(855) 888-8399</span>
                                     </Link>
                                     <button type="button" className="w-full rounded-full h-[50px] block bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] mx-auto hover:text-[#f17724] mb-5">
                                         Request A Quote Now
@@ -836,7 +877,7 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="bg-[#E9E9E9] py-[100px] mt-[100px]">
+                <div className="bg-[#E9E9E9] py-[100px] mt-[100px]" id="Portfolios">
                     <div className="container">
                         <div className="text-center mb-10">
                             <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-megat font-normal mb-3">
@@ -900,11 +941,11 @@ const Page = () => {
                             Connect With Us to Get <span className="text-[#f17724]">Custom Quote</span> <br />
                             On Your Web Project <span className="text-[#f17724]">Today!</span>
                         </h2>
-                        <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#2069ae]">
+                        <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#0F2847]">
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
                                 <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerCallIcon} alt="bannerCallIcon" />
-                                    <span>XXX-XXX-XXXX</span>
+                                    <span>(855) 888-8399</span>
                                 </Link>
                             </div>
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
@@ -934,7 +975,7 @@ const Page = () => {
                                 We'll have your new website up-and-running within a master of weeks! Here's how the process works:
                             </p>
                         </div>
-                        <div className="hidden lg:grid lg:gap-5 lg:grid-cols-3">
+                        <div className="hidden lg:grid lg:gap-5 lg:grid-cols-3" id="OurProcess">
                             {
                                 processData.map(({ title, content, image }, i) => {
                                     return (
@@ -1014,7 +1055,7 @@ const Page = () => {
                                         <p className="text-[16px] leading-[26px] font-sans font-normal  text-gray-600">
                                             "Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills."
                                         </p>
-                                        <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#2069ae]">
+                                        <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#0F2847]">
                                             — Jennifer Mitchell, Senior Financial Advisor
                                         </span>
                                     </div>
@@ -1022,7 +1063,7 @@ const Page = () => {
                                         <p className="text-[16px] leading-[26px] font-sans font-normal  text-gray-600">
                                             “Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Design Hub is the best web design company I have ever worked with.”
                                         </p>
-                                        <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#2069ae]">
+                                        <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#0F2847]">
                                             — Sarah Johnson, E-commerce Manager
                                         </span>
                                     </div>
@@ -1030,7 +1071,7 @@ const Page = () => {
                                         <p className="text-[16px] leading-[26px] font-sans font-normal  text-gray-600">
                                             “Hiring Web Design Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.”
                                         </p>
-                                        <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#2069ae]">
+                                        <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#0F2847]">
                                             — Emily Parker, Co-founder
                                         </span>
                                     </div>
@@ -1048,11 +1089,11 @@ const Page = () => {
                             Connect With Us to Get <span className="text-[#f17724]">Custom Quote</span> <br />
                             On Your Web Project <span className="text-[#f17724]">Today!</span>
                         </h2>
-                        <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#2069ae]">
+                        <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#0F2847]">
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
                                 <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerCallIcon} alt="bannerCallIcon" />
-                                    <span>XXX-XXX-XXXX</span>
+                                    <span>(855) 888-8399</span>
                                 </Link>
                             </div>
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
@@ -1128,7 +1169,7 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="py-[50px] md:py-[100px] bg-[#f6f6f6]">
+                <div className="py-[50px] md:py-[100px] bg-[#f6f6f6]" id="ContactUs">
                     <div className="container">
                         <div className="text-center mb-10">
                             <h2 className="text-[30px] lg:text-[40px] leading-[40px] lg:leading-[50px] text-black font-megat font-normal mb-3">
@@ -1169,18 +1210,21 @@ const Page = () => {
                             <div className="basis-full lg:basis-1/2">
                                 <form>
                                     <div className="grid grid-cols-1  md:grid-cols-2 gap-3">
-                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="text" placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="text" placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
                                     </div>
-                                    <select defaultValue="Desired Services.*" className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]">
-                                        <option disabled>Desired Services.*</option>
-                                        <option value="1">Item 1</option>
-                                        <option value="2">Item 2</option>
-                                        <option value="3">Item 3</option>
+                                    <select defaultValue={"Web Design Development"} className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]">
+                                        <option value="SEO">SEO</option>
+                                        <option value="PPC Marketing">PPC Marketing</option>
+                                        <option value="Social Media Management">Social Media Management</option>
+                                        <option value="Reputation Management">Reputation Management</option>
+                                        <option value="Content Marketing">Content Marketing</option>
+                                        <option value="Web Design Development">Web Design &amp; Development</option>
+                                        <option value="Other">Other</option>
                                     </select>
-                                    <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black my-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"></textarea>
+                                    <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black my-3 focus-visible:ring-4 ring-[#f17724]"></textarea>
                                     <button type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724]">
                                         Get A Free Consultation
                                     </button>

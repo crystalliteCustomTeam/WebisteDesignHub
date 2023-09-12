@@ -66,7 +66,7 @@ const Approach = () => {
                                     </div>
                                 </div>
                             </div>
-                            <Link href="/" className="block w-max mx-auto mt-10 hover:scale-75">
+                            <Link href="livechat" className="block w-max mx-auto mt-10 hover:scale-75">
                                 <Image src={btn} alt="btn" />
                             </Link>
                         </div>
