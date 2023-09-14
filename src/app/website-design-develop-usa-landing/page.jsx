@@ -340,10 +340,10 @@ const Page = () => {
                                             (855) 888-8399
                                         </Link>
                                         <div className="flex items-center gap-x-3">
-                                            <Link href="/" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
+                                            <Link href="javascript:$zopim.livechat.window.show();" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
                                                 Start Live Chat
                                             </Link>
-                                            <Link href="javascript:$zopim.livechat.window.show();" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
+                                            <Link href="#ContactUs" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
                                                 Request A Quote
                                             </Link>
                                         </div>
@@ -505,7 +505,7 @@ const Page = () => {
                                                                     <p className="text-[10px] lg:text-[12px] leading-[22px] text-black font-semibold">
                                                                         Call for Maintenance Plans
                                                                     </p>
-                                                                    <Link href="/" className={`flex items-center gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                    <Link href="javascript:$zopim.livechat.window.show();" className={`flex items-center gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
                                                                         <Image src={e.chatIcon} alt="packagesChatIconBlue" width={30} height={30} />
                                                                         <span>Live Chat Now</span>
                                                                     </Link>
@@ -517,7 +517,7 @@ const Page = () => {
                                                                     <p className="text-[10px] lg:text-[12px] leading-[22px] text-black font-semibold">
                                                                         Free 30 Min Consultation
                                                                     </p>
-                                                                    <Link href="/" className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                    <Link href="tel:(855)888-8399" className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
                                                                         <span>(855) 888-8399</span>
                                                                         <Image src={e.callIcon} alt="packagesCallIconBlue" width={30} height={30} />
                                                                     </Link>
@@ -577,7 +577,7 @@ const Page = () => {
                                                                 <p className="text-[12px] leading-[22px] text-black font-semibold">
                                                                     Call for Maintenance Plans
                                                                 </p>
-                                                                <Link href="/" className={`flex items-center gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                <Link href="javascript:$zopim.livechat.window.show();" className={`flex items-center gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
                                                                     <Image src={e.chatIcon} alt="packagesChatIconBlue" width={30} height={30} />
                                                                     <span>Live Chat Now</span>
                                                                 </Link>
@@ -589,7 +589,7 @@ const Page = () => {
                                                                 <p className="text-[12px] leading-[22px] text-black font-semibold">
                                                                     Free 30 Min Consultation
                                                                 </p>
-                                                                <Link href="/" className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                <Link href="tel:(855)888-8399" className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
                                                                     <span>(855) 888-8399</span>
                                                                     <Image src={e.callIcon} alt="packagesCallIconBlue" width={30} height={30} />
                                                                 </Link>
@@ -859,17 +859,17 @@ const Page = () => {
                                     <p className="text-[16px] leading-[22px] text-[#f17724] font-semibold mb-3">
                                         Free 30 Min Consultation
                                     </p>
-                                    <Link href="/" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
+                                    <Link href="javascript:$zopim.livechat.window.show();" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
                                         <Image src={packagesChatIconOrange} alt="packagesChatIconOrange" />
                                         <span>Live Chat Now</span>
                                     </Link>
-                                    <Link href="/" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
+                                    <Link href="tel:(855)888-8399" className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3">
                                         <Image src={packagesCallIconOrange} alt="packagesCallIconOrange" />
                                         <span>(855) 888-8399</span>
                                     </Link>
-                                    <button type="button" className="w-full rounded-full h-[50px] block bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] mx-auto hover:text-[#f17724] mb-5">
+                                    <Link href="#ContactUs" className="w-full rounded-full h-[50px] block bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] mx-auto hover:text-[#f17724] mb-5">
                                         Request A Quote Now
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -943,19 +943,19 @@ const Page = () => {
                         </h2>
                         <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#0F2847]">
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                                <Link href="tel:(855)888-8399" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerCallIcon} alt="bannerCallIcon" />
                                     <span>(855) 888-8399</span>
                                 </Link>
                             </div>
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                                <Link href="javascript:$zopim.livechat.window.show();" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerChatIcon} alt="bannerChatIcon" />
                                     <span>Live Chat Now</span>
                                 </Link>
                             </div>
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                                <Link href="#ContactUs" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerArrowIcon} alt="bannerArrowIcon" />
                                     <span>Request A Quote</span>
                                 </Link>
@@ -1091,19 +1091,19 @@ const Page = () => {
                         </h2>
                         <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#0F2847]">
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                                <Link href="tel:(855)888-8399" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerCallIcon} alt="bannerCallIcon" />
                                     <span>(855) 888-8399</span>
                                 </Link>
                             </div>
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                                <Link href="javascript:$zopim.livechat.window.show();" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerChatIcon} alt="bannerChatIcon" />
                                     <span>Live Chat Now</span>
                                 </Link>
                             </div>
                             <div className="basis-full sm:basis-1/2 md:basis-1/3">
-                                <Link href="/" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
+                                <Link href="#ContactUs" className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3">
                                     <Image src={bannerArrowIcon} alt="bannerArrowIcon" />
                                     <span>Request A Quote</span>
                                 </Link>
