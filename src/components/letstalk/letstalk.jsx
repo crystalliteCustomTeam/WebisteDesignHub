@@ -22,7 +22,7 @@ const Letstalk = () => {
                                     icon={true}
                                     color="bg-[#AE86F9] text-white"
                                     hover="hover:bg-[#000000]"
-                                    link="livechat" />
+                                    link="javascript:$zopim.livechat.window.show();" />
                                 <Button text="(855) 888-8399"
                                     color="bg-transparent text-white"
                                     border="border-2 border-[#AE86F9]"

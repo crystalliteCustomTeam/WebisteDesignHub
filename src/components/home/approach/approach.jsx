@@ -76,7 +76,7 @@ const Approach = () => {
                                     </div>
                                 </div>
                             </div>
-                            <Link href="livechat" className="block w-max mx-auto mt-10 hover:scale-75">
+                            <Link href="javascript:$zopim.livechat.window.show();" className="block w-max mx-auto mt-10 hover:scale-75">
                                 <Image src={btn} alt="btn" />
                             </Link>
                         </div>

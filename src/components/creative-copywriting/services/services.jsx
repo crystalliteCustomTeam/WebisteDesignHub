@@ -20,7 +20,7 @@ const Services = () => {
                             icon={true}
                             color="bg-[#768DF1] text-white"
                             hover="hover:bg-[#000000]"
-                            link="livechat" />
+                            link="javascript:$zopim.livechat.window.show();" />
                         <Button text="(855) 888-8399"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#768DF1]"

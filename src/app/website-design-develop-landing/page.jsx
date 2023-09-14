@@ -330,7 +330,7 @@ const Page = () => {
                                         icon={true}
                                         color="bg-[#3283FF] text-white"
                                         hover="hover:bg-[#000000]"
-                                        link="livechat" />
+                                        link="javascript:$zopim.livechat.window.show();" />
                                     <Button text="(855) 888-8399"
                                         color="text-white bg-transparent"
                                         border="border-2 border-[#00FFEF]"
@@ -412,7 +412,7 @@ const Page = () => {
                                     icon={true}
                                     color="btnBg bg-[#00FFEF] text-white"
                                     hover="hover:bg-[#000000]"
-                                    link="livechat" />
+                                    link="javascript:$zopim.livechat.window.show();" />
                                 <Button text="(855) 888-8399"
                                     color="btnColor text-white bg-transparent"
                                     border="border-2 border-[#00FFEF]"
@@ -467,7 +467,7 @@ const Page = () => {
                                                         icon={true}
                                                         color="btnBg bg-[#3283FF] text-white"
                                                         hover="hover:bg-[#000000]"
-                                                        link="livechat" />
+                                                        link="javascript:$zopim.livechat.window.show();" />
                                                     <Button text="(855) 888-8399"
                                                         color="btnColor text-white bg-transparent"
                                                         border="border-2 border-[#3283FF]"

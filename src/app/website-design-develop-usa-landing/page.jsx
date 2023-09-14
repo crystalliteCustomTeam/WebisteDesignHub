@@ -293,7 +293,7 @@ const Page = () => {
                                 </li>
                             </ul>
                             <div className="hidden sm:flex items-center gap-3 ml-auto">
-                                <Link href="livechat" className="flex items-center gap-3 w-max xl:w-[195px] justify-center pr-3.5 pl-3.5 h-12 bg-[#7598F2] text-white rounded-full">
+                                <Link href="javascript:$zopim.livechat.window.show();" className="flex items-center gap-3 w-max xl:w-[195px] justify-center pr-3.5 pl-3.5 h-12 bg-[#7598F2] text-white rounded-full">
                                     <span className="text-sm xl:text-lg font-medium">Start Live Chat</span>
                                     <Image src={liveChatIcon} alt="liveChatIcon" />
                                 </Link>
@@ -343,7 +343,7 @@ const Page = () => {
                                             <Link href="/" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
                                                 Start Live Chat
                                             </Link>
-                                            <Link href="livechat" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
+                                            <Link href="javascript:$zopim.livechat.window.show();" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
                                                 Request A Quote
                                             </Link>
                                         </div>

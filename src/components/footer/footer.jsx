@@ -192,9 +192,11 @@ const Footer = () => {
                             <Image src={cards} alt="cards" className="mt-3" />
                         </div>
                     </div>
-                    <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-5 sm:gap-y-0 items-center">
+                    <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-5 sm:gap-y-0 items-center border-b-[1px] border-[#707070]">
                         <div className="basis-full sm:basis-1/2">
-                            <p className="text-sm xl:text-base font-light text-white leading-6 text-center sm:text-left">Copyright © 2023 Logo.</p>
+                            <p className="text-sm font-light text-white leading-6 text-center sm:text-left">
+                                Copyright © 2023 <Link href="/">webdesignhub.co</Link> | <Link href="https://bhaooinc.com/" target="_blank">Brand Of Bhaoo Incorporation Company</Link>
+                            </p>
                         </div>
                         <div className="basis-full sm:basis-1/2">
                             <ul className="flex items-center justify-center sm:justify-end gap-4">
@@ -211,6 +213,11 @@ const Footer = () => {
                                 }
                             </ul>
                         </div>
+                    </div>
+                    <div className="py-5">
+                        <p className="text-[12px] font-light text-white leading-[22px]">
+                            <span className="font-semibold">Disclaimer</span>: Logo, name and graphic representation of webdesignhub and its products and services are trademarks of webdesignhub. All other company names, trademarks and logos mentioned on this website are the property of their respective owners and do not represent or imply endorsement, sponsorship or recommendation by webdesignhub and constitute or imply endorsement, sponsorship or recommendation thereof by webdesignhub and do not constitute or imply endorsement, sponsorship or recommendation of webdesignhub by the respective trademark owner.
+                        </p>
                     </div>
                 </div>
             </div>
