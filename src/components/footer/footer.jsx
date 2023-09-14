@@ -96,7 +96,7 @@ const Footer = () => {
     ];
     const contactLinks = [
         {
-            text: "Unit Level 13 A, Financial Park, Labuan, Jalan Merdeka, 87000, Malaysia",
+            text: "World Trade Center, New York",
             link: "/",
             icon: mapmarker
         },
