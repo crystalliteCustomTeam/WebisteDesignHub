@@ -31,7 +31,7 @@ const Letstalk = () => {
                             </div>
                         </div>
                         <div className="basis-[50%] lg:basis-[25%]">
-                            <Link href="mailto:info@webdesignhub.co" className="text-xl lg:text-2xl font-medium font-sans text-white">Discuss Your Ideas <br />Info@WebDesignHub.Com</Link>
+                            <Link href="mailto:info@webdesignhub.co" className="text-xl lg:text-2xl font-medium font-sans text-white">Discuss Your Ideas <br />Info@WebDesignHub.Co</Link>
                         </div>
                     </div>
                 </div>

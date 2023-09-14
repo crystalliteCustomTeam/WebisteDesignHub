@@ -26,42 +26,52 @@ const Approach = () => {
                                 <div className="flex justify-evenly md:gap-4 flex-wrap md:flex-nowrap">
                                     <div className="basis-[45%] md:basis-5/12 lg:basis-1/5">
                                         <div className={`${styles.__cards} shadow-[0_23px_56px_rgba(0,0,0,0.3)] relative lg:-rotate-45 lg:right-[-200px] z-[1]`}>
-                                            <Image src={uiux} alt="uiux" className="object-cover object-center h-52 md:h-96 lg:h-60 xl:h-80" />
-                                            <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
-                                                UI/UX
-                                            </h3>
+                                            <Link href="/logo-design">
+                                                <Image src={uiux} alt="uiux" className="object-cover object-center h-52 md:h-96 lg:h-60 xl:h-80" />
+                                                <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
+                                                    Logo
+                                                </h3>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="basis-[45%] md:basis-5/12 lg:basis-1/5">
                                         <div className={`${styles.__cards} shadow-[0_23px_56px_rgba(0,0,0,0.3)] relative lg:-rotate-45 lg:right-[-100px] z-[2]`}>
-                                            <Image src={application} alt="application" className="object-cover object-center h-52 md:h-96 lg:h-60 xl:h-80" />
-                                            <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
-                                                Application
-                                            </h3>
+                                            <Link href="/website-development">
+                                                <Image src={application} alt="application" className="object-cover object-center h-52 md:h-96 lg:h-60 xl:h-80" />
+                                                <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
+                                                    Website
+                                                </h3>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="basis-[45%] md:basis-5/12 lg:basis-1/5">
                                         <div className={`${styles.__cards} shadow-[0_23px_56px_rgba(0,0,0,0.3)] relative z-[3]`}>
-                                            <Image src={branding} alt="branding" className="object-cover object-center h-52 md:h-96 lg:h-60 xl:h-80" />
-                                            <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
-                                                Branding
-                                            </h3>
+                                            <Link href="/mobile-application">
+                                                <Image src={branding} alt="branding" className="object-cover object-center h-52 md:h-96 lg:h-60 xl:h-80" />
+                                                <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
+                                                    Application
+                                                </h3>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="basis-[45%] md:basis-5/12 lg:basis-1/5">
                                         <div className={`${styles.__cards} shadow-[0_23px_56px_rgba(0,0,0,0.3)] relative lg:rotate-45 lg:right-[100px] z-[4]`}>
-                                            <Image src={socialMedia} alt="socialMedia" className="object-cover object-left h-52 md:h-96 lg:h-60 xl:h-80" />
-                                            <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
-                                                Social Media
-                                            </h3>
+                                            <Link href="/digital-marketing">
+                                                <Image src={socialMedia} alt="socialMedia" className="object-cover object-left h-52 md:h-96 lg:h-60 xl:h-80" />
+                                                <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
+                                                    SMM
+                                                </h3>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="basis-[45%] md:basis-5/12 lg:basis-1/5">
                                         <div className={`${styles.__cards} shadow-[0_23px_56px_rgba(0,0,0,0.3)] relative lg:rotate-45 lg:right-[200px] z-[5]`}>
-                                            <Image src={brandColors} alt="brandColors" className="object-cover object-center h-52 md:h-96 lg:h-60 xl:h-80" />
-                                            <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
-                                                Brand Colors
-                                            </h3>
+                                            <Link href="/seo-services">
+                                                <Image src={brandColors} alt="brandColors" className="object-cover object-center h-52 md:h-96 lg:h-60 xl:h-80" />
+                                                <h3 className="text-xl text-white font-medium text-center leading-none absolute left-0 right-0 bottom-2/4 lg:bottom-8">
+                                                    SEO
+                                                </h3>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

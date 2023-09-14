@@ -3,8 +3,9 @@ import Hero from "@/components/hero/hero";
 import Letstalk from "@/components/letstalk/letstalk";
 import Contact from "@/components/contact/contact";
 import PricingAndPackages from "@/components/pricingAndPackages/pricingAndPackages";
-import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
+import Reviews from "@/components/reviews/reviews";
 // Import Images
 import banner from "media/about-us/hero/banner.png";
 
@@ -27,6 +28,9 @@ const Page = () => {
                 <Header />
                 <Hero content={hero} />
                 <PricingAndPackages />
+                <Reviews />
+                <Letstalk />
+                <Contact />
                 <Footer />
             </main>
         </>

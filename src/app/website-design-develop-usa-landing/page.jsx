@@ -275,7 +275,7 @@ const Page = () => {
                 <div className="py-[20px] absolute top-0 left-0 right-0 z-[9999]">
                     <div className="container">
                         <nav className="flex items-center">
-                            <Link href="/">
+                            <Link href="/website-design-develop-usa-landing">
                                 <Image src={logo} alt="logo" />
                             </Link>
                             <ul className="m-auto hidden lg:flex gap-3 xl:gap-5">
@@ -311,7 +311,7 @@ const Page = () => {
                         <div className="flex flex-wrap lg:flex-nowrap gap-y-10 lg:gap-y-0">
                             <div className="basis-full lg:basis-3/5">
                                 <h1 className="text-[35px] sm:text-[50px] lg:text-[40px] xl:text-[50px] leading-[45px] sm:leading-[60px] lg:leading-[50px] xl:leading-[60px] text-[#ffffff] font-megat font-normal mb-5">
-                                    Stunning, <span className="text-[#f17724]">Responsive <br /> Websites</span> That Drive Sales!
+                                    Stunning, <span className="text-[#0F2847]">Responsive <br /> Websites</span> That Drive Sales!
                                 </h1>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 w-max gap-x-5 gap-y-4">
                                     {
@@ -340,10 +340,10 @@ const Page = () => {
                                             (855) 888-8399
                                         </Link>
                                         <div className="flex items-center gap-x-3">
-                                            <Link href="/" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
+                                            <Link href="/" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
                                                 Start Live Chat
                                             </Link>
-                                            <Link href="livechat" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#f2791e] hover:underline">
+                                            <Link href="livechat" className="text-[14px] sm:text-[16px] font-sans leading-none font-medium text-[#0F2847] underline">
                                                 Request A Quote
                                             </Link>
                                         </div>
@@ -377,7 +377,7 @@ const Page = () => {
                                 heroCounter.map((e, i) => {
                                     return (<div key={i} className="lg:basis-1/5">
                                         <div className="text-center">
-                                            <h4 className="text-[40px] xl:text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
+                                            <h4 className="text-[40px] xl:text-[50px] leading-none text-[#0F2847] font-sans font-bold mb-3">
                                                 {e.number}
                                             </h4>
                                             <p className="text-[16px] text-[#ffffff] font-sans font-light"
@@ -395,7 +395,7 @@ const Page = () => {
                                     heroCounter.map((e, i) => {
                                         return (<div key={i}>
                                             <div className="text-center">
-                                                <h4 className="text-[40px] xl:text-[50px] leading-none text-[#f17724] font-sans font-bold mb-3">
+                                                <h4 className="text-[40px] xl:text-[50px] leading-none text-[#0F2847] font-sans font-bold mb-3">
                                                     {e.number}
                                                 </h4>
                                                 <p className="text-[16px] text-[#ffffff] font-sans font-light"

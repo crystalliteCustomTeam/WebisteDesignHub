@@ -160,7 +160,7 @@ const Combo = () => {
                                 </div>
                                 <div className="lg:w-max">
                                     <h5 className="font-sans font-bold text-5xl text-white mt-5 mb-5">
-                                        $99 <sup className="text-[#A497F5] text-4xl"><del>$198</del></sup>
+                                        $3999 <sup className="text-[#A497F5] text-4xl"><del>$7999</del></sup>
                                     </h5>
                                     <Button text="Order Now"
                                         color="bg-[#067AC8] text-white"

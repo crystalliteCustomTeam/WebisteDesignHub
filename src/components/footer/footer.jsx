@@ -42,11 +42,11 @@ const Footer = () => {
         },
         {
             text: "Privacy Policy",
-            link: "/contact-us"
+            link: "/privacy-policy"
         },
         {
             text: "Terms & Conditions",
-            link: "/contact-us"
+            link: "/terms-and-conditions"
         },
     ];
     const servicesLinks = [
