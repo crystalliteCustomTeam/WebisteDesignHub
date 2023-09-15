@@ -533,7 +533,7 @@ const Page = () => {
                                                                 }
                                                             </ul>
                                                         </div>
-                                                        <Link href="/order?category=Worl" className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:text-[#000000] hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
+                                                        <Link href={`/hello`} className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:text-[#000000] hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
                                                             Order Now!
                                                         </Link>
                                                         <span className="block h-[2px] bg-[#eaeaea]"></span>
