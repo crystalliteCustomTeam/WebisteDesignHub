@@ -96,8 +96,8 @@ const Footer = () => {
     ];
     const contactLinks = [
         {
-            text: "World Trade Center, New York",
-            link: "/",
+            text: "One World Trade Center, Suite 8500, New York, New York, 10007, United States",
+            link: "/contact-us",
             icon: mapmarker
         },
         {
@@ -114,19 +114,19 @@ const Footer = () => {
     const socialLinks = [
         {
             icon: facebook,
-            link: "/"
+            link: "https://www.facebook.com/webdesignhubofficial/"
         },
         {
             icon: twitter,
-            link: "/"
+            link: "https://twitter.com/webdesignhub_"
         },
         {
             icon: instagram,
-            link: "/"
+            link: "https://www.instagram.com/webdesignhubofficial"
         },
         {
             icon: linkedin,
-            link: "/"
+            link: "/contact-us"
         },
     ]
     return (

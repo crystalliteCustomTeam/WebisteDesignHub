@@ -6,6 +6,8 @@ import { useState } from "react";
 import Slider from "react-slick";
 import Footer from "@/components/footer/footer";
 import Portfolios from "@/components/landings/portfolios/portfolios";
+import { usePathname } from "next/navigation";
+import Axios from "axios";
 // Import Css
 import styles from "./page.module.css";
 // JSON Data
@@ -54,6 +56,43 @@ import liveChatIcon from "media/liveChatIcon.svg";
 
 
 const Page = () => {
+    const [selectedService, setSelectedService] = useState("no-need");
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        services: selectedService,
+        pageURL: usePathname()
+    });
+
+    const handleDataChange = (e) => {
+        setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    }
+
+    const handleSelectServices = (e) => {
+        setSelectedService(e.target.value);
+    }
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        e.target.value = "Processing...";
+        let headersList = {
+            "Accept": "*/*",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = { ...data, services: selectedService };
+        let reqOptions = {
+            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
+            method: "POST",
+            headers: headersList,
+            data: JSON.stringify(bodyContent),
+        }
+        let res = await Axios.request(reqOptions);
+        e.target.value = "Get A Free Consultation";
+        window.location.href = "/thank-you";
+    }
     // Reviewss
     let reviewsSlider = {
         dots: true,
@@ -286,14 +325,16 @@ const Page = () => {
                                     <p className="text-[16px] text-[#ffffff] font-sans font-light text-center mb-3">
                                         Or fill in the form below & we'll call you
                                     </p>
-                                    <form>
-                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="tel" placeholder="Phone*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]" />
-                                        <textarea placeholder="Message*" className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"></textarea>
-                                        <button type="submit" className="w-full h-[40px] bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724]">
-                                            Get A Free Consultation
-                                        </button>
+                                    <form autoComplete="off">
+                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                            name="name" onChange={handleDataChange} />
+                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                            name="email" onChange={handleDataChange} />
+                                        <input type="tel" placeholder="Phone*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                            name="phone" onChange={handleDataChange} />
+                                        <textarea placeholder="Message*" className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                            name="message" onChange={handleDataChange}></textarea>
+                                        <input type="button" className="w-full h-[40px] bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" onClick={handleFormSubmit} value="Get A Free Consultation" />
                                     </form>
                                 </div>
                                 <Image src={heroPointingGirl} alt="heroPointingGirl" className="absolute top-[50px] left-[-130px] hidden xl:block" />
@@ -492,10 +533,9 @@ const Page = () => {
                                                                 }
                                                             </ul>
                                                         </div>
-                                                        <button type="button"
-                                                            className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:text-[#000000] hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
+                                                        <Link href="/order?category=Worl" className={`w-max px-10 rounded-full h-[50px] block ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:text-[#000000] hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
                                                             Order Now!
-                                                        </button>
+                                                        </Link>
                                                         <span className="block h-[2px] bg-[#eaeaea]"></span>
                                                         <div className="flex justify-between mt-5 divide-x-2 divide-[#eaeaea] gap-x-5">
                                                             <div className="basis-1/2">
@@ -505,7 +545,7 @@ const Page = () => {
                                                                 <p className="text-[12px] leading-[22px] text-black font-semibold">
                                                                     Call for Maintenance Plans
                                                                 </p>
-                                                                <Link href="javascript:$zopim.livechat.window.show();" className={`flex items-center gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
+                                                                <Link href={`javascript:$zopim.livechat.window.show();`} className={`flex items-center gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}>
                                                                     <Image src={e.chatIcon} alt="packagesChatIconBlue" width={30} height={30} />
                                                                     <span>Live Chat Now</span>
                                                                 </Link>
@@ -795,7 +835,7 @@ const Page = () => {
                                         <Image src={packagesCallIconOrange} alt="packagesCallIconOrange" />
                                         <span>(855) 888-8399</span>
                                     </Link>
-                                    <Link href="#ContactUs" className="w-full rounded-full h-[50px] block bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] mx-auto hover:text-[#f17724] mb-5">
+                                    <Link href="#ContactUs" className="w-full text-center leading-[50px] rounded-full h-[50px] block bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] mx-auto hover:text-[#f17724] mb-5">
                                         Request A Quote Now
                                     </Link>
                                 </div>
@@ -1079,14 +1119,18 @@ const Page = () => {
                                 </ul>
                             </div>
                             <div className="basis-full lg:basis-1/2">
-                                <form>
+                                <form autoComplete="off">
                                     <div className="grid grid-cols-1  md:grid-cols-2 gap-3">
-                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
-                                        <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                            name="name" onChange={handleDataChange} />
+                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                            name="email" onChange={handleDataChange} />
+                                        <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                            name="phone" onChange={handleDataChange} />
                                         <input type="text" placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
                                     </div>
-                                    <select defaultValue={"Web Design Development"} className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]">
+                                    <select className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                        onChange={handleSelectServices} value={selectedService}>
                                         <option value="SEO">SEO</option>
                                         <option value="PPC Marketing">PPC Marketing</option>
                                         <option value="Social Media Management">Social Media Management</option>
@@ -1095,10 +1139,8 @@ const Page = () => {
                                         <option value="Web Design Development">Web Design &amp; Development</option>
                                         <option value="Other">Other</option>
                                     </select>
-                                    <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black my-3 focus-visible:ring-4 ring-[#f17724]"></textarea>
-                                    <button type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724]">
-                                        Get A Free Consultation
-                                    </button>
+                                    <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black my-3 focus-visible:ring-4 ring-[#f17724]" name="message" onChange={handleDataChange}></textarea>
+                                    <input type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" value="Get A Free Consultation" onClick={handleFormSubmit} />
                                 </form>
                             </div>
                         </div>

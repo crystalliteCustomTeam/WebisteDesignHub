@@ -13,6 +13,9 @@ export const metadata = {
     // Google Varification
     verification: {
         google: 'ziIYRBahP4WcKcps6RWRDJvZ9A00pSoI39ByXDN14us',
+        other: {
+            "facebook-domain-verification": ['rfth5fqyv2is1cegfmcloebw46z7nz'],
+        },
     },
     // Canonical
     alternates: {
@@ -42,7 +45,22 @@ export default function RootLayout({ children }) {
                     })(window,document,'script','dataLayer','${GTM_ID}');
                 `}
             </Script>
-            <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e" strategy="lazyOnload">
+            <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e"
+                strategy="lazyOnload">
+            </Script>
+            <Script>
+                {`
+                    !function(f,b,e,v,n,t,s)
+                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                    n.queue=[];t=b.createElement(e);t.async=!0;
+                    t.src=v;s=b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t,s)}(window, document,'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', '3301562960147657');
+                    fbq('track', 'PageView');
+                `}
             </Script>
             <body className={`${primary.className} ${megatFont.variable}`}>
                 <noscript>
