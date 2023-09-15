@@ -3,11 +3,43 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Input, ThemeProvider } from "@material-tailwind/react";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import Axios from "axios";
 // Import Images
 import chat from "media/chatIcon.svg";
 import call from "media/callIcon.svg";
 
 const Sidebuttons = () => {
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        services: "no-need",
+        pageURL: usePathname()
+    });
+
+    const handleDataChange = (e) => {
+        setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    }
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        let headersList = {
+            "Accept": "*/*",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = JSON.stringify(data);
+        let reqOptions = {
+            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
+            method: "POST",
+            headers: headersList,
+            data: bodyContent,
+        }
+        let res = await Axios.request(reqOptions);
+        window.location.href = "/thank-you";
+    }
     const theme = {
         input: {
             defaultProps: {
@@ -62,20 +94,20 @@ const Sidebuttons = () => {
             <div className="cursor-pointer hidden lg:flex items-center translate-x-[100%] hover:translate-x-[1%] fixed top-[49%] right-0 z-50">
                 <span className="text-white font-normal text-lg bg-[#0F2847] tracking-wide rotate-[-90deg] absolute top-[45%] left-[-137px] rounded-tr-[30px] rounded-tl-[30px] py-2 px-3 ">60% off on all services</span>
                 <ThemeProvider value={theme}>
-                    <form className="w-[400px] p-4 bg-black">
+                    <form className="w-[400px] p-4 bg-black" autoComplete="off">
                         <div className="mb-3">
-                            <Input label="Name" type="text" id="" name="" />
+                            <Input label="Name" type="text" id="" onChange={handleDataChange} name="name" />
                         </div>
                         <div className="mb-3">
-                            <Input label="Telephone Number" type="tel" id="" name="" />
+                            <Input label="Telephone Number" type="tel" id="" onChange={handleDataChange} name="phone" />
                         </div>
                         <div className="mb-3">
-                            <Input label="Email" type="email" id="" name="" />
+                            <Input label="Email" type="email" id="" onChange={handleDataChange} name="email" />
                         </div>
                         <div className="mb-3">
-                            <Input label="leave your message" type="text" id="" name="" />
+                            <Input label="leave your message" type="text" id="" onChange={handleDataChange} name="message" />
                         </div>
-                        <button type="button" className="text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white hover:bg-[#C165CB] ">Submit Form</button>
+                        <button type="button" onClick={handleFormSubmit} className="text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white hover:bg-[#C165CB] ">Submit Form</button>
                     </form>
                 </ThemeProvider>
             </div>

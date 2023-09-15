@@ -1,8 +1,46 @@
 "use client"
 // Import Components
 import { Input, Option, Select, Textarea, ThemeProvider } from "@material-tailwind/react";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import Axios from "axios";
 
 const From = () => {
+    const [selectedService, setSelectedService] = useState("Web Design Development");
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        services: selectedService,
+        pageURL: usePathname()
+    });
+
+    const handleDataChange = (e) => {
+        setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    }
+
+    const handleSelectServices = (e) => {
+        setSelectedService(e);
+    }
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        let headersList = {
+            "Accept": "*/*",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = { ...data, services: selectedService };
+        let reqOptions = {
+            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
+            method: "POST",
+            headers: headersList,
+            data: JSON.stringify(bodyContent),
+        }
+        let res = await Axios.request(reqOptions);
+        window.location.href = "/thank-you";
+    }
     const theme = {
         input: {
             defaultProps: {
@@ -193,32 +231,35 @@ const From = () => {
             <div className="lg:absolute lg:top-[95%] lg:left-0 lg:right-0 z-10 pb-10 lg:pb-0">
                 <div className="container">
                     <div className="bg-[#0000006b] backdrop-blur-sm py-10 md:p-10 rounded-[50px] brightness-[-4]">
-                        <form action="">
+                        <form autoComplete="off">
                             <div className="flex flex-col gap-y-3 lg:gap-y-0 lg:flex-row lg:gap-5 mb-3 w-[90%] lg:w-full m-auto">
                                 <div className="basis-full lg:basis-1/3">
-                                    <Input label="Name" type="text" id="" name="" className="backdrop-blur-sm" />
+                                    <Input label="Name" type="text" id="" name="name" onChange={handleDataChange} className="backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <Input label="Telephone Number" type="tel" id="" name="" className="backdrop-blur-sm" />
+                                    <Input label="Telephone Number" type="tel" id="" name="phone" onChange={handleDataChange} className="backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <Input label="Email" type="email" id="" name="" className="backdrop-blur-sm" />
+                                    <Input label="Email" type="email" id="" name="email" onChange={handleDataChange} className="backdrop-blur-sm" />
                                 </div>
                             </div>
                             <div className="flex flex-col lg:flex-row lg:gap-5 gap-y-3 lg:gap-y-0 w-[90%] lg:w-full m-auto">
                                 <div className="basis-full lg:basis-1/3">
-                                    <Select label="Tell Us your story" id="" name="" className="backdrop-blur-sm">
-                                        <Option>Logo Design</Option>
-                                        <Option>Website Design</Option>
-                                        <Option>Branding Design</Option>
-                                        <Option>Application Design</Option>
+                                    <Select label="You're Interested in" className="backdrop-blur-sm" onChange={handleSelectServices}>
+                                        <Option value="SEO">SEO</Option>
+                                        <Option value="PPC Marketing">PPC Marketing</Option>
+                                        <Option value="Social Media Management">Social Media Management</Option>
+                                        <Option value="Reputation Management">Reputation Management</Option>
+                                        <Option value="Content Marketing">Content Marketing</Option>
+                                        <Option value="Web Design Development">Web Design Development</Option>
+                                        <Option value="Other">Other</Option>
                                     </Select>
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <Textarea label="leave your message" variant="outlined" size="lg" id="" name="" rows={1} className="min-h-full backdrop-blur-sm" />
+                                    <Textarea label="leave your message" onChange={handleDataChange} variant="outlined" size="lg" id="" name="message" rows={1} className="min-h-full backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <button type="button" className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white ">Submit Form</button>
+                                    <button type="button" onClick={handleFormSubmit} className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white ">Submit Form</button>
                                 </div>
                             </div>
                         </form>

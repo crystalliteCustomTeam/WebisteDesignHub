@@ -6,21 +6,27 @@ import { Input, Select, Option, Textarea } from "@material-tailwind/react";
 import { ThemeProvider } from "@material-tailwind/react";
 // Import Images
 import contactGirl from "media/contactGirl.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Axios from "axios";
 
 const Contact = () => {
+    const [selectedService, setSelectedService] = useState("Web Design Development");
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
         message: "",
+        services: selectedService,
         pageURL: usePathname()
     });
 
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    }
+
+    const handleSelectServices = (e) => {
+        setSelectedService(e);
     }
 
     const handleFormSubmit = async (e) => {
@@ -29,16 +35,16 @@ const Contact = () => {
             "Accept": "*/*",
             "Content-Type": "application/json"
         }
-        let bodyContent = JSON.stringify(data.name);
+
+        let bodyContent = { ...data, services: selectedService };
         let reqOptions = {
             url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
             method: "POST",
             headers: headersList,
-            data: bodyContent,
+            data: JSON.stringify(bodyContent),
         }
-        let response = await Axios.request(reqOptions);
-        console.log(response.data);
-        console.log(bodyContent);
+        let res = await Axios.request(reqOptions);
+        window.location.href = "/thank-you";
     }
 
     const theme = {
@@ -146,17 +152,20 @@ const Contact = () => {
                                     Schedule  a Call at Your Convenience with Us!
                                 </h2>
                                 <p className="text-base text-black font-normal mb-10">Do not miss this chance to take the first step toward discussing a custom design solution for your website, logo and mobile application. Book a call now!</p>
-                                <form>
+                                <form autoComplete="off">
                                     <div className="flex gap-5 flex-wrap md:flex-nowrap">
                                         <div className="basis-full md:basis-6/12 lg:basis-5/12  xl:basis-6/12 flex space-y-6 flex-col">
                                             <Input label="Name" type="text" name="name" onChange={handleDataChange} />
                                             <Input label="Telephone Number" name="phone" type="tel" onChange={handleDataChange} />
                                             <Input label="Email" type="email" name="email" onChange={handleDataChange} />
-                                            <Select label="You're Interested in">
-                                                <Option>Logo Design</Option>
-                                                <Option>Website Design</Option>
-                                                <Option>Branding Design</Option>
-                                                <Option>Application Design</Option>
+                                            <Select label="You're Interested in" onChange={handleSelectServices}>
+                                                <Option value="SEO">SEO</Option>
+                                                <Option value="PPC Marketing">PPC Marketing</Option>
+                                                <Option value="Social Media Management">Social Media Management</Option>
+                                                <Option value="Reputation Management">Reputation Management</Option>
+                                                <Option value="Content Marketing">Content Marketing</Option>
+                                                <Option value="Web Design Development">Web Design Development</Option>
+                                                <Option value="Other">Other</Option>
                                             </Select>
                                             <button type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black hidden md:block" onClick={handleFormSubmit}>Submit Form</button>
                                         </div>

@@ -2,14 +2,45 @@
 // Import Components
 import Image from "next/image";
 import { ThemeProvider, Input } from "@material-tailwind/react";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import Axios from "axios";
 // Import Theme
 import theme from "../pricingAndPackages/theme";
 // Import Images
 import checkCircle from "media/packages/checkCircle.png";
 // Import Packages
-import data from "../pricingAndPackages/data";
+import dataPackages from "../pricingAndPackages/data";
 
 const PricingAndPackages = ({ content }) => {
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        pageURL: usePathname()
+    });
+
+    const handleDataChange = (e) => {
+        setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    }
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        let headersList = {
+            "Accept": "*/*",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = JSON.stringify(data);
+        let reqOptions = {
+            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
+            method: "POST",
+            headers: headersList,
+            data: bodyContent,
+        }
+        let res = await Axios.request(reqOptions);
+        window.location.href = "/thank-you";
+    }
     return (
         <ThemeProvider value={theme}>
             <section>
@@ -27,7 +58,7 @@ const PricingAndPackages = ({ content }) => {
                             </p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
-                            {data[content.key].packages.map((e, i) => {
+                            {dataPackages[content.key].packages.map((e, i) => {
                                 return <div key={i} className="shadow-lg bg-[#B8C5FA] p-4 rounded-xl">
                                     <div className="bg-[#0F2847] rounded-xl text-center py-5 shadow-lg">
                                         <h4 className="font-megat font-normal text-white text-3xl">{e.name}</h4>
@@ -49,22 +80,22 @@ const PricingAndPackages = ({ content }) => {
                                             );
                                         })}
                                     </ul>
-                                    <form>
+                                    <form autoComplete="off">
                                         <div className="flex flex-col gap-y-4">
                                             <div className="basis-full">
-                                                <Input label="Name" type="text" id="" name="" />
+                                                <Input label="Name" type="text" id="" onChange={handleDataChange} name="name" />
                                             </div>
                                             <div className="basis-full">
-                                                <Input label="Email" type="email" id="" name="" />
-                                            </div>
-                                            <div className="basis-full lg:basis-1/3">
-                                                <Input label="Telephone Number" type="tel" id="" name="" />
+                                                <Input label="Email" type="email" id="" onChange={handleDataChange} name="email" />
                                             </div>
                                             <div className="basis-full">
-                                                <Input label="Meesage..." type="text" id="" name="" />
+                                                <Input label="Telephone Number" type="tel" id="" onChange={handleDataChange} name="phone" />
                                             </div>
                                             <div className="basis-full">
-                                                <button type="button" className="text-lg font-medium h-11 rounded-md bg-[#0F2847] w-full text-white ">Select Package</button>
+                                                <Input type="hidden" id="" name="message" value={`Package : ${e.name}`} onChange={handleDataChange} />
+                                            </div>
+                                            <div className="basis-full">
+                                                <button type="button" onClick={handleFormSubmit} className="text-lg font-medium h-11 rounded-md bg-[#0F2847] w-full text-white ">Select Package</button>
                                             </div>
                                         </div>
                                     </form>

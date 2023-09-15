@@ -1,13 +1,14 @@
 "use client"
 // Import Components
 import Image from "next/image";
-import { Input, Textarea } from "@material-tailwind/react";
+import { Input, Option, Select, Textarea } from "@material-tailwind/react";
 import Slider from "react-slick";
 import Button from "@/components/button/Button";
 import { useState } from "react";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import Portfolios from "@/components/landings/portfolios/portfolios";
+import { usePathname } from "next/navigation";
 // Import Packages
 import packagesData from "@/components/pricingAndPackages/data";
 // Import Css
@@ -41,8 +42,44 @@ import logosReviews from "media/landing-pages/website-design-develop/reviews/log
 import quoteReviews from "media/landing-pages/website-design-develop/reviews/quote.png";
 // Reviews
 import screensContactUs from "media/landing-pages/website-design-develop/contact-us/screens.png";
+import Axios from "axios";
 
 const Page = () => {
+    const [selectedService, setSelectedService] = useState("Web Design Development");
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        services: selectedService,
+        pageURL: usePathname()
+    });
+
+    const handleDataChange = (e) => {
+        setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    }
+
+    const handleSelectServices = (e) => {
+        setSelectedService(e);
+    }
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        let headersList = {
+            "Accept": "*/*",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = { ...data, services: selectedService };
+        let reqOptions = {
+            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
+            method: "POST",
+            headers: headersList,
+            data: JSON.stringify(bodyContent),
+        }
+        let res = await Axios.request(reqOptions);
+        window.location.href = "/thank-you";
+    }
     // Awards Slider
     let awardsSlider = {
         dots: false,
@@ -184,32 +221,39 @@ const Page = () => {
                                                 <h3 className="text-[30px] lg:text-[40px] font-megat font-normal leading-none">
                                                     <span className="text-[#08FAE5]">70%</span> Discount
                                                 </h3>
-                                                <form>
+                                                <form autoComplete="off">
                                                     <Input placeholder="Enter Your Full Name*" type="text"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}
+                                                        name="name" onChange={handleDataChange}
                                                         containerProps={{ className: "m-h-[30px] xl:min-h-[45px] mt-3 xl:mt-5" }} />
                                                     <Input placeholder="Enter Your Email*" type="email"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}
+                                                        name="email" onChange={handleDataChange}
                                                         containerProps={{ className: "m-h-[30px] xl:min-h-[45px] mt-3 xl:mt-5" }} />
                                                     <Input placeholder="Phone*" type="text"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}
+                                                        name="phone" onChange={handleDataChange}
                                                         containerProps={{ className: "m-h-[30px] xl:min-h-[45px] mt-3 xl:mt-5" }} />
                                                     <Textarea placeholder="Enter Your Message"
                                                         className="border-none my-3 xl:my-5 backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
+                                                        name="message" onChange={handleDataChange}
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}>
                                                     </Textarea>
-                                                    <button type="button" className="bg-transparent text-base xl:text-lg font-medium text-white w-[100%] hover:bg-[#00FFED] border-2 border-[#00FFED] h-[40px] xl:h-[45px] rounded-lg">Submit Now</button>
+                                                    <button type="button" onClick={handleFormSubmit}
+                                                        className="bg-transparent text-base xl:text-lg font-medium text-white w-[100%] hover:bg-[#00FFED] border-2 border-[#00FFED] h-[40px] xl:h-[45px] rounded-lg">
+                                                        Submit Now
+                                                    </button>
                                                 </form>
                                             </div>
                                         </div>
@@ -398,7 +442,7 @@ const Page = () => {
                                             $4999
                                         </h5>
                                         <div className="flex gap-4 items-center">
-                                            <a href="tel:(855)888-8399" className="bg-[#3283FF] rounded-[50px] text-white inline-flex group items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-transparent font-medium border-2 border-[#3283FF] hover:text-[#3283FF]">
+                                            <a href="javascript:$zopim.livechat.window.show();" className="bg-[#3283FF] rounded-[50px] text-white inline-flex group items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-transparent font-medium border-2 border-[#3283FF] hover:text-[#3283FF]">
                                                 <Image src={checkCircle} alt="checkCircle" className="brightness-0 invert group-hover:brightness-100 group-hover:invert-0" />
                                                 <span>Order Now</span>
                                             </a>
@@ -540,7 +584,7 @@ const Page = () => {
                                             suscipit odio. Etiam nunc nisl, fermentum quis sagittis non.
                                         </p>
                                     </div>
-                                    <form>
+                                    <form autoComplete="off">
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                             <div>
                                                 <Input placeholder="Enter Your Full Name*" type="text"
@@ -548,6 +592,7 @@ const Page = () => {
                                                     labelProps={{
                                                         className: "hidden",
                                                     }}
+                                                    name="name" onChange={handleDataChange}
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl " }} />
                                             </div>
                                             <div>
@@ -556,6 +601,7 @@ const Page = () => {
                                                     labelProps={{
                                                         className: "hidden",
                                                     }}
+                                                    name="email" onChange={handleDataChange}
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
                                             </div>
                                             <div>
@@ -564,15 +610,30 @@ const Page = () => {
                                                     labelProps={{
                                                         className: "hidden",
                                                     }}
+                                                    name="phone" onChange={handleDataChange}
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
                                             </div>
                                             <div>
-                                                <Input placeholder="Subject*" type="text"
+                                                {/* <Input placeholder="Subject*" type="text"
                                                     className="border-none placeholder:text-white text-white font-[300]"
                                                     labelProps={{
                                                         className: "hidden",
                                                     }}
-                                                    containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
+                                                    name="message" onChange={handleDataChange}
+                                                    containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} /> */}
+                                                <Select label="You're Interested in" className="border-none placeholder:text-white text-white font-[300]"
+                                                    labelProps={{
+                                                        className: "text-white",
+                                                    }} containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }}
+                                                    onChange={handleSelectServices}>
+                                                    <Option value="SEO">SEO</Option>
+                                                    <Option value="PPC Marketing">PPC Marketing</Option>
+                                                    <Option value="Social Media Management">Social Media Management</Option>
+                                                    <Option value="Reputation Management">Reputation Management</Option>
+                                                    <Option value="Content Marketing">Content Marketing</Option>
+                                                    <Option value="Web Design Development">Web Design Development</Option>
+                                                    <Option value="Other">Other</Option>
+                                                </Select>
                                             </div>
                                         </div>
                                         <Textarea placeholder="Enter Your Message"
@@ -580,9 +641,10 @@ const Page = () => {
                                             labelProps={{
                                                 className: "hidden",
                                             }}
+                                            name="message" onChange={handleDataChange}
                                             containerProps={{ className: "bg-[#00296B]/30 rounded-xl my-5" }}>
                                         </Textarea>
-                                        <button type="button" className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5">Submit Now</button>
+                                        <button type="button" onClick={handleFormSubmit} className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5">Submit Now</button>
                                     </form>
                                 </div>
                                 <div>

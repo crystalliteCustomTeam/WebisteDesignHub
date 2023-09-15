@@ -58,8 +58,8 @@ const Page = () => {
                 <Reviews />
                 <Weare />
                 <Contact />
-                <Footer />
                 <Letstalk />
+                <Footer />
             </main>
         </>
     );
