@@ -61,99 +61,87 @@ const Page = () => {
         btnColor: "text-black",
         tabs: [
             {
-                value: "abstractmark",
-                label: "Abstract Mark",
+                value: "2d",
+                label: "2D Logos",
                 images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                    "/logo-design/services/2d/1.png",
+                    "/logo-design/services/2d/2.jpg",
+                    "/logo-design/services/2d/3.jpg",
+                    "/logo-design/services/2d/4.jpg",
+                    "/logo-design/services/2d/5.jpg",
+                    "/logo-design/services/2d/6.jpg",
+                ],
+            },
+            {
+                value: "3d",
+                label: "3D Logos",
+                images: [
+                    "/logo-design/services/3d/1.png",
+                    "/logo-design/services/3d/2.jpg",
+                    "/logo-design/services/3d/3.png",
+                    "/logo-design/services/3d/4.png",
+                    "/logo-design/services/3d/5.png",
+                    "/logo-design/services/3d/6.png",
                 ],
             },
             {
                 value: "emblem",
-                label: "Emblem",
+                label: "Emblem Logos",
                 images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
-                ],
-            },
-            {
-                value: "letter",
-                label: "Letter",
-                images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
-                ],
-            },
-            {
-                value: "wordmark",
-                label: "Wordmark",
-                images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
-                ],
-            },
-            {
-                value: "mascot",
-                label: "Mascot",
-                images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
-                ],
-            },
-            {
-                value: "2dlogos",
-                label: "2D Logos",
-                images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
-                ],
-            },
-            {
-                value: "3dlogos",
-                label: "3D Logos",
-                images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                    "/logo-design/services/emblem/1.jpg",
+                    "/logo-design/services/emblem/2.jpg",
+                    "/logo-design/services/emblem/3.png",
+                    "/logo-design/services/emblem/4.jpg",
+                    "/logo-design/services/emblem/5.png",
+                    "/logo-design/services/emblem/6.png",
                 ],
             },
             {
                 value: "illustrative",
-                label: "Illustrative",
+                label: "Illustrative Logos",
                 images: [
-                    "https://www.logodesignscenter.com/images/sample1.jpg",
-                    "https://www.logodesignscenter.com/images/sample2.jpg",
-                    "https://www.logodesignscenter.com/images/sample3.jpg",
-                    "https://www.logodesignscenter.com/images/sample%204.jpg",
-                    "https://www.logodesignscenter.com/images/sample5.jpg",
-                    "https://www.logodesignscenter.com/images/sample6.jpg"
+                    "/logo-design/services/illustrative/1.jpg",
+                    "/logo-design/services/illustrative/2.jpg",
+                    "/logo-design/services/illustrative/3.jpg",
+                    "/logo-design/services/illustrative/4.png",
+                    "/logo-design/services/illustrative/5.png",
+                    "/logo-design/services/illustrative/6.jpg",
+                ],
+            },
+            {
+                value: "letter",
+                label: "Letter Logos",
+                images: [
+                    "/logo-design/services/letter/1.jpg", 
+                    "/logo-design/services/letter/2.jpg",
+                    "/logo-design/services/letter/3.png",
+                    "/logo-design/services/letter/4.png",
+                    "/logo-design/services/letter/5.jpg",
+                    "/logo-design/services/letter/6.png",
+                ],
+            },
+            {
+                value: "mascot",
+                label: "Mascot Logos",
+                images: [
+                    "/logo-design/services/mascot/1.png",
+                    "/logo-design/services/mascot/2.jpg",
+                    "/logo-design/services/mascot/3.jpg",
+                    "/logo-design/services/mascot/4.png",
+                    "/logo-design/services/mascot/5.jpg",
+                    "/logo-design/services/mascot/6.png",
+                ],
+            },
+            {
+                value: "wordmark",
+                label: "Wordmark Logos",
+                images: [
+                    "/logo-design/services/wordmark/1.png",
+                    "/logo-design/services/wordmark/2.jpg",
+                    "/logo-design/services/wordmark/3.png",
+                    "/logo-design/services/wordmark/4.png",
+                    "/logo-design/services/wordmark/5.png",
+                    "/logo-design/services/wordmark/6.png",
                 ],
             }
         ]
@@ -170,7 +158,8 @@ const Page = () => {
         subtitle: "Reasonable Prices",
         title: "That Fits Your Budget",
         desc: "With affordable prices, we have exclusive digital art and design facilities, customized for your individual needs",
-        key: 0
+        key: 0,
+        name: "logo-design"
     }
     return (
         <>

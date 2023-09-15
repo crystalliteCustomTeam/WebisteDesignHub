@@ -2,6 +2,7 @@
 // Import Components
 import Image from "next/image";
 import { Tabs, TabsHeader, TabsBody, Tab, TabPanel, ThemeProvider, Input } from "@material-tailwind/react";
+import Button from "@/components/button/Button";
 // Import Theme
 import theme from "./theme";
 // Import Images
@@ -29,7 +30,7 @@ const PricingAndPackages = () => {
                                 })}
                             </TabsHeader>
                             <TabsBody>
-                                {data.map(({ value, packages }) => {
+                                {data.map(({ value, packages, label }) => {
                                     return <TabPanel key={value} value={value}>
                                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
                                             {packages.map(({ name, discountedPrice, originalPrice, list, note }, i) => {
@@ -54,25 +55,18 @@ const PricingAndPackages = () => {
                                                             );
                                                         })}
                                                     </ul>
-                                                    <form action="">
-                                                        <div className="flex flex-col gap-y-4">
-                                                            <div className="basis-full">
-                                                                <Input label="Name" type="text" id="" name="" />
-                                                            </div>
-                                                            <div className="basis-full">
-                                                                <Input label="Email" type="email" id="" name="" />
-                                                            </div>
-                                                            <div className="basis-full lg:basis-1/3">
-                                                                <Input label="Telephone Number" type="tel" id="" name="" />
-                                                            </div>
-                                                            <div className="basis-full">
-                                                                <Input label="Meesage..." type="text" id="" name="" />
-                                                            </div>
-                                                            <div className="basis-full">
-                                                                <button type="button" className="text-lg font-medium h-11 rounded-md bg-[#5750E4] w-full text-white ">Select Package</button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
+                                                    <div className="flex items-center gap-2 xl:gap-3 justify-evenly xl:justify-between">
+                                                        <Button text="Order Now"
+                                                            icon={true}
+                                                            color="btnBg bg-[#5750E4] text-white"
+                                                            hover="hover:bg-[#000000]"
+                                                            link={`order/${(label + " " + name).toLowerCase().replace(/\s/g, '-')}?price=$${discountedPrice}`} />
+                                                        <Button text="(855) 888-8399"
+                                                            color="btnColor text-black bg-transparent"
+                                                            border="border-2 border-[#5750E4]"
+                                                            hover="hover:bg-[#5750E4] hover:text-white"
+                                                            link="tel:(855)888-8399" />
+                                                    </div>
                                                 </div>
                                             })}
                                         </div>

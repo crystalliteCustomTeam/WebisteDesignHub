@@ -58,7 +58,8 @@ const page = () => {
         subtitle: "Reasonable Prices",
         title: "That Fits Your Budget",
         desc: "With affordable prices, we have exclusive digital art and design facilities, customized for your individual needs",
-        key: 2
+        key: 2,
+        name: "Mobile Application"
     }
     return (
         <>
@@ -68,11 +69,10 @@ const page = () => {
                 <Services />
                 <SmallBanner content={smallbanner} />
                 <Portfolios content={portfolios} />
-                <Packages content={packages} />
+                <Letstalk />
                 <Reviews />
                 <Weare />
                 <Contact />
-                <Letstalk />
                 <Footer />
             </main>
         </>

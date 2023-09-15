@@ -92,10 +92,10 @@ const Services = ({ content }) => {
                         <TabsBody>
                             {tabs.map(({ value, images }) => (
                                 <TabPanel key={value} value={value} className="p-0">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-6">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-3">
                                         {images.map((e, i) => {
                                             return <div key={i}>
-                                                <Image src={e} alt={i} width={400} height={300} className="block m-auto" />
+                                                <Image src={e} alt={i} width={800} height={300} className="block m-auto" />
                                             </div>
                                         })}
                                     </div>

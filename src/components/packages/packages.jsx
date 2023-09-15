@@ -2,6 +2,7 @@
 // Import Components
 import Image from "next/image";
 import { ThemeProvider, Input } from "@material-tailwind/react";
+import Button from "@/components/button/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Axios from "axios";
@@ -13,34 +14,6 @@ import checkCircle from "media/packages/checkCircle.png";
 import dataPackages from "../pricingAndPackages/data";
 
 const PricingAndPackages = ({ content }) => {
-    const [data, setData] = useState({
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
-        pageURL: usePathname()
-    });
-
-    const handleDataChange = (e) => {
-        setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-    }
-    const handleFormSubmit = async (e) => {
-        e.preventDefault();
-        let headersList = {
-            "Accept": "*/*",
-            "Content-Type": "application/json"
-        }
-
-        let bodyContent = JSON.stringify(data);
-        let reqOptions = {
-            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
-            method: "POST",
-            headers: headersList,
-            data: bodyContent,
-        }
-        let res = await Axios.request(reqOptions);
-        window.location.href = "/thank-you";
-    }
     return (
         <ThemeProvider value={theme}>
             <section>
@@ -80,25 +53,18 @@ const PricingAndPackages = ({ content }) => {
                                             );
                                         })}
                                     </ul>
-                                    <form autoComplete="off">
-                                        <div className="flex flex-col gap-y-4">
-                                            <div className="basis-full">
-                                                <Input label="Name" type="text" id="" onChange={handleDataChange} name="name" />
-                                            </div>
-                                            <div className="basis-full">
-                                                <Input label="Email" type="email" id="" onChange={handleDataChange} name="email" />
-                                            </div>
-                                            <div className="basis-full">
-                                                <Input label="Telephone Number" type="tel" id="" onChange={handleDataChange} name="phone" />
-                                            </div>
-                                            <div className="basis-full">
-                                                <Input type="hidden" id="" name="message" value={`Package : ${e.name}`} onChange={handleDataChange} />
-                                            </div>
-                                            <div className="basis-full">
-                                                <button type="button" onClick={handleFormSubmit} className="text-lg font-medium h-11 rounded-md bg-[#0F2847] w-full text-white ">Select Package</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <div className="flex items-center gap-2 xl:gap-3 justify-evenly xl:justify-between">
+                                        <Button text="Order Now"
+                                            icon={true}
+                                            color="btnBg bg-[#0F2847] text-white"
+                                            hover="hover:bg-[#000000]"
+                                            link={`order/${(content.name + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=$${e.discountedPrice}`} />
+                                        <Button text="(855) 888-8399"
+                                            color="btnColor text-black bg-transparent"
+                                            border="border-2 border-[#0F2847]"
+                                            hover="hover:bg-[#0F2847] hover:text-white"
+                                            link="tel:(855)888-8399" />
+                                    </div>
                                 </div>
                             })}
                         </div>

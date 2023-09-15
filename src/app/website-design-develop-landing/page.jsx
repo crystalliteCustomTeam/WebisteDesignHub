@@ -382,7 +382,7 @@ const Page = () => {
                                                         icon={true}
                                                         color="btnBg bg-[#3283FF] text-white"
                                                         hover="hover:bg-[#000000]"
-                                                        link="javascript:$zopim.livechat.window.show();" />
+                                                        link={`order/${("website" + " " + name).toLowerCase().replace(/\s/g, '-')}?price=$${originalPrice}`} />
                                                     <Button text="(855) 888-8399"
                                                         color="btnColor text-white bg-transparent"
                                                         border="border-2 border-[#3283FF]"
@@ -442,7 +442,7 @@ const Page = () => {
                                             $4999
                                         </h5>
                                         <div className="flex gap-4 items-center">
-                                            <a href="javascript:$zopim.livechat.window.show();" className="bg-[#3283FF] rounded-[50px] text-white inline-flex group items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-transparent font-medium border-2 border-[#3283FF] hover:text-[#3283FF]">
+                                            <a href={`order/${("Customized Web Portal Combo").toLowerCase().replace(/\s/g, '-')}?price=$4999`} className="bg-[#3283FF] rounded-[50px] text-white inline-flex group items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-transparent font-medium border-2 border-[#3283FF] hover:text-[#3283FF]">
                                                 <Image src={checkCircle} alt="checkCircle" className="brightness-0 invert group-hover:brightness-100 group-hover:invert-0" />
                                                 <span>Order Now</span>
                                             </a>

@@ -58,7 +58,8 @@ const Page = () => {
         subtitle: "Reasonable Prices",
         title: "That Fits Your Budget",
         desc: "With affordable prices, we have exclusive digital art and design facilities, customized for your individual needs",
-        key: 1
+        key: 1,
+        name: "Illustration Design"
     }
     return (
         <>
