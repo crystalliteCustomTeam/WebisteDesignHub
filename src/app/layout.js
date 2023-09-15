@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
             <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e"
                 strategy="lazyOnload">
             </Script>
-            <Script>
+            <Script strategy="lazyOnload">
                 {`
                     !function(f,b,e,v,n,t,s)
                     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
