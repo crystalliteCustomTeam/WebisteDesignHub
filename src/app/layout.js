@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
                 </noscript>
                 {children}
             </body>
-            <Script id="google-tag-manager" strategy="afterInteractive">
+            <Script id="google-tag-manager" strategy="lazyOnload">
                 {`
                     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -52,9 +52,9 @@ export default function RootLayout({ children }) {
                 `}
             </Script>
             <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e"
-                strategy="afterInteractive">
+                strategy="lazyOnload">
             </Script>
-            <Script id="facebook-manager" strategy="afterInteractive">
+            <Script id="facebook-manager" strategy="lazyOnload">
                 {`
                     !function(f,b,e,v,n,t,s)
                     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
