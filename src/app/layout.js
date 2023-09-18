@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
                 src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"
                 strategy="lazyOnload">
             </Script>
-            <Script>
+            <Script id="google-tag-manager-three">
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
