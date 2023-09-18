@@ -53,7 +53,7 @@ const From = () => {
                     outlined: {
                         base: {
                             input: {
-                                borderWidth: "border-2 placeholder-shown:border-0",
+                                borderWidth: "border-2 placeholder-shown:border-2",
                                 borderColor: "placeholder-shown:border-white placeholder-shown:border-t-white",
                                 floated: {
                                     borderWidth: "border-2 focus:border-2",
@@ -141,7 +141,7 @@ const From = () => {
                         states: {
                             close: {
                                 select: {
-                                    borderWidth: "border-0",
+                                    borderWidth: "border-2",
                                 },
                             },
                             withValue: {
@@ -182,7 +182,7 @@ const From = () => {
                     outlined: {
                         base: {
                             textarea: {
-                                borderWidth: "border-2 placeholder-shown:border-0",
+                                borderWidth: "border-2 placeholder-shown:border-2",
                                 borderColor: "placeholder-shown:border-white placeholder-shown:border-t-white",
                                 floated: {
                                     borderWidth: "border-2 focus:border-2",

@@ -36,12 +36,6 @@ export default function RootLayout({ children }) {
     const GTM_ID = 'GTM-5G927FVV';
     return (
         <html lang="en">
-            <body className={`${primary.className} ${megatFont.variable}`}>
-                <noscript>
-                    <iframe src={`https://www.googletagmanager.com/ns.html?id='${GTM_ID}'`} className="hidden"></iframe>
-                </noscript>
-                {children}
-            </body>
             <Script id="google-tag-manager" strategy="lazyOnload">
                 {`
                     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -51,7 +45,8 @@ export default function RootLayout({ children }) {
                     })(window,document,'script','dataLayer','${GTM_ID}');
                 `}
             </Script>
-            <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e"
+            <Script id="ze-snippet"
+                src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e"
                 strategy="lazyOnload">
             </Script>
             <Script id="facebook-manager" strategy="lazyOnload">
@@ -68,6 +63,24 @@ export default function RootLayout({ children }) {
                     fbq('track', 'PageView');
                 `}
             </Script>
+            <Script id="google-tag-manager-two"
+                src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"
+                strategy="lazyOnload">
+            </Script>
+            <Script>
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'AW-11337170041');
+                `}
+            </Script>
+            <body className={`${primary.className} ${megatFont.variable}`}>
+                <noscript>
+                    <iframe src={`https://www.googletagmanager.com/ns.html?id='${GTM_ID}'`} className="hidden"></iframe>
+                </noscript>
+                {children}
+            </body>
         </html >
     );
 }
