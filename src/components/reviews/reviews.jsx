@@ -34,7 +34,8 @@ const Reviews = () => {
                                         <Image src={avatarOne} alt={avatarOne} className="shadow-md rounded-full" />
                                         <div >
                                             <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Jennifer Mitchell</h5>
-                                            <p className="text-sm text-black font-light">Senior Financial Advisor</p>
+                                            <p className="text-sm text-black font-light mb-2">Senior Financial Advisor</p>
+                                            <h5 className="text-sm text-black font-sans font-bold leading-none">Wealth Vision Consultants</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -44,18 +45,20 @@ const Reviews = () => {
                                         <Image src={avatarTwo} alt={avatarTwo} className="shadow-md rounded-full" />
                                         <div>
                                             <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Sarah Johnson</h5>
-                                            <p className="text-sm text-black font-light">E-commerce Manager</p>
+                                            <p className="text-sm text-black font-light mb-2">E-commerce Manager</p>
+                                            <h5 className="text-sm text-black font-sans font-bold leading-none">Urban Bloom Boutique</h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">“Hiring Web Design Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.”</p>
                                     <div className="flex items-center gap-5 mt-5">
-                                    <Image src={avatarThree} alt={avatarThree} className="mt-5 shadow-md rounded-full" />
-                                    <div>
-                                        <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Emily Parker</h5>
-                                        <p className="text-sm text-black font-light">Co-founder - InnovateTech Solutions</p>
-                                    </div>
+                                        <Image src={avatarThree} alt={avatarThree} className="mt-5 shadow-md rounded-full" />
+                                        <div>
+                                            <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Emily Parker</h5>
+                                            <p className="text-sm text-black font-light mb-2">Co-founder</p>
+                                            <h5 className="text-sm text-black font-sans font-bold leading-none">InnovateTech Solutions</h5>
+                                        </div>
                                     </div>
                                 </div>
                             </Slider>
@@ -63,38 +66,6 @@ const Reviews = () => {
                         <div className="basis-full md:basis-2/4">
                             <Image src={reviewsIllustration} alt="reviewsIllustration" />
                         </div>
-                        {/* <div className="basis-full md:basis-2/4 flex flex-col gap-5">
-                            <div className="bg-[#0F2847] p-6 rounded-3xl cursor-pointer shadow-md relative md:left-[-50px] xl:left-[-100px]">
-                                <div className="flex items-center gap-4">
-                                    <Image src={avatarOne} alt={avatarOne} />
-                                    <div>
-                                        <h5 className="text-lg text-white font-sans font-bold leading-none mb-2">Kylie Madona</h5>
-                                        <p className="text-sm text-gray-400 font-light">CTO of JamsosTech</p>
-                                    </div>
-                                </div>
-                                <p className="text-sm font-normal text-white mt-3 hidden lg:block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
-                            </div>
-                            <div className="bg-[#F9F9FB] p-6 rounded-3xl cursor-pointer">
-                                <div className="flex items-center gap-4">
-                                    <Image src={avatarTwo} alt={avatarTwo} />
-                                    <div>
-                                        <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Kylie Madona</h5>
-                                        <p className="text-sm text-gray-400 font-light">CTO of JamsosTech</p>
-                                    </div>
-                                </div>
-                                <p className="text-sm font-normal text-black mt-3 hidden lg:block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
-                            </div>
-                            <div className="bg-[#F9F9FB] p-6 rounded-3xl cursor-pointer">
-                                <div className="flex items-center gap-4">
-                                    <Image src={avatarThree} alt={avatarThree} />
-                                    <div>
-                                        <h5 className="text-lg text-black font-sans font-bold leading-none mb-2">Kylie Madona</h5>
-                                        <p className="text-sm text-gray-400 font-light">CTO of JamsosTech</p>
-                                    </div>
-                                </div>
-                                <p className="text-sm font-normal text-black mt-3 hidden lg:block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit odio. Etiam nunc nisl, fermentum quis sagittis non, posuere sit amet diam.</p>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>

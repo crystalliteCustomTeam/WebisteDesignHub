@@ -5,15 +5,16 @@ import Link from "next/link";
 // Import Images
 import letstalk from "media/letstalk.png";
 
-const Letstalk = () => {
+const Letstalk = ({ content }) => {
+    const { title, desc } = content;
     return (
         <section>
             <div className="__homeHeroGradientBg py-10 lg:py-20 xl:py-24 relative overflow-hidden z-[1]">
                 <div className="container">
                     <div className="flex items-end lg:items-center lg:gap-5 flex-wrap lg:flex-nowrap">
                         <div className="basis-full lg:basis-[40%] mb-8 lg:mb-0">
-                            <h3 className="text-2xl lg:text-4xl leading-none xltext-5xl font-megat text-white font-normal">Design Consultation</h3>
-                            <p className="text-base text-white font-normal">Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!</p>
+                            <h3 className="text-2xl lg:text-4xl leading-none xltext-5xl font-megat text-white font-normal">{title}</h3>
+                            <p className="text-base text-white font-normal">{desc}</p>
                         </div>
                         <div className="basis-[50%] lg:basis-[35%] mb-8 md:mb-0">
                             <Link href="tel:(855)888-8399" className="text-2xl lg:text-4xl leading-none xltext-5xl font-normal font-megat  text-white block mb-4">(855) 888-8399</Link>

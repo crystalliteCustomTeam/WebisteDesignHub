@@ -10,9 +10,11 @@ const Services = () => {
             <div className="bg-[#EBEBEB] py-10 lg:py-[200px]">
                 <div className="container">
                     <div className="text-center mb-10">
-                        <span className="text-base font-normal text-[#00B4FF]">Internet Merchant Creators</span>
-                        <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">Developing E-Commerce Platforms</h2>
-                        <p className="text-base text-black font-normal">Our team is well-versed in providing safe e-commerce options for businesses like yours. If you`re a new company in need of an e-commerce platform, or an established company trying to expand into new markets, Urban Web Designers can help.</p>
+                        <span className="text-base font-normal text-[#00B4FF]">Ecommerce Website Solutions</span>
+                        <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">
+                            Ecommerce Web Development Experts
+                        </h2>
+                        <p className="text-base text-black font-normal lg:w-[70%] m-auto">Our team focuses on creating custom ecommerce solutions to make your online presence better, increase sales, and improve shopping experience on your website.</p>
                     </div>
                     <Image src={shoe} alt="shoe" className="block m-auto" />
                     <div className="flex items-center gap-3 justify-center mt-10 relative z-10">

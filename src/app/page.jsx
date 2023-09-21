@@ -115,6 +115,11 @@ const Page = () => {
         desc: "At Web Design Hub, our designers are committed  to excellence in every aspect of \n design, from logos to web, mobile apps, and illustrations.",
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive]
     };
+    // Array for Letstalk Component Props
+    const letstalk = {
+        title: "Design Consultation",
+        desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
+    }
     return (
         <>
             <main>
@@ -127,7 +132,7 @@ const Page = () => {
                 <Reviews />
                 <Weare />
                 <Contact />
-                <Letstalk />
+                <Letstalk content={letstalk} />
                 <Footer />
             </main>
         </>

@@ -16,29 +16,39 @@ const Weare = () => {
                     <div className="flex">
                         <div className="basis-full">
                             <h2 className="text-2xl sm:text-4xl xl:text-5xl font-megat text-white text-center font-normal leading-none mb-3">
-                                We Make 'Wow' Happen at Web Design Hub
+                                Innovative Services & Exceptional Results
                             </h2>
-                            <p className="text-base text-white text-center font-normal mb-10 lg:mb-20">Our professional web designers and developers prioritize communication, innovation, and your satisfaction. <br className="hidden xl:block" /> We serve  both large and small businesses with top-tier logo design services.</p>
+                            <p className="text-base text-white text-center font-normal mb-10 lg:mb-20">Our commitment to delivering innovative solutions and consistently surpassing expectations <br className="hidden xl:block" /> make Web Design Hub an exclusive choice</p>
                             <div className="flex lg:divide-x lg:divide-[#1E73DB] mb-10 lg:mb-20 gap-5 flex-wrap lg:flex-nowrap justify-center">
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={one} alt={one} className="block m-auto mb-3" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Responsive Customer <br /> Support</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">
+                                        Creative Excellence
+                                    </h3>
                                 </div>
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={two} alt={two} className="block m-auto mb-3" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Customer Satisfaction <br /> Guaranteed</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">
+                                        Customized Solutions
+                                    </h3>
                                 </div>
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={three} alt={three} className="block m-auto" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Ownership <br /> Protection</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">
+                                        Responsive Design
+                                    </h3>
                                 </div>
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5 border-l-5">
                                     <Image src={four} alt={four} className="block m-auto mb-3" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Budget-Friendly <br /> Pricing</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">
+                                        On-Time Delivery
+                                    </h3>
                                 </div>
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={five} alt={five} className="block m-auto mb-3" />
-                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">Industry <br /> Professionalss</h3>
+                                    <h3 className="text-basis md:text-lg xl:text-xl font-light font-sans text-white text-center">
+                                        Affordable Pricing.
+                                    </h3>
                                 </div>
                             </div>
                             <div className="flex border-2 rounded-2xl border-[#1E73DB] items-center justify-evenly py-5 flex-wrap md:flex-nowrap text-center md:text-left flex-col md:flex-row gap-5">

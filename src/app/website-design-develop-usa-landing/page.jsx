@@ -421,7 +421,7 @@ const Page = () => {
                             </p>
                         </div>
                         {
-                            affordablepackages.map(({ title, packages }) => {
+                            affordablepackages.map(({ title, value, label, packages }) => {
                                 return (<div key={title}>
                                     <h2 className="text-[25px] leading-none text-[#0F2847] text-center font-sans font-semibold underline my-10">
                                         {title}
@@ -461,7 +461,10 @@ const Page = () => {
                                                                     }
                                                                 </ul>
                                                             </div>
-                                                            <Link href={`order/${(title + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=${e.originalPrice}`} className={`w-max px-10 rounded-full h-[50px] block leading-[50px] ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:text-[#000000] hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
+                                                            <Link
+                                                                className={`w-max px-10 rounded-full h-[50px] block leading-[50px] ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:text-[#000000] hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}
+                                                                // href={`order/${(title + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=${e.originalPrice}`}
+                                                                href={`order/package?value=${value}&id=${e.id}&label=${label}`} >
                                                                 Order Now!
                                                             </Link>
                                                             <span className="block h-[2px] bg-[#eaeaea]"></span>
@@ -532,7 +535,10 @@ const Page = () => {
                                                                 }
                                                             </ul>
                                                         </div>
-                                                        <Link href={`order/${(title + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=${e.originalPrice}`} className={`w-max px-10 rounded-full h-[50px] block leading-[50px] ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:text-[#000000] hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}>
+                                                        <Link
+                                                            className={`w-max px-10 rounded-full h-[50px] block leading-[50px] ${e.bgColor} text-[#ffffff] text-[18px] font-sans font-semibold hover:text-[#000000] hover:ring-2 hover:bg-transparent ring-[#000000] mx-auto mb-5`}
+                                                            // href={`order/${(title + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=${e.originalPrice}`}
+                                                            href={`order/package?value=${value}&id=${e.id}&label=${label}`} >
                                                             Order Now!
                                                         </Link>
                                                         <span className="block h-[2px] bg-[#eaeaea]"></span>

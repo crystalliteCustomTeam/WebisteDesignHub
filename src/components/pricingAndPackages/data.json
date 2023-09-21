@@ -1,12 +1,14 @@
 [
     {
+        "id": 0,
         "value": "logo",
         "label": "Logo",
         "packages": [
             {
+                "id": 0,
                 "name": "Basic Logo",
-                "discountedPrice": "45",
-                "originalPrice": "80",
+                "discountedPrice": "$45",
+                "originalPrice": "$80",
                 "list": [
                     "3 Custom Logo Design Concepts",
                     "1 Dedicated Designer",
@@ -18,9 +20,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Startup Logo",
-                "discountedPrice": "80",
-                "originalPrice": "170",
+                "discountedPrice": "$80",
+                "originalPrice": "$170",
                 "list": [
                     "5 Custom Logo Design Concepts",
                     "By 2 Designers",
@@ -33,9 +36,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Professional Logo",
-                "discountedPrice": "125",
-                "originalPrice": "249",
+                "discountedPrice": "$125",
+                "originalPrice": "$249",
                 "list": [
                     "UNLIMITED Logo Design Concepts",
                     "By 4 Designers",
@@ -50,9 +54,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "Elite Logo",
-                "discountedPrice": "175",
-                "originalPrice": "348",
+                "discountedPrice": "$175",
+                "originalPrice": "$348",
                 "list": [
                     "UNLIMITED Logo Design Concepts",
                     "By 5 Award Winning Designers",
@@ -69,9 +74,10 @@
                 ]
             },
             {
+                "id": 4,
                 "name": "Business Logo",
-                "discountedPrice": "245",
-                "originalPrice": "488",
+                "discountedPrice": "$245",
+                "originalPrice": "$488",
                 "list": [
                     "UNLIMITED Logo Design Concepts",
                     "By 8 Award Winning Designers",
@@ -88,9 +94,10 @@
                 ]
             },
             {
+                "id": 5,
                 "name": "Gold Logo",
-                "discountedPrice": "425",
-                "originalPrice": "849",
+                "discountedPrice": "$425",
+                "originalPrice": "$849",
                 "list": [
                     "UNLIMITED Logo Design Concepts",
                     "By 8 Award Winning Designers",
@@ -112,13 +119,15 @@
         ]
     },
     {
+        "id": 1,
         "value": "illustrationDesign",
         "label": "Illustration Design",
         "packages": [
             {
+                "id": 0,
                 "name": "Basic Illustrative",
-                "discountedPrice": "294",
-                "originalPrice": "588",
+                "discountedPrice": "$294",
+                "originalPrice": "$588",
                 "list": [
                     "3 Custom Design Concepts",
                     "By 2 Designers",
@@ -132,9 +141,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Startup Illustrative",
-                "discountedPrice": "394",
-                "originalPrice": "788",
+                "discountedPrice": "$394",
+                "originalPrice": "$788",
                 "list": [
                     "4 Custom Design Concepts",
                     "By 3 Designers",
@@ -148,9 +158,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Professional Illustrative",
-                "discountedPrice": "594",
-                "originalPrice": "1188",
+                "discountedPrice": "$594",
+                "originalPrice": "$1188",
                 "list": [
                     "UNLIMITED Logo Design Concepts",
                     "By 4 Designers",
@@ -165,9 +176,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "3D Logo Package",
-                "discountedPrice": "544",
-                "originalPrice": "1088",
+                "discountedPrice": "$544",
+                "originalPrice": "$1088",
                 "list": [
                     "3 Unique 3D Logo Concepts",
                     "Light Effects and VFX",
@@ -184,9 +196,10 @@
                 ]
             },
             {
+                "id": 4,
                 "name": "Business Logo",
-                "discountedPrice": "245",
-                "originalPrice": "488",
+                "discountedPrice": "$245",
+                "originalPrice": "$488",
                 "list": [
                     "UNLIMITED Logo Design Concepts",
                     "By 8 Award Winning Designers",
@@ -203,9 +216,10 @@
                 ]
             },
             {
+                "id": 5,
                 "name": "Gold Logo",
-                "discountedPrice": "425",
-                "originalPrice": "849",
+                "discountedPrice": "$425",
+                "originalPrice": "$849",
                 "list": [
                     "UNLIMITED Logo Design Concepts",
                     "By 8 Award Winning Designers",
@@ -227,13 +241,15 @@
         ]
     },
     {
-        "value": "web",
-        "label": "Web",
+        "id": 2,
+        "value": "website",
+        "label": "Website",
         "packages": [
             {
+                "id": 0,
                 "name": "Basic",
-                "discountedPrice": "244",
-                "originalPrice": "488",
+                "discountedPrice": "$244",
+                "originalPrice": "$488",
                 "list": [
                     "1 Page Website Design",
                     "HTML Based",
@@ -250,9 +266,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Startup",
-                "discountedPrice": "394",
-                "originalPrice": "788",
+                "discountedPrice": "$394",
+                "originalPrice": "$788",
                 "list": [
                     "3 Page Website Design",
                     "HTML Based",
@@ -274,9 +291,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Professional",
-                "discountedPrice": "394",
-                "originalPrice": "788",
+                "discountedPrice": "$394",
+                "originalPrice": "$788",
                 "list": [
                     "Up to 5 Pages Website Design",
                     "3 Stock Photos (You can provide us more)",
@@ -299,9 +317,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "Elite",
-                "discountedPrice": "1499",
-                "originalPrice": "2500",
+                "discountedPrice": "$1499",
+                "originalPrice": "$2500",
                 "list": [
                     "Unique 5 Pages Website Design",
                     "Custom, Interactive, Dynamic & High End Web Design",
@@ -329,9 +348,10 @@
                 ]
             },
             {
+                "id": 4,
                 "name": "Identity",
-                "discountedPrice": "1999",
-                "originalPrice": "3000",
+                "discountedPrice": "$1999",
+                "originalPrice": "$3000",
                 "list": [
                     "10 Unique Pages Website Design",
                     "Custom, Interactive, Dynamic & High End Design",
@@ -360,9 +380,10 @@
                 ]
             },
             {
+                "id": 5,
                 "name": "Corporate",
-                "discountedPrice": "3899",
-                "originalPrice": "5800",
+                "discountedPrice": "$3899",
+                "originalPrice": "$5800",
                 "list": [
                     "15 to 20 Unique Pages Website Design",
                     "Custom Made, Interactive, Dynamic & High End Design",
@@ -398,13 +419,15 @@
         ]
     },
     {
+        "id": 3,
         "value": "branding",
         "label": "Branding",
         "packages": [
             {
+                "id": 0,
                 "name": "Startup",
-                "discountedPrice": "99",
-                "originalPrice": "198",
+                "discountedPrice": "$99",
+                "originalPrice": "$198",
                 "list": [
                     "2 Stationery Design Set",
                     "FREE Fax Template",
@@ -415,9 +438,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Classic",
-                "discountedPrice": "199",
-                "originalPrice": "788",
+                "discountedPrice": "$199",
+                "originalPrice": "$788",
                 "list": [
                     "2 Stationery Design Set",
                     "UNLIMITED Revisions",
@@ -428,9 +452,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Premium",
-                "discountedPrice": "399",
-                "originalPrice": "1188",
+                "discountedPrice": "$399",
+                "originalPrice": "$1188",
                 "list": [
                     "2 Stationery Design Set",
                     "Packaging Design",
@@ -441,9 +466,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "Unlimited",
-                "discountedPrice": "499",
-                "originalPrice": "1088",
+                "discountedPrice": "$499",
+                "originalPrice": "$1088",
                 "list": [
                     "2 Stationery Design Set",
                     "Menu Card Design",
@@ -456,13 +482,15 @@
         ]
     },
     {
+        "id": 4,
         "value": "video",
         "label": "Video",
         "packages": [
             {
+                "id": 0,
                 "name": "Startup",
-                "discountedPrice": "499",
-                "originalPrice": "999",
+                "discountedPrice": "$499",
+                "originalPrice": "$999",
                 "list": [
                     "30 Second Video",
                     "Professional Script",
@@ -474,9 +502,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Classic",
-                "discountedPrice": "999",
-                "originalPrice": "2198",
+                "discountedPrice": "$999",
+                "originalPrice": "$2198",
                 "list": [
                     "60 Second Video",
                     "Professional Script",
@@ -488,9 +517,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Premium",
-                "discountedPrice": "1499",
-                "originalPrice": "3248",
+                "discountedPrice": "$1499",
+                "originalPrice": "$3248",
                 "list": [
                     "90 Second Video",
                     "Professional Script",
@@ -502,9 +532,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "Unlimited",
-                "discountedPrice": "2299",
-                "originalPrice": "4598",
+                "discountedPrice": "$2299",
+                "originalPrice": "$4598",
                 "list": [
                     "120 Second Video",
                     "Professional Script",
@@ -517,12 +548,14 @@
         ]
     },
     {
+        "id": 5,
         "value": "seo",
         "label": "SEO",
         "packages": [
             {
+                "id": 0,
                 "name": "Basic",
-                "discountedPrice": "1000",
+                "discountedPrice": "$1000",
                 "originalPrice": null,
                 "note": "FIRST MONTH TOTAL PAYMENT $3,500 (3 MONTHS PLAN) $1,500 (ON-GOING MONTHLY PAYMENT)",
                 "list": [
@@ -538,8 +571,9 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Premium",
-                "discountedPrice": "1500",
+                "discountedPrice": "$1500",
                 "originalPrice": null,
                 "note": "FIRST MONTH TOTAL PAYMENT $5,000 (3 MONTHS PLAN) $2,000 (ON-GOING MONTHLY PAYMENT)",
                 "list": [
@@ -576,8 +610,9 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Platinum",
-                "discountedPrice": "2000",
+                "discountedPrice": "$2000",
                 "originalPrice": null,
                 "note": "FIRST MONTH TOTAL PAYMENT $6,500 (3 MONTHS PLAN) $2,500 (ON-GOING MONTHLY PAYMENT)",
                 "list": [
@@ -618,13 +653,15 @@
         ]
     },
     {
+        "id": 6,
         "value": "ecommerce",
         "label": "Ecommerce",
         "packages": [
             {
+                "id": 0,
                 "name": "Basic",
-                "discountedPrice": "499",
-                "originalPrice": "999",
+                "discountedPrice": "$499",
+                "originalPrice": "$999",
                 "list": [
                     "E-Commerce Website Design and Development",
                     "Theme Based Design",
@@ -656,9 +693,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Startup",
-                "discountedPrice": "699",
-                "originalPrice": "1399",
+                "discountedPrice": "$699",
+                "originalPrice": "$1399",
                 "list": [
                     "E-Commerce Website Design and Development",
                     "High-end Theme Based Design",
@@ -693,9 +731,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Professional",
-                "discountedPrice": "1199",
-                "originalPrice": "2399",
+                "discountedPrice": "$1199",
+                "originalPrice": "$2399",
                 "list": [
                     "E-Commerce Website Design and Development",
                     "Customized Theme Based Design",
@@ -737,9 +776,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "Identity",
-                "discountedPrice": "1699",
-                "originalPrice": "3399",
+                "discountedPrice": "$1699",
+                "originalPrice": "$3399",
                 "list": [
                     "E-Commerce Website Design and Development",
                     "Customized Tailor-Made Design",
@@ -789,9 +829,10 @@
                 ]
             },
             {
+                "id": 4,
                 "name": "Elite",
-                "discountedPrice": "2499",
-                "originalPrice": "4999",
+                "discountedPrice": "$2499",
+                "originalPrice": "$4999",
                 "list": [
                     "E-Commerce Website Design and Development",
                     "Customized Tailor-Made Design",
@@ -860,9 +901,10 @@
                 ]
             },
             {
+                "id": 5,
                 "name": "Corporate",
-                "discountedPrice": "3699",
-                "originalPrice": "7398",
+                "discountedPrice": "$3699",
+                "originalPrice": "$7398",
                 "list": [
                     "E-Commerce Website Design and Development",
                     "Customized Tailor-Made Design",
@@ -933,13 +975,15 @@
         ]
     },
     {
+        "id": 7,
         "value": "digitalMarketing",
         "label": "Digital Marketing",
         "packages": [
             {
+                "id": 0,
                 "name": "Startup",
-                "discountedPrice": "99",
-                "originalPrice": "198",
+                "discountedPrice": "$99",
+                "originalPrice": "$198",
                 "list": [
                     "Cover Photo Design",
                     "Profile Picture Design",
@@ -950,8 +994,9 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Classic",
-                "discountedPrice": "149",
+                "discountedPrice": "$149",
                 "originalPrice": null,
                 "list": [
                     "Cover Photo Design",
@@ -963,9 +1008,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Premium",
-                "discountedPrice": "199",
-                "originalPrice": "398",
+                "discountedPrice": "$199",
+                "originalPrice": "$398",
                 "list": [
                     "Cover Photo Design",
                     "Profile Picture Design",
@@ -976,9 +1022,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "Unlimited",
-                "discountedPrice": "999",
-                "originalPrice": "1998",
+                "discountedPrice": "$999",
+                "originalPrice": "$1998",
                 "list": [
                     "2 Cover Photo Designs",
                     "Profile Picture Design",
@@ -991,13 +1038,15 @@
         ]
     },
     {
+        "id": 8,
         "value": "socialMediaMarketing",
         "label": "Social Media Marketing",
         "packages": [
             {
+                "id": 0,
                 "name": "Startup",
-                "discountedPrice": "349",
-                "originalPrice": "699",
+                "discountedPrice": "$349",
+                "originalPrice": "$699",
                 "list": [
                     "3 postings per week (per network) Facebook + Twitter + Instagram + Google+ ",
                     "Content Creation ",
@@ -1009,9 +1058,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Scaling",
-                "discountedPrice": "699",
-                "originalPrice": "1,399",
+                "discountedPrice": "$699",
+                "originalPrice": "$1,399",
                 "list": [
                     "Copywriting & Visual designs",
                     "Business Page Optimization",
@@ -1027,9 +1077,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Venture",
-                "discountedPrice": "1,199",
-                "originalPrice": "2,399",
+                "discountedPrice": "$1,199",
+                "originalPrice": "$2,399",
                 "list": [
                     "Copywriting & Visual designs",
                     "Business Page Optimization",
@@ -1046,13 +1097,15 @@
         ]
     },
     {
+        "id": 9,
         "value": "copyWriting",
         "label": "Copy Writing",
         "packages": [
             {
+                "id": 0,
                 "name": "Basic",
-                "discountedPrice": "129",
-                "originalPrice": "319",
+                "discountedPrice": "$129",
+                "originalPrice": "$319",
                 "list": [
                     "1 Page Professional Copywriting Service",
                     "Creative & Well-Written by 1 Professional Copywriter",
@@ -1068,9 +1121,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Starter",
-                "discountedPrice": "499",
-                "originalPrice": "1119",
+                "discountedPrice": "$499",
+                "originalPrice": "$1119",
                 "list": [
                     "5 Pages Professional Copywriting Service",
                     "Creative & Well-Written by 2 Professional Copywriters",
@@ -1088,9 +1142,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Identity",
-                "discountedPrice": "1849",
-                "originalPrice": "4619",
+                "discountedPrice": "$1849",
+                "originalPrice": "$4619",
                 "list": [
                     "Up to 20 Pages Professional Copywriting Service",
                     "Creative & Well-Written by 3 Professional Copywriters",
@@ -1108,9 +1163,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "Professional",
-                "discountedPrice": "849",
-                "originalPrice": "2119",
+                "discountedPrice": "$849",
+                "originalPrice": "$2119",
                 "list": [
                     "10 Pages Professional Copywriting Service",
                     "Creative & Well-Written by 2 Professional Copywriters",
@@ -1128,9 +1184,10 @@
                 ]
             },
             {
+                "id": 4,
                 "name": "Article Writing",
-                "discountedPrice": "149",
-                "originalPrice": "369",
+                "discountedPrice": "$149",
+                "originalPrice": "$369",
                 "list": [
                     "1 Creative, Fresh & Well-Written Article",
                     "By 1 Professional Copywriter",
@@ -1149,9 +1206,10 @@
                 ]
             },
             {
+                "id": 5,
                 "name": "Blog Writing",
-                "discountedPrice": "129",
-                "originalPrice": "319",
+                "discountedPrice": "$129",
+                "originalPrice": "$319",
                 "list": [
                     "1 Creative, Fresh & Well-Written Article",
                     "By 1 Professional Copywriter",
@@ -1172,13 +1230,15 @@
         ]
     },
     {
+        "id": 10,
         "value": "comboPackages",
         "label": "Combo Packages",
         "packages": [
             {
+                "id": 0,
                 "name": "Basic",
-                "discountedPrice": "129",
-                "originalPrice": "319",
+                "discountedPrice": "$129",
+                "originalPrice": "$319",
                 "list": [
                     "– Logo Design",
                     "5 Custom Logo Design Concepts",
@@ -1209,9 +1269,10 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Startup",
-                "discountedPrice": "994",
-                "originalPrice": "1988",
+                "discountedPrice": "$994",
+                "originalPrice": "$1988",
                 "list": [
                     "– Logo Design",
                     "Unlimited Logo Design Concepts",
@@ -1236,9 +1297,10 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Professional",
-                "discountedPrice": "1299",
-                "originalPrice": "2599",
+                "discountedPrice": "$1299",
+                "originalPrice": "$2599",
                 "list": [
                     "– Logo Design",
                     "Unlimited Logo Concepts",
@@ -1281,9 +1343,10 @@
                 ]
             },
             {
+                "id": 3,
                 "name": "Identity",
-                "discountedPrice": "1899",
-                "originalPrice": "3300",
+                "discountedPrice": "$1899",
+                "originalPrice": "$3300",
                 "list": [
                     "– Logo Design",
                     "9 Logo Design Idea(s)",
@@ -1338,9 +1401,10 @@
                 ]
             },
             {
+                "id": 4,
                 "name": "Corporate",
-                "discountedPrice": "2299",
-                "originalPrice": "3800",
+                "discountedPrice": "$2299",
+                "originalPrice": "$3800",
                 "list": [
                     "– Logo Design",
                     "Unlimited Logo Design Idea(s)",
@@ -1391,9 +1455,10 @@
                 ]
             },
             {
+                "id": 5,
                 "name": "Elite",
-                "discountedPrice": "4499",
-                "originalPrice": "8999",
+                "discountedPrice": "$4499",
+                "originalPrice": "$8999",
                 "list": [
                     "– Logo Design",
                     "Unlimited Logo Design Idea(s)",
@@ -1441,6 +1506,219 @@
                     " 100% Satisfaction Guarantee",
                     " 100% Money Back Guarantee",
                     " *NO MONTHLY OR ANY HIDDEN FEE*"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "value": "standardPackages",
+        "label": "Standard Packages",
+        "title": "STANDARD PACKAGES",
+        "packages": [
+            {
+                "id": 0,
+                "name": "Templated",
+                "discountedPrice": "$299",
+                "originalPrice": "$599",
+                "note": "Great for Individuals & Startups!",
+                "subtitle": "Deliverables",
+                "badge": "/landing-pages/website-design-develop-usa/packages/badge.png",
+                "icon": "/landing-pages/website-design-develop-usa/packages/checkBlue.svg",
+                "textColor": "text-[#0d3163]",
+                "textColorHover": "hover:text-[#0d3163]",
+                "borderColor": "border-[#0d3163]",
+                "bgColor": "bg-[#0d3163]",
+                "chatIcon": "/landing-pages/website-design-develop-usa/packages/chatIconBlue.svg",
+                "callIcon": "/landing-pages/website-design-develop-usa/packages/callIconBlue.svg",
+                "theme": "blue",
+                "list": [
+                    "3 Page Website",
+                    "Theme Based Design",
+                    "Stock Photography",
+                    "Responsive Design",
+                    "Turnaround 3 Days",
+                    "Social Media Integration",
+                    "Contact Forms Included",
+                    "Content Not Included!"
+                ]
+            },
+            {
+                "id": 1,
+                "name": "Standard",
+                "discountedPrice": "$499",
+                "originalPrice": "$999",
+                "note": "Most Popular by New Businesses!",
+                "subtitle": "Deliverables",
+                "badge": "/landing-pages/website-design-develop-usa/packages/badge.png",
+                "icon": "/landing-pages/website-design-develop-usa/packages/checkOrange.svg",
+                "textColor": "text-[#f17724]",
+                "textColorHover": "hover:text-[#f17724]",
+                "borderColor": "border-[#f17724]",
+                "bgColor": "bg-[#f17724]",
+                "chatIcon": "/landing-pages/website-design-develop-usa/packages/chatIconOrange.svg",
+                "callIcon": "/landing-pages/website-design-develop-usa/packages/callIconOrange.svg",
+                "theme": "orange",
+                "list": [
+                    "5 Page Website",
+                    "Theme Based Design",
+                    "Stock Photography",
+                    "Turnaround 4 Days",
+                    "Responsive Design",
+                    "Content Management System",
+                    "Social Media Integration",
+                    "Blog Setup",
+                    "Contact Forms Included"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Professional",
+                "discountedPrice": "$999",
+                "originalPrice": "$1999",
+                "note": "Great for Small Businesses!",
+                "subtitle": "Deliverables",
+                "badge": "/landing-pages/website-design-develop-usa/packages/badge.png",
+                "icon": "/landing-pages/website-design-develop-usa/packages/checkBlue.svg",
+                "textColor": "text-[#0d3163]",
+                "textColorHover": "hover:text-[#0d3163]",
+                "borderColor": "border-[#0d3163]",
+                "bgColor": "bg-[#0d3163]",
+                "chatIcon": "/landing-pages/website-design-develop-usa/packages/chatIconBlue.svg",
+                "callIcon": "/landing-pages/website-design-develop-usa/packages/callIconBlue.svg",
+                "theme": "blue",
+                "list": [
+                    "10 Page Website",
+                    "Custom Design",
+                    "Stock Photography",
+                    "Original Content",
+                    "Turnaround 7 Days",
+                    "Responsive Design",
+                    "Content Management System",
+                    "Sliders",
+                    "Social Media Integration",
+                    "SEO Features",
+                    "Blog Setup",
+                    "Contact Forms Included"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "value": "ecommercePackages",
+        "label": "E-COMMERCE Packages",
+        "title": "E-COMMERCE PACKAGES",
+        "packages": [
+            {
+                "id": 0,
+                "name": "Templated",
+                "discountedPrice": "$1500",
+                "originalPrice": "$3000",
+                "note": "Ideal for small Ecommerce Sites!",
+                "subtitle": "Deliverables",
+                "badge": "/landing-pages/website-design-develop-usa/packages/badge.png",
+                "icon": "/landing-pages/website-design-develop-usa/packages/checkBlue.svg",
+                "textColor": "text-[#0d3163]",
+                "textColorHover": "hover:text-[#0d3163]",
+                "borderColor": "border-[#0d3163]",
+                "bgColor": "bg-[#0d3163]",
+                "chatIcon": "/landing-pages/website-design-develop-usa/packages/chatIconBlue.svg",
+                "callIcon": "/landing-pages/website-design-develop-usa/packages/callIconBlue.svg",
+                "theme": "blue",
+                "list": [
+                    "5 Main Pages",
+                    "Up to 25 Product Pages",
+                    "Perfect for Small eCommerce",
+                    "Theme Based Design",
+                    "Payment Integration Included",
+                    "Turn Around 3 weeks",
+                    "Content Management System",
+                    "Original Content",
+                    "Sliders",
+                    "Responsive Design",
+                    "Social Media Integration",
+                    "SEO Features",
+                    "Blog Setup",
+                    "Contact Forms Included"
+                ]
+            },
+            {
+                "id": 1,
+                "name": "Standard",
+                "discountedPrice": "$3000",
+                "originalPrice": "$6000",
+                "note": "Best for Ecommerce Sites!",
+                "subtitle": "Deliverables",
+                "badge": "/landing-pages/website-design-develop-usa/packages/badge.png",
+                "icon": "/landing-pages/website-design-develop-usa/packages/checkOrange.svg",
+                "textColor": "text-[#f17724]",
+                "textColorHover": "hover:text-[#f17724]",
+                "borderColor": "border-[#f17724]",
+                "bgColor": "bg-[#f17724]",
+                "chatIcon": "/landing-pages/website-design-develop-usa/packages/chatIconOrange.svg",
+                "callIcon": "/landing-pages/website-design-develop-usa/packages/callIconOrange.svg",
+                "theme": "orange",
+                "list": [
+                    "12 Main Pages",
+                    "Up to 50 Product Pages",
+                    "Perfect for Businesses",
+                    "Theme Based Design",
+                    "Admin Dashboard Area",
+                    "User Dashboard Area",
+                    "Complete in 4-5 Weeks",
+                    "Payment Integration Included",
+                    "Content Management System",
+                    "Original Content",
+                    "Multi-Currency",
+                    "Discount Coupon Code Module",
+                    "Sliders",
+                    "Responsive Design",
+                    "Social Media Integration",
+                    "SEO Features",
+                    "Blog Setup",
+                    "Contact Forms Included",
+                    "Stock Photography",
+                    "2 Sets of Revisions"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Custom",
+                "discountedPrice": "CALL FOR PRICING",
+                "originalPrice": false,
+                "note": "Best for Perfectionist!",
+                "subtitle": "Deliverables",
+                "badge": "/landing-pages/website-design-develop-usa/packages/badge.png",
+                "icon": "/landing-pages/website-design-develop-usa/packages/checkBlue.svg",
+                "textColor": "text-[#0d3163]",
+                "textColorHover": "hover:text-[#0d3163]",
+                "borderColor": "border-[#0d3163]",
+                "bgColor": "bg-[#0d3163]",
+                "chatIcon": "/landing-pages/website-design-develop-usa/packages/chatIconBlue.svg",
+                "callIcon": "/landing-pages/website-design-develop-usa/packages/callIconBlue.svg",
+                "theme": "blue",
+                "list": [
+                    "Main Pages",
+                    "Product Pages",
+                    "Perfect for Businesses",
+                    "Theme Based Design",
+                    "Admin Dashboard Area",
+                    "User Dashboard Area",
+                    "Complete in 6 Weeks",
+                    "Payment Integration Included",
+                    "Content Management System",
+                    "Original Content",
+                    "Multi-Currency",
+                    "Discount Coupon Code Module",
+                    "Sliders",
+                    "Responsive Design",
+                    "Social Media Integration",
+                    "SEO Features",
+                    "Blog Setup",
+                    "Contact Forms Included",
+                    "Stock Photography",
+                    "Multiple Revisions"
                 ]
             }
         ]

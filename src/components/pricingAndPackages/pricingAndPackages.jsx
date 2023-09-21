@@ -11,6 +11,7 @@ import checkCircle from "media/packages/checkCircle.png";
 import data from "./data";
 
 const PricingAndPackages = () => {
+    let count = 0;
     return (
         <ThemeProvider value={theme}>
             <section>
@@ -19,21 +20,24 @@ const PricingAndPackages = () => {
                         <div className="text-center mb-10">
                             <span className="text-base font-normal text-[#A497F5]">Reasonable Prices</span>
                             <h2 className="font-megat font-normal text-4xl lg:text-5xl text-white mb-2">That Fits Your Budget</h2>
-                            <p className="text-base text-white font-normal">With affordable prices, we have exclusive digital art and design facilities, <br /> customized for your individual needs</p>
+                            <p className="text-base text-white font-normal">Our commitment to affordability means you can have a stunning, professionally designed website that perfectly suits your budget.</p>
                         </div>
                         <Tabs value="logo">
                             <TabsHeader>
-                                {data.map(({ label, value }) => {
-                                    return <Tab key={value} value={value}>
-                                        {label}
-                                    </Tab>
+                                {data.map(({ label, value }, i) => {
+                                    count++;
+                                    if (count < 12) {
+                                        return <Tab key={value} value={value}>
+                                            {label}
+                                        </Tab>
+                                    }
                                 })}
                             </TabsHeader>
                             <TabsBody>
-                                {data.map(({ value, packages, label }) => {
+                                {data.map(({ value, packages, label }, i) => {
                                     return <TabPanel key={value} value={value}>
                                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
-                                            {packages.map(({ name, discountedPrice, originalPrice, list, note }, i) => {
+                                            {packages.map(({ name, discountedPrice, originalPrice, list, note, id }, i) => {
                                                 return <div key={i} className="shadow-lg bg-[#B8C5FA] p-4 rounded-xl">
                                                     <div className="bg-[#665FF3] rounded-xl text-center py-5 shadow-lg">
                                                         <h4 className="font-megat font-normal text-white text-3xl">{name}</h4>
@@ -42,7 +46,7 @@ const PricingAndPackages = () => {
                                                         {note}
                                                     </p>
                                                     <h5 className="font-sans text-center font-bold text-5xl text-black my-10">
-                                                        ${discountedPrice} <sup className="opacity-50 text-4xl"><del>{originalPrice}</del></sup>
+                                                        {discountedPrice} <sup className="opacity-50 text-4xl"><del>{originalPrice}</del></sup>
                                                     </h5>
                                                     <ul className="overflow-y-auto h-64 mb-5">
                                                         {list.map((e, i) => {
@@ -60,7 +64,8 @@ const PricingAndPackages = () => {
                                                             icon={true}
                                                             color="btnBg bg-[#5750E4] text-white"
                                                             hover="hover:bg-[#000000]"
-                                                            link={`order/${(label + " " + name).toLowerCase().replace(/\s/g, '-')}?price=$${discountedPrice}`} />
+                                                            // link={`order/${(label + " " + name).toLowerCase().replace(/\s/g, '-')}?price=$${discountedPrice}`}
+                                                            link={`order/package?value=${value}&id=${id}&label=${label}`} />
                                                         <Button text="(855) 888-8399"
                                                             color="btnColor text-black bg-transparent"
                                                             border="border-2 border-[#5750E4]"

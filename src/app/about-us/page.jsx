@@ -16,10 +16,10 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "single",
-        subtitle: "Top Web Design Company",
-        title: "Creating 100% Original Custom Website Designs",
-        desc: "Frustrated by underperforming web designs? It's time for a change and we can help. Website Design Hub is trusted by businesses nationwide. We are a top-rated and affordable web design company, known for creating websites that are:",
-        points: ["Interactive", "Responsive", "Conversion-Focused", "SEO-Optimized"],
+        subtitle: "Web Design Hub Where Brands",
+        title: "Are Recognized & Businesses are Boosted",
+        desc: "Welcome to Web Design Hub, the meeting place of creativity and expertise. We are your dependable partner in creating outstanding digital experiences, growing businesses, and making sure your brand stands out in the constant competitive environment.",
+        points: ["Logo Designing", "Digital Marketing", "SEO Services", "Website Development"],
         banner,
         bg: "__homeHeroGradientBg",
         btnBg: "bg-[#7F6CC7]",
@@ -38,6 +38,11 @@ const Page = () => {
         btnHover: "hover:bg-[#7F6CC7]",
         theme: "dark"
     };
+    // Array for Letstalk Component Props
+    const letstalk = {
+        title: "Design Consultation",
+        desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
+    }
     return (
         <>
             <main>
@@ -48,7 +53,7 @@ const Page = () => {
                 <Reviews />
                 <Weare />
                 <Contact />
-                <Letstalk />
+                <Letstalk content={letstalk} />
                 <Footer />
             </main>
         </>

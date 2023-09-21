@@ -11,23 +11,28 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "single",
-        subtitle: "Get in Touch With Us",
-        title: "Services for Creating Amazing Websites",
-        desc: "For all of your company's web development needs, you can count on us. Our online platforms flaunt nimbleness, quickness, uniqueness, and high quality.",
+        subtitle: "Top Web Designers",
+        title: "Let's Create Your Dream Website Together",
+        desc: "At Web Design Hub, we drive your business to success. From logo and website design to SEO and motion graphics, we offer top-quality services at affordable prices.",
         bg: "__ecommerceHeroGradientBg",
         banner,
-        points: ["Customized", "Optimized", "Result Driven", "Measurable"],
+        points: ["Website Design", "Website Development", "Custom Logo Design", "Digital Marketing"],
         btnBg: "bg-[#005368]",
         btnBorder: "border-[#005368]",
         btnHover: "hover:bg-[#005368]"
     };
+    // Array for Letstalk Component Props
+    const letstalk = {
+        title: "Design Consultation",
+        desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
+    }
     return (
         <>
             <main>
                 <Header />
                 <Hero content={hero} />
                 <Contact />
-                <Letstalk />
+                <Letstalk content={letstalk} />
                 <Footer />
             </main>
         </>

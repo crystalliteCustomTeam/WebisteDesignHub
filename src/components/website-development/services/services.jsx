@@ -10,9 +10,9 @@ const Services = () => {
             <div className="bg-[#EBEBEB] py-10 lg:py-[200px]">
                 <div className="container">
                     <div className="text-center mb-10">
-                        <span className="text-base font-normal text-[#00B4FF]">Website Design Services</span>
-                        <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">Custom Web Development</h2>
-                        <p className="text-base text-black font-normal">Having a website is important for gaining digital visibility and expanding business reach. Therefore at Urban Web Designers, we not only create a visually appealing website but also take into account the technical side too. We develop a website with SEO optimized content, faster loading time, interactive features and a mobile-friendly layout to improve user experience. </p>
+                        <span className="text-base font-normal text-[#00B4FF]">Custom Website Development</span>
+                        <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">Building Custom Websites from Scratch.</h2>
+                        <p className="text-base text-black font-normal">In the digital age, your website is your brand's front door. At Web Design Hub, we're the architects of that door. We design and develop websites that don't just look good; they're SEO optimized, responsive and have the best user experience, all in one package.</p>
                     </div>
                     <Image src={laptop} alt="laptop" className="block m-auto" />
                     <div className="flex items-center gap-3 justify-center mt-10 relative z-10">

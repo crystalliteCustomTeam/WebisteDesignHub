@@ -82,7 +82,7 @@ const Hero = ({ content }) => {
                     {page === "single" ? <div className="absolute right-0 bottom-[100px] z-[-1] hidden md:block">
                         <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[70%] block ml-auto xl:max-w-full" />
                     </div> : null}
-                    <div className="flex lg:h-[750px] xl:h-[820px] lg:items-end lg:pb-20">
+                    <div className="flex lg:h-[780px] xl:h-[840px] 2xl:h-[870px] lg:items-end lg:pb-20">
                         <div className="basis-full md:basis-[80%] lg:basis-[60%] xl:basis-[50%]">
                             <div className="relative w-max mb-10">
                                 <span className="text-sm sm:text-base xl:text-lg font-normal leading-none text-white inline-block">
@@ -99,25 +99,25 @@ const Hero = ({ content }) => {
                             {points && <div className="flex mb-5 xl:mb-8">
                                 <div className="basis-full">
                                     <div className="flex flex-wrap">
-                                        <div className="basis-6/12 md:basis-[45%] p-3 border-brown-10 px-0 border-r-2 border-b-2">
+                                        <div className="basis-6/12 md:basis-[48%] p-3 border-brown-10 px-0 border-r-2 border-b-2">
                                             <div className="flex items-center gap-x-3">
                                                 <Image src={circleCheck} alt="circleCheck" />
                                                 <p className="text-xs sm:text-lg xl:text-xl text-white font-normal">{points[0]}</p>
                                             </div>
                                         </div>
-                                        <div className="basis-6/12 md:basis-[45%] p-3 border-brown-100 pr-0 border-b-2">
+                                        <div className="basis-6/12 md:basis-[48%] p-3 border-brown-100 pr-0 border-b-2">
                                             <div className="flex items-center gap-x-3">
                                                 <Image src={circleCheck} alt="circleCheck" />
                                                 <p className="text-xs sm:text-lg xl:text-xl text-white font-normal">{points[1]}</p>
                                             </div>
                                         </div>
-                                        <div className="basis-6/12 md:basis-[45%] p-3 border-brown-100 pl-0 border-r-2">
+                                        <div className="basis-6/12 md:basis-[48%] p-3 border-brown-100 pl-0 border-r-2">
                                             <div className="flex items-center gap-x-3">
                                                 <Image src={circleCheck} alt="circleCheck" />
                                                 <p className="text-xs sm:text-lg xl:text-xl text-white font-normal">{points[2]}</p>
                                             </div>
                                         </div>
-                                        <div className="basis-6/12 md:basis-[45%] p-3 pr-0">
+                                        <div className="basis-6/12 md:basis-[48%] p-3 pr-0">
                                             <div className="flex items-center gap-x-3">
                                                 <Image src={circleCheck} alt="circleCheck" />
                                                 <p className="text-xs sm:text-lg xl:text-xl text-white font-normal">{points[3]}</p>

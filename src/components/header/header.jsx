@@ -38,95 +38,95 @@ const Header = () => {
                     <ul className="hidden lg:block w-1/2">
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={logoDesign} alt="logoDesign" />
-                            <Link className="text-base" href="/logo-design">Logo Design</Link>
+                            <Link className="text-base" href="/logo-design-company">Logo Design</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={creativeCopywriting} alt="creativeCopywriting" />
-                            <Link className="text-base" href="/creative-copywriting">Creative Copywriting</Link>
+                            <Link className="text-base" href="/creative-copywriting-company">Creative Copywriting</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={digitalMarketing} alt="digitalMarketing" />
-                            <Link className="text-base" href="/digital-marketing">Digital Marketing</Link>
+                            <Link className="text-base" href="/digital-marketing-company">Digital Marketing</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={ecommerce} alt="ecommerce" />
-                            <Link className="text-base" href="/ecommerce">Ecommerce Web Solutions</Link>
+                            <Link className="text-base" href="/ecommerce-solutions">Ecommerce Web Solutions</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={websiteDevelopment} alt="websiteDevelopment" />
-                            <Link className="text-base" href="/website-development">Website Development</Link>
+                            <Link className="text-base" href="/website-development-company">Website Development</Link>
                         </li>
                     </ul>
                     <ul className="hidden lg:block w-1/2">
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={motionGraphics} alt="motionGraphics" />
-                            <Link className="text-base" href="/motion-graphics">Motion Graphics</Link>
+                            <Link className="text-base" href="/motion-graphic-design-company">Motion Graphics</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={illustrationDesign} alt="illustrationDesign" />
-                            <Link className="text-base" href="/illustration-design">Illustration Design</Link>
+                            <Link className="text-base" href="/illustration-design-company">Illustration Design</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={marketingCollateral} alt="marketingCollateral" />
-                            <Link className="text-base" href="/marketing-collateral">Marketing Collateral</Link>
+                            <Link className="text-base" href="/marketing-collateral-company">Marketing Collateral</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={mobileApplication} alt="mobileApplication" />
-                            <Link className="text-base" href="/mobile-application">App Design</Link>
+                            <Link className="text-base" href="/mobile-app-design-company">App Design</Link>
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={seoServices} alt="seoServices" />
-                            <Link className="text-base" href="/seo-services">SEO Services</Link>
+                            <Link className="text-base" href="/seo-company">SEO Services</Link>
                         </li>
                     </ul>
                     <Collapse open={openSubMenu} className="block lg:hidden">
                         <ul>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={logoDesign} alt="logoDesign" />
-                                <Link className="text-base" href="/logo-design">Logo Design</Link>
+                                <Link className="text-base" href="/logo-design-company">Logo Design</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={creativeCopywriting} alt="creativeCopywriting" />
-                                <Link className="text-base" href="/creative-copywriting">Creative Copywriting</Link>
+                                <Link className="text-base" href="/creative-copywriting-company">Creative Copywriting</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={digitalMarketing} alt="digitalMarketing" />
-                                <Link className="text-base" href="/digital-marketing">Digital Marketing</Link>
+                                <Link className="text-base" href="/digital-marketing-company">Digital Marketing</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={ecommerce} alt="ecommerce" />
-                                <Link className="text-base" href="/ecommerce">Ecommerce Web Solutions</Link>
+                                <Link className="text-base" href="/ecommerce-solutions">Ecommerce Web Solutions</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={websiteDevelopment} alt="websiteDevelopment" />
-                                <Link className="text-base" href="/website-development">Website Development</Link>
+                                <Link className="text-base" href="/website-development-company">Website Development</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={motionGraphics} alt="motionGraphics" />
-                                <Link className="text-base" href="/motion-graphics">Motion Graphics</Link>
+                                <Link className="text-base" href="/motion-graphic-design-company">Motion Graphics</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={illustrationDesign} alt="illustrationDesign" />
-                                <Link className="text-base" href="/illustration-design">Illustration Design</Link>
+                                <Link className="text-base" href="/illustration-design-company">Illustration Design</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={marketingCollateral} alt="marketingCollateral" />
-                                <Link className="text-base" href="/marketing-collateral">Marketing Collateral</Link>
+                                <Link className="text-base" href="/marketing-collateral-company">Marketing Collateral</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={mobileApplication} alt="mobileApplication" />
-                                <Link className="text-base" href="/mobile-application">App Design</Link>
+                                <Link className="text-base" href="/mobile-app-design-company">App Design</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={seoServices} alt="seoServices" />
-                                <Link className="text-base" href="/seo-services">SEO Services</Link>
+                                <Link className="text-base" href="/seo-company">SEO Services</Link>
                             </li>
 
                         </ul>
                     </Collapse>
                 </div>
             </li>
-            <li className="lg:h-full lg:flex lg:items-center"><Link href="/pricing-and-packages" className="text-lg font-medium leading-10">Pricing/Packages</Link></li>
+            <li className="lg:h-full lg:flex lg:items-center"><Link href="/pricing" className="text-lg font-medium leading-10">Pricing/Packages</Link></li>
             <li className="lg:h-full lg:flex lg:items-center"><Link href="/contact-us" className="text-lg font-medium leading-10">Contact</Link></li>
         </ul>
     );
@@ -153,29 +153,29 @@ const Header = () => {
                                 icon={true}
                                 color={`${(() => {
                                     switch (router) {
-                                        case '/logo-design':
+                                        case '/logo-design-company':
                                             return "bg-[#7598F2]"
-                                        case '/creative-copywriting':
+                                        case '/creative-copywriting-company':
                                             return "bg-[#768DF1]"
-                                        case '/digital-marketing':
+                                        case '/digital-marketing-company':
                                             return "bg-[#8A6EA5]"
-                                        case '/ecommerce':
+                                        case '/ecommerce-solutions':
                                             return "bg-[#005368]"
-                                        case '/website-development':
+                                        case '/website-development-company':
                                             return "bg-[#283C3C]"
-                                        case '/motion-graphics':
+                                        case '/motion-graphic-design-company':
                                             return "bg-[#195A47]"
-                                        case '/illustration-design':
+                                        case '/illustration-design-company':
                                             return "bg-[#A4637A]"
-                                        case '/marketing-collateral':
+                                        case '/marketing-collateral-company':
                                             return "bg-[#223C5A]"
-                                        case '/mobile-application':
+                                        case '/mobile-app-design-company':
                                             return "bg-[#7AAF60]"
-                                        case '/seo-services':
+                                        case '/seo-company':
                                             return "bg-[#577981]"
                                         case '/contact-us':
                                             return "bg-[#005368]"
-                                        case '/pricing-and-packages':
+                                        case '/pricing':
                                             return "bg-[#8A6EA5]"
                                         case '/website-design-develop-landing':
                                             return "bg-[#3283FF] pl-4 pr-4"
@@ -189,29 +189,29 @@ const Header = () => {
                                 color="bg-transparent text-white"
                                 border={`border-2 ${(() => {
                                     switch (router) {
-                                        case '/logo-design':
+                                        case '/logo-design-company':
                                             return "border-[#7598F2]"
-                                        case '/creative-copywriting':
+                                        case '/creative-copywriting-company':
                                             return "border-[#768DF1]"
-                                        case '/digital-marketing':
+                                        case '/digital-marketing-company':
                                             return "border-[#8A6EA5]"
-                                        case '/ecommerce':
+                                        case '/ecommerce-solutions':
                                             return "border-[#005368]"
-                                        case '/website-development':
+                                        case '/website-development-company':
                                             return "border-[#283C3C]"
-                                        case '/motion-graphics':
+                                        case '/motion-graphic-design-company':
                                             return "border-[#195A47]"
-                                        case '/illustration-design':
+                                        case '/illustration-design-company':
                                             return "border-[#A4637A]"
-                                        case '/marketing-collateral':
+                                        case '/marketing-collateral-company':
                                             return "border-[#223C5A]"
-                                        case '/mobile-application':
+                                        case '/mobile-app-design-company':
                                             return "border-[#7AAF60]"
-                                        case '/seo-services':
+                                        case '/seo-company':
                                             return "border-[#577981]"
                                         case '/contact-us':
                                             return "border-[#005368]"
-                                        case '/pricing-and-packages':
+                                        case '/pricing':
                                             return "border-[#8A6EA5]"
                                         case '/website-design-develop-landing':
                                             return "border-[#00FFEF] pl-4 pr-4"
@@ -221,29 +221,29 @@ const Header = () => {
                                 })()}`}
                                 hover={`${(() => {
                                     switch (router) {
-                                        case '/logo-design':
+                                        case '/logo-design-company':
                                             return "hover:bg-[#7598F2]"
-                                        case '/creative-copywriting':
+                                        case '/creative-copywriting-company':
                                             return "hover:bg-[#768DF1]"
-                                        case '/digital-marketing':
+                                        case '/digital-marketing-company':
                                             return "hover:bg-[#8A6EA5]"
-                                        case '/ecommerce':
+                                        case '/ecommerce-solutions':
                                             return "hover:bg-[#005368]"
-                                        case '/website-development':
+                                        case '/website-development-company':
                                             return "hover:bg-[#283C3C]"
-                                        case '/motion-graphics':
+                                        case '/motion-graphic-design-company':
                                             return "hover:bg-[#195A47]"
-                                        case '/illustration-design':
+                                        case '/illustration-design-company':
                                             return "hover:bg-[#A4637A]"
-                                        case '/marketing-collateral':
+                                        case '/marketing-collateral-company':
                                             return "hover:bg-[#223C5A]"
-                                        case '/mobile-application':
+                                        case '/mobile-app-design-company':
                                             return "hover:bg-[#7AAF60]"
-                                        case '/seo-services':
+                                        case '/seo-company':
                                             return "hover:bg-[#577981]"
                                         case '/contact-us':
                                             return "hover:bg-[#005368]"
-                                        case '/pricing-and-packages':
+                                        case '/pricing':
                                             return "hover:bg-[#8A6EA5]"
                                         case '/website-design-develop-landing':
                                             return "hover:bg-[#00FFEF]"

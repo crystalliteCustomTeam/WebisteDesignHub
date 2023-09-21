@@ -1,8 +1,12 @@
 [
     {
+        "id": 11,
+        "value": "standardPackages",
+        "label": "Standard Packages",
         "title": "STANDARD PACKAGES",
         "packages": [
             {
+                "id": 0,
                 "name": "Templated",
                 "discountedPrice": "$299",
                 "originalPrice": "$599",
@@ -29,6 +33,7 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Standard",
                 "discountedPrice": "$499",
                 "originalPrice": "$999",
@@ -56,6 +61,7 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Professional",
                 "discountedPrice": "$999",
                 "originalPrice": "$1999",
@@ -88,9 +94,13 @@
         ]
     },
     {
+        "id": 12,
+        "value": "ecommercePackages",
+        "label": "E-COMMERCE Packages",
         "title": "E-COMMERCE PACKAGES",
         "packages": [
             {
+                "id": 0,
                 "name": "Templated",
                 "discountedPrice": "$1500",
                 "originalPrice": "$3000",
@@ -123,6 +133,7 @@
                 ]
             },
             {
+                "id": 1,
                 "name": "Standard",
                 "discountedPrice": "$3000",
                 "originalPrice": "$6000",
@@ -161,6 +172,7 @@
                 ]
             },
             {
+                "id": 2,
                 "name": "Custom",
                 "discountedPrice": "CALL FOR PRICING",
                 "originalPrice": false,

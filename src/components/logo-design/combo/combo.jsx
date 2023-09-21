@@ -166,7 +166,7 @@ const Combo = () => {
                                         color="bg-[#067AC8] text-white"
                                         border="border-2 border-[#067AC8]"
                                         hover="hover:bg-transparent"
-                                        link={`order/${("Logo Design Combo").toLowerCase().replace(/\s/g, '-')}?price=$3999`} />
+                                        link="javascript:$zopim.livechat.window.show();" />
                                 </div>
                             </div>
                         </div>

@@ -353,7 +353,7 @@ const Page = () => {
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
                                 {
-                                    packagesData[2].packages.map(({ name, originalPrice, list, note }) => {
+                                    packagesData[2].packages.map(({ name, originalPrice, list, note, id }) => {
                                         return (
                                             <div key={name} className="border-2 border-white rounded-xl p-3 xl:p-5">
                                                 <div className="text-center">
@@ -382,7 +382,8 @@ const Page = () => {
                                                         icon={true}
                                                         color="btnBg bg-[#3283FF] text-white"
                                                         hover="hover:bg-[#000000]"
-                                                        link={`order/${("website" + " " + name).toLowerCase().replace(/\s/g, '-')}?price=$${originalPrice}`} />
+                                                        // link={`order/${("website" + " " + name).toLowerCase().replace(/\s/g, '-')}?price=$${originalPrice}`}
+                                                        link={`order/package?value=${packagesData[2].value}&id=${id}&label=${packagesData[2].label}`} />
                                                     <Button text="(855) 888-8399"
                                                         color="btnColor text-white bg-transparent"
                                                         border="border-2 border-[#3283FF]"
@@ -442,7 +443,7 @@ const Page = () => {
                                             $4999
                                         </h5>
                                         <div className="flex gap-4 items-center">
-                                            <a href={`order/${("Customized Web Portal Combo").toLowerCase().replace(/\s/g, '-')}?price=$4999`} className="bg-[#3283FF] rounded-[50px] text-white inline-flex group items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-transparent font-medium border-2 border-[#3283FF] hover:text-[#3283FF]">
+                                            <a href="javascript:$zopim.livechat.window.show();" className="bg-[#3283FF] rounded-[50px] text-white inline-flex group items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-transparent font-medium border-2 border-[#3283FF] hover:text-[#3283FF]">
                                                 <Image src={checkCircle} alt="checkCircle" className="brightness-0 invert group-hover:brightness-100 group-hover:invert-0" />
                                                 <span>Order Now</span>
                                             </a>

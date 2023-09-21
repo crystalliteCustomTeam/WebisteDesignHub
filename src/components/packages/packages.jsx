@@ -40,7 +40,7 @@ const PricingAndPackages = ({ content }) => {
                                         {e.note}
                                     </p>
                                     <h5 className="font-sans text-center font-bold text-5xl text-black my-10">
-                                        ${e.discountedPrice} <sup className="opacity-50 text-4xl"><del>{e.originalPrice}</del></sup>
+                                        {e.discountedPrice} <sup className="opacity-50 text-4xl"><del>{e.originalPrice}</del></sup>
                                     </h5>
                                     <ul className="overflow-y-auto h-64 mb-5">
                                         {e.list.map((e, i) => {
@@ -58,7 +58,8 @@ const PricingAndPackages = ({ content }) => {
                                             icon={true}
                                             color="btnBg bg-[#0F2847] text-white"
                                             hover="hover:bg-[#000000]"
-                                            link={`order/${(content.name + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=$${e.discountedPrice}`} />
+                                            // link={`order/${(content.name + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=$${e.discountedPrice}`}
+                                            link={`order/package?value=${dataPackages[content.key].value}&id=${e.id}&label=${dataPackages[content.key].label}`} />
                                         <Button text="(855) 888-8399"
                                             color="btnColor text-black bg-transparent"
                                             border="border-2 border-[#0F2847]"
