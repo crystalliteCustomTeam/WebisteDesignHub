@@ -22,6 +22,11 @@ const Page = () => {
         btnBorder: "border-[#8A6EA5]",
         btnHover: "hover:bg-[#8A6EA5]"
     };
+    // Array for Letstalk Component Props
+    const letstalk = {
+        title: "Design Consultation",
+        desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
+    }
     return (
         <>
             <main>
@@ -29,7 +34,7 @@ const Page = () => {
                 <Hero content={hero} />
                 <PricingAndPackages />
                 <Reviews />
-                <Letstalk />
+                <Letstalk content={letstalk} />
                 <Contact />
                 <Footer />
             </main>

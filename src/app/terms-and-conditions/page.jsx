@@ -6,6 +6,11 @@ import Letstalk from "@/components/letstalk/letstalk";
 import Reviews from "@/components/reviews/reviews";
 
 const Page = () => {
+    // Array for Letstalk Component Props
+    const letstalk = {
+        title: "Design Consultation",
+        desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
+    }
     return (
         <main>
             <Header />
@@ -71,7 +76,7 @@ const Page = () => {
                     </div>
                 </div>
             </section>
-            <Letstalk />
+            <Letstalk content={letstalk} />
             <Reviews />
             <Contact />
             <Footer />
