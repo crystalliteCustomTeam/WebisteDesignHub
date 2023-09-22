@@ -33,7 +33,7 @@ const From = () => {
 
         let bodyContent = { ...data, services: selectedService };
         let reqOptions = {
-            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
+            url: "/api/email",
             method: "POST",
             headers: headersList,
             data: JSON.stringify(bodyContent),

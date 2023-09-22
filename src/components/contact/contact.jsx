@@ -38,12 +38,13 @@ const Contact = () => {
 
         let bodyContent = { ...data, services: selectedService };
         let reqOptions = {
-            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
+            url: "/api/email",
             method: "POST",
             headers: headersList,
             data: JSON.stringify(bodyContent),
         }
         let res = await Axios.request(reqOptions);
+        console.log(res.data);
         window.location.href = "/thank-you";
     }
 

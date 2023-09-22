@@ -25,6 +25,7 @@ const Sidebuttons = () => {
     }
     const handleFormSubmit = async (e) => {
         e.preventDefault();
+        e.target.value = "Processing...";
         let headersList = {
             "Accept": "*/*",
             "Content-Type": "application/json"
@@ -32,12 +33,13 @@ const Sidebuttons = () => {
 
         let bodyContent = JSON.stringify(data);
         let reqOptions = {
-            url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub",
+            url: "/api/email",
             method: "POST",
             headers: headersList,
             data: bodyContent,
         }
         let res = await Axios.request(reqOptions);
+        e.target.value = "Submit Form";
         window.location.href = "/thank-you";
     }
     const theme = {
@@ -107,7 +109,7 @@ const Sidebuttons = () => {
                         <div className="mb-3">
                             <Input label="leave your message" type="text" id="" onChange={handleDataChange} name="message" />
                         </div>
-                        <button type="button" onClick={handleFormSubmit} className="text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white hover:bg-[#C165CB] ">Submit Form</button>
+                        <input type="button" onClick={handleFormSubmit} className="cursor-pointer  text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white hover:bg-[#C165CB]" value="Submit Form" />
                     </form>
                 </ThemeProvider>
             </div>

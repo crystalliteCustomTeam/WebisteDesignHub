@@ -103,7 +103,7 @@ const Package = ({ params }) => {
                 data = JSON.stringify({ ...fieldsData, client_refernce: response.data.image });
             });
             let reqOptions = {
-                url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub/",
+                url: "https://brandsapi.cryscampus.com/public/api/getfields",
                 method: "POST",
                 data: data,
             }
@@ -113,7 +113,7 @@ const Package = ({ params }) => {
             let data = JSON.stringify(fieldsData);
 
             let reqOptions = {
-                url: "https://brandsapi.cryscampus.com/public/api/leadform/webdesginhub/",
+                url: "https://brandsapi.cryscampus.com/public/api/getfields",
                 method: "POST",
                 data: data,
             }
