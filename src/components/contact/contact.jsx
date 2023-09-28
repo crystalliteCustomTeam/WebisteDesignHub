@@ -35,12 +35,6 @@ const Contact = () => {
         }
 
         let bodyContent = { ...data, services: selectedService };
-        if (bodyContent.name == "") {
-            setFieldsAlert({
-                message: "Enter Your Full Name...",
-                state: true
-            })
-        }
         let reqOptions = {
             url: "/api/email",
             method: "POST",
