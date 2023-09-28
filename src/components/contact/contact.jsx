@@ -20,34 +20,37 @@ const Contact = () => {
         services: selectedService,
         pageURL: usePathname()
     });
-
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
-
     const handleSelectServices = (e) => {
         setSelectedService(e);
     }
-
     const handleFormSubmit = async (e) => {
         e.preventDefault();
+        e.target.value = "Processing...";
         let headersList = {
             "Accept": "*/*",
             "Content-Type": "application/json"
         }
 
         let bodyContent = { ...data, services: selectedService };
+        if (bodyContent.name == "") {
+            setFieldsAlert({
+                message: "Enter Your Full Name...",
+                state: true
+            })
+        }
         let reqOptions = {
             url: "/api/email",
             method: "POST",
             headers: headersList,
             data: JSON.stringify(bodyContent),
         }
-        let res = await Axios.request(reqOptions);
-        console.log(res.data);
+        await Axios.request(reqOptions);
+        e.target.value = "Submit Form";
         window.location.href = "/thank-you";
     }
-
     const theme = {
         input: {
             defaultProps: {
@@ -168,11 +171,11 @@ const Contact = () => {
                                                 <Option value="Web Design Development">Web Design Development</Option>
                                                 <Option value="Other">Other</Option>
                                             </Select>
-                                            <button type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black hidden md:block" onClick={handleFormSubmit}>Submit Form</button>
+                                            <input type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black hidden md:block cursor-pointer" onClick={handleFormSubmit} value="Submit Form" />
                                         </div>
                                         <div className="basis-full md:basis-6/12 lg:basis-5/12  xl:basis-6/12">
                                             <Textarea label="leave your message" variant="outlined" size="lg" id="" rows={11} className="h-[50px] md:h-full" name="message" onChange={handleDataChange} />
-                                            <button type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black block md:hidden mt-3" onClick={handleFormSubmit}>Submit Form</button>
+                                            <input type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black block md:hidden mt-3 cursor-pointer" onClick={handleFormSubmit} value="Submit Form" />
                                         </div>
                                     </div>
                                 </form>

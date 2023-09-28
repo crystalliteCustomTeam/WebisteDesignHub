@@ -19,7 +19,6 @@ const Sidebuttons = () => {
         services: "no-need",
         pageURL: usePathname()
     });
-
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
@@ -38,7 +37,7 @@ const Sidebuttons = () => {
             headers: headersList,
             data: bodyContent,
         }
-        let res = await Axios.request(reqOptions);
+        await Axios.request(reqOptions);
         e.target.value = "Submit Form";
         window.location.href = "/thank-you";
     }

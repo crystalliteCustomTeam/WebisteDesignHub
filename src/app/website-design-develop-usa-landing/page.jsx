@@ -53,8 +53,6 @@ import googleReviews from "media/landing-pages/website-design-develop-usa/review
 import logo from "media/logo.svg";
 import liveChatIcon from "media/liveChatIcon.svg";
 
-
-
 const Page = () => {
     const [selectedService, setSelectedService] = useState("no-need");
     const [data, setData] = useState({
@@ -65,15 +63,12 @@ const Page = () => {
         services: selectedService,
         pageURL: usePathname()
     });
-
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
-
     const handleSelectServices = (e) => {
         setSelectedService(e.target.value);
     }
-
     const handleFormSubmit = async (e) => {
         e.preventDefault();
         e.target.value = "Processing...";
@@ -81,7 +76,6 @@ const Page = () => {
             "Accept": "*/*",
             "Content-Type": "application/json"
         }
-
         let bodyContent = { ...data, services: selectedService };
         let reqOptions = {
             url: "api/email",
@@ -89,7 +83,7 @@ const Page = () => {
             headers: headersList,
             data: JSON.stringify(bodyContent),
         }
-        let res = await Axios.request(reqOptions);
+        await Axios.request(reqOptions);
         e.target.value = "Get A Free Consultation";
         window.location.href = "/thank-you";
     }
@@ -1132,7 +1126,7 @@ const Page = () => {
                                             name="email" onChange={handleDataChange} />
                                         <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
                                             name="phone" onChange={handleDataChange} />
-                                        <input type="text" placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
+                                        <input type="text" name="company" onChange={handleDataChange} placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
                                     </div>
                                     <select className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
                                         onChange={handleSelectServices} value={selectedService}>

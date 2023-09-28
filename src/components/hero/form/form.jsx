@@ -15,17 +15,15 @@ const From = () => {
         services: selectedService,
         pageURL: usePathname()
     });
-
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
-
     const handleSelectServices = (e) => {
         setSelectedService(e);
     }
-
     const handleFormSubmit = async (e) => {
         e.preventDefault();
+        e.target.value = "Processing...";
         let headersList = {
             "Accept": "*/*",
             "Content-Type": "application/json"
@@ -38,7 +36,8 @@ const From = () => {
             headers: headersList,
             data: JSON.stringify(bodyContent),
         }
-        let res = await Axios.request(reqOptions);
+        await Axios.request(reqOptions);
+        e.target.value = "Submit Form";
         window.location.href = "/thank-you";
     }
     const theme = {
@@ -259,7 +258,7 @@ const From = () => {
                                     <Textarea label="leave your message" onChange={handleDataChange} variant="outlined" size="lg" id="" name="message" rows={1} className="min-h-full backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <button type="button" onClick={handleFormSubmit} className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white ">Submit Form</button>
+                                    <input type="button" onClick={handleFormSubmit} className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white cursor-pointer" value="Submit Form" />
                                 </div>
                             </div>
                         </form>

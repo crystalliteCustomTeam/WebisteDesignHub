@@ -54,17 +54,15 @@ const Page = () => {
         services: selectedService,
         pageURL: usePathname()
     });
-
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
-
     const handleSelectServices = (e) => {
         setSelectedService(e);
     }
-
     const handleFormSubmit = async (e) => {
         e.preventDefault();
+        e.target.value = "Processing...";
         let headersList = {
             "Accept": "*/*",
             "Content-Type": "application/json"
@@ -77,7 +75,8 @@ const Page = () => {
             headers: headersList,
             data: JSON.stringify(bodyContent),
         }
-        let res = await Axios.request(reqOptions);
+        await Axios.request(reqOptions);
+        e.target.value = "Submit Form";
         window.location.href = "/thank-you";
     }
     // Awards Slider
@@ -250,10 +249,8 @@ const Page = () => {
                                                             className: "hidden",
                                                         }}>
                                                     </Textarea>
-                                                    <button type="button" onClick={handleFormSubmit}
-                                                        className="bg-transparent text-base xl:text-lg font-medium text-white w-[100%] hover:bg-[#00FFED] border-2 border-[#00FFED] h-[40px] xl:h-[45px] rounded-lg">
-                                                        Submit Now
-                                                    </button>
+                                                    <input type="button" onClick={handleFormSubmit}
+                                                        className="bg-transparent text-base xl:text-lg font-medium text-white w-[100%] hover:bg-[#00FFED] border-2 border-[#00FFED] h-[40px] xl:h-[45px] rounded-lg cursor-pointer" value="Submit Now" />
                                                 </form>
                                             </div>
                                         </div>
@@ -615,13 +612,6 @@ const Page = () => {
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
                                             </div>
                                             <div>
-                                                {/* <Input placeholder="Subject*" type="text"
-                                                    className="border-none placeholder:text-white text-white font-[300]"
-                                                    labelProps={{
-                                                        className: "hidden",
-                                                    }}
-                                                    name="message" onChange={handleDataChange}
-                                                    containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} /> */}
                                                 <Select label="You're Interested in" className="border-none placeholder:text-white text-white font-[300]"
                                                     labelProps={{
                                                         className: "text-white",
@@ -645,7 +635,7 @@ const Page = () => {
                                             name="message" onChange={handleDataChange}
                                             containerProps={{ className: "bg-[#00296B]/30 rounded-xl my-5" }}>
                                         </Textarea>
-                                        <button type="button" onClick={handleFormSubmit} className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5">Submit Now</button>
+                                        <input type="button" onClick={handleFormSubmit} className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5 cursor-pointer" value="Submit Now" />
                                     </form>
                                 </div>
                                 <div>

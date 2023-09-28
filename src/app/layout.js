@@ -33,23 +33,37 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-    const GTM_ID = 'GTM-5G927FVV';
+    const GTM_ID_1 = 'GTM-5G927FVV';
+    const GTM_ID_2 = 'GTM-WH5N73ZB';
     return (
         <html lang="en">
-            <Script id="google-tag-manager" strategy="lazyOnload">
+            <Script id="ze-snippet"
+                src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e"
+                strategy="afterInteractive">
+            </Script>
+            <Script id="google-tag-manager-two"
+                src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"
+                strategy="afterInteractive">
+            </Script>
+            <Script id="google-tag-manager-one" strategy="afterInteractive">
                 {`
                     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                    })(window,document,'script','dataLayer','${GTM_ID}');
+                    })(window,document,'script','dataLayer','${GTM_ID_1}');
                 `}
             </Script>
-            <Script id="ze-snippet"
-                src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e"
-                strategy="lazyOnload">
+            <Script id="google-tag-manager-two" strategy="afterInteractive">
+                {`
+                    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','${GTM_ID_2}');
+                `}
             </Script>
-            <Script id="facebook-manager" strategy="lazyOnload">
+            <Script id="facebook-manager" strategy="afterInteractive">
                 {`
                     !function(f,b,e,v,n,t,s)
                     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -63,11 +77,7 @@ export default function RootLayout({ children }) {
                     fbq('track', 'PageView');
                 `}
             </Script>
-            <Script id="google-tag-manager-two"
-                src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"
-                strategy="lazyOnload">
-            </Script>
-            <Script id="google-tag-manager-three">
+            <Script id="google-tag-manager-three" strategy="afterInteractive">
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
@@ -77,7 +87,10 @@ export default function RootLayout({ children }) {
             </Script>
             <body className={`${primary.className} ${megatFont.variable}`}>
                 <noscript>
-                    <iframe src={`https://www.googletagmanager.com/ns.html?id='${GTM_ID}'`} className="hidden"></iframe>
+                    <iframe src={`https://www.googletagmanager.com/ns.html?id='${GTM_ID_1}'`} className="hidden"></iframe>
+                </noscript>
+                <noscript>
+                    <iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID_2}`} className="hidden"></iframe>
                 </noscript>
                 {children}
             </body>
