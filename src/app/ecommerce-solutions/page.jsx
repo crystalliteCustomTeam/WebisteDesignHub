@@ -114,6 +114,25 @@ const Page = () => {
                         }
                     `}
                 </Script>
+                <Script id="general-schema-2" type="application/ld+json">
+                    {`
+                        {
+                            "@context": "http://schema.org/",
+                            "@type": "Product",
+                            "name": "Ecommerce Website Design Company",
+                            "description": "WebDesignHub is the go-to Ecommerce Website Design Company. Our team crafts online stores that captivate & convert. Elevate your ecommerce with us.",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "WebDesignHub"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "5",
+                                "ratingCount": "230"
+                            }
+                        }
+                    `}
+                </Script>
             </main>
         </>
     );

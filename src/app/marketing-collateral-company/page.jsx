@@ -114,6 +114,25 @@ const Page = () => {
                         }
                     `}
                 </Script>
+                <Script id="general-schema-2" type="application/ld+json">
+                    {`
+                        {
+                            "@context": "http://schema.org/",
+                            "@type": "Product",
+                            "name": "Marketing Collateral Company",
+                            "description": "WebDesignHub specializes in creating compelling marketing collateral that effectively communicates your brand's message, engages audiences, and supports sales efforts.",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "WebDesignHub"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "5",
+                                "ratingCount": "567"
+                            }
+                        }
+                    `}
+                </Script>
             </main>
         </>
     );

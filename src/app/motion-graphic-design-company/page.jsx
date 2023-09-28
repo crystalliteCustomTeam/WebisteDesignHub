@@ -113,6 +113,25 @@ const Page = () => {
                         }
                     `}
                 </Script>
+                <Script id="general-schema-2" type="application/ld+json">
+                    {`
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "Product",
+                            "name": "Motion Graphic Design Company",
+                            "description": "WebDesignHub is your cutting-edge motion graphic design company, producing captivating animations that engage, entertain, and effectively convey your brand message.",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "WebDesignHub"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "5",
+                                "ratingCount": "147"
+                            }
+                        }
+                    `}
+                </Script>
             </main>
         </>
     );

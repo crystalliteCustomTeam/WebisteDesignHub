@@ -113,6 +113,25 @@ const page = () => {
                         }
                     `}
                 </Script>
+                <Script id="general-schema-2" type="application/ld+json">
+                    {`
+                        {
+                            "@context": "http://schema.org/",
+                            "@type": "Product",
+                            "name": "Mobile App Design Company",
+                            "description": "WebDesignHub is at the forefront of mobile app design company, creating innovative and user-centric app interfaces that foster engagement and elevate user experience.",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "WebDesignHub"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "5",
+                                "ratingCount": "660"
+                            }
+                        }
+                    `}
+                </Script>
             </main>
         </>
     );

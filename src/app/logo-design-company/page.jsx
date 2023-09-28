@@ -215,6 +215,25 @@ const Page = () => {
                         }
                     `}
                 </Script>
+                <Script id="general-schema-2" type="application/ld+json">
+                    {`
+                        {
+                            "@context": "http://schema.org/",
+                            "@type": "Product",
+                            "name": "Custom Logo Design Services By WebDesignHub",
+                            "description": "WebDesignHub is a leading Custom Logo Design Company. Our skilled designers create impactful logos to elevate your brand. Partner with us for standout branding.",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "WebDesignHub"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.9",
+                                "ratingCount": "450"
+                            }
+                        }
+                    `}
+                </Script>
             </main>
         </>
     );

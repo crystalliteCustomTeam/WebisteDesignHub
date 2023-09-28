@@ -100,6 +100,25 @@ const Page = () => {
                         }
                     `}
                 </Script>
+                <Script id="general-schema-2" type="application/ld+json">
+                    {`
+                        {
+                            "@context": "http://schema.org/",
+                            "@type": "Product",
+                            "name": "Creative Copywriting Company",
+                            "description": "WebDesignHub offers expert creative copywriting services, delivering persuasive and captivating content that engages audiences and drives brand success.",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "WebDesignHub"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.9",
+                                "ratingCount": "450"
+                            }
+                        }
+                    `}
+                </Script>
             </main>
         </>
     );

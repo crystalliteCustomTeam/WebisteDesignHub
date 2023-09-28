@@ -102,6 +102,25 @@ const Page = () => {
                         }
                     `}
                 </Script>
+                <Script id="general-schema-2" type="application/ld+json">
+                    {`
+                        {
+                            "@context": "http://schema.org/",
+                            "@type": "Product",
+                            "name": "Digital Marketing Company",
+                            "description": "WebDesignHub is a top-tier Digital Marketing Company. Our expert team drives results to amplify your online presence. Boost your brand with us.",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "WebDesignHub"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.9",
+                                "ratingCount": "830"
+                            }
+                        }
+                    `}
+                </Script>
             </main>
         </>
     );
