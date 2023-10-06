@@ -27,9 +27,9 @@ const Reviews = ({ content }) => {
                         <div className="basis-full md:basis-2/4 overflow-hidden">
                             <Image src={quote} alt={quote} className="mb-10" />
                             <h2 className="text-4xl lg:text-5xl font-megat text-black font-normal mb-5">Our Client`s Review</h2>
-                            <Slider {...settings} className="pb-8">
+                            {content && <Slider {...settings} className="pb-8">
                                 {
-                                    content && content.map((e, i) => (
+                                    content.map((e, i) => (
                                         <div key={i}>
                                             <p className="text-sm lg:text-[16px] leading-[24px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">
                                                 {e.message}
@@ -44,7 +44,9 @@ const Reviews = ({ content }) => {
                                         </div>
                                     ))
                                 }
-                                {/* <div>
+                            </Slider>}
+                            {!content && <Slider {...settings} className="pb-8">
+                                <div>
                                     <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">"Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills."</p>
                                     <div className="flex items-center gap-5 mt-5">
                                         <Image src={avatarOne} alt={avatarOne} className="shadow-md rounded-full" />
@@ -76,8 +78,8 @@ const Reviews = ({ content }) => {
                                             <h5 className="text-sm text-black font-sans font-bold leading-none">InnovateTech Solutions</h5>
                                         </div>
                                     </div>
-                                </div> */}
-                            </Slider>
+                                </div>
+                            </Slider>}
                         </div>
                         <div className="basis-full md:basis-2/4">
                             <Image src={reviewsIllustration} alt="reviewsIllustration" />

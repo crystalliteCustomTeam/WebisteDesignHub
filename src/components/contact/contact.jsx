@@ -2,7 +2,7 @@
 // Imports Components
 import Image from "next/image";
 import Link from "next/link";
-import { Input, Select, Option, Textarea } from "@material-tailwind/react";
+import { Input, Select, Option, Textarea, Alert } from "@material-tailwind/react";
 import { ThemeProvider } from "@material-tailwind/react";
 // Import Images
 import contactGirl from "media/contactGirl.png";
@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation";
 import Axios from "axios";
 
 const Contact = () => {
-    const [selectedService, setSelectedService] = useState("Web Design Development");
+    const [selectedService, setSelectedService] = useState("Not Selected");
     const [data, setData] = useState({
         name: "",
         phone: "",
@@ -20,6 +20,26 @@ const Contact = () => {
         services: selectedService,
         pageURL: usePathname()
     });
+    const [formStatus, setFormStatus] = useState("Submit Form");
+    const [errors, setErrors] = useState({});
+    const formValidateHandle = () => {
+        let errors = {};
+        // Name validation
+        if (!data.name.trim()) {
+            errors.name = 'Name is required';
+        }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = 'Valid email is required';
+        }
+        // Phone validation
+        const phoneRegex = /[0-9]/i;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = 'Valid phone is required';
+        }
+        return errors;
+    };
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
@@ -28,22 +48,30 @@ const Contact = () => {
     }
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        e.target.value = "Processing...";
-        let headersList = {
-            "Accept": "*/*",
-            "Content-Type": "application/json"
-        }
+        setFormStatus("Processing...");
 
-        let bodyContent = { ...data, services: selectedService };
-        let reqOptions = {
-            url: "/api/email",
-            method: "POST",
-            headers: headersList,
-            data: JSON.stringify(bodyContent),
+        const errors = formValidateHandle();
+        setErrors(errors);
+
+        if (Object.keys(errors).length === 0) {
+            let headersList = {
+                "Accept": "*/*",
+                "Content-Type": "application/json"
+            }
+
+            let bodyContent = { ...data, services: selectedService };
+            let reqOptions = {
+                url: "/api/email",
+                method: "POST",
+                headers: headersList,
+                data: JSON.stringify(bodyContent),
+            }
+            await Axios.request(reqOptions);
+            setFormStatus("Submit Form");
+            window.location.href = "/thank-you";
+        } else {
+            setFormStatus("Failed...");
         }
-        await Axios.request(reqOptions);
-        e.target.value = "Submit Form";
-        window.location.href = "/thank-you";
     }
     const theme = {
         input: {
@@ -153,23 +181,47 @@ const Contact = () => {
                                 <form autoComplete="off">
                                     <div className="flex gap-5 flex-wrap md:flex-nowrap">
                                         <div className="basis-full md:basis-6/12 lg:basis-5/12  xl:basis-6/12 flex space-y-6 flex-col">
-                                            <input   label="Name" type="text" name="name" onChange={handleDataChange} />
-                                            <input   label="Telephone Number" name="phone" type="tel" onChange={handleDataChange} />
-                                            <input   label="Email" type="email" name="email" onChange={handleDataChange} />
-                                            <Select label="You're Interested in" onChange={handleSelectServices}>
-                                                <Option value="SEO">SEO</Option>
-                                                <Option value="PPC Marketing">PPC Marketing</Option>
-                                                <Option value="Social Media Management">Social Media Management</Option>
-                                                <Option value="Reputation Management">Reputation Management</Option>
-                                                <Option value="Content Marketing">Content Marketing</Option>
-                                                <Option value="Web Design Development">Web Design Development</Option>
-                                                <Option value="Other">Other</Option>
-                                            </Select>
-                                            <input   type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black hidden md:block cursor-pointer" onClick={handleFormSubmit} value="Submit Form" />
+                                            <div>
+                                                <Input label="Name" type="text" name="name" onChange={handleDataChange} />
+                                                {
+                                                    errors.name && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                        {errors.name}
+                                                    </span>
+                                                }
+                                            </div>
+                                            <div>
+                                                <Input label="Telephone Number" name="phone" type="tel" onChange={handleDataChange} />
+                                                {
+                                                    errors.phone && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                        {errors.phone}
+                                                    </span>
+                                                }
+                                            </div>
+                                            <div>
+                                                <Input label="Email" type="email" name="email" onChange={handleDataChange} />
+                                                {
+                                                    errors.email && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                        {errors.email}
+                                                    </span>
+                                                }
+                                            </div>
+                                            <div>
+                                                <Select label="You're Interested in" onChange={handleSelectServices}>
+                                                    <Option value="SEO">SEO</Option>
+                                                    <Option value="PPC Marketing">PPC Marketing</Option>
+                                                    <Option value="Social Media Management">Social Media Management</Option>
+                                                    <Option value="Reputation Management">Reputation Management</Option>
+                                                    <Option value="Content Marketing">Content Marketing</Option>
+                                                    <Option value="Web Design Development">Web Design Development</Option>
+                                                    <Option value="Other">Other</Option>
+                                                </Select>
+                                            </div>
+                                            <input type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black hidden md:block cursor-pointer" onClick={handleFormSubmit} value={formStatus} />
                                         </div>
                                         <div className="basis-full md:basis-6/12 lg:basis-5/12  xl:basis-6/12">
                                             <Textarea label="leave your message" variant="outlined" size="lg" id="" rows={11} className="h-[50px] md:h-full" name="message" onChange={handleDataChange} />
-                                            <input   type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black block md:hidden mt-3 cursor-pointer" onClick={handleFormSubmit} value="Submit Form" />
+                                            <input type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black block md:hidden mt-3 cursor-pointer" onClick={handleFormSubmit}
+                                                value={formStatus} />
                                         </div>
                                     </div>
                                 </form>

@@ -45,7 +45,7 @@ import screensContactUs from "media/landing-pages/website-design-develop/contact
 import Axios from "axios";
 
 const Page = () => {
-    const [selectedService, setSelectedService] = useState("Web Design Development");
+    const [selectedService, setSelectedService] = useState("Not Selected");
     const [data, setData] = useState({
         name: "",
         phone: "",
@@ -54,6 +54,26 @@ const Page = () => {
         services: selectedService,
         pageURL: usePathname()
     });
+    const [formStatus, setFormStatus] = useState("Submit Form");
+    const [errors, setErrors] = useState({});
+    const formValidateHandle = () => {
+        let errors = {};
+        // Name validation
+        if (!data.name.trim()) {
+            errors.name = 'Name is required';
+        }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = 'Valid email is required';
+        }
+        // Phone validation
+        const phoneRegex = /[0-9]/i;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = 'Valid phone is required';
+        }
+        return errors;
+    };
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
@@ -62,22 +82,30 @@ const Page = () => {
     }
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        e.target.value = "Processing...";
-        let headersList = {
-            "Accept": "*/*",
-            "Content-Type": "application/json"
-        }
+        setFormStatus("Processing...");
 
-        let bodyContent = { ...data, services: selectedService };
-        let reqOptions = {
-            url: "api/email",
-            method: "POST",
-            headers: headersList,
-            data: JSON.stringify(bodyContent),
+        const errors = formValidateHandle();
+        setErrors(errors);
+
+        if (Object.keys(errors).length === 0) {
+            let headersList = {
+                "Accept": "*/*",
+                "Content-Type": "application/json"
+            }
+
+            let bodyContent = { ...data, services: selectedService };
+            let reqOptions = {
+                url: "/api/email",
+                method: "POST",
+                headers: headersList,
+                data: JSON.stringify(bodyContent),
+            }
+            await Axios.request(reqOptions);
+            setFormStatus("Submit Form");
+            window.location.href = "/thank-you";
+        } else {
+            setFormStatus("Failed...");
         }
-        await Axios.request(reqOptions);
-        e.target.value = "Submit Form";
-        window.location.href = "/thank-you";
     }
     // Awards Slider
     let awardsSlider = {
@@ -221,27 +249,42 @@ const Page = () => {
                                                     <span className="text-[#08FAE5]">70%</span> Discount
                                                 </h3>
                                                 <form autoComplete="off">
-                                                    <input   placeholder="Enter Your Full Name*" type="text"
+                                                    <Input placeholder="Enter Your Full Name*" type="text"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}
                                                         name="name" onChange={handleDataChange}
                                                         containerProps={{ className: "m-h-[30px] xl:min-h-[45px] mt-3 xl:mt-5" }} />
-                                                    <input   placeholder="Enter Your Email*" type="email"
+                                                    {
+                                                        errors.name && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                            {errors.name}
+                                                        </span>
+                                                    }
+                                                    <Input placeholder="Enter Your Email*" type="email"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}
                                                         name="email" onChange={handleDataChange}
                                                         containerProps={{ className: "m-h-[30px] xl:min-h-[45px] mt-3 xl:mt-5" }} />
-                                                    <input   placeholder="Phone*" type="text"
+                                                    {
+                                                        errors.email && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                            {errors.email}
+                                                        </span>
+                                                    }
+                                                    <Input placeholder="Phone*" type="text"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}
                                                         name="phone" onChange={handleDataChange}
                                                         containerProps={{ className: "m-h-[30px] xl:min-h-[45px] mt-3 xl:mt-5" }} />
+                                                    {
+                                                        errors.phone && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                            {errors.phone}
+                                                        </span>
+                                                    }
                                                     <Textarea placeholder="Enter Your Message"
                                                         className="border-none my-3 xl:my-5 backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         name="message" onChange={handleDataChange}
@@ -249,8 +292,8 @@ const Page = () => {
                                                             className: "hidden",
                                                         }}>
                                                     </Textarea>
-                                                    <input   type="button" onClick={handleFormSubmit}
-                                                        className="bg-transparent text-base xl:text-lg font-medium text-white w-[100%] hover:bg-[#00FFED] border-2 border-[#00FFED] h-[40px] xl:h-[45px] rounded-lg cursor-pointer" value="Submit Now" />
+                                                    <input type="button" onClick={handleFormSubmit}
+                                                        className="bg-transparent text-base xl:text-lg font-medium text-white w-[100%] hover:bg-[#00FFED] border-2 border-[#00FFED] h-[40px] xl:h-[45px] rounded-lg cursor-pointer" value={formStatus} />
                                                 </form>
                                             </div>
                                         </div>
@@ -585,31 +628,46 @@ const Page = () => {
                                     <form autoComplete="off">
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                             <div>
-                                                <input   placeholder="Enter Your Full Name*" type="text"
+                                                <Input placeholder="Enter Your Full Name*" type="text"
                                                     className="border-none placeholder:text-white text-white font-[300]"
                                                     labelProps={{
                                                         className: "hidden",
                                                     }}
                                                     name="name" onChange={handleDataChange}
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl " }} />
+                                                {
+                                                    errors.name && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                        {errors.name}
+                                                    </span>
+                                                }
                                             </div>
                                             <div>
-                                                <input   placeholder="Enter Your Email*" type="email"
+                                                <Input placeholder="Enter Your Email*" type="email"
                                                     className="border-none placeholder:text-white text-white font-[300]"
                                                     labelProps={{
                                                         className: "hidden",
                                                     }}
                                                     name="email" onChange={handleDataChange}
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
+                                                {
+                                                    errors.email && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                        {errors.email}
+                                                    </span>
+                                                }
                                             </div>
                                             <div>
-                                                <input   placeholder="Phone*" type="text"
+                                                <Input placeholder="Phone*" type="text"
                                                     className="border-none placeholder:text-white text-white font-[300]"
                                                     labelProps={{
                                                         className: "hidden",
                                                     }}
                                                     name="phone" onChange={handleDataChange}
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
+                                                {
+                                                    errors.phone && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                        {errors.phone}
+                                                    </span>
+                                                }
                                             </div>
                                             <div>
                                                 <Select label="You're Interested in" className="border-none placeholder:text-white text-white font-[300]"
@@ -635,7 +693,7 @@ const Page = () => {
                                             name="message" onChange={handleDataChange}
                                             containerProps={{ className: "bg-[#00296B]/30 rounded-xl my-5" }}>
                                         </Textarea>
-                                        <input   type="button" onClick={handleFormSubmit} className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5 cursor-pointer" value="Submit Now" />
+                                        <input type="button" onClick={handleFormSubmit} className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5 cursor-pointer" value={formStatus} />
                                     </form>
                                 </div>
                                 <div>

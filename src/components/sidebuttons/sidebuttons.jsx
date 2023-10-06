@@ -16,30 +16,58 @@ const Sidebuttons = () => {
         phone: "",
         email: "",
         message: "",
-        services: "no-need",
+        services: "Not Selected",
         pageURL: usePathname()
     });
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
+    const [formStatus, setFormStatus] = useState("Submit Form");
+    const [errors, setErrors] = useState({});
+    const formValidateHandle = () => {
+        let errors = {};
+        // Name validation
+        if (!data.name.trim()) {
+            errors.name = 'Name is required';
+        }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = 'Valid email is required';
+        }
+        // Phone validation
+        const phoneRegex = /[0-9]/i;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = 'Valid phone is required';
+        }
+        return errors;
+    };
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        e.target.value = "Processing...";
-        let headersList = {
-            "Accept": "*/*",
-            "Content-Type": "application/json"
-        }
+        setFormStatus("Processing...");
 
-        let bodyContent = JSON.stringify(data);
-        let reqOptions = {
-            url: "/api/email",
-            method: "POST",
-            headers: headersList,
-            data: bodyContent,
+        const errors = formValidateHandle();
+        setErrors(errors);
+
+        if (Object.keys(errors).length === 0) {
+            let headersList = {
+                "Accept": "*/*",
+                "Content-Type": "application/json"
+            }
+
+            let bodyContent = data;
+            let reqOptions = {
+                url: "/api/email",
+                method: "POST",
+                headers: headersList,
+                data: JSON.stringify(bodyContent),
+            }
+            await Axios.request(reqOptions);
+            setFormStatus("Submit Form");
+            window.location.href = "/thank-you";
+        } else {
+            setFormStatus("Failed...");
         }
-        await Axios.request(reqOptions);
-        e.target.value = "Submit Form";
-        window.location.href = "/thank-you";
     }
     const theme = {
         input: {
@@ -97,18 +125,33 @@ const Sidebuttons = () => {
                 <ThemeProvider value={theme}>
                     <form className="w-[400px] p-4 bg-black" autoComplete="off">
                         <div className="mb-3">
-                            <input   label="Name" type="text" id="" onChange={handleDataChange} name="name" />
+                            <Input label="Name" type="text" onChange={handleDataChange} name="name" />
+                            {
+                                errors.name && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                    {errors.name}
+                                </span>
+                            }
                         </div>
                         <div className="mb-3">
-                            <input   label="Telephone Number" type="tel" id="" onChange={handleDataChange} name="phone" />
+                            <Input label="Telephone Number" type="tel" onChange={handleDataChange} name="phone" />
+                            {
+                                errors.phone && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                    {errors.phone}
+                                </span>
+                            }
                         </div>
                         <div className="mb-3">
-                            <input   label="Email" type="email" id="" onChange={handleDataChange} name="email" />
+                            <Input label="Email" type="email" onChange={handleDataChange} name="email" />
+                            {
+                                errors.email && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                    {errors.email}
+                                </span>
+                            }
                         </div>
                         <div className="mb-3">
-                            <input   label="leave your message" type="text" id="" onChange={handleDataChange} name="message" />
+                            <Input label="leave your message" type="text" onChange={handleDataChange} name="message" />
                         </div>
-                        <input   type="button" onClick={handleFormSubmit} className="cursor-pointer  text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white hover:bg-[#C165CB]" value="Submit Form" />
+                        <input type="button" onClick={handleFormSubmit} className="cursor-pointer  text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white hover:bg-[#C165CB]" value={formStatus} />
                     </form>
                 </ThemeProvider>
             </div>

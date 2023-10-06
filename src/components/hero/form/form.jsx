@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import Axios from "axios";
 
 const From = () => {
-    const [selectedService, setSelectedService] = useState("Web Design Development");
+    const [selectedService, setSelectedService] = useState("Not Selected");
     const [data, setData] = useState({
         name: "",
         phone: "",
@@ -15,6 +15,26 @@ const From = () => {
         services: selectedService,
         pageURL: usePathname()
     });
+    const [formStatus, setFormStatus] = useState("Submit Form");
+    const [errors, setErrors] = useState({});
+    const formValidateHandle = () => {
+        let errors = {};
+        // Name validation
+        if (!data.name.trim()) {
+            errors.name = 'Name is required';
+        }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = 'Valid email is required';
+        }
+        // Phone validation
+        const phoneRegex = /[0-9]/i;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = 'Valid phone is required';
+        }
+        return errors;
+    };
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
@@ -23,22 +43,30 @@ const From = () => {
     }
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        e.target.value = "Processing...";
-        let headersList = {
-            "Accept": "*/*",
-            "Content-Type": "application/json"
-        }
+        setFormStatus("Processing...");
 
-        let bodyContent = { ...data, services: selectedService };
-        let reqOptions = {
-            url: "/api/email",
-            method: "POST",
-            headers: headersList,
-            data: JSON.stringify(bodyContent),
+        const errors = formValidateHandle();
+        setErrors(errors);
+
+        if (Object.keys(errors).length === 0) {
+            let headersList = {
+                "Accept": "*/*",
+                "Content-Type": "application/json"
+            }
+
+            let bodyContent = { ...data, services: selectedService };
+            let reqOptions = {
+                url: "/api/email",
+                method: "POST",
+                headers: headersList,
+                data: JSON.stringify(bodyContent),
+            }
+            await Axios.request(reqOptions);
+            setFormStatus("Submit Form");
+            window.location.href = "/thank-you";
+        } else {
+            setFormStatus("Failed...");
         }
-        await Axios.request(reqOptions);
-        e.target.value = "Submit Form";
-        window.location.href = "/thank-you";
     }
     const theme = {
         input: {
@@ -233,13 +261,28 @@ const From = () => {
                         <form autoComplete="off">
                             <div className="flex flex-col gap-y-3 lg:gap-y-0 lg:flex-row lg:gap-5 mb-3 w-[90%] lg:w-full m-auto">
                                 <div className="basis-full lg:basis-1/3">
-                                    <input   label="Name" type="text" id="" name="name" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    <Input label="Name" type="text" name="name" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    {
+                                        errors.name && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                            {errors.name}
+                                        </span>
+                                    }
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <input   label="Telephone Number" type="tel" id="" name="phone" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    <Input label="Telephone Number" type="tel" name="phone" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    {
+                                        errors.phone && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                            {errors.phone}
+                                        </span>
+                                    }
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <input   label="Email" type="email" id="" name="email" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    <Input label="Email" type="email" name="email" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    {
+                                        errors.email && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                            {errors.email}
+                                        </span>
+                                    }
                                 </div>
                             </div>
                             <div className="flex flex-col lg:flex-row lg:gap-5 gap-y-3 lg:gap-y-0 w-[90%] lg:w-full m-auto">
@@ -255,10 +298,10 @@ const From = () => {
                                     </Select>
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <Textarea label="leave your message" onChange={handleDataChange} variant="outlined" size="lg" id="" name="message" rows={1} className="min-h-full backdrop-blur-sm" />
+                                    <Textarea label="leave your message" onChange={handleDataChange} variant="outlined" size="lg" name="message" rows={1} className="min-h-full backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <input   type="button" onClick={handleFormSubmit} className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white cursor-pointer" value="Submit Form" />
+                                    <input type="button" onClick={handleFormSubmit} className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white cursor-pointer" value={formStatus} />
                                 </div>
                             </div>
                         </form>

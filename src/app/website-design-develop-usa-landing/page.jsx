@@ -54,7 +54,7 @@ import logo from "media/logo.svg";
 import liveChatIcon from "media/liveChatIcon.svg";
 
 const Page = () => {
-    const [selectedService, setSelectedService] = useState("no-need");
+    const [selectedService, setSelectedService] = useState("Not Selected");
     const [data, setData] = useState({
         name: "",
         phone: "",
@@ -63,6 +63,26 @@ const Page = () => {
         services: selectedService,
         pageURL: usePathname()
     });
+    const [formStatus, setFormStatus] = useState("Get A Free Consultation");
+    const [errors, setErrors] = useState({});
+    const formValidateHandle = () => {
+        let errors = {};
+        // Name validation
+        if (!data.name.trim()) {
+            errors.name = 'Name is required';
+        }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = 'Valid email is required';
+        }
+        // Phone validation
+        const phoneRegex = /[0-9]/i;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = 'Valid phone is required';
+        }
+        return errors;
+    };
     const handleDataChange = (e) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
@@ -71,21 +91,30 @@ const Page = () => {
     }
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        e.target.value = "Processing...";
-        let headersList = {
-            "Accept": "*/*",
-            "Content-Type": "application/json"
+        setFormStatus("Processing...");
+
+        const errors = formValidateHandle();
+        setErrors(errors);
+
+        if (Object.keys(errors).length === 0) {
+            let headersList = {
+                "Accept": "*/*",
+                "Content-Type": "application/json"
+            }
+
+            let bodyContent = { ...data, services: selectedService };
+            let reqOptions = {
+                url: "/api/email",
+                method: "POST",
+                headers: headersList,
+                data: JSON.stringify(bodyContent),
+            }
+            await Axios.request(reqOptions);
+            setFormStatus("Get A Free Consultation");
+            window.location.href = "/thank-you";
+        } else {
+            setFormStatus("Failed...");
         }
-        let bodyContent = { ...data, services: selectedService };
-        let reqOptions = {
-            url: "api/email",
-            method: "POST",
-            headers: headersList,
-            data: JSON.stringify(bodyContent),
-        }
-        await Axios.request(reqOptions);
-        e.target.value = "Get A Free Consultation";
-        window.location.href = "/thank-you";
     }
     // Reviewss
     let reviewsSlider = {
@@ -320,15 +349,36 @@ const Page = () => {
                                         Or fill in the form below & we'll call you
                                     </p>
                                     <form autoComplete="off">
-                                        <input   type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
-                                            name="name" onChange={handleDataChange} />
-                                        <input   type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
-                                            name="email" onChange={handleDataChange} />
-                                        <input   type="tel" placeholder="Phone*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
-                                            name="phone" onChange={handleDataChange} />
+                                        <div className="mb-3">
+                                            <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                                name="name" onChange={handleDataChange} />
+                                            {
+                                                errors.name && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                    {errors.name}
+                                                </span>
+                                            }
+                                        </div>
+                                        <div className="mb-3">
+                                            <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                                name="email" onChange={handleDataChange} />
+                                            {
+                                                errors.email && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                    {errors.email}
+                                                </span>
+                                            }
+                                        </div>
+                                        <div className="mb-3">
+                                            <input type="tel" placeholder="Phone*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                                name="phone" onChange={handleDataChange} />
+                                            {
+                                                errors.phone && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                    {errors.phone}
+                                                </span>
+                                            }
+                                        </div>
                                         <textarea placeholder="Message*" className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
                                             name="message" onChange={handleDataChange}></textarea>
-                                        <input   type="button" className="w-full h-[40px] bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" onClick={handleFormSubmit} value="Get A Free Consultation" />
+                                        <input type="button" className="w-full h-[40px] bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" onClick={handleFormSubmit} value={formStatus} />
                                     </form>
                                 </div>
                                 <Image src={heroPointingGirl} alt="heroPointingGirl" className="absolute top-[50px] left-[-130px] hidden xl:block" />
@@ -1120,13 +1170,36 @@ const Page = () => {
                             <div className="basis-full lg:basis-1/2">
                                 <form autoComplete="off">
                                     <div className="grid grid-cols-1  md:grid-cols-2 gap-3">
-                                        <input   type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
-                                            name="name" onChange={handleDataChange} />
-                                        <input   type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
-                                            name="email" onChange={handleDataChange} />
-                                        <input   type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
-                                            name="phone" onChange={handleDataChange} />
-                                        <input   type="text" name="company" onChange={handleDataChange} placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
+                                        <div>
+                                            <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                                name="name" onChange={handleDataChange} />
+                                            {
+                                                errors.name && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                    {errors.name}
+                                                </span>
+                                            }
+                                        </div>
+                                        <div>
+                                            <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                                name="email" onChange={handleDataChange} />
+                                            {
+                                                errors.email && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                    {errors.email}
+                                                </span>
+                                            }
+                                        </div>
+                                        <div>
+                                            <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                                name="phone" onChange={handleDataChange} />
+                                            {
+                                                errors.phone && <span className="text-[12px] block p-2 font-medium text-red-600">
+                                                    {errors.phone}
+                                                </span>
+                                            }
+                                        </div>
+                                        <div>
+                                            <input type="text" name="company" onChange={handleDataChange} placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
+                                        </div>
                                     </div>
                                     <select className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
                                         onChange={handleSelectServices} value={selectedService}>
@@ -1139,7 +1212,7 @@ const Page = () => {
                                         <option value="Other">Other</option>
                                     </select>
                                     <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black my-3 focus-visible:ring-4 ring-[#f17724]" name="message" onChange={handleDataChange}></textarea>
-                                    <input   type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" value="Get A Free Consultation" onClick={handleFormSubmit} />
+                                    <input type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" value={formStatus} onClick={handleFormSubmit} />
                                 </form>
                             </div>
                         </div>
