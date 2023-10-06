@@ -153,27 +153,27 @@ const Package = ({ params }) => {
                                 </>}
                                 <form autoComplete="off" className={`${value === 'logo' ? 'grid grid-cols-2 gap-5' : 'grid grid-cols-1 gap-5'}`}>
                                     <div>
-                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
+                                        <input   type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
                                             name="customer_name" onChange={fieldsChangeHandler} />
                                     </div>
                                     <div>
-                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
+                                        <input   type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
                                             name="customer_email" onChange={fieldsChangeHandler} />
                                     </div>
                                     <div>
-                                        <input type="tel" placeholder="Phone*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
+                                        <input   type="tel" placeholder="Phone*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
                                             name="customer_phone" onChange={fieldsChangeHandler} />
                                     </div>
                                     {value == 'logo' && <div>
-                                        <input type="text" placeholder="Logo Name" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
+                                        <input   type="text" placeholder="Logo Name" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
                                             name="logo_name" onChange={fieldsChangeHandler} />
                                     </div>}
                                     {value == 'logo' && <div>
-                                        <input type="text" placeholder="Slogan or Tagline" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
+                                        <input   type="text" placeholder="Slogan or Tagline" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
                                             name="logo_solgan" onChange={fieldsChangeHandler} />
                                     </div>}
                                     {value == 'logo' && <div>
-                                        <input type="text" placeholder="Color Reference" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
+                                        <input   type="text" placeholder="Color Reference" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black placeholder:text[#f17724] ring-2 ring-[#f17724]"
                                             name="logo_color_reference" onChange={fieldsChangeHandler} />
                                     </div>}
                                     {value == 'logo' && <div className="col-span-2">
@@ -199,7 +199,7 @@ const Package = ({ params }) => {
                                     {value == 'logo' && <div className="col-span-2">
                                         <label className="block">
                                             <span className="block text-white font-sans font-medium text-[16px] mb-3">Any Reference ?</span>
-                                            <input type="file" name="file" className="w-full p-3 focus-visible:outline-none text-white ring-2 ring-[#f17724]"
+                                            <input   type="file" name="file" className="w-full p-3 focus-visible:outline-none text-white ring-2 ring-[#f17724]"
                                                 onChange={e => setFile(e.target.files?.[0])} />
                                         </label>
                                     </div>}
@@ -208,7 +208,7 @@ const Package = ({ params }) => {
                                             name="logo_description" onChange={fieldsChangeHandler}></textarea>
                                     </div>}
                                     <div>
-                                        <input type="button" className="w-max px-5 h-[40px] bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold ring-2 hover:bg-transparent ring-[#f17724] cursor-pointer" value="Complete" onClick={handleFormSubmit} />
+                                        <input   type="button" className="w-max px-5 h-[40px] bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold ring-2 hover:bg-transparent ring-[#f17724] cursor-pointer" value="Complete" onClick={handleFormSubmit} />
                                     </div>
                                 </form>
                             </div>

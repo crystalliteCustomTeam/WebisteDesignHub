@@ -2,7 +2,7 @@
 // Import Components
 import Image from "next/image";
 import { ThemeProvider, Input } from "@material-tailwind/react";
-import Button from "@/components/button/Button";
+import Button from "@/components/button/button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Axios from "axios";

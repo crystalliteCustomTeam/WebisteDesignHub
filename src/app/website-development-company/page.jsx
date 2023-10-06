@@ -66,6 +66,27 @@ const Page = () => {
         title: "Design Consultation",
         desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
     }
+    // Array for Reviews Component Props
+    const reviews = [
+        {
+            message: "The experience of working with Web Design Hub has been wonderful. They have surpassed our expectations at every turn, starting with the initial consultation and ending with the launch. Their team's dedication to detail, originality, and technological expertise were essential to realizing our vision. Due to their dedication to quality, our website not only looks amazing but also runs without a hitch. Anyone looking for top-notch web development services should get in contact with them immediately.",
+            name: "John Mitchell",
+            jd: false,
+            profile: "/website-development/reviews/1.png"
+        },
+        {
+            message: "For years, Web Design Hub has been our dependable website development partner, and they never cease to wow us. It's amazing how well they can translate complicated concepts into web pages that are easy to use. The team's commitment to comprehending our brand and goals has produced websites that are an ideal representation of us. Their superb post-launch assistance makes them the ideal long-term partner. I am quite pleased with their services.",
+            name: "Sarah Anderson",
+            jd: false,
+            profile: "/website-development/reviews/2.png"
+        },
+        {
+            message: "Our website development agency is the best ally we discovered who actually cared about our success. Every project exhibits innovation, technical mastery, and attention to detail. The unique features and perfect operation of our website have increased user interaction and conversion rates. We appreciate their spirit of cooperation and persistent commitment to our objectives. Contact Web Design Hub and get yourself on a journey of success.",
+            name: "Michael George",
+            jd: false,
+            profile: "/website-development/reviews/3.png"
+        }
+    ]
     return (
         <>
             <main>
@@ -75,7 +96,7 @@ const Page = () => {
                 <SmallBanner content={smallbanner} />
                 <Portfolios content={portfolios} />
                 <Packages content={packages} />
-                <Reviews />
+                <Reviews content={reviews} />
                 <Weare />
                 <Contact />
                 <Letstalk content={letstalk} />

@@ -67,6 +67,27 @@ const Page = () => {
         title: "Design Consultation",
         desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
     }
+    // Array for Reviews Component Props
+    const reviews = [
+        {
+            message: "Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills.",
+            name: "Jennifer Mitchell",
+            jd: "Senior Financial Advisor",
+            profile: "/illustration-design/reviews/1.png"
+        },
+        {
+            message: "Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Design Hub is the best web design company I have ever worked with.",
+            name: "Sarah Johnson",
+            jd: "E-commerce Manager",
+            profile: "/illustration-design/reviews/2.png"
+        },
+        {
+            message: "Hiring Web Design Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.",
+            name: "Emily Parker",
+            jd: "Co-founder",
+            profile: "/illustration-design/reviews/3.png"
+        }
+    ]
     return (
         <>
             <main>
@@ -76,7 +97,7 @@ const Page = () => {
                 <SmallBanner content={smallbanner} />
                 <Portfolios content={portfolios} />
                 <Packages content={packages} />
-                <Reviews />
+                <Reviews content={reviews} />
                 <Weare />
                 <Contact />
                 <Letstalk content={letstalk} />

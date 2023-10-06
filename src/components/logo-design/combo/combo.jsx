@@ -1,6 +1,6 @@
 // Import Components
 import Image from "next/image";
-import Button from "@/components/button/Button";
+import Button from "@/components/button/button";
 // Import Images
 import checkCircle from "media/packages/checkCircle.png";
 import comboImage from "media/packages/combo.png";

@@ -153,9 +153,9 @@ const Contact = () => {
                                 <form autoComplete="off">
                                     <div className="flex gap-5 flex-wrap md:flex-nowrap">
                                         <div className="basis-full md:basis-6/12 lg:basis-5/12  xl:basis-6/12 flex space-y-6 flex-col">
-                                            <Input label="Name" type="text" name="name" onChange={handleDataChange} />
-                                            <Input label="Telephone Number" name="phone" type="tel" onChange={handleDataChange} />
-                                            <Input label="Email" type="email" name="email" onChange={handleDataChange} />
+                                            <input   label="Name" type="text" name="name" onChange={handleDataChange} />
+                                            <input   label="Telephone Number" name="phone" type="tel" onChange={handleDataChange} />
+                                            <input   label="Email" type="email" name="email" onChange={handleDataChange} />
                                             <Select label="You're Interested in" onChange={handleSelectServices}>
                                                 <Option value="SEO">SEO</Option>
                                                 <Option value="PPC Marketing">PPC Marketing</Option>
@@ -165,11 +165,11 @@ const Contact = () => {
                                                 <Option value="Web Design Development">Web Design Development</Option>
                                                 <Option value="Other">Other</Option>
                                             </Select>
-                                            <input type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black hidden md:block cursor-pointer" onClick={handleFormSubmit} value="Submit Form" />
+                                            <input   type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black hidden md:block cursor-pointer" onClick={handleFormSubmit} value="Submit Form" />
                                         </div>
                                         <div className="basis-full md:basis-6/12 lg:basis-5/12  xl:basis-6/12">
                                             <Textarea label="leave your message" variant="outlined" size="lg" id="" rows={11} className="h-[50px] md:h-full" name="message" onChange={handleDataChange} />
-                                            <input type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black block md:hidden mt-3 cursor-pointer" onClick={handleFormSubmit} value="Submit Form" />
+                                            <input   type="button" className="text-sm sm:text-lg font-medium w-max pr-8 pl-8 h-10 rounded-md bg-[#0F2847] text-white hover:bg-black block md:hidden mt-3 cursor-pointer" onClick={handleFormSubmit} value="Submit Form" />
                                         </div>
                                     </div>
                                 </form>

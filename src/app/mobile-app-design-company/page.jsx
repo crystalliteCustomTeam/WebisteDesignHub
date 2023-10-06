@@ -67,6 +67,27 @@ const page = () => {
         title: "Design Consultation",
         desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
     }
+    // Array for Reviews Component Props
+    const reviews = [
+        {
+            message: "Working with Web Design Hub, the marketing collateral team helped change the game. Every brochure, flyer, and presentation they've created for us demonstrates their limitless ingenuity. Our updated material has left our clients really thrilled, and it surely helped to our recent success. I personally recommend them to each one of you.",
+            name: "Emily Kennedy",
+            jd: false,
+            profile: "/marketing-collateral/reviews/1.png"
+        },
+        {
+            message: "I wanted marketing materials for my small business that would have a huge impact on a tight budget. This marketing collateral team not only got my concept but also made the most of every dollar to produce materials of the highest caliber. Their attention to detail on everything from business cards to fliers has improved the visibility of my brand. Since using their material, I've noticed a substantial rise in inquiries and purchases. Thank you to each team player for helping me throughout everything and for remaining committed.",
+            name: "Michael Sherling",
+            jd: false,
+            profile: "/marketing-collateral/reviews/2.png"
+        },
+        {
+            message: "Event preparation demands attention to detail, and my go-to resource for outstanding promotional materials has been Web Design Hub. They've assisted me in turning events into life-changing experiences, with anything from attractive posters to interesting pamphlets. It is just amazing how well they are able to capture the soul of each event and transform it into collateral. Without them, I wouldn't dare attempt to organize a gathering.",
+            name: "Sarah Kyle",
+            jd: false,
+            profile: "/marketing-collateral/reviews/3.png"
+        }
+    ]
     return (
         <>
             <main>
@@ -76,7 +97,7 @@ const page = () => {
                 <SmallBanner content={smallbanner} />
                 <Portfolios content={portfolios} />
                 <Letstalk content={letstalk} />
-                <Reviews />
+                <Reviews content={reviews} />
                 <Weare />
                 <Contact />
                 <Footer />

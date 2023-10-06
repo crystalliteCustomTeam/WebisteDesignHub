@@ -2,7 +2,7 @@
 // Import Components
 import Image from "next/image";
 import { Tabs, TabsHeader, TabsBody, Tab, TabPanel, ThemeProvider, Input } from "@material-tailwind/react";
-import Button from "@/components/button/Button";
+import Button from "@/components/button/button";
 // Import Theme
 import theme from "./theme";
 // Import Images

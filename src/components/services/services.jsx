@@ -3,7 +3,7 @@ import { useState } from "react";
 // Imports Components
 import Image from "next/image";
 import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from "@material-tailwind/react";
-import Button from "@/components/button/Button";
+import Button from "@/components/button/button";
 // Import Images
 import serviceTabArrow from "media/serviceTabArrow.svg";
 

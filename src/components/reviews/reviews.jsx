@@ -12,7 +12,7 @@ import avatarTwo from "media/reviews/avatarTwo.png";
 import avatarThree from "media/reviews/avatarThree.png";
 import reviewsIllustration from "media/reviews/reviews.png";
 
-const Reviews = () => {
+const Reviews = ({ content }) => {
     const settings = {
         dots: true,
         arrows: true,
@@ -28,7 +28,23 @@ const Reviews = () => {
                             <Image src={quote} alt={quote} className="mb-10" />
                             <h2 className="text-4xl lg:text-5xl font-megat text-black font-normal mb-5">Our Client`s Review</h2>
                             <Slider {...settings} className="pb-8">
-                                <div>
+                                {
+                                    content && content.map((e, i) => (
+                                        <div key={i}>
+                                            <p className="text-sm lg:text-[16px] leading-[24px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">
+                                                {e.message}
+                                            </p>
+                                            <div className="flex items-center gap-5 mt-5">
+                                                {e.profile && <Image src={e.profile} alt="profile" className="shadow-md rounded-full" width={50} height={50} />}
+                                                <div >
+                                                    <h5 className="text-lg text-black font-sans font-bold leading-none mb-1">{e.name}</h5>
+                                                    {e.jd && <p className="text-sm text-black font-light">{e.jd}</p>}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                                {/* <div>
                                     <p className="text-sm lg:text-[18px] leading-[28px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">"Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills."</p>
                                     <div className="flex items-center gap-5 mt-5">
                                         <Image src={avatarOne} alt={avatarOne} className="shadow-md rounded-full" />
@@ -60,7 +76,7 @@ const Reviews = () => {
                                             <h5 className="text-sm text-black font-sans font-bold leading-none">InnovateTech Solutions</h5>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </Slider>
                         </div>
                         <div className="basis-full md:basis-2/4">

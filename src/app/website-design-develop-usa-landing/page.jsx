@@ -320,15 +320,15 @@ const Page = () => {
                                         Or fill in the form below & we'll call you
                                     </p>
                                     <form autoComplete="off">
-                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                        <input   type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
                                             name="name" onChange={handleDataChange} />
-                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                        <input   type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
                                             name="email" onChange={handleDataChange} />
-                                        <input type="tel" placeholder="Phone*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
+                                        <input   type="tel" placeholder="Phone*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
                                             name="phone" onChange={handleDataChange} />
                                         <textarea placeholder="Message*" className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[16px] text-black mb-3 placeholder:text[#f17724] focus-visible:ring-4 ring-[#f17724]"
                                             name="message" onChange={handleDataChange}></textarea>
-                                        <input type="button" className="w-full h-[40px] bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" onClick={handleFormSubmit} value="Get A Free Consultation" />
+                                        <input   type="button" className="w-full h-[40px] bg-[#f17724] text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" onClick={handleFormSubmit} value="Get A Free Consultation" />
                                     </form>
                                 </div>
                                 <Image src={heroPointingGirl} alt="heroPointingGirl" className="absolute top-[50px] left-[-130px] hidden xl:block" />
@@ -1120,13 +1120,13 @@ const Page = () => {
                             <div className="basis-full lg:basis-1/2">
                                 <form autoComplete="off">
                                     <div className="grid grid-cols-1  md:grid-cols-2 gap-3">
-                                        <input type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                        <input   type="text" placeholder="Full Name*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
                                             name="name" onChange={handleDataChange} />
-                                        <input type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                        <input   type="email" placeholder="Email Address*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
                                             name="email" onChange={handleDataChange} />
-                                        <input type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
+                                        <input   type="tel" placeholder="Phone No*" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
                                             name="phone" onChange={handleDataChange} />
-                                        <input type="text" name="company" onChange={handleDataChange} placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
+                                        <input   type="text" name="company" onChange={handleDataChange} placeholder="Company / Website URL" className="w-full h-[40px] px-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]" />
                                     </div>
                                     <select className="w-full h-[40px] px-3 mt-3 focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black focus-visible:ring-4 ring-[#f17724]"
                                         onChange={handleSelectServices} value={selectedService}>
@@ -1139,7 +1139,7 @@ const Page = () => {
                                         <option value="Other">Other</option>
                                     </select>
                                     <textarea placeholder="Please tell us more how can we help you..." className="w-full h-[100px] p-3 resize-none focus-visible:outline-none font-sans font-medium text-[14px] md:text-[16px] text-black my-3 focus-visible:ring-4 ring-[#f17724]" name="message" onChange={handleDataChange}></textarea>
-                                    <input type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" value="Get A Free Consultation" onClick={handleFormSubmit} />
+                                    <input   type="submit" className="w-full h-[40px] bg-[#f17724] hover:text-black text-[#ffffff] text-[18px] font-sans font-semibold hover:ring-4 hover:bg-transparent ring-[#f17724] cursor-pointer" value="Get A Free Consultation" onClick={handleFormSubmit} />
                                 </form>
                             </div>
                         </div>

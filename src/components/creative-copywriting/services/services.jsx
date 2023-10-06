@@ -1,6 +1,6 @@
 // Import Components
 import Image from "next/image";
-import Button from "@/components/button/Button";
+import Button from "@/components/button/button";
 // Import Images
 import screens from "media/creative-copywriting/services/screens.png";
 

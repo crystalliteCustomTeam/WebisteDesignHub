@@ -233,13 +233,13 @@ const From = () => {
                         <form autoComplete="off">
                             <div className="flex flex-col gap-y-3 lg:gap-y-0 lg:flex-row lg:gap-5 mb-3 w-[90%] lg:w-full m-auto">
                                 <div className="basis-full lg:basis-1/3">
-                                    <Input label="Name" type="text" id="" name="name" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    <input   label="Name" type="text" id="" name="name" onChange={handleDataChange} className="backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <Input label="Telephone Number" type="tel" id="" name="phone" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    <input   label="Telephone Number" type="tel" id="" name="phone" onChange={handleDataChange} className="backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <Input label="Email" type="email" id="" name="email" onChange={handleDataChange} className="backdrop-blur-sm" />
+                                    <input   label="Email" type="email" id="" name="email" onChange={handleDataChange} className="backdrop-blur-sm" />
                                 </div>
                             </div>
                             <div className="flex flex-col lg:flex-row lg:gap-5 gap-y-3 lg:gap-y-0 w-[90%] lg:w-full m-auto">
@@ -258,7 +258,7 @@ const From = () => {
                                     <Textarea label="leave your message" onChange={handleDataChange} variant="outlined" size="lg" id="" name="message" rows={1} className="min-h-full backdrop-blur-sm" />
                                 </div>
                                 <div className="basis-full lg:basis-1/3">
-                                    <input type="button" onClick={handleFormSubmit} className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white cursor-pointer" value="Submit Form" />
+                                    <input   type="button" onClick={handleFormSubmit} className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white cursor-pointer" value="Submit Form" />
                                 </div>
                             </div>
                         </form>

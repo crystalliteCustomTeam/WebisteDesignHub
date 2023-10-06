@@ -55,6 +55,33 @@ const Page = () => {
         title: "Let’s Talk",
         desc: "Connect with us and let our professional digital marketing experts help you to achieve your business goals without facing any hassles."
     }
+    // Array for Reviews Component Props
+    const reviews = [
+        {
+            message: "Web Design Hub's e-commerce digital marketing solutions have skyrocketed our online sales. They're the best at what they do, and our success speaks for itself.",
+            name: "Alice Roger",
+            jd: false,
+            profile: "/digital-marketing/reviews/1.png"
+        },
+        {
+            message: "Our consumer goods brand owes its success to Web Design Hub's digital marketing prowess. They understand our industry like no one else, truly the best.",
+            name: "Michael Sorsen",
+            jd: false,
+            profile: "/digital-marketing/reviews/2.png"
+        },
+        {
+            message: "Web Design Hub's service-focused digital marketing transformed our business. Their expertise shines, and they've earned their reputation as the best in the field.",
+            name: "Billy Benson",
+            jd: false,
+            profile: "/digital-marketing/reviews/3.png"
+        },
+        {
+            message: "I couldn't be happier with Web Design Hub's digital marketing for our service-based company. Their results are unmatched, solidifying their status as the best in the business.",
+            name: "Robert Lee",
+            jd: false,
+            profile: "/digital-marketing/reviews/4.png"
+        },
+    ]
     return (
         <>
             <main>
@@ -64,7 +91,7 @@ const Page = () => {
                 <SmallBanner content={smallbanner} />
                 <Steps />
                 <Packages content={packages} />
-                <Reviews />
+                <Reviews content={reviews} />
                 <Weare />
                 <Contact />
                 <Letstalk content={letstalk} />

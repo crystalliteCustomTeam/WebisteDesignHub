@@ -1,5 +1,5 @@
 // Import Components
-import Button from "@/components/button/Button";
+import Button from "@/components/button/button";
 
 const Services = () => {
     return (

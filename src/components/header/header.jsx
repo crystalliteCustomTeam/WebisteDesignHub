@@ -3,7 +3,7 @@
 import { Collapse, IconButton, MobileNav, Navbar } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/components/button/Button";
+import Button from "@/components/button/button";
 import { usePathname } from "next/navigation";
 // Import Images
 import logo from "media/logo.svg";

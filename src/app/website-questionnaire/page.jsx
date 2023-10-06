@@ -112,31 +112,31 @@ const Page = () => {
                         <div className="grid grid-cols-2 gap-5">
                             <div>
                                 <Label title="Client Name:" htmlFor="clientName" required={true} />
-                                <Input type="text" name="clientName" placeholder="Enter Your Name" handle={handleFormFields} />
+                                <input   type="text" name="clientName" placeholder="Enter Your Name" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="Contact Person:" htmlFor="contactPerson" required={false} />
-                                <Input type="text" name="contactPerson" placeholder="Enter Contact Person" handle={handleFormFields} />
+                                <input   type="text" name="contactPerson" placeholder="Enter Contact Person" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="Designation:" htmlFor="designation" required={false} />
-                                <Input type="text" name="designation" placeholder="Enter Your Designation" handle={handleFormFields} />
+                                <input   type="text" name="designation" placeholder="Enter Your Designation" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="Email:" htmlFor="email" required={true} />
-                                <Input type="email" name="email" placeholder="Enter Your Email" handle={handleFormFields} />
+                                <input   type="email" name="email" placeholder="Enter Your Email" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="Business Phone:" htmlFor="businessPhone" required={true} />
-                                <Input type="tel" name="businessPhone" placeholder="Enter Phone No" handle={handleFormFields} />
+                                <input   type="tel" name="businessPhone" placeholder="Enter Phone No" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="Skype / Gtalk:" htmlFor="stypeGtalk" required={false} />
-                                <Input type="text" name="stypeGtalk" placeholder="Enter Your Skype / Gtalk" handle={handleFormFields} />
+                                <input   type="text" name="stypeGtalk" placeholder="Enter Your Skype / Gtalk" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="Industry:" htmlFor="industry" required={false} />
-                                <Input type="text" name="industry" placeholder="Enter Your Industry" handle={handleFormFields} />
+                                <input   type="text" name="industry" placeholder="Enter Your Industry" handle={handleFormFields} />
                             </div>
                         </div>
                         <h3 className="text-2xl sm:text-3xl font-megat text-black font-normal leading-none mt-8 mb-1">
@@ -148,7 +148,7 @@ const Page = () => {
                         <div className="grid grid-cols-2 gap-5">
                             <div>
                                 <Label title="1. What is the Business Name?" htmlFor="businessName" required={false} />
-                                <Input type="text" name="businessName" placeholder="Enter Your Business Name" handle={handleFormFields} />
+                                <input   type="text" name="businessName" placeholder="Enter Your Business Name" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="2. Do you have a Business Logo?" required={false} />
@@ -159,7 +159,7 @@ const Page = () => {
                             </div>
                             <div>
                                 <Label title="3. Do you have a Business Slogan?" htmlFor="businessSlogan" required={false} />
-                                <Input type="text" name="businessSlogan" placeholder="Enter Your Business Slogan" handle={handleFormFields} />
+                                <input   type="text" name="businessSlogan" placeholder="Enter Your Business Slogan" handle={handleFormFields} />
                             </div>
                         </div>
                         <h3 className="text-lg sm:text-xl font-sans text-black font-normal leading-none my-5">
@@ -168,19 +168,19 @@ const Page = () => {
                         <div className="grid grid-cols-2 gap-5">
                             <div>
                                 <Label title="1. What is the Principal Purpose of the website?" htmlFor="webistePrincipalPurpose" required={false} />
-                                <Input type="text" name="webistePrincipalPurpose" placeholder="Enter Principal Purpose" handle={handleFormFields} />
+                                <input   type="text" name="webistePrincipalPurpose" placeholder="Enter Principal Purpose" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="2. Who is the Target Audience?" htmlFor="webisteTargetAudience" required={false} />
-                                <Input type="text" name="webisteTargetAudience" placeholder="Enter Your Target Audience" handle={handleFormFields} />
+                                <input   type="text" name="webisteTargetAudience" placeholder="Enter Your Target Audience" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="3. Is there an existing website? If yes, provide the URL" htmlFor="webisteExistingURL" required={false} />
-                                <Input type="text" name="webisteExistingURL" placeholder="Enter Your Existing URL" handle={handleFormFields} />
+                                <input   type="text" name="webisteExistingURL" placeholder="Enter Your Existing URL" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="4. Are there any website color preferences" htmlFor="webisteColorPreferences" required={false} />
-                                <Input type="text" name="webisteColorPreferences" placeholder="Enter Your Color Preferences" handle={handleFormFields} />
+                                <input   type="text" name="webisteColorPreferences" placeholder="Enter Your Color Preferences" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="5. Have you purchased domain already?" required={false} />
@@ -198,7 +198,7 @@ const Page = () => {
                             </div>
                             <div>
                                 <Label title="7. Please mention at least 3 top competitors" required={false} />
-                                <Input type="text" name="topCompetitors" placeholder="Enter Your Top Competitors" handle={handleFormFields} />
+                                <input   type="text" name="topCompetitors" placeholder="Enter Your Top Competitors" handle={handleFormFields} />
                             </div>
                             <div>
                                 <Label title="8. Which payment method would you like to integrate on the website?" required={false} />
@@ -233,12 +233,12 @@ const Page = () => {
                             <div>
                                 <Label title="12. Are there any specific requirements or preferences not mentioned above?"
                                     htmlFor="otherRequirementsAndPreferences" required={false} />
-                                <Input type="text" name="otherRequirementsAndPreferences" placeholder="Enter Here" handle={handleFormFields} />
+                                <input   type="text" name="otherRequirementsAndPreferences" placeholder="Enter Here" handle={handleFormFields} />
                             </div>
                             <div className="col-span-2">
                                 <Label title="13. Please list down content pages you will have on your website? (Example About Us, Privacy Policy, FAQ's etc.)"
                                     htmlFor="listContentPages" required={false} />
-                                <Input type="text" name="listContentPages" placeholder="Enter List Down Content Pages" handle={handleFormFields} />
+                                <input   type="text" name="listContentPages" placeholder="Enter List Down Content Pages" handle={handleFormFields} />
                             </div>
                             <div className="col-span-2">
                                 <Label title="14. Please specify which of the below mentioned moduels / components you would like to see on your home page?"
@@ -347,41 +347,41 @@ const Page = () => {
                             <div className="col-span-2">
                                 <Label title="15. Any External API required? If yes then please mention the details"
                                     htmlFor="externalAPIDetailes" required={false} />
-                                <Input type="text" name="externalAPIDetailes" placeholder="Enter External API Details" handle={handleFormFields} />
+                                <input   type="text" name="externalAPIDetailes" placeholder="Enter External API Details" handle={handleFormFields} />
                             </div>
                             <div className="col-span-2">
                                 <Label title="16. Detailed Functional Requirements: (Please mention the detailed functional requirements of the applicaton)"
                                     htmlFor="functionalRequirements" required={false} />
-                                <Input type="text" name="functionalRequirements" placeholder="Enter Functional Requirements" handle={handleFormFields} />
+                                <input   type="text" name="functionalRequirements" placeholder="Enter Functional Requirements" handle={handleFormFields} />
                             </div>
                             <div className="col-span-2">
                                 <Label title="17. Administration area Detailed Functional Requirements: (Please mention the detailed functional requirements of the Admin module)"
                                     htmlFor="functionalRequirementsAdmin" required={false} />
-                                <Input type="text" name="functionalRequirementsAdmin" placeholder="Enter Admin Functional Requirements"
+                                <input   type="text" name="functionalRequirementsAdmin" placeholder="Enter Admin Functional Requirements"
                                     handle={handleFormFields} />
                             </div>
                             <div className="col-span-2">
                                 <Label title="18. Any specific (Content Management System) platform you require? (Drupal, Magento, Wordpress etc) Or do you leave that to the developer's suggestion?"
                                     htmlFor="anySpecificCMS" required={false} />
-                                <Input type="text" name="anySpecificCMS" placeholder="Enter Any Specific CMS" handle={handleFormFields} />
+                                <input   type="text" name="anySpecificCMS" placeholder="Enter Any Specific CMS" handle={handleFormFields} />
                             </div>
                             <div className="col-span-2">
                                 <Label title="19. Is there a specific deadline you have for the completion of the website? (Kindly note that website completion depends on the scope of work)"
                                     htmlFor="specificDeadline" required={false} />
-                                <Input type="text" name="specificDeadline" placeholder="Enter Specific Deadline" handle={handleFormFields} />
+                                <input   type="text" name="specificDeadline" placeholder="Enter Specific Deadline" handle={handleFormFields} />
                             </div>
                             <div className="col-span-2">
                                 <Label title="20. Do you have any other suggestion, idea or requirements for the website?"
                                     htmlFor="websiteOtherSuggestion" required={false} />
-                                <Input type="text" name="websiteOtherSuggestion" placeholder="Enter Other Suggestions or Idea" handle={handleFormFields} />
+                                <input   type="text" name="websiteOtherSuggestion" placeholder="Enter Other Suggestions or Idea" handle={handleFormFields} />
                             </div>
                             <div className="col-span-2">
                                 <Label title="21. Do you have any reference website that you would like to provide in terms of design inspiration?"
                                     htmlFor="websiteDesignReference" required={false} />
-                                <Input type="text" name="websiteDesignReference" placeholder="Enter Reference Website" handle={handleFormFields} />
+                                <input   type="text" name="websiteDesignReference" placeholder="Enter Reference Website" handle={handleFormFields} />
                             </div>
                             <div>
-                                <input type="button" value="Submit" onClick={handleForm} />
+                                <input   type="button" value="Submit" onClick={handleForm} />
                             </div>
                         </div>
                     </form>

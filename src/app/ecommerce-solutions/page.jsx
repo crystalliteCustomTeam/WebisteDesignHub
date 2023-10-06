@@ -67,6 +67,27 @@ const Page = () => {
         title: "Design Consultation",
         desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
     }
+    // Array for Reviews Component Props
+    const reviews = [
+        {
+            message: "I found Web Design Hub when looking for a collaborator for revamping our online store. They showed a thorough knowledge of our demands right from the start of the conversation. Their dedication to providing excellent service, enthusiasm for design, and attention to detail were visible throughout the whole process. The outcome? Our consumers adore our visually appealing and incredibly useful online store.",
+            name: "Linda S",
+            jd: false,
+            profile: "/ecommerce/reviews/1.png"
+        },
+        {
+            message: "I can't convey how happy we are with the changes Web Design Hub has made to our company. Their staff put out a lot of effort to make sure our e-commerce website design not only looked excellent but also functioned without a hitch. They listened to our suggestions, and they went above to make sure every little element was perfect. Our sales have increased significantly since the modification, and our brand's online presence is more powerful than ever. I appreciate you, Web Design Hub. Keep up the good work!",
+            name: "John Kennedy",
+            jd: false,
+            profile: "/ecommerce/reviews/2.png"
+        },
+        {
+            message: "Our experience working with Web Design Hub has been nothing less than extraordinary. They transformed our e-commerce platform into a sleek, contemporary, and effective website. They stand out because they genuinely care about our success. They not only constructed a website but also an effective tool that has greatly increased our online sales. The crew at Web Design Hub is the real deal and understands the power of commitment and consistency.",
+            name: "Billy Benson",
+            jd: false,
+            profile: "/ecommerce/reviews/3.png"
+        }
+    ]
     return (
         <>
             <main>
@@ -76,7 +97,7 @@ const Page = () => {
                 <SmallBanner content={smallbanner} />
                 <Portfolios content={portfolios} />
                 <Packages content={packages} />
-                <Reviews />
+                <Reviews content={reviews} />
                 <Weare />
                 <Contact />
                 <Letstalk content={letstalk} />

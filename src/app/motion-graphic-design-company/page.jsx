@@ -66,6 +66,27 @@ const Page = () => {
         title: "Design Consultation",
         desc: "Discuss with us and let us design motion graphics for you without facing any hassles."
     }
+    // Array for Reviews Component Props
+    const reviews = [
+        {
+            message: "Excellent work and exceptional services! With incredible logo animation and appealing motion graphics for our marketing campaigns, the team brought our brand to life. They definitely stand out due to their inventiveness and attention to detail.",
+            name: "Kylie Madonna",
+            jd: false,
+            profile: "/motion-graphics/reviews/1.png"
+        },
+        {
+            message: "I don’t have words to describe the services offered by Web Design Hub. I just want to state, “Mind Blowing Visual Effects!” The whole team gave their 101% with us on a high-profile event, and their visual effects were just amazing. They turned the event visuals we provided into something extraordinary. I would personally recommend each one of you to get your services from this Company.",
+            name: "Ellen Brown",
+            jd: false,
+            profile: "/motion-graphics/reviews/2.png"
+        },
+        {
+            message: "I am glad I chose Web Design Hub for character animation services. They were ideal for the animated figures we required for our educational materials program. Our audience likes the cartoons because they are engaging and attractive. Their crew is unmatched in terms of talent and professionalism.",
+            name: "John Lennon",
+            jd: false,
+            profile: "/motion-graphics/reviews/3.png"
+        }
+    ]
     return (
         <>
             <main>
@@ -75,7 +96,7 @@ const Page = () => {
                 <SmallBanner content={smallbanner} />
                 <Portfolios content={portfolios} />
                 <Packages content={packages} />
-                <Reviews />
+                <Reviews content={reviews} />
                 <Weare />
                 <Contact />
                 <Letstalk content={letstalk} />

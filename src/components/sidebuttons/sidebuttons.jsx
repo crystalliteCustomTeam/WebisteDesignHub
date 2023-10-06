@@ -97,18 +97,18 @@ const Sidebuttons = () => {
                 <ThemeProvider value={theme}>
                     <form className="w-[400px] p-4 bg-black" autoComplete="off">
                         <div className="mb-3">
-                            <Input label="Name" type="text" id="" onChange={handleDataChange} name="name" />
+                            <input   label="Name" type="text" id="" onChange={handleDataChange} name="name" />
                         </div>
                         <div className="mb-3">
-                            <Input label="Telephone Number" type="tel" id="" onChange={handleDataChange} name="phone" />
+                            <input   label="Telephone Number" type="tel" id="" onChange={handleDataChange} name="phone" />
                         </div>
                         <div className="mb-3">
-                            <Input label="Email" type="email" id="" onChange={handleDataChange} name="email" />
+                            <input   label="Email" type="email" id="" onChange={handleDataChange} name="email" />
                         </div>
                         <div className="mb-3">
-                            <Input label="leave your message" type="text" id="" onChange={handleDataChange} name="message" />
+                            <input   label="leave your message" type="text" id="" onChange={handleDataChange} name="message" />
                         </div>
-                        <input type="button" onClick={handleFormSubmit} className="cursor-pointer  text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white hover:bg-[#C165CB]" value="Submit Form" />
+                        <input   type="button" onClick={handleFormSubmit} className="cursor-pointer  text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#A497F5] w-full text-white hover:bg-[#C165CB]" value="Submit Form" />
                     </form>
                 </ThemeProvider>
             </div>

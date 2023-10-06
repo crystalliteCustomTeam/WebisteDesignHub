@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Input, Option, Select, Textarea } from "@material-tailwind/react";
 import Slider from "react-slick";
-import Button from "@/components/button/Button";
+import Button from "@/components/button/button";
 import { useState } from "react";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
@@ -221,21 +221,21 @@ const Page = () => {
                                                     <span className="text-[#08FAE5]">70%</span> Discount
                                                 </h3>
                                                 <form autoComplete="off">
-                                                    <Input placeholder="Enter Your Full Name*" type="text"
+                                                    <input   placeholder="Enter Your Full Name*" type="text"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}
                                                         name="name" onChange={handleDataChange}
                                                         containerProps={{ className: "m-h-[30px] xl:min-h-[45px] mt-3 xl:mt-5" }} />
-                                                    <Input placeholder="Enter Your Email*" type="email"
+                                                    <input   placeholder="Enter Your Email*" type="email"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
                                                         }}
                                                         name="email" onChange={handleDataChange}
                                                         containerProps={{ className: "m-h-[30px] xl:min-h-[45px] mt-3 xl:mt-5" }} />
-                                                    <Input placeholder="Phone*" type="text"
+                                                    <input   placeholder="Phone*" type="text"
                                                         className="border-none backdrop-blur-sm bg-[#272727]/30 placeholder:text-white text-white rounded-xl font-[300]"
                                                         labelProps={{
                                                             className: "hidden",
@@ -249,7 +249,7 @@ const Page = () => {
                                                             className: "hidden",
                                                         }}>
                                                     </Textarea>
-                                                    <input type="button" onClick={handleFormSubmit}
+                                                    <input   type="button" onClick={handleFormSubmit}
                                                         className="bg-transparent text-base xl:text-lg font-medium text-white w-[100%] hover:bg-[#00FFED] border-2 border-[#00FFED] h-[40px] xl:h-[45px] rounded-lg cursor-pointer" value="Submit Now" />
                                                 </form>
                                             </div>
@@ -585,7 +585,7 @@ const Page = () => {
                                     <form autoComplete="off">
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                             <div>
-                                                <Input placeholder="Enter Your Full Name*" type="text"
+                                                <input   placeholder="Enter Your Full Name*" type="text"
                                                     className="border-none placeholder:text-white text-white font-[300]"
                                                     labelProps={{
                                                         className: "hidden",
@@ -594,7 +594,7 @@ const Page = () => {
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl " }} />
                                             </div>
                                             <div>
-                                                <Input placeholder="Enter Your Email*" type="email"
+                                                <input   placeholder="Enter Your Email*" type="email"
                                                     className="border-none placeholder:text-white text-white font-[300]"
                                                     labelProps={{
                                                         className: "hidden",
@@ -603,7 +603,7 @@ const Page = () => {
                                                     containerProps={{ className: "m-h-[30px] xl:min-h-[45px] bg-[#00296B]/30 rounded-xl" }} />
                                             </div>
                                             <div>
-                                                <Input placeholder="Phone*" type="text"
+                                                <input   placeholder="Phone*" type="text"
                                                     className="border-none placeholder:text-white text-white font-[300]"
                                                     labelProps={{
                                                         className: "hidden",
@@ -635,7 +635,7 @@ const Page = () => {
                                             name="message" onChange={handleDataChange}
                                             containerProps={{ className: "bg-[#00296B]/30 rounded-xl my-5" }}>
                                         </Textarea>
-                                        <input type="button" onClick={handleFormSubmit} className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5 cursor-pointer" value="Submit Now" />
+                                        <input   type="button" onClick={handleFormSubmit} className="bg-[#00296B] text-base xl:text-lg font-medium text-white hover:bg-transparent border-2 border-[#00296B] h-[40px] xl:h-[45px] rounded-[50px] px-5 cursor-pointer" value="Submit Now" />
                                     </form>
                                 </div>
                                 <div>
