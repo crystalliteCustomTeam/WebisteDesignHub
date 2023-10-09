@@ -19,8 +19,8 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "digitalMarketing",
-        subtitle: "Hire Top Digital Marketing Company",
-        title: "Achieve Maximum ROI in Just 30 Days",
+        subtitle: false,
+        title: "Hire Top Digital Marketing Company Achieve Maximum ROI in Just 30 Days",
         desc: "Are you looking to see actual, noticeable results with marketing in no time? That's our specialty at top digital marketing company. We design smart campaigns using creative thinking and accurate data to make your brand more visible online. Our services include;",
         points: ["SEO Content Marketing", "Pay Per Click Ads", "Social Media Marketing", "Conversion Rate"],
         banner,

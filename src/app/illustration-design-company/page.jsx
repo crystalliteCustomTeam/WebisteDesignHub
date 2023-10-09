@@ -25,7 +25,7 @@ const Page = () => {
     const hero = {
         page: "illustrationDesign",
         subtitle: "Best Illustration Designers",
-        title: "5-Star Rated Illustration Design Company",
+        title: "5-Star Rated Top Illustration Design Company",
         desc: "When you hire Web Design Hub,  you gain access to the best character illustrators, and gaming artwork. We make custom character designs, immersive gaming illustrations, and any related creative illustrations. Our skill in illustration design combines unique qualities that make us a distinctive illustration company.",
         points: ["Unique Artistry", "Time Efficiency", "Attention to Detail", "Original Art"],
         isForm: true,

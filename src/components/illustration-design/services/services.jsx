@@ -12,7 +12,7 @@ const Services = () => {
                     <div className="text-center mb-10">
                         <span className="text-base font-normal text-[#00B4FF]">Custom Illustration Agency</span>
                         <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">
-                            High-Quality Illustration Designs
+                            High-Quality Illustration Designs by <br /> Our Professional Illustrators
                         </h2>
                         <p className="text-base text-black font-normal">Hire illustrators to breathe life into your products, services, and any other offerings. <br /> We create visuals that capture attention and convey your message uniquely.</p>
                     </div>

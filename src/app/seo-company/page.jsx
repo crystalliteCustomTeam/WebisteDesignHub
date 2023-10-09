@@ -52,6 +52,27 @@ const Page = () => {
         title: "Design Consultation",
         desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
     }
+    // Array for Reviews Component Props
+    const reviews = [
+        {
+            message: "Words cannot explain how thankful I am that Web Design Hub was picked to handle our SEO requirements. They have a very outstanding crew. After we teamed up with them, our website's traffic quickly doubled, and our internet exposure rocketed. Because of their knowledge and commitment, our business is booming like never before. Look no further if you're seeking an SEO company that deliver  real results.",
+            name: "Sarah Thomas",
+            jd: false,
+            profile: "/seo-services/reviews/1.png"
+        },
+        {
+            message: "Our web visibility has changed in ways we could never have predicted because of Web Design Hub. Their staff took the time to learn about our company's objectives right away and then customized an SEO plan that was completely in line with them. The outcomes speak for themselves; our website now appears on the top page for a number of difficult-to-rank keywords, and organic traffic is constantly increasing. I strongly recommend anyone looking for top-notch SEO service contact Web Design Hub.",
+            name: "Johnny Radcliffe",
+            jd: false,
+            profile: "/seo-services/reviews/2.png"
+        },
+        {
+            message: "I've worked with an SEO Company before, but working with Web Design Hub has changed everything. Their team's knowledge exceeds others in every way. They not only raised our website's search engine ranks, but they also offered insightful feedback that helped us better our entire internet approach. Since cooperating with them, we have had incredible ROI. I wouldn't trust anybody else to handle our SEO since Web Design Hub is the genuine deal.",
+            name: "Emily Madison",
+            jd: false,
+            profile: "/seo-services/reviews/3.png"
+        }
+    ]
     return (
         <>
             <main>
@@ -60,7 +81,7 @@ const Page = () => {
                 <Services />
                 <SmallBanner content={smallbanner} />
                 <Packages content={packages} />
-                <Reviews />
+                <Reviews content={reviews} />
                 <Weare />
                 <Contact />
                 <Letstalk content={letstalk} />

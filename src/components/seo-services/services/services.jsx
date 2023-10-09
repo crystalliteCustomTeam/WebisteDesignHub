@@ -10,7 +10,7 @@ const Services = () => {
                     <div className="text-center mb-10">
                         <span className="text-base font-normal text-[#00B4FF]">SEO Services Company</span>
                         <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">
-                        Hire Our SEO Pros And Watch Your Rankings Grow
+                        Hire Our SEO Pros & Watch Your Rankings Grow
                         </h2>
                         <p className="text-base text-black font-normal lg:w-[70%] m-auto">Ready to witness your rankings skyrocket? When you hire our SEO company, you're not just getting results – you're investing in a proven path to online excellence.</p>
                     </div>

@@ -84,12 +84,12 @@ const Hero = ({ content }) => {
                     </div> : null}
                     <div className="flex lg:h-[780px] xl:h-[840px] 2xl:h-[870px] lg:items-end lg:pb-20">
                         <div className="basis-full md:basis-[80%] lg:basis-[60%] xl:basis-[50%]">
-                            <div className="relative w-max mb-10">
+                            {subtitle && <div className="relative w-max mb-10">
                                 <span className="text-sm sm:text-base xl:text-lg font-normal leading-none text-white inline-block">
                                     {subtitle}
                                 </span>
                                 <Image src={downArrow} alt="downArrow" className="absolute top-2/4 left-full ml-5 sm:ml-10" />
-                            </div>
+                            </div>}
                             <h1 className="text-4xl sm:text-5xl xl:text-5xl 2xl:text-6xl font-megat text-white font-normal leading-none mb-2">
                                 {title}
                             </h1>

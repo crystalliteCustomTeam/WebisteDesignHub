@@ -18,8 +18,8 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "creativeCopywriting",
-        subtitle: "Top Copywriters For Hire Dominate",
-        title: "Your Market with Our Creative Copywriting Company",
+        subtitle: "Top Copywriters For Hire",
+        title: "Dominate Your Market with Our Creative Copywriting Company",
         desc: "Web Design Hub shapes your words and ideas into perfectly persuasive tales and narratives. As a highly competitive copywriting company, we grab the attention of your audience, driving positive outcomes. Our team comprises of experienced;",
         points: ["SEO Copywriters", "Website Copywriters", "Technical Copywriters", "Landing Page Copywriters"],
         banner,

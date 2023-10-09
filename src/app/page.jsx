@@ -10,6 +10,7 @@ import Contact from "@/components/contact/contact";
 import Letstalk from "@/components/letstalk/letstalk";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import Script from "next/script";
 // Import Images
 import banner from "media/home/hero/chair.png";
 import bannerIconOne from "media/home/hero/iconOne.png";
@@ -134,6 +135,22 @@ const Page = () => {
                 <Contact />
                 <Letstalk content={letstalk} />
                 <Footer />
+                <Script id="general-schema" type="application/ld+json">
+                    {`
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Organization",
+                            "name": "Web Design Hub",
+                            "url": "https://www.webdesignhub.co",
+                            "logo": "https://www.webdesignhub.co/_next/static/media/logo.0278bd76.svg",
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "855 888-8399",
+                                "areaServed": "US"
+                            }
+                        }
+                    `}
+                </Script>
             </main>
         </>
     );

@@ -9,7 +9,7 @@ import "./global.css";
 export const metadata = {
     // Title & Descriptions
     title: "Top Web Design Company - Web Design Hub",
-    description: "Looking for a top rated web design company? Hire top web design company for stunning design solutions",
+    description: "WebDesignHub is an award-winning top web design company with a team of professional web designers, and online strategists, delivering cutting-edge websites for businesses.",
     // Google Varification
     verification: {
         google: 'ziIYRBahP4WcKcps6RWRDJvZ9A00pSoI39ByXDN14us',
@@ -24,7 +24,7 @@ export const metadata = {
     // OG Metas
     openGraph: {
         title: 'Top Web Design Company - Web Design Hub',
-        description: 'Looking for a top rated web design company? Hire top web design company for stunning design solutions',
+        description: 'WebDesignHub is an award-winning top web design company with a team of professional web designers, and online strategists, delivering cutting-edge websites for businesses.',
         url: 'https://www.webdesignhub.co',
         siteName: 'Web Design Hub',
         locale: 'en_US',
