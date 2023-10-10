@@ -96,7 +96,7 @@ const Page = () => {
                 <Contact />
                 <Letstalk content={letstalk} />
                 <Footer />
-                <Script id="general-schema" type="application/ld+json">
+                {/* <Script id="general-schema" type="application/ld+json">
                     {`
                         {
                             "@context": "http://schema.org",
@@ -147,7 +147,7 @@ const Page = () => {
                             }
                         }
                     `}
-                </Script>
+                </Script> */}
             </main>
         </>
     );
