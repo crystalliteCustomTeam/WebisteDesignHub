@@ -1,6 +1,6 @@
 "use client"
 // Components
-import Input from "./Input";
+import Input from "./input";
 import Button from "./button";
 import Select from "./select";
 import Image from "next/image";
