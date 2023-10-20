@@ -1,5 +1,5 @@
 // Import Fonts
-import { megatFont, primary } from "./configs/fonts";
+import { megatFont, primary, pacifico } from "./configs/fonts";
 import Script from 'next/script';
 
 // Import Css
@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
                     gtag('config', 'AW-11337170041');
                 `}
             </Script>
-            <body className={`${primary.className} ${megatFont.variable}`}>
+            <body className={`${primary.className} ${megatFont.variable} ${pacifico.variable}`}>
                 <noscript>
                     <iframe src={`https://www.googletagmanager.com/ns.html?id='${GTM_ID_1}'`} className="hidden"></iframe>
                 </noscript>

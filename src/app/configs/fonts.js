@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+import { Poppins, Pacifico } from "next/font/google";
 import localFont from "next/font/local";
 
 const primary = Poppins({
@@ -20,4 +20,12 @@ const megatFont = localFont({
     display: 'swap',
 });
 
-export { primary, megatFont }
+const pacifico = Pacifico({
+    weight: ['400'],
+    style: ['normal'],
+    display: 'swap',
+    subsets: ['latin'],
+    variable: '--font-pacifico',
+});
+
+export { primary, megatFont, pacifico }

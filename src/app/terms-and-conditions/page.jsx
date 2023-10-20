@@ -598,7 +598,7 @@ const Page = () => {
                             Contact Us
                         </h2>
                         <p className="text-[15px] leading-[25px] text-[#565151] font-normal">
-                            f you have any questions or concerns regarding this policy, please contact us at <a href="mailto:info@webdesignhub.co" className="text-[#0F2847] font-bold">info@webdesignhub.co</a>
+                            if you have any questions or concerns regarding this policy, please contact us at <a href="mailto:info@webdesignhub.co" className="text-[#0F2847] font-bold">info@webdesignhub.co</a>
                         </p>
                     </div>
                 </div>

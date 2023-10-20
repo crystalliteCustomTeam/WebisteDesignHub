@@ -33,7 +33,8 @@ module.exports = withMT({
       },
       fontFamily: {
         megat: ['var(--font-megat)'],
-        sans: ['var(--font-primary)']
+        sans: ['var(--font-primary)'],
+        pacifico: ['var(--font-pacifico)']
       },
       colors: {
         black: "#202020",
