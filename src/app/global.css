@@ -72,6 +72,12 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d6ec47", endColorstr="#36571c", GradientType=1);
 }
 
+
+.__btnGredient {
+    background: linear-gradient(to right, rgba(181, 108, 175, 1) 0%, rgba(48, 0, 52, 1) 100%);
+    /* background: radial-gradient(rgba(181, 108, 175, 1) 0%, rgba(48, 0, 52, 1) 100%); */
+}
+
 .__seoServicesHeroGradientBg {
     background: rgb(68, 73, 84);
     background: -moz-radial-gradient(circle, rgba(68, 73, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -209,7 +215,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #8C85FF;
+    background: linear-gradient(180deg, rgba(181, 108, 175, 1) 0%, rgba(48, 0, 52, 1) 100%);
 }
 
 /* Handle */

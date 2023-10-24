@@ -1,133 +1,15 @@
 [
     {
-        "id": 0,
-        "value": "logo",
-        "label": "Logo",
+        "id": 5,
+        "value": "seo",
+        "label": "SEO",
         "packages": [
             {
                 "id": 0,
-                "name": "Basic Logo",
-                "discountedPrice": "$45",
-                "originalPrice": "$80",
-                "list": [
-                    "3 Custom Logo Design Concepts",
-                    "1 Dedicated Designer",
-                    "4 Revisions",
-                    "48 to 72 hours TAT",
-                    "100% Unique Design Guarantee",
-                    "100% Satisfaction Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 1,
-                "name": "Startup Logo",
-                "discountedPrice": "$80",
-                "originalPrice": "$170",
-                "list": [
-                    "5 Custom Logo Design Concepts",
-                    "By 2 Designers",
-                    "UNLIMITED Revisions",
-                    "48 to 72 hours TAT",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Professional Logo",
-                "discountedPrice": "$125",
-                "originalPrice": "$249",
-                "list": [
-                    "UNLIMITED Logo Design Concepts",
-                    "By 4 Designers",
-                    "UNLIMITED Revisions",
-                    "Stationary Design (Business Card, Letterhead, Envelope)",
-                    "FREE MS Word Letterhead",
-                    "48 to 72 hours TAT",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)*",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 3,
-                "name": "Elite Logo",
-                "discountedPrice": "$175",
-                "originalPrice": "$348",
-                "list": [
-                    "UNLIMITED Logo Design Concepts",
-                    "By 5 Award Winning Designers",
-                    "Stationary Design (Business Card, Letterhead, Envelope)",
-                    "Icon Design",
-                    "UNLIMITED Revisions",
-                    "FREE MS Word Letterhead",
-                    "Free Email Signature",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *",
-                    "48 to 72 hours TAT"
-                ]
-            },
-            {
-                "id": 4,
-                "name": "Business Logo",
-                "discountedPrice": "$245",
-                "originalPrice": "$488",
-                "list": [
-                    "UNLIMITED Logo Design Concepts",
-                    "By 8 Award Winning Designers",
-                    "UNLIMITED Revisions",
-                    "2 Stationary Design Sets (Business Card, Letterhead, Envelope)",
-                    "Icon Design",
-                    "Double Sided Flyer Design / Bi-Fold Brochure",
-                    "FREE MS Word Letterhead",
-                    "Free Email Signature",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 5,
-                "name": "Gold Logo",
-                "discountedPrice": "$425",
-                "originalPrice": "$849",
-                "list": [
-                    "UNLIMITED Logo Design Concepts",
-                    "By 8 Award Winning Designers",
-                    "Icon Design",
-                    "UNLIMITED Revisions",
-                    "2 Stationary Design Sets (Business Card, Letterhead, Envelope)",
-                    "FREE MS Word Letterhead",
-                    "Free Email Signature",
-                    "3 Page Custom Website",
-                    "2 Stock Photos",
-                    "2 Banner Designs",
-                    "jQuery Slider",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "value": "illustrationDesign",
-        "label": "Illustration Design",
-        "packages": [
-            {
-                "id": 0,
-                "name": "Basic Illustrative",
-                "discountedPrice": "$294",
-                "originalPrice": "$588",
+                "name": "Basic",
+                "discountedPrice": "$1000",
+                "originalPrice": null,
+                "note": "FIRST MONTH TOTAL PAYMENT $3,500 (3 MONTHS PLAN) $1,500 (ON-GOING MONTHLY PAYMENT)",
                 "list": [
                     "3 Custom Design Concepts",
                     "By 2 Designers",
@@ -142,100 +24,82 @@
             },
             {
                 "id": 1,
-                "name": "Startup Illustrative",
-                "discountedPrice": "$394",
-                "originalPrice": "$788",
+                "name": "Premium",
+                "discountedPrice": "$1500",
+                "originalPrice": null,
+                "note": "FIRST MONTH TOTAL PAYMENT $5,000 (3 MONTHS PLAN) $2,000 (ON-GOING MONTHLY PAYMENT)",
                 "list": [
-                    "4 Custom Design Concepts",
-                    "By 3 Designers",
-                    "48 to 72 hours TAT",
-                    "UNLIMITED Revisions",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
-                    "100% Ownership Rights",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
+                    "Prior Analysis",
+                    "1 - Business Analysis",
+                    "2 - Consumer Analysis",
+                    "3 - Competitor Analysis",
+                    "4 - 30 Selected Keywords Targeting",
+                    "5 - 30 Pages Keyword Targeted",
+                    "Webpage Optimization",
+                    "1 - Meta Tags Creation",
+                    "2 - Keyword Optimization",
+                    "3 - Image Optimization",
+                    "4 - Inclusion of anchors Tags",
+                    "5 - Inclusion of anchors Indexing Modifications",
+                    "Tracking & Analysis",
+                    "1 - Google Places Inclusions",
+                    "2 - Google Analytics Installation",
+                    "3 - Google Webmaster Installation",
+                    "4 - Call To Action Plan",
+                    "5 - Creation of Sitemaps",
+                    "Reporting",
+                    "1 - Monthly Reporting",
+                    "2 - Recommendation",
+                    "3 - Email Support",
+                    "4 - Phone Support",
+                    "Off Page Optimization",
+                    "1 - Social Bookmarking",
+                    "2 - Slide Share Marketing",
+                    "3 - Forums/FAQ’s",
+                    "4 - Link Building",
+                    "5 - Directory Submission",
+                    "6 - Local Business Listings"
                 ]
             },
             {
                 "id": 2,
-                "name": "Professional Illustrative",
-                "discountedPrice": "$594",
-                "originalPrice": "$1188",
+                "name": "Platinum",
+                "discountedPrice": "$2000",
+                "originalPrice": null,
+                "note": "FIRST MONTH TOTAL PAYMENT $6,500 (3 MONTHS PLAN) $2,500 (ON-GOING MONTHLY PAYMENT)",
                 "list": [
-                    "UNLIMITED Logo Design Concepts",
-                    "By 4 Designers",
-                    "UNLIMITED Revisions",
-                    "Stationary Design (Business Card, Letterhead, Envelope)",
-                    "FREE MS Word Letterhead",
-                    "48 to 72 hours TAT",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)*",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 3,
-                "name": "3D Logo Package",
-                "discountedPrice": "$544",
-                "originalPrice": "$1088",
-                "list": [
-                    "3 Unique 3D Logo Concepts",
-                    "Light Effects and VFX",
-                    "Fully Rendered",
-                    "Multiple 3D Angles",
-                    "By 3 Award Winning Designers",
-                    "72 hours Turnaround Time",
-                    "UNLIMITED Revisions",
-                    "100% Ownership Rights",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Satisfaction Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 4,
-                "name": "Business Logo",
-                "discountedPrice": "$245",
-                "originalPrice": "$488",
-                "list": [
-                    "UNLIMITED Logo Design Concepts",
-                    "By 8 Award Winning Designers",
-                    "UNLIMITED Revisions",
-                    "2 Stationary Design Sets (Business Card, Letterhead, Envelope)",
-                    "Icon Design",
-                    "Double Sided Flyer Design / Bi-Fold Brochure",
-                    "FREE MS Word Letterhead",
-                    "Free Email Signature",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 5,
-                "name": "Gold Logo",
-                "discountedPrice": "$425",
-                "originalPrice": "$849",
-                "list": [
-                    "UNLIMITED Logo Design Concepts",
-                    "By 8 Award Winning Designers",
-                    "Icon Design",
-                    "UNLIMITED Revisions",
-                    "2 Stationary Design Sets (Business Card, Letterhead, Envelope)",
-                    "FREE MS Word Letterhead",
-                    "Free Email Signature",
-                    "3 Page Custom Website",
-                    "2 Stock Photos",
-                    "2 Banner Designs",
-                    "jQuery Slider",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
+                    "Prior Analysis",
+                    "1 - Business Analysis",
+                    "2 - Consumer Analysis",
+                    "3 - Competitor Analysis",
+                    "4 - 70 Selected Keywords Targeting",
+                    "5 - 50 Pages Keyword Targeted",
+                    "Webpage Optimization",
+                    "1 - Meta Tags Creation",
+                    "2 - Keyword Optimization",
+                    "3 - Image Optimization",
+                    "4 - Inclusion of anchors Tags",
+                    "5 - Inclusion of anchors Indexing Modifications",
+                    "Tracking & Analysis",
+                    "1 - Google Places Inclusions",
+                    "2 - Google Analytics Installation",
+                    "3 - Google Webmaster Installation",
+                    "4 - Call To Action Plan",
+                    "5 - Creation of Sitemaps",
+                    "Reporting",
+                    "1 - Monthly Reporting",
+                    "2 - Recommendation",
+                    "3 - Email Support",
+                    "4 - Phone Support",
+                    "Off Page Optimization",
+                    "1 - Social Bookmarking",
+                    "2 - Slide Share Marketing",
+                    "3 - Forums/FAQ’s",
+                    "4 - Link Building",
+                    "5 - Directory Submission",
+                    "6 - Local Business Listings",
+                    "7 - Blog Content Creation",
+                    "8 - Local SEO"
                 ]
             }
         ]
@@ -414,240 +278,6 @@
                     "100% Satisfaction Guarantee",
                     "100% Money Back Guarantee",
                     "*NO MONTHLY OR ANY HIDDEN FEE*"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "value": "branding",
-        "label": "Branding",
-        "packages": [
-            {
-                "id": 0,
-                "name": "Startup",
-                "discountedPrice": "$99",
-                "originalPrice": "$198",
-                "list": [
-                    "2 Stationery Design Set",
-                    "FREE Fax Template",
-                    "Print Ready Formats",
-                    "UNLIMITED Revisions",
-                    "100% Satisfaction Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 1,
-                "name": "Classic",
-                "discountedPrice": "$199",
-                "originalPrice": "$788",
-                "list": [
-                    "2 Stationery Design Set",
-                    "UNLIMITED Revisions",
-                    "Flyer Design",
-                    "Brochure Design (Bi-fold/Tri-fold)",
-                    "100% Satisfaction Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Premium",
-                "discountedPrice": "$399",
-                "originalPrice": "$1188",
-                "list": [
-                    "2 Stationery Design Set",
-                    "Packaging Design",
-                    "UNLIMITED Revisions",
-                    "T-Shirt Design",
-                    "100% Satisfaction Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 3,
-                "name": "Unlimited",
-                "discountedPrice": "$499",
-                "originalPrice": "$1088",
-                "list": [
-                    "2 Stationery Design Set",
-                    "Menu Card Design",
-                    "T-Shirt Design",
-                    "1 Banner Design",
-                    "100% Satisfaction Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "value": "video",
-        "label": "Video",
-        "packages": [
-            {
-                "id": 0,
-                "name": "Startup",
-                "discountedPrice": "$499",
-                "originalPrice": "$999",
-                "list": [
-                    "30 Second Video",
-                    "Professional Script",
-                    "Storyboard",
-                    "Animation",
-                    "Voice - Over & Sound Effects",
-                    "4 weeks Delivery",
-                    "Unlimited Revisions"
-                ]
-            },
-            {
-                "id": 1,
-                "name": "Classic",
-                "discountedPrice": "$999",
-                "originalPrice": "$2198",
-                "list": [
-                    "60 Second Video",
-                    "Professional Script",
-                    "Sample Theme",
-                    "Storyboard",
-                    "Animation",
-                    "Voice - Over & Sound Effects",
-                    "5 weeks Delivery"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Premium",
-                "discountedPrice": "$1499",
-                "originalPrice": "$3248",
-                "list": [
-                    "90 Second Video",
-                    "Professional Script",
-                    "Sample Theme",
-                    "Storyboard",
-                    "Animation",
-                    "Voice - Over & Sound Effects",
-                    "6 weeks Delivery"
-                ]
-            },
-            {
-                "id": 3,
-                "name": "Unlimited",
-                "discountedPrice": "$2299",
-                "originalPrice": "$4598",
-                "list": [
-                    "120 Second Video",
-                    "Professional Script",
-                    "Sample Theme",
-                    "Storyboard",
-                    "Animation",
-                    "Voice - Over & Sound Effects"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "value": "seo",
-        "label": "SEO",
-        "packages": [
-            {
-                "id": 0,
-                "name": "Basic",
-                "discountedPrice": "$1000",
-                "originalPrice": null,
-                "note": "FIRST MONTH TOTAL PAYMENT $3,500 (3 MONTHS PLAN) $1,500 (ON-GOING MONTHLY PAYMENT)",
-                "list": [
-                    "3 Custom Design Concepts",
-                    "By 2 Designers",
-                    "UNLIMITED Revisions",
-                    "48 to 72 hours TAT",
-                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
-                    "100% Ownership Rights",
-                    "100% Satisfaction Guarantee",
-                    "100% Unique Design Guarantee",
-                    "100% Money Back Guarantee *"
-                ]
-            },
-            {
-                "id": 1,
-                "name": "Premium",
-                "discountedPrice": "$1500",
-                "originalPrice": null,
-                "note": "FIRST MONTH TOTAL PAYMENT $5,000 (3 MONTHS PLAN) $2,000 (ON-GOING MONTHLY PAYMENT)",
-                "list": [
-                    "Prior Analysis",
-                    "1 - Business Analysis",
-                    "2 - Consumer Analysis",
-                    "3 - Competitor Analysis",
-                    "4 - 30 Selected Keywords Targeting",
-                    "5 - 30 Pages Keyword Targeted",
-                    "Webpage Optimization",
-                    "1 - Meta Tags Creation",
-                    "2 - Keyword Optimization",
-                    "3 - Image Optimization",
-                    "4 - Inclusion of anchors Tags",
-                    "5 - Inclusion of anchors Indexing Modifications",
-                    "Tracking & Analysis",
-                    "1 - Google Places Inclusions",
-                    "2 - Google Analytics Installation",
-                    "3 - Google Webmaster Installation",
-                    "4 - Call To Action Plan",
-                    "5 - Creation of Sitemaps",
-                    "Reporting",
-                    "1 - Monthly Reporting",
-                    "2 - Recommendation",
-                    "3 - Email Support",
-                    "4 - Phone Support",
-                    "Off Page Optimization",
-                    "1 - Social Bookmarking",
-                    "2 - Slide Share Marketing",
-                    "3 - Forums/FAQ’s",
-                    "4 - Link Building",
-                    "5 - Directory Submission",
-                    "6 - Local Business Listings"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Platinum",
-                "discountedPrice": "$2000",
-                "originalPrice": null,
-                "note": "FIRST MONTH TOTAL PAYMENT $6,500 (3 MONTHS PLAN) $2,500 (ON-GOING MONTHLY PAYMENT)",
-                "list": [
-                    "Prior Analysis",
-                    "1 - Business Analysis",
-                    "2 - Consumer Analysis",
-                    "3 - Competitor Analysis",
-                    "4 - 70 Selected Keywords Targeting",
-                    "5 - 50 Pages Keyword Targeted",
-                    "Webpage Optimization",
-                    "1 - Meta Tags Creation",
-                    "2 - Keyword Optimization",
-                    "3 - Image Optimization",
-                    "4 - Inclusion of anchors Tags",
-                    "5 - Inclusion of anchors Indexing Modifications",
-                    "Tracking & Analysis",
-                    "1 - Google Places Inclusions",
-                    "2 - Google Analytics Installation",
-                    "3 - Google Webmaster Installation",
-                    "4 - Call To Action Plan",
-                    "5 - Creation of Sitemaps",
-                    "Reporting",
-                    "1 - Monthly Reporting",
-                    "2 - Recommendation",
-                    "3 - Email Support",
-                    "4 - Phone Support",
-                    "Off Page Optimization",
-                    "1 - Social Bookmarking",
-                    "2 - Slide Share Marketing",
-                    "3 - Forums/FAQ’s",
-                    "4 - Link Building",
-                    "5 - Directory Submission",
-                    "6 - Local Business Listings",
-                    "7 - Blog Content Creation",
-                    "8 - Local SEO"
                 ]
             }
         ]
@@ -1092,6 +722,376 @@
                     "Content Creation",
                     "Social Media Hearing",
                     "Query and comments reply"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "value": "logo",
+        "label": "Logo",
+        "packages": [
+            {
+                "id": 0,
+                "name": "Basic Logo",
+                "discountedPrice": "$45",
+                "originalPrice": "$80",
+                "list": [
+                    "3 Custom Logo Design Concepts",
+                    "1 Dedicated Designer",
+                    "4 Revisions",
+                    "48 to 72 hours TAT",
+                    "100% Unique Design Guarantee",
+                    "100% Satisfaction Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 1,
+                "name": "Startup Logo",
+                "discountedPrice": "$80",
+                "originalPrice": "$170",
+                "list": [
+                    "5 Custom Logo Design Concepts",
+                    "By 2 Designers",
+                    "UNLIMITED Revisions",
+                    "48 to 72 hours TAT",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Professional Logo",
+                "discountedPrice": "$125",
+                "originalPrice": "$249",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 4 Designers",
+                    "UNLIMITED Revisions",
+                    "Stationary Design (Business Card, Letterhead, Envelope)",
+                    "FREE MS Word Letterhead",
+                    "48 to 72 hours TAT",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)*",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Elite Logo",
+                "discountedPrice": "$175",
+                "originalPrice": "$348",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 5 Award Winning Designers",
+                    "Stationary Design (Business Card, Letterhead, Envelope)",
+                    "Icon Design",
+                    "UNLIMITED Revisions",
+                    "FREE MS Word Letterhead",
+                    "Free Email Signature",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *",
+                    "48 to 72 hours TAT"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Business Logo",
+                "discountedPrice": "$245",
+                "originalPrice": "$488",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 8 Award Winning Designers",
+                    "UNLIMITED Revisions",
+                    "2 Stationary Design Sets (Business Card, Letterhead, Envelope)",
+                    "Icon Design",
+                    "Double Sided Flyer Design / Bi-Fold Brochure",
+                    "FREE MS Word Letterhead",
+                    "Free Email Signature",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Gold Logo",
+                "discountedPrice": "$425",
+                "originalPrice": "$849",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 8 Award Winning Designers",
+                    "Icon Design",
+                    "UNLIMITED Revisions",
+                    "2 Stationary Design Sets (Business Card, Letterhead, Envelope)",
+                    "FREE MS Word Letterhead",
+                    "Free Email Signature",
+                    "3 Page Custom Website",
+                    "2 Stock Photos",
+                    "2 Banner Designs",
+                    "jQuery Slider",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "value": "illustrationDesign",
+        "label": "Illustration Design",
+        "packages": [
+            {
+                "id": 0,
+                "name": "Basic Illustrative",
+                "discountedPrice": "$294",
+                "originalPrice": "$588",
+                "list": [
+                    "3 Custom Design Concepts",
+                    "By 2 Designers",
+                    "UNLIMITED Revisions",
+                    "48 to 72 hours TAT",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Ownership Rights",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 1,
+                "name": "Startup Illustrative",
+                "discountedPrice": "$394",
+                "originalPrice": "$788",
+                "list": [
+                    "4 Custom Design Concepts",
+                    "By 3 Designers",
+                    "48 to 72 hours TAT",
+                    "UNLIMITED Revisions",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Ownership Rights",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Professional Illustrative",
+                "discountedPrice": "$594",
+                "originalPrice": "$1188",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 4 Designers",
+                    "UNLIMITED Revisions",
+                    "Stationary Design (Business Card, Letterhead, Envelope)",
+                    "FREE MS Word Letterhead",
+                    "48 to 72 hours TAT",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)*",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "3D Logo Package",
+                "discountedPrice": "$544",
+                "originalPrice": "$1088",
+                "list": [
+                    "3 Unique 3D Logo Concepts",
+                    "Light Effects and VFX",
+                    "Fully Rendered",
+                    "Multiple 3D Angles",
+                    "By 3 Award Winning Designers",
+                    "72 hours Turnaround Time",
+                    "UNLIMITED Revisions",
+                    "100% Ownership Rights",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Satisfaction Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Business Logo",
+                "discountedPrice": "$245",
+                "originalPrice": "$488",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 8 Award Winning Designers",
+                    "UNLIMITED Revisions",
+                    "2 Stationary Design Sets (Business Card, Letterhead, Envelope)",
+                    "Icon Design",
+                    "Double Sided Flyer Design / Bi-Fold Brochure",
+                    "FREE MS Word Letterhead",
+                    "Free Email Signature",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Gold Logo",
+                "discountedPrice": "$425",
+                "originalPrice": "$849",
+                "list": [
+                    "UNLIMITED Logo Design Concepts",
+                    "By 8 Award Winning Designers",
+                    "Icon Design",
+                    "UNLIMITED Revisions",
+                    "2 Stationary Design Sets (Business Card, Letterhead, Envelope)",
+                    "FREE MS Word Letterhead",
+                    "Free Email Signature",
+                    "3 Page Custom Website",
+                    "2 Stock Photos",
+                    "2 Banner Designs",
+                    "jQuery Slider",
+                    "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+                    "100% Satisfaction Guarantee",
+                    "100% Unique Design Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "value": "branding",
+        "label": "Branding",
+        "packages": [
+            {
+                "id": 0,
+                "name": "Startup",
+                "discountedPrice": "$99",
+                "originalPrice": "$198",
+                "list": [
+                    "2 Stationery Design Set",
+                    "FREE Fax Template",
+                    "Print Ready Formats",
+                    "UNLIMITED Revisions",
+                    "100% Satisfaction Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 1,
+                "name": "Classic",
+                "discountedPrice": "$199",
+                "originalPrice": "$788",
+                "list": [
+                    "2 Stationery Design Set",
+                    "UNLIMITED Revisions",
+                    "Flyer Design",
+                    "Brochure Design (Bi-fold/Tri-fold)",
+                    "100% Satisfaction Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Premium",
+                "discountedPrice": "$399",
+                "originalPrice": "$1188",
+                "list": [
+                    "2 Stationery Design Set",
+                    "Packaging Design",
+                    "UNLIMITED Revisions",
+                    "T-Shirt Design",
+                    "100% Satisfaction Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Unlimited",
+                "discountedPrice": "$499",
+                "originalPrice": "$1088",
+                "list": [
+                    "2 Stationery Design Set",
+                    "Menu Card Design",
+                    "T-Shirt Design",
+                    "1 Banner Design",
+                    "100% Satisfaction Guarantee",
+                    "100% Money Back Guarantee *"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "value": "video",
+        "label": "Video",
+        "packages": [
+            {
+                "id": 0,
+                "name": "Startup",
+                "discountedPrice": "$499",
+                "originalPrice": "$999",
+                "list": [
+                    "30 Second Video",
+                    "Professional Script",
+                    "Storyboard",
+                    "Animation",
+                    "Voice - Over & Sound Effects",
+                    "4 weeks Delivery",
+                    "Unlimited Revisions"
+                ]
+            },
+            {
+                "id": 1,
+                "name": "Classic",
+                "discountedPrice": "$999",
+                "originalPrice": "$2198",
+                "list": [
+                    "60 Second Video",
+                    "Professional Script",
+                    "Sample Theme",
+                    "Storyboard",
+                    "Animation",
+                    "Voice - Over & Sound Effects",
+                    "5 weeks Delivery"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Premium",
+                "discountedPrice": "$1499",
+                "originalPrice": "$3248",
+                "list": [
+                    "90 Second Video",
+                    "Professional Script",
+                    "Sample Theme",
+                    "Storyboard",
+                    "Animation",
+                    "Voice - Over & Sound Effects",
+                    "6 weeks Delivery"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Unlimited",
+                "discountedPrice": "$2299",
+                "originalPrice": "$4598",
+                "list": [
+                    "120 Second Video",
+                    "Professional Script",
+                    "Sample Theme",
+                    "Storyboard",
+                    "Animation",
+                    "Voice - Over & Sound Effects"
                 ]
             }
         ]

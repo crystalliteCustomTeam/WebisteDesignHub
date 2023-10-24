@@ -48,7 +48,7 @@ const theme = {
     },
     tab: {
         defaultProps: {
-            className: "transition-none border-2 rounded-md",
+            className: "transition-none border-[2px] border-[#0F2847] rounded-md",
             activeClassName: "text-white border-none",
             disabled: false,
         },
@@ -60,7 +60,7 @@ const theme = {
                         bg: "bg-transparent",
                         py: "py-3",
                         px: "px-3.5",
-                        color: "text-white",
+                        color: "text-black",
                         fontSmoothing: "antialiased",
                         fontFamily: "font-sans",
                         fontSize: "text-lg",
@@ -72,7 +72,7 @@ const theme = {
                     inset: "inset-0",
                     zIndex: "z-10",
                     height: "h-full",
-                    bg: "bg-[#665FF3]",
+                    bg: "bg-[#0F2847]",
                     borderRadius: "rounded-md",
                     boxShadow: "shadow-none",
                 },
