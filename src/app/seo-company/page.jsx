@@ -12,6 +12,7 @@ import Footer from "@/components/footer/footer";
 import Script from "next/script";
 // Import Images
 import smallBannerImage from "media/seo-services/smallBanner.png";
+import PricingAndPackages from "@/components/packages/packages";
 
 const Page = () => {
     // Array for Hero Component Props
@@ -44,7 +45,7 @@ const Page = () => {
         subtitle: "SEO Packages",
         title: "Increased Profit on a Budget with Our SEO Agency",
         desc: "Our affordable SEO agency will increase your profit margin without overspending – hire us to rank on search results in 30 days.",
-        key: 5,
+        key: 0,
         name: "SEO"
     }
     // Array for Letstalk Component Props
