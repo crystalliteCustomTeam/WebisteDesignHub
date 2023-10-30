@@ -59,8 +59,10 @@ const PricingAndPackages = ({ content }) => {
                                             icon={true}
                                             color="btnBg bg-[#300034] text-white"
                                             hover="hover:bg-[#000000]"
-                                            // link={`order/${(content.name + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=$${e.discountedPrice}`}
-                                            link={`order/package?value=${dataPackages[content.key].value}&id=${e.id}&label=${dataPackages[content.key].label}`} />
+                                            link="javascript:$zopim.livechat.window.show();"    
+                                        // link={`order/${(content.name + " " + e.name).toLowerCase().replace(/\s/g, '-')}?price=$${e.discountedPrice}`}
+                                        // link={`order/package?value=${dataPackages[content.key].value}&id=${e.id}&label=${dataPackages[content.key].label}`}
+                                        />
                                         <Button text="(855) 888-8399"
                                             color="btnColor text-black bg-transparent"
                                             border="border-2 border-[#300034]"

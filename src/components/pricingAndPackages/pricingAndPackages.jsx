@@ -22,7 +22,7 @@ const PricingAndPackages = () => {
                             <h2 className="font-megat font-normal text-4xl lg:text-5xl text-black mb-2">That Fits Your Budget</h2>
                             <p className="text-base text-black font-normal">Our commitment to affordability means you can have a stunning, professionally designed website that perfectly suits your budget.</p>
                         </div>
-                        <Tabs value="logo">
+                        <Tabs value="seo">
                             <TabsHeader>
                                 {data.map(({ label, value }, i) => {
                                     count++;
@@ -48,7 +48,7 @@ const PricingAndPackages = () => {
                                                     <h5 className="font-sans text-center font-bold text-5xl text-black my-10">
                                                         {discountedPrice} <sup className="opacity-50 text-4xl"><del>{originalPrice}</del></sup>
                                                     </h5>
-                                                    <ul className="overflow-y-auto h-64 mb-5">  
+                                                    <ul className="overflow-y-auto h-64 mb-5">
                                                         {list.map((e, i) => {
                                                             return (
                                                                 <li className="text-sm md:text-base text-black font-normal flex items-start gap-2 leading-[24px] mb-3"
@@ -64,8 +64,10 @@ const PricingAndPackages = () => {
                                                             icon={true}
                                                             color="btnBg bg-[#300034] text-white"
                                                             hover="hover:bg-[#000]"
-                                                            // link={`order/${(label + " " + name).toLowerCase().replace(/\s/g, '-')}?price=$${discountedPrice}`}
-                                                            link={`order/package?value=${value}&id=${id}&label=${label}`} />
+                                                            link="javascript:$zopim.livechat.window.show();"
+                                                        // link={`order/${(label + " " + name).toLowerCase().replace(/\s/g, '-')}?price=$${discountedPrice}`}
+                                                        // link={`order/package?value=${value}&id=${id}&label=${label}`}
+                                                        />
                                                         <Button text="(855) 888-8399"
                                                             color="btnColor text-black bg-transparent"
                                                             border="border-2 border-[#300034]"
