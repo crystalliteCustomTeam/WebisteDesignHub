@@ -59,7 +59,7 @@ const Page = () => {
         subtitle: "Affordable Packages",
         title: "Finding Value in Every Dollar",
         desc: "our eCommerce solutions company, we prioritize affordability, and delivering top-quality services that won't strain your budget. Experience excellence without compromise.",
-        key: 6,
+        key: 2,
         name: "E-Commerce"
     }
     // Array for Letstalk Component Props
