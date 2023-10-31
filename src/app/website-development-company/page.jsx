@@ -58,7 +58,7 @@ const Page = () => {
         subtitle: "Web Development Packages",
         title: "Budget-Friendly Website Development Company",
         desc: "Our commitment to affordability means you can have a stunning, professionally designed website that perfectly suits your budget.",
-        key: 2,
+        key: 1,
         name: "Website Development"
     }
     // Array for Letstalk Component Props

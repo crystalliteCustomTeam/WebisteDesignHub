@@ -159,7 +159,7 @@ const Page = () => {
         subtitle: "Logo Design Packages",
         title: "Gain the Upper Hand with Our Creative Logo Designs",
         desc: "Our top logo design service packages are thoughtfully customized to match your brand's voice and budget, giving you a competitive edge in the market.",
-        key: 0,
+        key: 5,
         name: "logo-design"
     }
     // Array for Letstalk Component Props

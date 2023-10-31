@@ -35,11 +35,12 @@ const PricingAndPackages = ({ content }) => {
                                 return <div key={i} className="shadow-lg bg-[#f4f5f6] p-4 rounded-xl">
                                     <div className="__btnGredient rounded-xl text-center py-5 shadow-lg">
                                         <h4 className="font-megat font-normal text-white text-3xl">{e.name}</h4>
-                                        <p className="capitalize leading-[1]">{e.recomdation}</p>
                                     </div>
                                     <p className="text-sm text-black font-normal my-5 leading-[24px] text-center">
                                         {e.note}
                                     </p>
+                                    {/* <p className="capitalize leading-[1]">{e.recomdation}</p> */}
+
                                     <h5 className="font-sans text-center font-bold text-5xl text-black my-10">
                                         {e.discountedPrice} <sup className="opacity-50 text-4xl"><del>{e.originalPrice}</del></sup>
                                     </h5>

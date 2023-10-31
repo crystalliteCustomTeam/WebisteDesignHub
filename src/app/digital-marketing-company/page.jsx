@@ -47,7 +47,7 @@ const Page = () => {
         subtitle: "Digital Marketing Packages",
         title: "Budget-Friendly Digital Brilliance",
         desc: "Our affordable packages never fail to provide the highest quality digital marketing services. What else do you need?",
-        key: 7,
+        key: 3,
         name: "Digital Marketing"
     }
     // Array for Letstalk Component Props
