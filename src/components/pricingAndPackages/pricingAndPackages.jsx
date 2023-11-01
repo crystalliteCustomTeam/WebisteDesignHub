@@ -26,7 +26,7 @@ const PricingAndPackages = () => {
                             <TabsHeader>
                                 {data.map(({ label, value }, i) => {
                                     count++;
-                                    if (count < 12) {
+                                    if (count < 13) {
                                         return <Tab key={value} value={value}>
                                             {label}
                                         </Tab>
@@ -36,16 +36,16 @@ const PricingAndPackages = () => {
                             <TabsBody>
                                 {data.map(({ value, packages, label }, i) => {
                                     return <TabPanel key={value} value={value}>
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-4">
                                             {packages.map(({ name, discountedPrice, originalPrice, list, note, id }, i) => {
                                                 return <div key={i} className="shadow-lg bg-[#f4f5f6] p-4 rounded-xl">
                                                     <div className="__btnGredient rounded-xl text-center py-5 shadow-lg">
                                                         <h4 className="font-megat font-normal text-white text-3xl">{name}</h4>
                                                     </div>
-                                                    <p className="text-sm text-black font-normal my-5 leading-[24px] text-center">
+                                                    <p className="text-sm text-black font-normal mt-5 mb-0 leading-[24px] text-center">
                                                         {note}
                                                     </p>
-                                                    <h5 className="font-sans text-center font-bold text-5xl text-black my-10">
+                                                    <h5 className="font-sans text-center font-bold text-5xl text-black mt-4 mb-10">
                                                         {discountedPrice} <sup className="opacity-50 text-4xl"><del>{originalPrice}</del></sup>
                                                     </h5>
                                                     <ul className="overflow-y-auto h-64 mb-5">

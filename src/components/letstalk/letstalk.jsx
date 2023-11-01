@@ -9,7 +9,7 @@ const Letstalk = ({ content }) => {
     const { title, desc } = content;
     return (
         <section>
-            <div className="__homeHeroGradientBg py-10 lg:py-20 xl:py-24 relative overflow-hidden z-[1]">
+            <div className="__homeHeroGradientBg py-10 lg:pb-20 xl:py-24 relative overflow-hidden z-[1]">
                 <div className="container">
                     <div className="flex items-end lg:items-center lg:gap-5 flex-wrap lg:flex-nowrap">
                         <div className="basis-full lg:basis-[40%] mb-8 lg:mb-0">
