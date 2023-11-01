@@ -82,7 +82,7 @@ const Hero = ({ content }) => {
                     {page === "single" ? <div className="absolute right-0 bottom-[100px] z-[-1] hidden md:block">
                         <Image src={banner} alt="banner" priority className="max-w-[50%] lg:max-w-[77%] block ml-auto xl:max-w-full" />
                     </div> : null}
-                    <div className="flex lg:h-[680px] xl:h-[840px] 2xl:h-[870px] lg:items-end lg:pb-20">
+                    <div className="flex lg:h-[780px] xl:h-[840px] 2xl:h-[870px] lg:items-end lg:pb-20">
                         <div className="basis-full md:basis-[80%] lg:basis-[60%] xl:basis-[50%]">
                             {subtitle && <div className="relative w-max mb-10">
                                 <span className="text-sm sm:text-base xl:text-lg font-normal leading-none text-white inline-block">

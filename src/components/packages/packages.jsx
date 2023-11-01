@@ -30,7 +30,7 @@ const PricingAndPackages = ({ content }) => {
                                 {content.desc}
                             </p>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-4">
                             {dataPackages[content.key].packages.map((e, i) => {
                                 return <div key={i} className="shadow-lg bg-[#f4f5f6] p-4 rounded-xl">
                                     <div className="__btnGredient rounded-xl text-center py-5 shadow-lg">
