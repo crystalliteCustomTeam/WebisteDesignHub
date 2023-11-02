@@ -65,7 +65,7 @@ const PricingAndPackages = () => {
                                                         </div>
                                                         <div className="card_body flex flex-col justify-between h-full">
                                                             <h4 className="text-center mt-[110px] text-[22px] text-[#f7f7f7f7] font-[400] mb-[-5px] font-megat relative before:content-[''] before:absolute before:mx-auto before:h-[2px] before:w-[70%] before:left-0 before:right-0 before:top-[35px] h2_before">{name}</h4>
-                                                            <ul className="text-center max-h-[350px] overflow-y-scroll mt-10 overflow-x-hidden">
+                                                            <ul className="text-center max-h-[150px] overflow-y-scroll mt-10 overflow-x-hidden">
                                                                 {list.map((item, index) => (
                                                                     <li key={index}>
                                                                         <p className="text-white font-[600] text-[12px] leading-[30px] tracking-[0.1rem] mb-0">{item}</p>
