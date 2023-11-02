@@ -1634,6 +1634,65 @@
     },
     {
         "id": 12,
+        "value": "marketing-collatteral",
+        "label": "Marketing-Collatteral",
+        "packages": [
+            {
+                "id": 0,
+                "name": "STANDARD",
+                "icons": "/plane.png",
+                "largePrice": "799",
+                "smallPrice": ".00",
+                "cardStyle": "bg-gradient-to-r from-[#b76cd2] to-[#4c3bb3] overflow-hidden ",
+                "list": [
+                    "Business Card Design",
+                    "Letter Head Design",
+                    "Envelope Design",
+                    "Email Signature"
+                ]
+            },
+            {
+                "id": 1,
+                "name": "BUSINESS",
+                "icons": "/rocket.png",
+                "largePrice": "949",
+                "smallPrice": ".00",
+                "cardStyle": "bg-gradient-to-t to-[#fb6a44] from-[#fa2b7f]",
+                "list": [
+                    "Business Card Design",
+                    "Letter Head Design",
+                    "Envelope Design",
+                    "Email Signature",
+                    "Brochure Design",
+                    "Banner Design"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "ADVANCED",
+                "icons": "/plane-icon.png",
+                "largePrice": "1249",
+                "smallPrice": ".00",
+                "cardStyle": "bg-gradient-to-r from-[#b76cd2] to-[#4c3bb3] overflow-hidden",
+                "list": [
+                    "Business Card Design",
+                    "Letter Head Design",
+                    "Envelope Design",
+                    "Email Signature",
+                    "Brochure Design",
+                    "Banner Design",
+                    "Sticker Design",
+                    "Social Media Page Designs",
+                    "Facebook",
+                    "Instagram",
+                    "Twitter",
+                    "YouTube"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 13,
         "value": "standardPackages",
         "label": "Standard Packages",
         "title": "STANDARD PACKAGES",
@@ -1727,7 +1786,7 @@
         ]
     },
     {
-        "id": 13,
+        "id": 14,
         "value": "ecommercePackages",
         "label": "E-COMMERCE Packages",
         "title": "E-COMMERCE PACKAGES",
