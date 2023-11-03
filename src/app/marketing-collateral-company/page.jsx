@@ -59,7 +59,7 @@ const Page = () => {
         subtitle: "Reasonable Prices",
         title: "That Fits Your Budget",
         desc: "With affordable prices, we have exclusive digital art and design facilities, customized for your individual needs",
-        key: 12,
+        key: 11,
         name: "Marketing Collateral"
     }
     // Array for Letstalk Component Props

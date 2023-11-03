@@ -38,7 +38,7 @@ const PricingAndPackages = () => {
                             <TabsHeader>
                                 {data.map(({ label, value }, i) => {
                                     count++;
-                                    if (count < 13) {
+                                    if (count < 12) {
                                         return <Tab key={value} value={value}>
                                             {label}
                                         </Tab>
