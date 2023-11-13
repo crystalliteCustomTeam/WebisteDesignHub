@@ -39,13 +39,13 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <Script id="ze-snippet"
                 src="https://static.zdassets.com/ekr/snippet.js?key=f8df8f7a-97b8-4ca4-bbeb-c5d6ea51968e"
-                strategy="afterInteractive">
+                strategy="lazyOnload">
             </Script>
             <Script id="google-tag-manager-two"
                 src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"
-                strategy="afterInteractive">
+                strategy="lazyOnload">
             </Script>
-            <Script id="google-tag-manager-one" strategy="afterInteractive">
+            <Script id="google-tag-manager-one" strategy="lazyOnload">
                 {`
                     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
                     })(window,document,'script','dataLayer','${GTM_ID_1}');
                 `}
             </Script>
-            <Script id="google-tag-manager-two" strategy="afterInteractive">
+            <Script id="google-tag-manager-two" strategy="lazyOnload">
                 {`
                     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
                     })(window,document,'script','dataLayer','${GTM_ID_2}');
                 `}
             </Script>
-            <Script id="facebook-manager" strategy="afterInteractive">
+            <Script id="facebook-manager" strategy="lazyOnload">
                 {`
                     !function(f,b,e,v,n,t,s)
                     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
                     fbq('track', 'PageView');
                 `}
             </Script>
-            <Script id="google-tag-manager-three" strategy="afterInteractive">
+            <Script id="google-tag-manager-three" strategy="lazyOnload">
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}

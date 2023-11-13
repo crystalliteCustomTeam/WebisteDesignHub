@@ -39,7 +39,6 @@ import packagesChatIconBlue from "media/landing-pages/website-design-develop-usa
 import packagesChatIconOrange from "media/landing-pages/website-design-develop-usa/packages/chatIconOrange.svg";
 import packagesCallIconBlue from "media/landing-pages/website-design-develop-usa/packages/callIconBlue.svg";
 import packagesCallIconOrange from "media/landing-pages/website-design-develop-usa/packages/callIconOrange.svg";
-import packagesBadge from "media/landing-pages/website-design-develop-usa/packages/badge.png";
 import packagesBadgeTwo from "media/landing-pages/website-design-develop-usa/packages/badgeTwo.png";
 // Banner
 import bannerCallIcon from "media/landing-pages/website-design-develop-usa/banner/callIcon.svg";
