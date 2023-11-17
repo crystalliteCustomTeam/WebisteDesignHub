@@ -7,22 +7,9 @@ import Script from "next/script";
 const Page = () => {
     return (
         <main>
-            <Script
-                strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"
-            />
-            <Script>
+            <Script strategy="lazyOnload">
                 {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
-                gtag('js', new Date());
-                gtag('config', 'AW-11337170041');
-                `}
-            </Script>
-
-            {/* Your custom script */}
-            <Script>
-                {`
-                gtag('event', 'conversion', {'send_to': 'AW-11337170041/esMKCNTj5uEYEPn4_Z0q'});
+                    gtag('event', 'conversion', {'send_to': 'AW-11337170041/esMKCNTj5uEYEPn4_Z0q'});
                 `}
             </Script>
             <Header />

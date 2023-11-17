@@ -76,9 +76,6 @@ export default function RootLayout({ children }) {
                 `}
             </Script>
             <body className={`${primary.className} ${megatFont.variable} ${pacifico.variable}`}>
-                <noscript>
-                    <iframe src={`https://www.googletagmanager.com/ns.html?id='${GTM_ID_1}'`} className="hidden"></iframe>
-                </noscript>
                 {children}
             </body>
         </html >
