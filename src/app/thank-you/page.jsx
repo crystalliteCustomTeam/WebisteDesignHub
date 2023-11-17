@@ -12,6 +12,19 @@ const Page = () => {
                     gtag('event', 'conversion', {'send_to': 'AW-11337170041/esMKCNTj5uEYEPn4_Z0q'});
                 `}
             </Script>
+
+            {/* Google tag (gtag.js)  */}
+            <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"></Script>
+            <Script>
+                {`
+                    
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments)}
+                    gtag('js', new Date());
+                    gtag('config', 'AW-11337170041');
+                
+                `}
+            </Script>
             <Header />
             <section>
                 <div className="__homeHeroGradientBg h-screen flex items-center">
