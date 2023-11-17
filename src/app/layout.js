@@ -34,7 +34,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     const GTM_ID_1 = 'GTM-5G927FVV';
-    const GTM_ID_2 = 'GTM-WH5N73ZB';
+    // const GTM_ID_2 = 'GTM-WH5N73ZB';
     return (
         <html lang="en">
             <Script id="ze-snippet"
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
                     })(window,document,'script','dataLayer','${GTM_ID_1}');
                 `}
             </Script>
-            <Script id="google-tag-manager-two" strategy="lazyOnload">
+            {/* <Script id="google-tag-manager-two" strategy="lazyOnload">
                 {`
                     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','${GTM_ID_2}');
                 `}
-            </Script>
+            </Script> */}
             <Script id="facebook-manager" strategy="lazyOnload">
                 {`
                     !function(f,b,e,v,n,t,s)
@@ -89,9 +89,9 @@ export default function RootLayout({ children }) {
                 <noscript>
                     <iframe src={`https://www.googletagmanager.com/ns.html?id='${GTM_ID_1}'`} className="hidden"></iframe>
                 </noscript>
-                <noscript>
+                {/* <noscript>
                     <iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID_2}`} className="hidden"></iframe>
-                </noscript>
+                </noscript> */}
                 {children}
             </body>
         </html >
