@@ -7,22 +7,22 @@ import Script from "next/script";
 const Page = () => {
     return (
         <main>
-            <Script id="tacking-code-gtag">
+            <Script
+                strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"
+            />
+            <Script>
                 {`
-                    gtag('event', 'conversion', {'send_to': 'AW-11337170041/esMKCNTj5uEYEPn4_Z0q'});
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments)}
+                gtag('js', new Date());
+                gtag('config', 'AW-11337170041');
                 `}
             </Script>
 
-            {/* Google tag (gtag.js)  */}
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11337170041"></Script>
+            {/* Your custom script */}
             <Script>
                 {`
-                    
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments)}
-                    gtag('js', new Date());
-                    gtag('config', 'AW-11337170041');
-                
+                gtag('event', 'conversion', {'send_to': 'AW-11337170041/esMKCNTj5uEYEPn4_Z0q'});
                 `}
             </Script>
             <Header />
