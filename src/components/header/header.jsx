@@ -216,7 +216,7 @@ const Header = () => {
                                         case '/website-design-develop-landing':
                                             return "border-[#00FFEF] pl-4 pr-4"
                                         default:
-                                            return " border-[#9E7DE9]"
+                                            return " border-[#9E7DE9] text-black"
                                     }
                                 })()}`}
                                 hover={`${(() => {
