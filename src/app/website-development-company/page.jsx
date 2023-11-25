@@ -18,6 +18,7 @@ import portfolioTwo from "media/logo-design/portfolios/two.png";
 import portfolioThree from "media/logo-design/portfolios/three.png";
 import portfolioFour from "media/logo-design/portfolios/four.png";
 import portfolioFive from "media/logo-design/portfolios/five.png";
+import PopupAlert from "@/components/popup-alert/popup-alert";
 
 const Page = () => {
     // Array for Hero Component Props
@@ -90,6 +91,7 @@ const Page = () => {
     return (
         <>
             <main>
+                <PopupAlert />
                 <Header />
                 <Hero content={hero} />
                 <Services />
