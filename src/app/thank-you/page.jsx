@@ -7,7 +7,7 @@ import Script from "next/script";
 const Page = () => {
     return (
         <main>
-            <Script id="conversion-code" strategy="lazyOnload">
+            <Script strategy="lazyOnload">
                 {`
                     gtag('event', 'conversion', {'send_to': 'AW-11337170041/esMKCNTj5uEYEPn4_Z0q'});
                 `}
