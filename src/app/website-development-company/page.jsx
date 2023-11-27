@@ -91,7 +91,7 @@ const Page = () => {
     return (
         <>
             <main>
-                <PopupAlert />
+                {/* <PopupAlert /> */}
                 <Header />
                 <Hero content={hero} />
                 <Services />
