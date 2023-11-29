@@ -7,7 +7,7 @@
         "packages": [
             {
                 "id": 0,
-                "name": "Templated",
+                "name": "ELEMENTARY WEBSITE",
                 "discountedPrice": "$299",
                 "originalPrice": "$599",
                 "note": "Great for Individuals & Startups!",
@@ -34,7 +34,7 @@
             },
             {
                 "id": 1,
-                "name": "Standard",
+                "name": "COLLATERAL CLASSIC",
                 "discountedPrice": "$499",
                 "originalPrice": "$999",
                 "note": "Most Popular by New Businesses!",
@@ -62,7 +62,7 @@
             },
             {
                 "id": 2,
-                "name": "Professional",
+                "name": "EXCLUSIVE WEBSITE",
                 "discountedPrice": "$999",
                 "originalPrice": "$1999",
                 "note": "Great for Small Businesses!",
@@ -101,7 +101,7 @@
         "packages": [
             {
                 "id": 0,
-                "name": "Templated",
+                "name": "ELEMENTARY E-COMMERCE",
                 "discountedPrice": "$499",
                 "originalPrice": "$999",
                 "note": "Ideal for small Ecommerce Sites!",
@@ -131,7 +131,7 @@
             },
             {
                 "id": 1,
-                "name": "Standard",
+                "name": "EXCLUSIVE E-COMMERCE",
                 "discountedPrice": "$999",
                 "originalPrice": "$1799",
                 "note": "Best for Ecommerce Sites!",
@@ -161,7 +161,7 @@
             },
             {
                 "id": 2,
-                "name": "Custom",
+                "name": "DELUXE E-COMMERCE",
                 "discountedPrice": "$1,799",
                 "originalPrice": "$2299",
                 "note": "Best for Perfectionist!",

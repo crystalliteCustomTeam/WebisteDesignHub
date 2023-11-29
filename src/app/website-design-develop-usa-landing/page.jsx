@@ -549,7 +549,7 @@ const Page = () => {
                                             packages.map((e, i) => {
                                                 return (<div className="hidden xl:block xl:basis-1/3" key={i}>
                                                     <div className={`p-5 border-2 ${e.borderColor} rounded-2xl overflow-hidden relative`}>
-                                                        <h4 className="text-[30px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[50px] py-[15px]">
+                                                        <h4 className="text-[18px] leading-none font-sans font-semibold text-[#ffffff] w-max relative pr-[25px] py-[15px]">
                                                             {e.name}
                                                             <span className={`absolute top-0 right-0 bottom-0 left-0 ${e.bgColor} -z-10 rounded-r-full ml-[-30px]`}></span>
                                                         </h4>
