@@ -30,7 +30,8 @@ const Page = () => {
         points: ["Optimized Performance", "Responsive Design", "Brand Consistency", "Search Engine Visibility"],
         bg: "bg-[#0f1013]",
         video: "videos/websiteDevelopment.mp4",
-        isForm: true,
+        isForm: false,
+        WebBanner: true,
         btnBg: "bg-[#283C3C]",
         btnBorder: "border-[#283C3C]",
         btnHover: "hover:bg-[#283C3C]"
