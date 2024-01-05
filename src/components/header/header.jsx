@@ -54,7 +54,7 @@ const Header = () => {
                         </li>
                         <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                             <Image src={websiteDevelopment} alt="websiteDevelopment" />
-                            <Link className="text-base" href="/website-development-company">Website Development</Link>
+                            <Link className="text-base" href="/website-development">Website Development</Link>
                         </li>
                     </ul>
                     <ul className="hidden lg:block w-1/2">
@@ -99,7 +99,7 @@ const Header = () => {
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={websiteDevelopment} alt="websiteDevelopment" />
-                                <Link className="text-base" href="/website-development-company">Website Development</Link>
+                                <Link className="text-base" href="/website-development">Website Development</Link>
                             </li>
                             <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
                                 <Image src={motionGraphics} alt="motionGraphics" />
@@ -161,7 +161,7 @@ const Header = () => {
                                             return "bg-[#8A6EA5]"
                                         case '/ecommerce-solutions':
                                             return "bg-[#005368]"
-                                        case '/website-development-company':
+                                        case '/website-development':
                                             return "bg-[#283C3C]"
                                         case '/motion-graphic-design-company':
                                             return "bg-[#195A47]"
@@ -197,7 +197,7 @@ const Header = () => {
                                             return "border-[#8A6EA5]"
                                         case '/ecommerce-solutions':
                                             return "border-[#005368]"
-                                        case '/website-development-company':
+                                        case '/website-development':
                                             return "border-[#283C3C]"
                                         case '/motion-graphic-design-company':
                                             return "border-[#195A47]"
@@ -229,7 +229,7 @@ const Header = () => {
                                             return "hover:bg-[#8A6EA5]"
                                         case '/ecommerce-solutions':
                                             return "hover:bg-[#005368]"
-                                        case '/website-development-company':
+                                        case '/website-development':
                                             return "hover:bg-[#283C3C]"
                                         case '/motion-graphic-design-company':
                                             return "hover:bg-[#195A47]"
