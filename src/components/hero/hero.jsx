@@ -43,9 +43,9 @@ const Hero = ({ content }) => {
           ></video>
         ) : null}
         {/* For Website Development Page */}
-        {/* {page === "websiteDevelopment" ?
+        {page === "websiteDevelopmentCompany" ?
                     <video src={video} autoPlay loop muted
-                        className="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-contain object-right-top z-[-2] hidden lg:block"></video> : null} */}
+                        className="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-contain object-right-top z-[-2] hidden lg:block"></video> : null}
         {/* For Seo Services Page */}
         {page === "seoServices" ? (
           <div className="bg-[url('../../public/seo-services/hero/handle.png')] bg-contain bg-no-repeat bg-right-top absolute right-0 hidden lg:block bottom-0 w-full h-full"></div>

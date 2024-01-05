@@ -10,6 +10,7 @@ import {
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Axios from "axios";
+import Link from "next/link";
 
 const WebDevelopmentForm = () => {
   const [selectedService, setSelectedService] = useState("Not Selected");
@@ -270,9 +271,9 @@ const WebDevelopmentForm = () => {
     <ThemeProvider value={theme}>
       <div className="">
         <div className="container">
-          <div className="bg-[#0000006b] backdrop-blur-sm py-5 lg:py-12 md:p-7 rounded-[40px] brightness-[-4] lg:max-h-[550px] flex flex-col items-center justify-between mb-5 lg:mb-0">
+          <div className="bg-[#0000006b] backdrop-blur-sm py-5 md:p-7 rounded-[40px] brightness-[-4] lg:mt-16 flex flex-col items-center justify-between mb-5 lg:mb-0">
             <form autoComplete="off" className="w-full px-4 lg:px-0">
-              <div className="flex flex-col gap-y-6 py-6">
+              <div className="flex flex-col gap-y-6 pt-6">
                 <div className="basis-full lg:basis-1/3">
                   <Input
                     label="Name"
@@ -336,6 +337,12 @@ const WebDevelopmentForm = () => {
                     className="text-sm sm:text-lg font-medium pr-8 pl-8 h-11 rounded-md bg-[#0F2847] w-full text-white cursor-pointer"
                     value={formStatus}
                   />
+                </div>
+                <div className="basis-full ">
+                  <p className="text-md font-[400] text-white text-center">
+                    We take your privacy seriously. Read our{" "}
+                    <Link href="/privacy-policy" className="font-[700]">Privacy Policy</Link> .
+                  </p>
                 </div>
               </div>
             </form>
