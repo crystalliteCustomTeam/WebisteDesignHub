@@ -79,9 +79,9 @@ const Portfolios = () => {
                                 portfolioData.map(({ value, images, links }) => {
                                     return (
                                         <TabPanel value={value} key={value} className="p-0">
-                                            <div className="grid grid-cols-3 gap-x-5 gap-y-5 mt-10">
+                                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 mt-10">
                                                 {images?.map((e, i) => (
-                                                    <div key={i} className="rounded-[10px] h-[200px] overflow-hidden group relative hover:cursor-pointer">
+                                                    <div key={i} className="rounded-[10px] h-[200px] lg:h-[300px] overflow-hidden group relative hover:cursor-pointer">
                                                         <Image src={e} alt="portfolios" className="rounded-[10px] w-full" />
                                                         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-0 group-hover:opacity-50">
                                                         </div>
