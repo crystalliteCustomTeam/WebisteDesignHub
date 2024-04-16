@@ -120,5 +120,4 @@ const Services = ({ content }) => {
         </section>
     );
 }
-
 export default Services;

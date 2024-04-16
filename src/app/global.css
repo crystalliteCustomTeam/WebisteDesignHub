@@ -292,3 +292,6 @@ body {
 .card_body .h2_before::before {
     background: transparent linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent) repeat scroll 0 0;
 }
+.__list li .z-20.text-inherit {
+    width: 100%;
+}
