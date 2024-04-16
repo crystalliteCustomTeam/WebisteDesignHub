@@ -139,7 +139,7 @@ const Reviews = () => {
                                         <div className="flex justify-center">
                                             <div className="md:basis-[30%]">
                                                 <div className="relative md:block hidden">
-                                                    <Image src={clientImg} alt="Clients" className="absolute top-0 left-0 right-0 bottom-0 w-full 2xl:h-[350px] h-[334px] object-cover object-bottom" />
+                                                    <Image src={clientImg} alt="Clients" className="absolute top-0 left-0 right-0 bottom-0 w-full h-[350px] object-cover object-bottom" />
                                                 </div>
                                             </div>
                                             <div className="md:basis-[65%]">

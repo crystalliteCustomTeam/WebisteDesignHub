@@ -31,23 +31,21 @@ const Footer = () => {
             pagination: "false",
             loop: "true",
             direction: "horizontal",
-            slidesPerView: "5",
+            slidesPerView: 5,
             centeredSlides: "true",
             spaceBetween: "20",
             speed: 3000,
             roundLengths: true,
             mousewheel: true,
             grabCursor: true,
-            autoplay: {
-                delay: "0",
-                disableOnInteraction: "false"
-            },
+            autoplay: true,
             injectStyles: [`
                 .swiper {
                     overflow: hidden;
                 }
                 .swiper-wrapper{
                     align-items:center;
+                    transition-timing-function: linear;
                 }
             `],
             breakpoints: {
