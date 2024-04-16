@@ -67,7 +67,7 @@ const Services = () => {
                                     return (
                                         <>
                                             <Tab value={value} key={value} onClick={() => setQuestions(value)}
-                                                className={`${questions === value ? "text-white border-b-2 border-[#4d4c4c] bg-transparent outline-0" : " border-[#707070]"} justify-between border-b-2 font-sans font-medium text-base text-white w-full py-[0.5rem] px-[0.8rem] lg:px-0 mb-10 hover:bg-transparent hover:border-[#4d4c4c] hover:text-white`}>
+                                                className={`${questions === value ? "text-white border-b-2 border-[#4d4c4c] bg-transparent outline-0" : " border-[#707070]"} justify-between border-b-2 font-sans font-medium 2xl:text-2xl xl:text-xl lg:text-lg text-base text-white w-full py-[0.5rem] px-[0.8rem] lg:px-0 mb-10 hover:bg-transparent hover:border-[#4d4c4c] hover:text-white`}>
                                                 <div className="flex justify-between items-center w-full">
                                                     <span>{label}</span>
                                                     {questions === value ? <Image src={arrowDown} alt="icons" className="block ms-auto" /> : <Image src={arrowUp} alt="icons" className="block ms-auto" />}
