@@ -36,7 +36,7 @@ const Services = () => {
             value: "app-development",
             label: "Web App Development",
             images: [service4],
-            desc: "Make your mark on the web with Bitswits, the web app development company that understands your vision. Our web app solutions are designed for impact, ensuring you make the right impression. Our web app developers are here to turn your dream into a digital reality."
+            desc: "Make your mark on the web with Web Design Hub, the web app development company that understands your vision. Our web app solutions are designed for impact, ensuring you make the right impression. Our web app developers are here to turn your dream into a digital reality."
         },
         {
             value: "custom",
@@ -58,7 +58,7 @@ const Services = () => {
                     <div className="font-sans text-center text-white">
                         <span className="lg:text-xl md:text-lg text-base leading-tight font-semibold tracking-widest">Services</span>
                         <h2 className="xl:text-[45px] lg:text-[40px] md:text-[30px] text-[22px] leading-normal font-bold my-1">Transforming Visions into Reality with Exceptional <br className="xl:block hidden" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eb335b] to-[#4a78ef]">Mobile App Solutions</span></h2>
-                        <p className="md:text-base text-sm leading-normal font-normal">At BitsWits, our expert team specializes in professional app development. Whether you want to build an app from scratch or make an <br className="xl:block hidden" /> app that stands out, we're here to turn your ideas into reality.</p>
+                        <p className="md:text-base text-sm leading-normal font-normal">At Web Design Hub, our expert team specializes in professional app development. Whether you want to build an app from scratch or make an <br className="xl:block hidden" /> app that stands out, we're here to turn your ideas into reality.</p>
                     </div>
                     <Tabs value={questions} className="grid lg:grid-cols-2 grid-cols-1 gap-x-5 items-center pt-[50px]">
                         <TabsHeader indicatorProps={{ className: "hidden" }} className={`overflow-hidden bg-transparent p-0 flex-col __list`}>

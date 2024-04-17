@@ -70,7 +70,7 @@ const Hero = () => {
                                 <span className="md:text-base text-sm leading-tight font-bold mb-4 block">Transform Your Business With Our Revolutionary</span>
                                 <h1 className="xl:text-[45px] lg:text-[40px] md:text-[30px] text-[23px] leading-tight font-bold mb-3">Mobile App <br /> Development Company</h1>
                                 <span className="md:text-base text-sm leading-tight font-bold mb-4 block">We Don't Just Create Apps; We Create Experiences</span>
-                                <p className="md:text-base text-sm md:text-start text-justify font-normal">At BitsWits, we develop innovative and user - friendly apps that have a visually appealing design and function seamlessly, meeting the specific needs of our clients.Our focus on delivering high - quality mobile apps is unwavering; as a result, we have earned a reputation as the industry's best mobile app development company.</p>
+                                <p className="md:text-base text-sm md:text-start text-justify font-normal">At Web Design Hub, we develop innovative and user - friendly apps that have a visually appealing design and function seamlessly, meeting the specific needs of our clients.Our focus on delivering high - quality mobile apps is unwavering; as a result, we have earned a reputation as the industry's best mobile app development company.</p>
                             </div>
                             <div className="flex sm:flex-nowrap flex-wrap items-center gap-5">
                                 <CTA
@@ -107,11 +107,11 @@ const Hero = () => {
                         </div>
                         <div className="relative lg:basis-[35%] basis-full">
                             <div className="xl:w-[90%] w-full mx-auto text-white text-center">
-                                <div className={`bg-gradient-to-b from-[#7560bd] via-[#f32fc2] to-[#f32f53] xl:px-0 px-2 pt-4 pb-[160px] border-4 border-[#ee9acf] font-sans rounded-xl`}>
+                                <div className={`bg-gradient-to-b from-[#7560bd] via-[#f32fc2] to-[#f32f53] xl:px-0 px-2 pt-[30px] pb-[55px] border-4 border-[#ee9acf] font-sans rounded-xl`}>
                                     <h2 className="xl:text-lg text-base font-bold">MAKE AN OBLIGATION-FREE ENQUIRY</h2>
                                     <Form />
                                 </div>
-                                <div className="bg-[#000000] rounded-b-xl border-4 border-[#f32f5e] xl:w-[89.5%] w-full mx-auto absolute left-0 right-0 bottom-0 py-5">
+                                {/* <div className="bg-[#000000] rounded-b-xl border-4 border-[#f32f5e] xl:w-[89.5%] w-full mx-auto absolute left-0 right-0 bottom-0 py-5">
                                     <h4 className="font-semibold">OUR OFFICES</h4>
                                     <div className="flex items-end justify-between">
                                         {
@@ -127,7 +127,7 @@ const Hero = () => {
                                             ))
                                         }
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
