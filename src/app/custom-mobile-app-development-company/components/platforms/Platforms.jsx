@@ -9,13 +9,13 @@ const Platforms = () => {
                 <div className="text-white text-center font-sans">
                     <span className="lg:text-xl md:text-lg text-base leading-tight font-semibold tracking-widest">Platforms</span>
                     <h2 className="xl:text-[45px] lg:text-[40px] md:text-[30px] text-[22px] leading-normal font-bold my-1"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eb335b] to-[#4a78ef]">Best App Making Company</span> <br className="xl:block hidden" /> Technologies We Used</h2>
-                    <p className="md:text-base text-sm font-normal">Bitswits turns inventive ideas into groundbreaking mobile apps! Our award-winning app developers know hybrid and native technologies, so your project is in <br className="xl:block hidden" />good hands. With us, your project will be a success from start to finish!</p>
+                    <p className="md:text-base text-sm font-normal">Web Design Hub turns inventive ideas into groundbreaking mobile apps! Our award-winning app developers know hybrid and native technologies, so your project is in <br className="xl:block hidden" />good hands. With us, your project will be a success from start to finish!</p>
                 </div>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 items-center text-white font-sans mt-10">
                     {
                         [
                             [`Hybrid <br /> <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#eb335b] to-[#4a78ef]">App Development</span>`,
-                                "BitsWits take pride in developing hybrid apps that are visually stunning and perform exceptionally well. Our team of skilled hybrid app developers leverages the latest technologies to create fast, secure, and user-friendly apps, ensuring your business stays ahead of the curve with:"
+                                "Web Design Hub take pride in developing hybrid apps that are visually stunning and perform exceptionally well. Our team of skilled hybrid app developers leverages the latest technologies to create fast, secure, and user-friendly apps, ensuring your business stays ahead of the curve with:"
                                 , hybrid, [
                                     "Cross-platform Compatibility.",
                                     "Accelerated Development Cycle",
@@ -23,7 +23,7 @@ const Platforms = () => {
                                     "Cost-Effective Single Codebase Solution.",
                                 ]],
                             [`Native <br /> <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#eb335b] to-[#4a78ef]">App Development</span>`,
-                                "BitsWits specializes in creating native applications that provide users with the best experience. With our native app developers, we deeply understand the most popular operating systems and programming languages to ensure that any app developed with us will have professional performance. Our key focus includes:",
+                                "Web Design Hub specializes in creating native applications that provide users with the best experience. With our native app developers, we deeply understand the most popular operating systems and programming languages to ensure that any app developed with us will have professional performance. Our key focus includes:",
                                 native, [
                                     "High Performance Platform-Optimization.",
                                     "Access To Device Features & Integration.",
