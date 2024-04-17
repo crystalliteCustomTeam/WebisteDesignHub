@@ -28,7 +28,6 @@ const Footer = () => {
     useEffect(() => {
         register();
         const params = {
-            pagination: "false",
             loop: "true",
             direction: "horizontal",
             slidesPerView: 5,
@@ -49,6 +48,9 @@ const Footer = () => {
                 }
             `],
             breakpoints: {
+                1024: {
+                    slidesPerView: 5,
+                },
                 576: {
                     slidesPerView: 3,
                 },
