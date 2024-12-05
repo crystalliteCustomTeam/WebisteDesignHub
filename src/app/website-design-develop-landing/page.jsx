@@ -407,11 +407,11 @@ const Page = () => {
                     link="javascript:$zopim.livechat.window.show();"
                   />
                   <Button
-                    text="(855) 888-8399"
+                    text="0346-8280101"
                     color="text-white bg-transparent"
                     border="border-2 border-[#00FFEF]"
                     hover="hover:bg-[#00FFEF]"
-                    link="tel:(855)888-8399"
+                    link="tel:0346-8280101"
                   />
                 </div>
               </div>
@@ -437,11 +437,11 @@ const Page = () => {
                   link="javascript:$zopim.livechat.window.show();"
                 />
                 <Button
-                  text="(855) 888-8399"
+                  text="0346-8280101"
                   color="btnColor text-white bg-transparent"
                   border="border-2 border-[#00FFEF]"
                   hover="hover:bg-[#00FFEF]"
-                  link="tel:(855)888-8399"
+                  link="tel:0346-8280101"
                 />
               </div>
               <div className="absolute right-0 bottom-[-2rem] xl:bottom-[-4rem]">
@@ -518,11 +518,11 @@ const Page = () => {
                             link="javascript:$zopim.livechat.window.show();"
                           />
                           <Button
-                            text="(855) 888-8399"
+                            text="0346-8280101"
                             color="btnColor text-white bg-transparent"
                             border="border-2 border-[#3283FF]"
                             hover="hover:bg-[#3283FF]"
-                            link="tel:(855)888-8399"
+                            link="tel:0346-8280101"
                           />
                         </div>
                       </div>
@@ -609,10 +609,10 @@ const Page = () => {
                         <span>Order Now</span>
                       </a>
                       <a
-                        href="tel:(855)888-8399"
+                        href="tel:0346-8280101"
                         className="bg-transparent rounded-[50px] text-black inline-flex items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-[#3283FF] hover:text-white hover:border-[#3283FF] font-medium border-2 border-black"
                       >
-                        <span>(855) 888-8399</span>
+                        <span>0346-8280101</span>
                       </a>
                     </div>
                     <Image

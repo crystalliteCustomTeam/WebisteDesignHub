@@ -17,22 +17,22 @@ const Letstalk = ({ content }) => {
                             <p className="text-base text-white font-normal">{desc}</p>
                         </div>
                         <div className="basis-[50%] lg:basis-[35%] mb-8 md:mb-0">
-                            <Link href="tel:(855)888-8399" className="text-2xl lg:text-4xl leading-none xltext-5xl font-normal font-megat  text-white block mb-4">(855) 888-8399</Link>
+                            <Link href="tel:0346-8280101" className="text-2xl lg:text-4xl leading-none xltext-5xl font-normal font-megat  text-white block mb-4">0346-8280101</Link>
                             <div className="flex items-center gap-3">
                                 <Button text="Start Live Chat"
                                     icon={true}
                                     color="bg-[#AE86F9] text-white"
                                     hover="hover:bg-[#000000]"
                                     link="javascript:$zopim.livechat.window.show();" />
-                                <Button text="(855) 888-8399"
+                                <Button text="0346-8280101"
                                     color="bg-transparent text-white"
                                     border="border-2 border-[#AE86F9]"
                                     hover="hover:bg-[#AE86F9]"
-                                    link="tel:(855)888-8399" />
+                                    link="tel:0346-8280101" />
                             </div>
                         </div>
                         <div className="basis-[50%] lg:basis-[25%]">
-                            <Link href="mailto:info@webdesignhub.co" className="text-xl lg:text-2xl font-medium font-sans text-white">Discuss Your Ideas <br />Info@WebDesignHub.Co</Link>
+                            <Link href="mailto:info@WebDevelopersHub.co" className="text-xl lg:text-2xl font-medium font-sans text-white">Discuss Your Ideas <br />info@WebDevelopersHub.co</Link>
                         </div>
                     </div>
                 </div>

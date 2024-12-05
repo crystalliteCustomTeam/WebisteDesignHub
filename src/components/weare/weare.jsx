@@ -56,12 +56,12 @@ const Weare = () => {
                                     <h3 className="text-xl lg:text-2xl font-medium font-sans text-white">You Are Just A Call <br /> Away From Securing <br /> A Spectacular Design</h3>
                                 </div>
                                 <div className="basis-full md:basis-[30%]">
-                                    <Link href="tel:(855)888-8399" className="text-xl lg:text-2xl font-medium font-sans text-white">
-                                        Call Us (TOLL FREE) <br /> (855) 888-8399
+                                    <Link href="tel:0346-8280101" className="text-xl lg:text-2xl font-medium font-sans text-white">
+                                        Call Us <br /> 0346-8280101
                                     </Link>
                                 </div>
                                 <div className="basis-full md:basis-[30%]">
-                                    <Link href="mailto:info@webdesignhub.co" className="text-xl lg:text-2xl font-medium font-sans text-white">Discuss Your Ideas <br />Info@WebDesignHub.Co</Link>
+                                    <Link href="mailto:info@WebDevelopersHub.co" className="text-xl lg:text-2xl font-medium font-sans text-white">Discuss Your Ideas <br />info@WebDevelopersHub.co</Link>
                                 </div>
                             </div>
                         </div>

@@ -116,9 +116,9 @@ const Sidebuttons = () => {
                 <Image src={chat} alt="chat" />
                 <span className="text-white font-semibold text-lg block" href="#">Start Live Chat</span>
             </Link>
-            <Link href="tel:(855)888-8399" className="cursor-pointer hidden lg:flex items-center rounded-tl-[50px] rounded-bl-[50px] py-2 px-4 gap-4 translate-x-[75%] hover:translate-x-[1%] bg-[#0F2847] fixed top-[33%] right-0 z-50">
+            <Link href="tel:0346-8280101" className="cursor-pointer hidden lg:flex items-center rounded-tl-[50px] rounded-bl-[50px] py-2 px-4 gap-4 translate-x-[75%] hover:translate-x-[1%] bg-[#0F2847] fixed top-[33%] right-0 z-50">
                 <Image src={call} alt="call" />
-                <span className="text-white font-semibold text-lg">(855) 888-8399</span>
+                <span className="text-white font-semibold text-lg">0346-8280101</span>
             </Link>
             <div className="cursor-pointer hidden lg:flex items-center translate-x-[100%] hover:translate-x-[1%] fixed top-[43%] right-0 z-50">
                 <span className="text-white font-normal text-lg bg-[#0F2847] tracking-wide rotate-[-90deg] absolute top-[45%] left-[-137px] rounded-tr-[30px] rounded-tl-[30px] py-2 px-3 ">60% off on all services</span>

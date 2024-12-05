@@ -223,7 +223,7 @@ const Page = () => {
                                 <ul className="list-decimal list-inside pl-5">
                                     <li>
                                         <span>
-                                            Toll-free <a href="tel:(855)888-8399" className="text-[#0F2847]">(855) 888-8399</a>
+                                            Toll-free <a href="tel:0346-8280101" className="text-[#0F2847]">0346-8280101</a>
                                         </span>
                                     </li>
                                     <li>
@@ -233,7 +233,7 @@ const Page = () => {
                                     </li>
                                     <li>
                                         <span>
-                                            <a href="mailto:info@webdesignhub.co" className="text-[#0F2847]">info@webdesignhub.co</a>
+                                            <a href="mailto:info@WebDevelopersHub.co" className="text-[#0F2847]">info@WebDevelopersHub.co</a>
                                         </span>
                                     </li>
                                 </ul>
@@ -250,7 +250,7 @@ const Page = () => {
                             </li>
                             <li className="text-[14px] leading-[28px] text-[#565151] font-normal">
                                 <span>
-                                    Working in collaboration with the Government Copyright Agencies, Web Design Hub would share Copyright Acquisition information for the refunded designs that would restrict the re-use of the website as its original layout in the future. If you have any questions or concerns about our Refund Policy, please contact us by clicking here <a href="mailto:info@webdesignhub.co" className="text-[#0F2847]">info@webdesignhub.co</a>
+                                    Working in collaboration with the Government Copyright Agencies, Web Design Hub would share Copyright Acquisition information for the refunded designs that would restrict the re-use of the website as its original layout in the future. If you have any questions or concerns about our Refund Policy, please contact us by clicking here <a href="mailto:info@WebDevelopersHub.co" className="text-[#0F2847]">info@WebDevelopersHub.co</a>
                                 </span>
                             </li>
                         </ul>
@@ -266,7 +266,7 @@ const Page = () => {
                         <ul className="list-disc list-inside mb-5">
                             <li className="text-[14px] leading-[28px] text-[#565151] font-normal mb-2">
                                 <span>
-                                    Emails Sent back and forth through official emails that are "<a href="mailto:info@webdesignhub.co" className="text-[#0F2847]">info@webdesignhub.co</a>" are to be only considered forms of valid communication.
+                                    Emails Sent back and forth through official emails that are "<a href="mailto:info@WebDevelopersHub.co" className="text-[#0F2847]">info@WebDevelopersHub.co</a>" are to be only considered forms of valid communication.
                                 </span>
                             </li>
                             <li className="text-[14px] leading-[28px] text-[#565151] font-normal mb-2">
@@ -598,7 +598,7 @@ const Page = () => {
                             Contact Us
                         </h2>
                         <p className="text-[15px] leading-[25px] text-[#565151] font-normal">
-                            if you have any questions or concerns regarding this policy, please contact us at <a href="mailto:info@webdesignhub.co" className="text-[#0F2847] font-bold">info@webdesignhub.co</a>
+                            if you have any questions or concerns regarding this policy, please contact us at <a href="mailto:info@WebDevelopersHub.co" className="text-[#0F2847] font-bold">info@WebDevelopersHub.co</a>
                         </p>
                     </div>
                 </div>

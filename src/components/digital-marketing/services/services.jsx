@@ -23,11 +23,11 @@ const Services = () => {
                             color="bg-[#8A6EA5] text-white"
                             hover="hover:bg-[#000000]"
                             link="javascript:$zopim.livechat.window.show();" />
-                        <Button text="(855) 888-8399"
+                        <Button text="0346-8280101"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#8A6EA5]"
                             hover="hover:bg-[#8A6EA5] hover:text-white"
-                            link="tel:(855)888-8399" />
+                            link="tel:0346-8280101" />
                     </div>
                 </div>
             </div>

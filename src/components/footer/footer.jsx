@@ -96,18 +96,18 @@ const Footer = () => {
     ];
     const contactLinks = [
         {
-            text: "One World Trade Center, Suite 8500, New York, New York, 10007, United States",
+            text: "1206-1209 , Ceasers Tower , Main Shar e Faisal Karachi - Pakistan",
             link: "/contact-us",
             icon: mapmarker
         },
         {
-            text: "(855) 888-8399",
-            link: "tel:(855)888-8399",
+            text: "0346-8280101",
+            link: "tel:0346-8280101",
             icon: telephone
         },
         {
             text: "info@webdesignhub.co",
-            link: "mailto:info@webdesignhub.co",
+            link: "mailto:info@WebDevelopersHub.co",
             icon: envelope
         },
     ];

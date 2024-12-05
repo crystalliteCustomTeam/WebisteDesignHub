@@ -82,8 +82,8 @@ const Hero = () => {
                                     width="sm:w-max w-full"
                                 />
                                 <CTA
-                                    text="(855)888-8399"
-                                    href="tel:(855)888-8399"
+                                    text="0346-8280101"
+                                    href="tel:0346-8280101"
                                     bg="bg-[#000000]"
                                     padding="px-9"
                                     textSize="md:text-base text-sm"

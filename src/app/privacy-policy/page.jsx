@@ -233,7 +233,7 @@ const Page = () => {
                         <ul className="list-disc list-inside mb-5">
                             <li className="text-[14px] leading-[28px] text-[#565151] font-normal">
                                 <span>
-                                    If you have previously agreed to us using your mobile number for direct marketing purposes, you may change your mind at any time by contacting us at <a href="mailto:info@webdesignhub.co" className="text-[#0F2847] font-bold">info@webdesignhub.co</a> or you can reply “STOP” or “Unsubscribe” to stop receiving the messages
+                                    If you have previously agreed to us using your mobile number for direct marketing purposes, you may change your mind at any time by contacting us at <a href="mailto:info@WebDevelopersHub.co" className="text-[#0F2847] font-bold">info@WebDevelopersHub.co</a> or you can reply “STOP” or “Unsubscribe” to stop receiving the messages
                                 </span>
                             </li>
                         </ul>
@@ -247,7 +247,7 @@ const Page = () => {
                             Your Rights
                         </h2>
                         <p className="text-[15px] leading-[25px] text-[#565151] font-normal mb-5">
-                            You have the right to request details of the personal information we hold about you. If you would like a copy of this information, please contact us at <a href="mailto:info@webdesignhub.co" className="text-[#0F2847] font-bold">info@webdesignhub.co</a>
+                            You have the right to request details of the personal information we hold about you. If you would like a copy of this information, please contact us at <a href="mailto:info@WebDevelopersHub.co" className="text-[#0F2847] font-bold">info@WebDevelopersHub.co</a>
                         </p>
                         <h2 className="text-xl sm:text-2xl font-sans text-[#202020] font-semibold leading-none mb-2">
                             Changes to this Policy
@@ -271,19 +271,19 @@ const Page = () => {
                             Address:
                         </h3>
                         <p className="text-[15px] leading-[25px] text-[#202020] font-normal mb-5">
-                            One World Trade Center, Suite 8500, New York, New York, 10007, United States
+                            1206-1209 , Ceasers Tower , Main Shar e Faisal Karachi - Pakistan
                         </p>
                         <h3 className="text-lg sm:text-xl font-sans text-[#202020] font-semibold leading-none mb-2">
                             E-mail:
                         </h3>
                         <p className="text-[15px] leading-[25px] text-[#0F2847] font-bold mb-5">
-                            <a href="mailto:info@webdesignhub.co">info@webdesignhub.co</a>
+                            <a href="mailto:info@WebDevelopersHub.co">info@WebDevelopersHub.co</a>
                         </p>
                         <h3 className="text-lg sm:text-xl font-sans text-[#202020] font-semibold leading-none mb-2">
                             Phone:
                         </h3>
                         <p className="text-[15px] leading-[25px] text-[#0F2847] font-bold">
-                            <a href="tel:(855)888-8399">(855) 888-8399</a>
+                            <a href="tel:0346-8280101">0346-8280101</a>
                         </p>
                     </div>
                 </div>
