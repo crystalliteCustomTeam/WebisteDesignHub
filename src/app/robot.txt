@@ -4,4 +4,4 @@ Disallow: /terms-and-conditions
 Disallow: /privacy-policy
 Disallow: /order
 
-Sitemap: https://www.webdesignhub.co/sitemap.xml
+Sitemap: https://www.webdevelopershub.co/sitemap.xml

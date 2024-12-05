@@ -12,13 +12,13 @@ export const metadata = {
     },
     // Canonical
     alternates: {
-        canonical: 'https://www.webdesignhub.co/website-design-develop-usa-landing',
+        canonical: 'https://www.webdevelopershub.co/website-design-develop-usa-landing',
     },
     // OG Metas
     openGraph: {
         title: 'Landing Page 3 | WebDesignHub',
         description: 'WebDesignHub: Your trusted website development company. Craft dynamic, responsive sites tailored to your needs. Unlock your digital potential. Reach out now!',
-        url: 'https://www.webdesignhub.co/website-design-develop-usa-landing',
+        url: 'https://www.webdevelopershub.co/website-design-develop-usa-landing',
         siteName: 'Web Design Hub',
         locale: 'en_US',
         type: 'website',

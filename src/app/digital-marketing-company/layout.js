@@ -12,13 +12,13 @@ export const metadata = {
     },
     // Canonical
     alternates: {
-        canonical: 'https://www.webdesignhub.co/digital-marketing-company',
+        canonical: 'https://www.webdevelopershub.co/digital-marketing-company',
     },
     // OG Metas
     openGraph: {
         title: 'Leading Digital Marketing Company Services | WebDesignHub',
         description: 'WebDesignHub: The go-to digital marketing company for tailored strategies. Boost your online presence, traffic, and achieve ROI-focused results. Contact us!',
-        url: 'https://www.webdesignhub.co/digital-marketing-company',
+        url: 'https://www.webdevelopershub.co/digital-marketing-company',
         siteName: 'Web Design Hub',
         locale: 'en_US',
         type: 'website',

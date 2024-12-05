@@ -12,13 +12,13 @@ export const metadata = {
     },
     // Canonical
     alternates: {
-        canonical: 'https://www.webdesignhub.co/mobile-app-design-company',
+        canonical: 'https://www.webdevelopershub.co/mobile-app-design-company',
     },
     // OG Metas
     openGraph: {
         title: 'Top Mobile App Design And Development Company',
         description: 'Your trusted Mobile App Design & Development Company - delivering innovative solutions for your mobile app needs.',
-        url: 'https://www.webdesignhub.co/mobile-app-design-company',
+        url: 'https://www.webdevelopershub.co/mobile-app-design-company',
         siteName: 'Web Design Hub',
         locale: 'en_US',
         type: 'website',

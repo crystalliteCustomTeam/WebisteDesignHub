@@ -20,14 +20,14 @@ export const metadata = {
   },
   // Canonical
   alternates: {
-    canonical: "https://www.webdesignhub.co",
+    canonical: "https://www.webdevelopershub.co",
   },
   // OG Metas
   openGraph: {
     title: "Top Web Design Company - Web Design Hub .",
     description:
       "WebDesignHub is an award-winning top web design company with a team of professional web designers, and online strategists, delivering cutting-edge websites for businesses.",
-    url: "https://www.webdesignhub.co",
+    url: "https://www.webdevelopershub.co",
     siteName: "Web Design Hub",
     locale: "en_US",
     type: "website",

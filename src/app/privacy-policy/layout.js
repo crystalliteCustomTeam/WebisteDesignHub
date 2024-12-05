@@ -12,13 +12,13 @@ export const metadata = {
     },
     // Canonical
     alternates: {
-        canonical: 'https://www.webdesignhub.co/privacy-policy',
+        canonical: 'https://www.webdevelopershub.co/privacy-policy',
     },
     // OG Metas
     openGraph: {
         title: 'Privacy Policy - Web Design Hub',
         description: "Looking for a top rated web design company? Hire top web design company for stunning design solutions",
-        url: 'https://www.webdesignhub.co/privacy-policy',
+        url: 'https://www.webdevelopershub.co/privacy-policy',
         siteName: 'Web Design Hub',
         locale: 'en_US',
         type: 'website',

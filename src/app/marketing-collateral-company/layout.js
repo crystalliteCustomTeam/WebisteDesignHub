@@ -12,13 +12,13 @@ export const metadata = {
     },
     // Canonical
     alternates: {
-        canonical: 'https://www.webdesignhub.co/marketing-collateral-company',
+        canonical: 'https://www.webdevelopershub.co/marketing-collateral-company',
     },
     // OG Metas
     openGraph: {
         title: 'Best Marketing Collateral Company | WebDesignHub',
         description: 'WebDesignHub: Your trusted Marketing Collateral Company. Craft brand-aligned assets that captivate and convert. Elevate your outreach. Connect with us today!',
-        url: 'https://www.webdesignhub.co/marketing-collateral-company',
+        url: 'https://www.webdevelopershub.co/marketing-collateral-company',
         siteName: 'Web Design Hub',
         locale: 'en_US',
         type: 'website',

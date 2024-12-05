@@ -96,7 +96,7 @@ const Footer = () => {
                                 <Link href="/privacy-policy" className="block">Privacy Policy</Link>
                             </div>
                             <div className="text-sm">
-                                <p>Copyright © 2024 <Link href="/">webdesignhub.co</Link> | Brand Of <a href="https://bhaooinc.com/" target="_blank">Bhaoo Incorporation Company</a></p>
+                                <p>Copyright © 2024 <Link href="/">webdevelopershub.co</Link> </p>
                             </div>
                             <div>
                                 <Image src={Card} alt="card" className="block mx-auto" />

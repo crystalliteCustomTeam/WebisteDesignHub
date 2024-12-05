@@ -12,13 +12,13 @@ export const metadata = {
     },
     // Canonical
     alternates: {
-        canonical: 'https://www.webdesignhub.co/motion-graphic-design-company',
+        canonical: 'https://www.webdevelopershub.co/motion-graphic-design-company',
     },
     // OG Metas
     openGraph: {
         title: 'Top Motion Graphics Design Company | WebDesignHub',
         description: 'Your premier motion graphics design company WebDesignHub. Elevate your brand visuals with dynamic animations and unique designs. Captivate audiences. Connect now!b',
-        url: 'https://www.webdesignhub.co/motion-graphic-design-company',
+        url: 'https://www.webdevelopershub.co/motion-graphic-design-company',
         siteName: 'Web Design Hub',
         locale: 'en_US',
         type: 'website',

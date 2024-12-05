@@ -12,13 +12,13 @@ export const metadata = {
     },
     // Canonical
     alternates: {
-        canonical: 'https://www.webdesignhub.co/about-us',
+        canonical: 'https://www.webdevelopershub.co/about-us',
     },
     // OG Metas
     openGraph: {
         title: 'About Us - Web Design Hub',
         description: "Discover WebDesignHub's journey and ethos. Driven by innovation and expertise, we're committed to bringing you unparalleled digital solutions. Know our story.",
-        url: 'https://www.webdesignhub.co/about-us',
+        url: 'https://www.webdevelopershub.co/about-us',
         siteName: 'Web Design Hub',
         locale: 'en_US',
         type: 'website',

@@ -143,8 +143,8 @@ const Page = () => {
                             "@context": "https://schema.org",
                             "@type": "Organization",
                             "name": "Web Design Hub",
-                            "url": "https://www.webdesignhub.co",
-                            "logo": "https://www.webdesignhub.co/_next/static/media/logo.0278bd76.svg",
+                            "url": "https://www.webdevelopershub.co",
+                            "logo": "https://www.webdevelopershub.co/_next/static/media/logo.0278bd76.svg",
                             "contactPoint": {
                                 "@type": "ContactPoint",
                                 "telephone": "855 888-8399",

@@ -12,13 +12,13 @@ export const metadata = {
     },
     // Canonical
     alternates: {
-        canonical: 'https://www.webdesignhub.co/creative-copywriting-company',
+        canonical: 'https://www.webdevelopershub.co/creative-copywriting-company',
     },
     // OG Metas
     openGraph: {
         title: 'Top Copywriting Company | WebDesignHub Services',
         description: "Choose WebDesignHub, your trusted copywriting company. We craft compelling content to elevate your brand's voice and reach. Engage better. Convert more.",
-        url: 'https://www.webdesignhub.co/creative-copywriting-company',
+        url: 'https://www.webdevelopershub.co/creative-copywriting-company',
         siteName: 'Web Design Hub',
         locale: 'en_US',
         type: 'website',
