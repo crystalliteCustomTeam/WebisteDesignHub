@@ -407,11 +407,11 @@ const Page = () => {
                     link="javascript:$zopim.livechat.window.show();"
                   />
                   <Button
-                    text="0346-8280101"
+                    text="0346-8280111"
                     color="text-white bg-transparent"
                     border="border-2 border-[#00FFEF]"
                     hover="hover:bg-[#00FFEF]"
-                    link="tel:0346-8280101"
+                    link="tel:0346-8280111"
                   />
                 </div>
               </div>
@@ -437,11 +437,11 @@ const Page = () => {
                   link="javascript:$zopim.livechat.window.show();"
                 />
                 <Button
-                  text="0346-8280101"
+                  text="0346-8280111"
                   color="btnColor text-white bg-transparent"
                   border="border-2 border-[#00FFEF]"
                   hover="hover:bg-[#00FFEF]"
-                  link="tel:0346-8280101"
+                  link="tel:0346-8280111"
                 />
               </div>
               <div className="absolute right-0 bottom-[-2rem] xl:bottom-[-4rem]">
@@ -518,11 +518,11 @@ const Page = () => {
                             link="javascript:$zopim.livechat.window.show();"
                           />
                           <Button
-                            text="0346-8280101"
+                            text="0346-8280111"
                             color="btnColor text-white bg-transparent"
                             border="border-2 border-[#3283FF]"
                             hover="hover:bg-[#3283FF]"
-                            link="tel:0346-8280101"
+                            link="tel:0346-8280111"
                           />
                         </div>
                       </div>
@@ -609,10 +609,10 @@ const Page = () => {
                         <span>Order Now</span>
                       </a>
                       <a
-                        href="tel:0346-8280101"
+                        href="tel:0346-8280111"
                         className="bg-transparent rounded-[50px] text-black inline-flex items-center gap-3 w-max pr-4 pl-4 h-12  hover:bg-[#3283FF] hover:text-white hover:border-[#3283FF] font-medium border-2 border-black"
                       >
-                        <span>0346-8280101</span>
+                        <span>0346-8280111</span>
                       </a>
                     </div>
                     <Image
@@ -762,14 +762,14 @@ const Page = () => {
                       </h3>
                       <p className="text-sm lg:text-[18px] leading-[22px] xl:leading-[28px] font-normal  text-gray-600">
                         "I couldn't be happier with the logo design and landing
-                        page that Web Design Hub created for my business. The
+                        page that Web Developers Hub created for my business. The
                         team's creativity and attention to detail truly exceeded
                         my expectations. From the initial concept discussions to
                         the final execution, their professionalism and
                         commitment were evident at every step. The logo
                         perfectly captures the essence of my brand, and the
                         landing page has significantly increased user
-                        engagement. Thank you, Web Design Hub, for your
+                        engagement. Thank you, Web Developers Hub, for your
                         exceptional work and for bringing my vision to life!"
                       </p>
                       <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#3283FF]">
@@ -784,14 +784,14 @@ const Page = () => {
                       </h3>
                       <p className="text-sm lg:text-[18px] leading-[22px] xl:leading-[28px] font-font-normal  text-gray-600">
                         "I couldn't be happier with the logo design and landing
-                        page that Web Design Hub created for my business. The
+                        page that Web Developers Hub created for my business. The
                         team's creativity and attention to detail truly exceeded
                         my expectations. From the initial concept discussions to
                         the final execution, their professionalism and
                         commitment were evident at every step. The logo
                         perfectly captures the essence of my brand, and the
                         landing page has significantly increased user
-                        engagement. Thank you, Web Design Hub, for your
+                        engagement. Thank you, Web Developers Hub, for your
                         exceptional work and for bringing my vision to life!"
                       </p>
                       <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#3283FF]">
@@ -806,14 +806,14 @@ const Page = () => {
                       </h3>
                       <p className="text-sm lg:text-[18px] leading-[22px] xl:leading-[28px] font-font-normal  text-gray-600">
                         "I couldn't be happier with the logo design and landing
-                        page that Web Design Hub created for my business. The
+                        page that Web Developers Hub created for my business. The
                         team's creativity and attention to detail truly exceeded
                         my expectations. From the initial concept discussions to
                         the final execution, their professionalism and
                         commitment were evident at every step. The logo
                         perfectly captures the essence of my brand, and the
                         landing page has significantly increased user
-                        engagement. Thank you, Web Design Hub, for your
+                        engagement. Thank you, Web Developers Hub, for your
                         exceptional work and for bringing my vision to life!"
                       </p>
                       <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#3283FF]">

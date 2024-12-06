@@ -14,7 +14,7 @@ const Services = () => {
                         <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">
                             Customized Digital Marketing Services for You
                         </h2>
-                        <p className="text-base text-black font-normal lg:w-[70%] m-auto">Our marketing team at Web Design Hub creates a digital marketing strategy that is completely unique and customized for your business. If you are ready for the digital revolution, let's kickstart the journey today!</p>
+                        <p className="text-base text-black font-normal lg:w-[70%] m-auto">Our marketing team at Web Developers Hub creates a digital marketing strategy that is completely unique and customized for your business. If you are ready for the digital revolution, let's kickstart the journey today!</p>
                     </div>
                     <Image src={services} alt="services" className="block m-auto" />
                     <div className="flex items-center gap-3 justify-center mt-10 relative z-10">
@@ -23,11 +23,11 @@ const Services = () => {
                             color="bg-[#8A6EA5] text-white"
                             hover="hover:bg-[#000000]"
                             link="javascript:$zopim.livechat.window.show();" />
-                        <Button text="0346-8280101"
+                        <Button text="0346-8280111"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#8A6EA5]"
                             hover="hover:bg-[#8A6EA5] hover:text-white"
-                            link="tel:0346-8280101" />
+                            link="tel:0346-8280111" />
                     </div>
                 </div>
             </div>

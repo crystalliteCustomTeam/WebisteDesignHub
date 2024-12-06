@@ -23,7 +23,7 @@ export const metadata = {
         title: 'Top Website Development Company | WebDesignHub',
         description: 'WebDesignHub: Your trusted website development company. Craft dynamic, responsive sites tailored to your needs. Unlock your digital potential. Reach out now!',
         url: 'https://www.webdevelopershub.co/website-design-develop-usa-landing',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

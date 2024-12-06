@@ -101,8 +101,8 @@ const Footer = () => {
             icon: mapmarker
         },
         {
-            text: "0346-8280101",
-            link: "tel:0346-8280101",
+            text: "0346-8280111",
+            link: "tel:0346-8280111",
             icon: telephone
         },
         {
@@ -138,7 +138,7 @@ const Footer = () => {
                             <Link href="/" className="mb-5 block">
                                 {path !== "/website-design-develop-landing" ? <Image src={logo} alt="logo" /> : <Image src={logo2} alt="logo2" />}
                             </Link>
-                            <p className="text-sm xl:text-base font-normal text-white">Web Design Hub excels in making custom logos, responsive website design and development. Our expert UI/UX designers contribute to your brand’s success with visually stunning and functional designs.</p>
+                            <p className="text-sm xl:text-base font-normal text-white">Web Developers Hub excels in making custom logos, responsive website design and development. Our expert UI/UX designers contribute to your brand’s success with visually stunning and functional designs.</p>
                             <Image src={certification} alt="certification" className="mt-3" />
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-[20%]">
@@ -195,7 +195,7 @@ const Footer = () => {
                     <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-5 sm:gap-y-0 items-center border-b-[1px] border-[#707070]">
                         <div className="basis-full sm:basis-1/2">
                             <p className="text-sm font-light text-white leading-6 text-center sm:text-left">
-                                Copyright © 2024 <Link href="/">webdevelopershub.co</Link>
+                                Copyright © 2024 <Link href="/">webdevelopershub.co</Link> - JQTEL
                             </p>
                         </div>
                         <div className="basis-full sm:basis-1/2">
@@ -216,7 +216,7 @@ const Footer = () => {
                     </div>
                     <div className="py-5">
                         <p className="text-[12px] font-light text-white leading-[22px]">
-                            <span className="font-semibold">Disclaimer</span>: Logo, name and graphic representation of webdesignhub and its products and services are trademarks of webdesignhub. All other company names, trademarks and logos mentioned on this website are the property of their respective owners and do not represent or imply endorsement, sponsorship or recommendation by webdesignhub and constitute or imply endorsement, sponsorship or recommendation thereof by webdesignhub and do not constitute or imply endorsement, sponsorship or recommendation of webdesignhub by the respective trademark owner.
+                            <span className="font-semibold">Disclaimer</span>: Logo, name, and graphic representation of Web Developers Hub and its products and services are trademarks of Web Design Hub. All other company names, trademarks, and logos mentioned on this website are the property of their respective owners and do not represent or imply endorsement, sponsorship, or recommendation by Web Developers Hub or JQTEL. Furthermore, these do not constitute or imply endorsement, sponsorship, or recommendation thereof by Web Developers Hub or JQTEL, and do not constitute or imply endorsement, sponsorship, or recommendation of Web Developers Hub or JQTEL by the respective trademark owner.
                         </p>
                     </div>
                 </div>

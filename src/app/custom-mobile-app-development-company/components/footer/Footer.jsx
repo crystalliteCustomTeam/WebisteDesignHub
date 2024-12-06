@@ -96,7 +96,7 @@ const Footer = () => {
                                 <Link href="/privacy-policy" className="block">Privacy Policy</Link>
                             </div>
                             <div className="text-sm">
-                                <p>Copyright © 2024 <Link href="/">webdevelopershub.co</Link> </p>
+                                <p>Copyright © 2024 <Link href="/">webdevelopershub.co</Link> - JQTEL </p>
                             </div>
                             <div>
                                 <Image src={Card} alt="card" className="block mx-auto" />
@@ -104,7 +104,7 @@ const Footer = () => {
                         </div>
                         <div className="flex md:flex-nowrap flex-wrap md:gap-0 gap-5 md:justify-between justify-center pt-10">
                             <div className="md:basis-[75%]">
-                                <p className="md:text-start sm:text-center text-justify font-light text-xs">Disclaimer: Logo, name and graphic representation of webdesignhub and its products and services are trademarks of webdesignhub. All other company names, trademarks and logos mentioned on this website are the property of their respective owners and do not represent or imply endorsement, sponsorship or recommendation by webdesignhub and constitute or imply endorsement, sponsorship or recommendation thereof by webdesignhub and do not constitute or imply endorsement, sponsorship or recommendation of webdesignhub by the respective trademark owner.</p>
+                                <p className="md:text-start sm:text-center text-justify font-light text-xs"><span className="font-semibold">Disclaimer</span>: Logo, name, and graphic representation of Web Developers Hub and its products and services are trademarks of Web Design Hub. All other company names, trademarks, and logos mentioned on this website are the property of their respective owners and do not represent or imply endorsement, sponsorship, or recommendation by Web Developers Hub or JQTEL. Furthermore, these do not constitute or imply endorsement, sponsorship, or recommendation thereof by Web Developers Hub or JQTEL, and do not constitute or imply endorsement, sponsorship, or recommendation of Web Developers Hub or JQTEL by the respective trademark owner.</p>
                             </div>
                             <div className="md:basis-[25%]">
                                 <ul className="flex items-center justify-end gap-x-5">

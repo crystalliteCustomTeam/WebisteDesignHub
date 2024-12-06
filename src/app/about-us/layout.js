@@ -1,7 +1,7 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "About Us - Web Design Hub",
+    title: "About Us - Web Developers Hub",
     description: "Discover WebDesignHub's journey and ethos. Driven by innovation and expertise, we're committed to bringing you unparalleled digital solutions. Know our story.",
     // Google Varification
     verification: {
@@ -16,10 +16,10 @@ export const metadata = {
     },
     // OG Metas
     openGraph: {
-        title: 'About Us - Web Design Hub',
+        title: 'About Us - Web Developers Hub',
         description: "Discover WebDesignHub's journey and ethos. Driven by innovation and expertise, we're committed to bringing you unparalleled digital solutions. Know our story.",
         url: 'https://www.webdevelopershub.co/about-us',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

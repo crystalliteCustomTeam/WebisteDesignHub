@@ -14,7 +14,7 @@ const Services = () => {
                         <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">
                             Agile Mobile Application Development & <br /> Design Company
                         </h2>
-                        <p className="text-base text-black font-normal">At Web Design Hub, our app developers utilize an Agile approach to build mobile apps through close collaboration with our clients, <br /> ensuring timely delivery of the mobile app design and prototype, while constantly improving the development process.</p>
+                        <p className="text-base text-black font-normal">At Web Developers Hub, our app developers utilize an Agile approach to build mobile apps through close collaboration with our clients, <br /> ensuring timely delivery of the mobile app design and prototype, while constantly improving the development process.</p>
                     </div>
                     <Image src={screens} alt="screens" className="block m-auto" />
                     <div className="flex items-center gap-3 justify-center mt-10 relative z-10">
@@ -23,11 +23,11 @@ const Services = () => {
                             color="bg-[#7AAF60] text-white"
                             hover="hover:bg-[#000000]"
                             link="javascript:$zopim.livechat.window.show();" />
-                        <Button text="0346-8280101"
+                        <Button text="0346-8280111"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#7AAF60]"
                             hover="hover:bg-[#7AAF60] hover:text-white"
-                            link="tel:0346-8280101" />
+                            link="tel:0346-8280111" />
                     </div>
                 </div>
             </div>

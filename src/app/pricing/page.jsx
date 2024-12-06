@@ -15,7 +15,7 @@ const Page = () => {
         page: "single",
         subtitle: "Web Design & Development",
         title: "Comprehensive Design Solutions at Affordable Prices",
-        desc: "Web Design Hub: Your Destination for High-Quality Design and Development Services, Crafted to Fit Your Budget.",
+        desc: "Web Developers Hub: Your Destination for High-Quality Design and Development Services, Crafted to Fit Your Budget.",
         bg: "__digitalMarketingHeroGradientBg",
         banner,
         btnBg: "bg-[#8A6EA5]",

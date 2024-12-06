@@ -17,18 +17,18 @@ const Developers = () => {
                     </div>
                     <div className="text-black font-sans">
                         <h2 className="xl:text-[40px] lg:text-[30px] text-[25px] leading-tight font-bold mb-3">Custom Shopify Website With Exquisite User Interface.</h2>
-                        <p className="md:text-base text-sm">At Web Design Hub, our focus is on specialized website design and development services. We implement strategic and market-proven tactics to provide optimal web experiences for your customers, ensuring your enterprise reaps the rewards of enhanced customer loyalty.</p>
+                        <p className="md:text-base text-sm">At Web Developers Hub, our focus is on specialized website design and development services. We implement strategic and market-proven tactics to provide optimal web experiences for your customers, ensuring your enterprise reaps the rewards of enhanced customer loyalty.</p>
                         <div className="flex items-center gap-3 mt-8">
                             <Button text="Start Live Chat"
                                 icon={true}
                                 color={`bg-[#9E4BFF] text-white`} border="border-2"
                                 hover="hover:bg-[#000000]"
                                 link="javascript:$zopim.livechat.window.show();" />
-                            <Button text="0346-8280101"
+                            <Button text="0346-8280111"
                                 color={`text-white bg-black`}
                                 border={`border-2 border-[#ffffff]`}
                                 hover="hover:bg-[#9E4BFF]"
-                                link="tel:0346-8280101" />
+                                link="tel:0346-8280111" />
                         </div>
                     </div>
                 </div>

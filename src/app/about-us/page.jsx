@@ -16,9 +16,9 @@ const Page = () => {
     // Array for Hero Component Props
     const hero = {
         page: "single",
-        subtitle: "Web Design Hub Where Brands",
+        subtitle: "Web Developers Hub Where Brands",
         title: "Are Recognized & Businesses are Boosted",
-        desc: "Welcome to Web Design Hub, the meeting place of creativity and expertise. We are your dependable partner in creating outstanding digital experiences, growing businesses, and making sure your brand stands out in the constant competitive environment.",
+        desc: "Welcome to Web Developers Hub, the meeting place of creativity and expertise. We are your dependable partner in creating outstanding digital experiences, growing businesses, and making sure your brand stands out in the constant competitive environment.",
         points: ["Logo Designing", "Digital Marketing", "SEO Services", "Website Development"],
         banner,
         bg: "__homeHeroGradientBg",

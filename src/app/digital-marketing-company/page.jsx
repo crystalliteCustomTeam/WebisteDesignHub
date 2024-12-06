@@ -34,7 +34,7 @@ const Page = () => {
     const smallbanner = {
         page: "digitalMarketing",
         title: "Get Noticed Online Our Creative Digital Marketing Company",
-        desc: "Let Web Design Hub be your point of reference as you create and improve your digital presence.",
+        desc: "Let Web Developers Hub be your point of reference as you create and improve your digital presence.",
         img: smallBannerImage,
         bgColor: "__digitalMarketingHeroGradientBg",
         btnBg: "bg-[#8A6EA5]",
@@ -58,25 +58,25 @@ const Page = () => {
     // Array for Reviews Component Props
     const reviews = [
         {
-            message: "Web Design Hub's e-commerce digital marketing solutions have skyrocketed our online sales. They're the best at what they do, and our success speaks for itself.",
+            message: "Web Developers Hub's e-commerce digital marketing solutions have skyrocketed our online sales. They're the best at what they do, and our success speaks for itself.",
             name: "Alice Roger",
             jd: false,
             profile: "/digital-marketing/reviews/1.png"
         },
         {
-            message: "Our consumer goods brand owes its success to Web Design Hub's digital marketing prowess. They understand our industry like no one else, truly the best.",
+            message: "Our consumer goods brand owes its success to Web Developers Hub's digital marketing prowess. They understand our industry like no one else, truly the best.",
             name: "Michael Sorsen",
             jd: false,
             profile: "/digital-marketing/reviews/2.png"
         },
         {
-            message: "Web Design Hub's service-focused digital marketing transformed our business. Their expertise shines, and they've earned their reputation as the best in the field.",
+            message: "Web Developers Hub's service-focused digital marketing transformed our business. Their expertise shines, and they've earned their reputation as the best in the field.",
             name: "Billy Benson",
             jd: false,
             profile: "/digital-marketing/reviews/3.png"
         },
         {
-            message: "I couldn't be happier with Web Design Hub's digital marketing for our service-based company. Their results are unmatched, solidifying their status as the best in the business.",
+            message: "I couldn't be happier with Web Developers Hub's digital marketing for our service-based company. Their results are unmatched, solidifying their status as the best in the business.",
             name: "Robert Lee",
             jd: false,
             profile: "/digital-marketing/reviews/4.png"

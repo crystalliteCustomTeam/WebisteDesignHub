@@ -1,7 +1,7 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Top Copywriting Company | WebDesignHub Services",
+    title: "Top Copywriting Company | webdevelopershub Services",
     description: "Choose WebDesignHub, your trusted copywriting company. We craft compelling content to elevate your brand's voice and reach. Engage better. Convert more.",
     // Google Varification
     verification: {
@@ -16,10 +16,10 @@ export const metadata = {
     },
     // OG Metas
     openGraph: {
-        title: 'Top Copywriting Company | WebDesignHub Services',
+        title: 'Top Copywriting Company | webdevelopershub Services',
         description: "Choose WebDesignHub, your trusted copywriting company. We craft compelling content to elevate your brand's voice and reach. Engage better. Convert more.",
         url: 'https://www.webdevelopershub.co/creative-copywriting-company',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

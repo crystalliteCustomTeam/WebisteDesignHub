@@ -19,7 +19,7 @@ export const metadata = {
         title: 'Top Motion Graphics Design Company | WebDesignHub',
         description: 'Your premier motion graphics design company WebDesignHub. Elevate your brand visuals with dynamic animations and unique designs. Captivate audiences. Connect now!b',
         url: 'https://www.webdevelopershub.co/motion-graphic-design-company',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

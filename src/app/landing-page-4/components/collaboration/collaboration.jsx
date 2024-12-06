@@ -19,11 +19,11 @@ const Collaboration = () => {
                                 color={`bg-[#9E4BFF] text-white`}
                                 hover="hover:bg-[#000000]"
                                 link="javascript:$zopim.livechat.window.show();" />
-                            <Button text="0346-8280101"
+                            <Button text="0346-8280111"
                                 color={`text-white bg-transparent`}
                                 hover="hover:bg-[#000000] hover:border-[#000000]"
                                 border="border border-white"
-                                link="tel:0346-8280101" />
+                                link="tel:0346-8280111" />
                         </div>
                     </div>
                     <div className="lg:mt-0 mt-10">

@@ -19,7 +19,7 @@ export const metadata = {
         title: 'Top SEO Company Services | WebDesignHub',
         description: 'WebDesignHub stands as a leading SEO company, optimizing your digital presence for maximum visibility. Drive organic traffic and achieve top search rankings. Contact us!',
         url: 'https://www.webdevelopershub.co/seo-company',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

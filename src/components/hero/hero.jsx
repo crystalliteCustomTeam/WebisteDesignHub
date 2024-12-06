@@ -271,13 +271,13 @@ const Hero = ({ content }) => {
                         link="javascript:$zopim.livechat.window.show();"
                       />
                       <Button
-                        text="0346-8280101"
+                        text="0346-8280111"
                         color={`${btnColor ?? "text-white"} bg-transparent`}
                         border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
                         hover={`hover:text-white ${
                           btnHover ?? "hover:bg-transparent"
                         }`}
-                        link="tel:0346-8280101"
+                        link="tel:0346-8280111"
                       />
                     </div>
                   </div>
@@ -368,13 +368,13 @@ const Hero = ({ content }) => {
                     link="javascript:$zopim.livechat.window.show();"
                   />
                   <Button
-                    text="0346-8280101"
+                    text="0346-8280111"
                     color={`${btnColor ?? "text-white"} bg-transparent`}
                     border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
                     hover={`hover:text-white ${
                       btnHover ?? "hover:bg-transparent"
                     }`}
-                    link="tel:0346-8280101"
+                    link="tel:0346-8280111"
                   />
                 </div>
               </div>

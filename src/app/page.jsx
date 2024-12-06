@@ -114,7 +114,7 @@ const Page = () => {
     // Array for Portfolios Component Props
     const portfolios = {
         title: "Explore Our Design Portfolio",
-        desc: "At Web Design Hub, our designers are committed  to excellence in every aspect of \n design, from logos to web, mobile apps, and illustrations.",
+        desc: "At Web Developers Hub, our designers are committed  to excellence in every aspect of \n design, from logos to web, mobile apps, and illustrations.",
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive]
     };
     // Array for Letstalk Component Props
@@ -142,7 +142,7 @@ const Page = () => {
                         {
                             "@context": "https://schema.org",
                             "@type": "Organization",
-                            "name": "Web Design Hub",
+                            "name": "Web Developers Hub",
                             "url": "https://www.webdevelopershub.co",
                             "logo": "https://www.webdevelopershub.co/_next/static/media/logo.0278bd76.svg",
                             "contactPoint": {

@@ -312,11 +312,11 @@ const Page = () => {
                   <Image src={liveChatIcon} alt="liveChatIcon" />
                 </Link>
                 <Link
-                  href="tel:0346-8280101"
+                  href="tel:0346-8280111"
                   className="flex  items-center gap-3 w-max xl:w-[195px] justify-center pr-3.5 pl-3.5 h-12 bg-transparent border-2 border-[#7598F2] text-white rounded-full"
                 >
                   <span className="text-sm xl:text-lg font-medium">
-                    0346-8280101
+                    0346-8280111
                   </span>
                 </Link>
               </div>
@@ -366,10 +366,10 @@ const Page = () => {
                   <Image src={heroCallEnvelope} alt="heroCallEnvelope" />
                   <div>
                     <Link
-                      href="tel:0346-8280101"
+                      href="tel:0346-8280111"
                       className="text-[20px] sm:text-[40px] leading-7 text-[#ffffff] font-sans font-bold block mb-3"
                     >
-                      0346-8280101
+                      0346-8280111
                     </Link>
                     <div className="flex items-center gap-x-3">
                       <Link
@@ -391,7 +391,7 @@ const Page = () => {
               <div className="basis-full lg:basis-2/5 relative">
                 <div className="bg-[#0F2847] p-5 xl:w-[80%] ml-auto">
                   <h2 className="text-[20px] leading-none text-[#ffffff] font-sans font-light text-center mb-3">
-                    CALL: <span className="text-[#f17724]">0346-8280101</span>
+                    CALL: <span className="text-[#f17724]">0346-8280111</span>
                   </h2>
                   <p className="text-[16px] text-[#ffffff] font-sans font-light text-center mb-3">
                     Or fill in the form below & we'll call you
@@ -656,10 +656,10 @@ const Page = () => {
                                       Free 30 Min Consultation
                                     </p>
                                     <Link
-                                      href="tel:0346-8280101"
+                                      href="tel:0346-8280111"
                                       className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}
                                     >
-                                      <span>0346-8280101</span>
+                                      <span>0346-8280111</span>
                                       <Image
                                         src={e.callIcon}
                                         alt="packagesCallIconBlue"
@@ -779,10 +779,10 @@ const Page = () => {
                                   Free 30 Min Consultation
                                 </p>
                                 <Link
-                                  href="tel:0346-8280101"
+                                  href="tel:0346-8280111"
                                   className={`flex items-center justify-end gap-1 text-[12px] leading-[22px] font-semibold ${e.textColor}`}
                                 >
-                                  <span>0346-8280101</span>
+                                  <span>0346-8280111</span>
                                   <Image
                                     src={e.callIcon}
                                     alt="packagesCallIconBlue"
@@ -1119,14 +1119,14 @@ const Page = () => {
                     <span>Live Chat Now</span>
                   </Link>
                   <Link
-                    href="tel:0346-8280101"
+                    href="tel:0346-8280111"
                     className="flex items-center gap-1 text-[16px] leading-[26px] font-semibold text-[#ffffff] mb-3"
                   >
                     <Image
                       src={packagesCallIconOrange}
                       alt="packagesCallIconOrange"
                     />
-                    <span>0346-8280101</span>
+                    <span>0346-8280111</span>
                   </Link>
                   <Link
                     href="#ContactUs"
@@ -1152,11 +1152,11 @@ const Page = () => {
             <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#0F2847]">
               <div className="basis-full sm:basis-1/2 md:basis-1/3">
                 <Link
-                  href="tel:0346-8280101"
+                  href="tel:0346-8280111"
                   className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3"
                 >
                   <Image src={bannerCallIcon} alt="bannerCallIcon" />
-                  <span>0346-8280101</span>
+                  <span>0346-8280111</span>
                 </Link>
               </div>
               <div className="basis-full sm:basis-1/2 md:basis-1/3">
@@ -1296,7 +1296,7 @@ const Page = () => {
                 <Slider {...reviewsSlider} className="__reviewsSlider">
                   <div>
                     <p className="text-[16px] leading-[26px] font-sans font-normal  text-gray-600">
-                      "Web Design Hub created a special and eye-catching custom
+                      "Web Developers Hub created a special and eye-catching custom
                       logo design that perfectly shows what our financial
                       consulting firm is about. Our team and clients love it,
                       thanks to their amazing logo design skills."
@@ -1310,7 +1310,7 @@ const Page = () => {
                       “Their UI/UX web design service has significantly improved
                       the visual appeal and functionality of our ecommerce
                       website across devices. The user engagement on our website
-                      has increased a lot as well. Web Design Hub is the best
+                      has increased a lot as well. Web Developers Hub is the best
                       web design company I have ever worked with.”
                     </p>
                     <span className="text-[10px] sm:text-[14px] lg:text-[16px] leading-none font-light text-white block mt-3 w-max px-2 sm:px-4 py-3 rounded-[50px] bg-[#0F2847]">
@@ -1319,7 +1319,7 @@ const Page = () => {
                   </div>
                   <div>
                     <p className="text-[16px] leading-[26px] font-sans font-normal  text-gray-600">
-                      “Hiring Web Design Hub for our tech startup web design and
+                      “Hiring Web Developers Hub for our tech startup web design and
                       development has been one of the best decisions. It's not
                       just about aesthetics; the functionality and user
                       experience they delivered are nothing short of
@@ -1351,11 +1351,11 @@ const Page = () => {
             <div className="flex items-center justify-center flex-wrap gap-y-10 md:flex-nowrap xl:w-[80%] m-auto mt-10 lg:divide-x-2 lg:divide-[#0F2847]">
               <div className="basis-full sm:basis-1/2 md:basis-1/3">
                 <Link
-                  href="tel:0346-8280101"
+                  href="tel:0346-8280111"
                   className="flex items-center justify-center gap-3 text-[16px] lg:text-[20px] leading-none font-semibold text-[#ffffff] mb-3"
                 >
                   <Image src={bannerCallIcon} alt="bannerCallIcon" />
-                  <span>0346-8280101</span>
+                  <span>0346-8280111</span>
                 </Link>
               </div>
               <div className="basis-full sm:basis-1/2 md:basis-1/3">

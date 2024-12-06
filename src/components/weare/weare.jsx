@@ -18,7 +18,7 @@ const Weare = () => {
                             <h2 className="text-2xl sm:text-4xl xl:text-5xl font-megat text-white text-center font-normal leading-none mb-3">
                                 Innovative Services & Exceptional Results
                             </h2>
-                            <p className="text-base text-white text-center font-normal mb-10 lg:mb-20">Our commitment to delivering innovative solutions and consistently surpassing expectations <br className="hidden xl:block" /> make Web Design Hub an exclusive choice</p>
+                            <p className="text-base text-white text-center font-normal mb-10 lg:mb-20">Our commitment to delivering innovative solutions and consistently surpassing expectations <br className="hidden xl:block" /> make Web Developers Hub an exclusive choice</p>
                             <div className="flex lg:divide-x lg:divide-[#1E73DB] mb-10 lg:mb-20 gap-5 flex-wrap lg:flex-nowrap justify-center">
                                 <div className="basis-[46%] md:basis-[30%] lg:basis-1/5">
                                     <Image src={one} alt={one} className="block m-auto mb-3" />
@@ -56,8 +56,8 @@ const Weare = () => {
                                     <h3 className="text-xl lg:text-2xl font-medium font-sans text-white">You Are Just A Call <br /> Away From Securing <br /> A Spectacular Design</h3>
                                 </div>
                                 <div className="basis-full md:basis-[30%]">
-                                    <Link href="tel:0346-8280101" className="text-xl lg:text-2xl font-medium font-sans text-white">
-                                        Call Us <br /> 0346-8280101
+                                    <Link href="tel:0346-8280111" className="text-xl lg:text-2xl font-medium font-sans text-white">
+                                        Call Us <br /> 0346-8280111
                                     </Link>
                                 </div>
                                 <div className="basis-full md:basis-[30%]">

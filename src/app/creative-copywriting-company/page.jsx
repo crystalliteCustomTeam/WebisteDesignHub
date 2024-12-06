@@ -20,7 +20,7 @@ const Page = () => {
         page: "creativeCopywriting",
         subtitle: "Top Copywriters For Hire",
         title: "Dominate Your Market with Our Creative Copywriting Company",
-        desc: "Web Design Hub shapes your words and ideas into perfectly persuasive tales and narratives. As a highly competitive copywriting company, we grab the attention of your audience, driving positive outcomes. Our team comprises of experienced;",
+        desc: "Web Developers Hub shapes your words and ideas into perfectly persuasive tales and narratives. As a highly competitive copywriting company, we grab the attention of your audience, driving positive outcomes. Our team comprises of experienced;",
         points: ["SEO Copywriters", "Website Copywriters", "Technical Copywriters", "Landing Page Copywriters"],
         banner,
         bg: "__creativeCopywritingHeroGradientBg",
@@ -33,7 +33,7 @@ const Page = () => {
     const smallbanner = {
         page: "creativeCopywriting",
         title: "Weave Your Digital Dreams with Our Professional Copywriters",
-        desc: "Top copywriters at Web Design Hub write the best content distinguishing your business from others. Our strategic finesse helps create the web presence everyone wishes for.",
+        desc: "Top copywriters at Web Developers Hub write the best content distinguishing your business from others. Our strategic finesse helps create the web presence everyone wishes for.",
         img: smallBannerImage,
         bgColor: "__creativeCopywritingHeroGradientBg",
         btnBg: "bg-[#768DF1]",
@@ -57,19 +57,19 @@ const Page = () => {
     // Array for Reviews Component Props
     const reviews = [
         {
-            message: "I'm pleased with the authoring assistance I got from Web Design Hub. They immediately demonstrated a profound grasp of my business and goals when I got in touch with them. The content that they provided was not only interesting, but it also precisely reflected the tone and values of my brand. They exceeded my expectations and improved the way I communicated with my target audience. You need to look no further than Web Design Hub for excellent copywriting services!",
+            message: "I'm pleased with the authoring assistance I got from Web Developers Hub. They immediately demonstrated a profound grasp of my business and goals when I got in touch with them. The content that they provided was not only interesting, but it also precisely reflected the tone and values of my brand. They exceeded my expectations and improved the way I communicated with my target audience. You need to look no further than Web Developers Hub for excellent copywriting services!",
             name: "Emily Thompson",
             jd: false,
             profile: "/creative-copywriting/reviews/1.png"
         },
         {
-            message: "Our top-secret tool for creating intriguing material is Web Design Hub. Our brand's soul was brilliantly captured by their copywriters, who translated it into the language that connects with our target audience. Their work has improved our brand's reputation and increased our online visibility, from website text to social media postings. They certainly deserve praise for their commitment to quality. This copywriting agency is a wonderful copywriting partner, and we appreciate them",
+            message: "Our top-secret tool for creating intriguing material is Web Developers Hub. Our brand's soul was brilliantly captured by their copywriters, who translated it into the language that connects with our target audience. Their work has improved our brand's reputation and increased our online visibility, from website text to social media postings. They certainly deserve praise for their commitment to quality. This copywriting agency is a wonderful copywriting partner, and we appreciate them",
             name: "Karen Roberts",
             jd: false,
             profile: "/creative-copywriting/reviews/2.png"
         },
         {
-            message: "The copywriting services offered by Web Design Hub are priceless. Their team has a special aptitude for transforming concepts into compelling and interesting material. They regularly provide outstanding outcomes, whether they are building engaging landing sites or writing catchy headlines. Since joining forces with Web Design Hub, we've noticed a huge improvement in both our conversion rates and consumer engagement. They truly provide value to our company",
+            message: "The copywriting services offered by Web Developers Hub are priceless. Their team has a special aptitude for transforming concepts into compelling and interesting material. They regularly provide outstanding outcomes, whether they are building engaging landing sites or writing catchy headlines. Since joining forces with Web Developers Hub, we've noticed a huge improvement in both our conversion rates and consumer engagement. They truly provide value to our company",
             name: "Laura Turner",
             jd: false,
             profile: "/creative-copywriting/reviews/3.png"

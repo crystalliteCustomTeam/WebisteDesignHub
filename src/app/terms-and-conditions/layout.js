@@ -1,7 +1,7 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Terms & Conditions - Web Design Hub",
+    title: "Terms & Conditions - Web Developers Hub",
     description: "Looking for a top rated web design company? Hire top web design company for stunning design solutions",
     // Google Varification
     verification: {
@@ -16,10 +16,10 @@ export const metadata = {
     },
     // OG Metas
     openGraph: {
-        title: 'Terms & Conditions - Web Design Hub',
+        title: 'Terms & Conditions - Web Developers Hub',
         description: "Looking for a top rated web design company? Hire top web design company for stunning design solutions",
         url: 'https://www.webdevelopershub.co/terms-and-conditions',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

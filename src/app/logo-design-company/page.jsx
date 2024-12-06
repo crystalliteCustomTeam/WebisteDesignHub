@@ -31,7 +31,7 @@ const Page = () => {
         page: "logoDesign",
         subtitle: "Custom Logo Designs",
         title: "Logo Design Company That's Designing Brand’s Signature",
-        desc: "At Web Design Hub, we employ the best logo designers and illustrators to make creative logos for big companies and small businesses. As an affordable logo design company, we promise to create a logo that delivers impressive outcomes for your brand.",
+        desc: "At Web Developers Hub, we employ the best logo designers and illustrators to make creative logos for big companies and small businesses. As an affordable logo design company, we promise to create a logo that delivers impressive outcomes for your brand.",
         points: ["Visual Identity", "Brand Recognition", "Increased Credibility", "Brand Identification"],
         banner,
         icons: [bannerIconOne, bannerIconTwo, bannerIconThree],
@@ -150,7 +150,7 @@ const Page = () => {
     // Array for Portfolios Component Props
     const portfolios = {
         title: "A Glimpse into Our Corporate Logo Designs",
-        desc: "At Web Design Hub, we are passionately devoted to achieving excellence across the spectrum of design \n including creative logo design, logo redesign, web design, and many more.",
+        desc: "At Web Developers Hub, we are passionately devoted to achieving excellence across the spectrum of design \n including creative logo design, logo redesign, web design, and many more.",
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive],
         theme: "light"
     };
@@ -170,19 +170,19 @@ const Page = () => {
     // Array for Reviews Component Props
     const reviews = [
         {
-            message: "Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills.",
+            message: "Web Developers Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills.",
             name: "Jennifer Mitchell",
             jd: "Senior Financial Advisor",
             profile: "/logo-design/reviews/1.png"
         },
         {
-            message: "Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Design Hub is the best web design company I have ever worked with.",
+            message: "Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Developers Hub is the best web design company I have ever worked with.",
             name: "Sarah Johnson",
             jd: "E-commerce Manager",
             profile: "/logo-design/reviews/2.png"
         },
         {
-            message: "Hiring Web Design Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.",
+            message: "Hiring Web Developers Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.",
             name: "Emily Parker",
             jd: "Co-founder",
             profile: "/logo-design/reviews/3.png"

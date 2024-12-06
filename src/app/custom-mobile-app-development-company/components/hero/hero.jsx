@@ -70,7 +70,7 @@ const Hero = () => {
                                 <span className="md:text-base text-sm leading-tight font-bold mb-4 block">Transform Your Business With Our Revolutionary</span>
                                 <h1 className="xl:text-[45px] lg:text-[40px] md:text-[30px] text-[23px] leading-tight font-bold mb-3">Mobile App <br /> Development Company</h1>
                                 <span className="md:text-base text-sm leading-tight font-bold mb-4 block">We Don't Just Create Apps; We Create Experiences</span>
-                                <p className="md:text-base text-sm md:text-start text-justify font-normal">At Web Design Hub, we develop innovative and user - friendly apps that have a visually appealing design and function seamlessly, meeting the specific needs of our clients.Our focus on delivering high - quality mobile apps is unwavering; as a result, we have earned a reputation as the industry's best mobile app development company.</p>
+                                <p className="md:text-base text-sm md:text-start text-justify font-normal">At Web Developers Hub, we develop innovative and user - friendly apps that have a visually appealing design and function seamlessly, meeting the specific needs of our clients.Our focus on delivering high - quality mobile apps is unwavering; as a result, we have earned a reputation as the industry's best mobile app development company.</p>
                             </div>
                             <div className="flex sm:flex-nowrap flex-wrap items-center gap-5">
                                 <CTA
@@ -82,8 +82,8 @@ const Hero = () => {
                                     width="sm:w-max w-full"
                                 />
                                 <CTA
-                                    text="0346-8280101"
-                                    href="tel:0346-8280101"
+                                    text="0346-8280111"
+                                    href="tel:0346-8280111"
                                     bg="bg-[#000000]"
                                     padding="px-9"
                                     textSize="md:text-base text-sm"

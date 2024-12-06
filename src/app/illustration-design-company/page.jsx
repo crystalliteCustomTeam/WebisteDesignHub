@@ -26,7 +26,7 @@ const Page = () => {
         page: "illustrationDesign",
         subtitle: "Best Illustration Designers",
         title: "5-Star Rated Top Illustration Design Company",
-        desc: "When you hire Web Design Hub,  you gain access to the best character illustrators, and gaming artwork. We make custom character designs, immersive gaming illustrations, and any related creative illustrations. Our skill in illustration design combines unique qualities that make us a distinctive illustration company.",
+        desc: "When you hire Web Developers Hub,  you gain access to the best character illustrators, and gaming artwork. We make custom character designs, immersive gaming illustrations, and any related creative illustrations. Our skill in illustration design combines unique qualities that make us a distinctive illustration company.",
         points: ["Unique Artistry", "Time Efficiency", "Attention to Detail", "Original Art"],
         isForm: true,
         banner,
@@ -70,19 +70,19 @@ const Page = () => {
     // Array for Reviews Component Props
     const reviews = [
         {
-            message: "Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills.",
+            message: "Web Developers Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills.",
             name: "Jennifer Mitchell",
             jd: "Senior Financial Advisor",
             profile: "/illustration-design/reviews/1.png"
         },
         {
-            message: "Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Design Hub is the best web design company I have ever worked with.",
+            message: "Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Developers Hub is the best web design company I have ever worked with.",
             name: "Sarah Johnson",
             jd: "E-commerce Manager",
             profile: "/illustration-design/reviews/2.png"
         },
         {
-            message: "Hiring Web Design Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.",
+            message: "Hiring Web Developers Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.",
             name: "Emily Parker",
             jd: "Co-founder",
             profile: "/illustration-design/reviews/3.png"

@@ -26,7 +26,7 @@ const page = () => {
         page: "mobileApplication",
         subtitle: "Mobile App Design Company",
         title: "Experience Building A Mobile App At Its Finest",
-        desc: "Web Design Hub is leading the way in mobile app design and development innovation. Our expertise extends beyond  design, and we provide mobile app developers with the essential resources, enabling them to build efficient mobile applications for businesses.",
+        desc: "Web Developers Hub is leading the way in mobile app design and development innovation. Our expertise extends beyond  design, and we provide mobile app developers with the essential resources, enabling them to build efficient mobile applications for businesses.",
         points: ["Multi Device Integration", "Scalability", "Easy Monetization", "Interactivity"],
         banner,
         bg: "__mobileApplicationHeroGradientBg",
@@ -50,7 +50,7 @@ const page = () => {
     // Array for Portfolios Component Props
     const portfolios = {
         title: "Creativity Knows No Bounds At Our Mobile App Agency",
-        desc: "At Web Design Hub, our expertise shine through custom layouts and interactive designs, ensuring a superlative user \n experience with our responsive mobile app designs.",
+        desc: "At Web Developers Hub, our expertise shine through custom layouts and interactive designs, ensuring a superlative user \n experience with our responsive mobile app designs.",
         images: [portfolioOne, portfolioTwo, portfolioThree, portfolioFour, portfolioFive],
         theme: "light"
     };
@@ -70,19 +70,19 @@ const page = () => {
     // Array for Reviews Component Props
     const reviews = [
         {
-            message: "Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills.",
+            message: "Web Developers Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills.",
             name: "Jennifer Mitchell",
             jd: "Senior Financial Advisor",
             profile: "/mobile-application/reviews/1.png"
         },
         {
-            message: "Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Design Hub is the best web design company I have ever worked with.",
+            message: "Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Developers Hub is the best web design company I have ever worked with.",
             name: "Sarah Johnson",
             jd: "E-commerce Manager",
             profile: "/mobile-application/reviews/2.png"
         },
         {
-            message: "Hiring Web Design Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.",
+            message: "Hiring Web Developers Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.",
             name: "Emily Parker",
             jd: "Co-founder",
             profile: "/mobile-application/reviews/3.png"

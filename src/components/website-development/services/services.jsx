@@ -21,7 +21,7 @@ const Services = ({ content }) => {
             </h2>
             <p className="text-base text-black font-normal">
               In the digital age, your website is your brand's front door. At
-              Web Design Hub, we're the architects of that door. We design and
+              Web Developers Hub, we're the architects of that door. We design and
               develop websites that don't just look good; they're SEO optimized,
               responsive and have the best user experience, all in one package.
             </p>
@@ -36,11 +36,11 @@ const Services = ({ content }) => {
               link="javascript:$zopim.livechat.window.show();"
             />
             <Button
-              text="0346-8280101"
+              text="0346-8280111"
               color="bg-transparent text-[#202020]"
               border="border-2 border-[#283C3C]"
               hover="hover:bg-[#283C3C] hover:text-white"
-              link="tel:0346-8280101"
+              link="tel:0346-8280111"
             />
           </div>
         </div>

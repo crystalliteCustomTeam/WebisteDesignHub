@@ -14,7 +14,7 @@ const Services = () => {
                         <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">
                             Redefining Web Design & Development Standards
                         </h2>
-                        <p className="text-base text-black font-normal lg:w-[70%] m-auto">At Web Design Hub, our expertise goes beyond web design. We excel in crafting captivating custom logos, illustrations, and dynamic motion graphics, enhancing your brand's visual appeal and impact.</p>
+                        <p className="text-base text-black font-normal lg:w-[70%] m-auto">At Web Developers Hub, our expertise goes beyond web design. We excel in crafting captivating custom logos, illustrations, and dynamic motion graphics, enhancing your brand's visual appeal and impact.</p>
                     </div>
                     <Image src={peoples} alt="peoples" className="block m-auto" />
                     <div className="flex items-center gap-3 justify-center mt-10 relative z-10">
@@ -23,11 +23,11 @@ const Services = () => {
                             color="bg-[#7337BB] text-white"
                             hover="hover:bg-[#000000]"
                             link="javascript:$zopim.livechat.window.show();" />
-                        <Button text="0346-8280101"
+                        <Button text="0346-8280111"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#7337BB]"
                             hover="hover:bg-[#7337BB] hover:text-white"
-                            link="tel:0346-8280101" />
+                            link="tel:0346-8280111" />
                     </div>
                 </div>
             </div>

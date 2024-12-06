@@ -28,7 +28,7 @@ const page = () => {
             <Industries />
             <WhyHire
                 span="Why Hire Us?"
-                title={`What Makes <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#eb335b] to-[#4a78ef]">Web Design Hub The Most Recommended <br class="xl:block hidden"/> Mobile App Development</span>  Company?`}
+                title={`What Makes <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#eb335b] to-[#4a78ef]">Web Developers Hub The Most Recommended <br class="xl:block hidden"/> Mobile App Development</span>  Company?`}
                 desc="As the leading mobile app development agency, we've gathered top-notch resources to create exceptional solutions for mobile applications. We have been crafting and will continue to develop unique apps across various platforms, including iOS, Android, Xamarin, and beyond. Our unbridled passion for the most cutting-edge technologies fuels us to continually evolve and innovate, allowing us to instantly provide unparalleled solutions to our valued clients.">
                 <CTA text="GET FREE CONSULTATION"
                     border="border-2 border-[#000000]"

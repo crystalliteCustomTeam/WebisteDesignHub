@@ -21,8 +21,8 @@ const Header = () => {
                                 icon="/liveChatIcon.svg"
                             />
                             <CTA
-                                text="0346-8280101"
-                                href="tel:0346-8280101"
+                                text="0346-8280111"
+                                href="tel:0346-8280111"
                                 css="hover:bg-[#F85F84] border-[#F85F84]"
                                 bg="bg-transparent"
                             />

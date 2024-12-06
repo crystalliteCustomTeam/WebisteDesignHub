@@ -19,7 +19,7 @@ export const metadata = {
         title: 'Best Marketing Collateral Company | WebDesignHub',
         description: 'WebDesignHub: Your trusted Marketing Collateral Company. Craft brand-aligned assets that captivate and convert. Elevate your outreach. Connect with us today!',
         url: 'https://www.webdevelopershub.co/marketing-collateral-company',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

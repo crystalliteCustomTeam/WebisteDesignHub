@@ -1,7 +1,7 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Thank You - Web Design Hub",
+    title: "Thank You - Web Developers Hub",
     description: "Looking for a top rated web design company? Hire top web design company for stunning design solutions",
     // Google Varification
     verification: {
@@ -16,10 +16,10 @@ export const metadata = {
     },
     // OG Metas
     openGraph: {
-        title: 'Thank You - Web Design Hub',
+        title: 'Thank You - Web Developers Hub',
         description: "Looking for a top rated web design company? Hire top web design company for stunning design solutions",
         url: 'https://www.webdevelopershub.co/thank-you',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

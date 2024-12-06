@@ -259,7 +259,7 @@ const Industries = () => {
                                                             <li key={i} className="pb-5 text-sm leading-normal"><Image src={Check} alt="Check" className="inline-block invert-[.1] mr-3" />{e}</li>
                                                         ))}
                                                     </ul>
-                                                    <a href="tel:0346-8280101" className="block font-bold md:text-lg text-sm">BOOK A CALL</a>
+                                                    <a href="tel:0346-8280111" className="block font-bold md:text-lg text-sm">BOOK A CALL</a>
                                                 </div>
                                                 <div className="col-span-5">
                                                     <Image src={icon} alt="fintech" className="block mx-auto" />

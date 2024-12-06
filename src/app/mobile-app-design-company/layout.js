@@ -19,7 +19,7 @@ export const metadata = {
         title: 'Top Mobile App Design And Development Company',
         description: 'Your trusted Mobile App Design & Development Company - delivering innovative solutions for your mobile app needs.',
         url: 'https://www.webdevelopershub.co/mobile-app-design-company',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },

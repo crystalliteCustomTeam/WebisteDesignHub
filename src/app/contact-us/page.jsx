@@ -13,7 +13,7 @@ const Page = () => {
         page: "single",
         subtitle: "Top Web Designers",
         title: "Let's Create Your Dream Website Together",
-        desc: "At Web Design Hub, we drive your business to success. From logo and website design to SEO and motion graphics, we offer top-quality services at affordable prices.",
+        desc: "At Web Developers Hub, we drive your business to success. From logo and website design to SEO and motion graphics, we offer top-quality services at affordable prices.",
         bg: "__ecommerceHeroGradientBg",
         banner,
         points: ["Website Design", "Website Development", "Custom Logo Design", "Digital Marketing"],

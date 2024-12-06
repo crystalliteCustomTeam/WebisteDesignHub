@@ -47,7 +47,7 @@ const Reviews = ({ content }) => {
                             </Slider>}
                             {!content && <Slider {...settings} className="pb-8">
                                 <div>
-                                    <p className="text-sm lg:text-[16px] leading-[24px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">"Web Design Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills."</p>
+                                    <p className="text-sm lg:text-[16px] leading-[24px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">"Web Developers Hub created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills."</p>
                                     <div className="flex items-center gap-5 mt-5">
                                         <Image src={avatarOne} alt={avatarOne} className="shadow-md rounded-full" />
                                         <div >
@@ -58,7 +58,7 @@ const Reviews = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <p className="text-sm lg:text-[16px] leading-[24px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">“Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Design Hub is the best web design company I have ever worked with.”</p>
+                                    <p className="text-sm lg:text-[16px] leading-[24px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">“Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Web Developers Hub is the best web design company I have ever worked with.”</p>
                                     <div className="flex items-center gap-5 mt-5">
                                         <Image src={avatarTwo} alt={avatarTwo} className="shadow-md rounded-full" />
                                         <div>
@@ -69,7 +69,7 @@ const Reviews = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <p className="text-sm lg:text-[16px] leading-[24px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">“Hiring Web Design Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.”</p>
+                                    <p className="text-sm lg:text-[16px] leading-[24px] font-light  text-gray-600 shadow-md bg-white p-3 rounded-xl">“Hiring Web Developers Hub for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.”</p>
                                     <div className="flex items-center gap-5 mt-5">
                                         <Image src={avatarThree} alt={avatarThree} className="mt-5 shadow-md rounded-full" />
                                         <div>

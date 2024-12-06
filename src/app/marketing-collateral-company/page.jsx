@@ -26,7 +26,7 @@ const Page = () => {
         page: "marketingCollateral",
         subtitle: "Top Marketing Collateral Company",
         title: "Hire Marketing Collateral Company For Superior Engagement",
-        desc: "Looking for experts to enhance your content and reach your audience effectively? At Web Design Hub, our team consists of top-notch content writers and marketers who can create engaging content to grow and retain your customer base with confidence.",
+        desc: "Looking for experts to enhance your content and reach your audience effectively? At Web Developers Hub, our team consists of top-notch content writers and marketers who can create engaging content to grow and retain your customer base with confidence.",
         points: ["Measurable Results", "Enhanced Brand Image", "Save Time & Resources", "Comprehensive Solutions"],
         banner,
         bg: "bg-[url('../../public/marketing-collateral/hero/bg.png')] bg-cover bg-no-repeat bg-left-top",
@@ -39,7 +39,7 @@ const Page = () => {
     const smallbanner = {
         page: "marketingCollateral",
         title: "Hire Us For Powerful Marketing Collateral Service",
-        desc: "With the help of effective Marketing Collateral Services at Web Design Hub, start your digital adventure. ",
+        desc: "With the help of effective Marketing Collateral Services at Web Developers Hub, start your digital adventure. ",
         img: smallBannerImage,
         bgColor: "__marketingCollateralHeroGradientBg",
         btnBg: "bg-[#223C5A]",
@@ -70,7 +70,7 @@ const Page = () => {
     // Array for Reviews Component Props
     const reviews = [
         {
-            message: "Working with Web Design Hub, the marketing collateral team helped change the game. Every brochure, flyer, and presentation they've created for us demonstrates their limitless ingenuity. Our updated material has left our clients really thrilled, and it surely helped to our recent success. I personally recommend them to each one of you.",
+            message: "Working with Web Developers Hub, the marketing collateral team helped change the game. Every brochure, flyer, and presentation they've created for us demonstrates their limitless ingenuity. Our updated material has left our clients really thrilled, and it surely helped to our recent success. I personally recommend them to each one of you.",
             name: "Emily Kennedy",
             jd: false,
             profile: "/marketing-collateral/reviews/1.png"
@@ -82,7 +82,7 @@ const Page = () => {
             profile: "/marketing-collateral/reviews/2.png"
         },
         {
-            message: "Event preparation demands attention to detail, and my go-to resource for outstanding promotional materials has been Web Design Hub. They've assisted me in turning events into life-changing experiences, with anything from attractive posters to interesting pamphlets. It is just amazing how well they are able to capture the soul of each event and transform it into collateral. Without them, I wouldn't dare attempt to organize a gathering.",
+            message: "Event preparation demands attention to detail, and my go-to resource for outstanding promotional materials has been Web Developers Hub. They've assisted me in turning events into life-changing experiences, with anything from attractive posters to interesting pamphlets. It is just amazing how well they are able to capture the soul of each event and transform it into collateral. Without them, I wouldn't dare attempt to organize a gathering.",
             name: "Sarah Kyle",
             jd: false,
             profile: "/marketing-collateral/reviews/3.png"

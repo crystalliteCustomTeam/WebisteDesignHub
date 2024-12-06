@@ -169,7 +169,7 @@ const Page = () => {
                             Introduction
                         </h2>
                         <p className="text-[15px] leading-[25px] text-[#565151] font-normal mb-5">
-                            This Privacy Policy explains how Web Design Hub collects, uses, and protects the email addresses and mobile numbers provided by users on our website. We are committed to ensuring that your privacy is protected and that we comply with all relevant data protection laws.
+                            This Privacy Policy explains how Web Developers Hub collects, uses, and protects the email addresses and mobile numbers provided by users on our website. We are committed to ensuring that your privacy is protected and that we comply with all relevant data protection laws.
                         </p>
                         <h2 className="text-xl sm:text-2xl font-sans text-[#202020] font-semibold leading-none mb-2">
                             Information We Collect
@@ -216,7 +216,7 @@ const Page = () => {
                             Consent for Mobile Number Collection
                         </h2>
                         <p className="text-[15px] leading-[25px] text-[#565151] font-normal mb-5">
-                            By providing your mobile number on Web Design Hub, you consent to the collection and use of this information as outlined in this Privacy Policy.
+                            By providing your mobile number on Web Developers Hub, you consent to the collection and use of this information as outlined in this Privacy Policy.
                         </p>
                         <h2 className="text-xl sm:text-2xl font-sans text-[#202020] font-semibold leading-none mb-2">
                             Security
@@ -253,7 +253,7 @@ const Page = () => {
                             Changes to this Policy
                         </h2>
                         <p className="text-[15px] leading-[25px] text-[#565151] font-normal mb-5">
-                            Web Design Hub may change this policy from time to time by updating this page. You should check this page periodically to ensure that you are comfortable with any changes.
+                            Web Developers Hub may change this policy from time to time by updating this page. You should check this page periodically to ensure that you are comfortable with any changes.
                         </p>
                         <h2 className="text-xl sm:text-2xl font-sans text-[#202020] font-semibold leading-none mb-2">
                             Contacting Us
@@ -283,7 +283,7 @@ const Page = () => {
                             Phone:
                         </h3>
                         <p className="text-[15px] leading-[25px] text-[#0F2847] font-bold">
-                            <a href="tel:0346-8280101">0346-8280101</a>
+                            <a href="tel:0346-8280111">0346-8280111</a>
                         </p>
                     </div>
                 </div>

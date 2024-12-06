@@ -11,7 +11,7 @@ const Services = () => {
                         <h2 className="font-megat font-normal text-3xl sm:text-4xl lg:text-5xl text-black mb-2">
                             Converting the Ordinary into the Extraordinary
                         </h2>
-                        <p className="text-base text-black font-normal lg:w-[70%] m-auto">Our motion graphics designers at Web Design Hub fuse animation, music, and multimedia components into striking visuals. They build captivating narratives that grab attention and have an enduring influence on your audience using creativity as their reference point.</p>
+                        <p className="text-base text-black font-normal lg:w-[70%] m-auto">Our motion graphics designers at Web Developers Hub fuse animation, music, and multimedia components into striking visuals. They build captivating narratives that grab attention and have an enduring influence on your audience using creativity as their reference point.</p>
                     </div>
                     <video src="videos/motionGraphicsLaptop.mp4" autoPlay loop muted controls={false}></video>
                     <div className="flex items-center gap-3 justify-center mt-10 relative z-10">
@@ -20,11 +20,11 @@ const Services = () => {
                             color="bg-[#195A47] text-white"
                             hover="hover:bg-[#000000]"
                             link="javascript:$zopim.livechat.window.show();" />
-                        <Button text="0346-8280101"
+                        <Button text="0346-8280111"
                             color="bg-transparent text-[#202020]"
                             border="border-2 border-[#195A47]"
                             hover="hover:bg-[#195A47] hover:text-white"
-                            link="tel:0346-8280101" />
+                            link="tel:0346-8280111" />
                     </div>
                 </div>
             </div>

@@ -58,7 +58,7 @@ const Testimonial = () => {
                                     </div>
                                 </div>
                                 <h4 className="text-xl font-bold my-1">Bella Thompson</h4>
-                                <p className="text-[12px] leading-[18px] text-justify">I collaborated with Web Design Hub, and I’m satisfied with my decision. They designed a highly responsive and visually stunning website for my business, and their SEO services have made a world of difference. My website now ranks prominently on search engines, and I've witnessed a significant increase in online leads and sales.</p>
+                                <p className="text-[12px] leading-[18px] text-justify">I collaborated with Web Developers Hub, and I’m satisfied with my decision. They designed a highly responsive and visually stunning website for my business, and their SEO services have made a world of difference. My website now ranks prominently on search engines, and I've witnessed a significant increase in online leads and sales.</p>
                                 {/* <span className="text-xs">Digital Marketing Consultant of Asia School of Business</span> */}
                             </div>
                             <div className="relative right-[190px] -bottom-[10px] w-6 h-6 -mt-2 -rotate-45 bg-white"></div>
@@ -77,7 +77,7 @@ const Testimonial = () => {
                                     </div>
                                 </div>
                                 <h4 className="text-xl font-bold my-1">Will Smith</h4>
-                                <p className="text-[12px] leading-[18px] text-justify">I was at my wit's end with the high maintenance costs from my previous provider. Then I switched to Web Design Hub, and it got rid of every issue of maintenance & updates. Their team took care of my website beautifully and managed to do it at a fraction of the cost I was paying before.</p>
+                                <p className="text-[12px] leading-[18px] text-justify">I was at my wit's end with the high maintenance costs from my previous provider. Then I switched to Web Developers Hub, and it got rid of every issue of maintenance & updates. Their team took care of my website beautifully and managed to do it at a fraction of the cost I was paying before.</p>
                                 {/* <span className="text-xs">Digital Marketing Consultant of Asia School of Business</span> */}
                             </div>
                             <div className="relative right-[190px] -bottom-[10px] w-6 h-6 -mt-2 -rotate-45 bg-white"></div>
@@ -96,7 +96,7 @@ const Testimonial = () => {
                                     </div>
                                 </div>
                                 <h4 className="text-xl font-bold my-1">Sarah Anderson</h4>
-                                <p className="text-[12px] leading-[18px] text-justify">For years, Web Design Hub has been our dependable website development partner, and they never cease to wow us. It's amazing how well they can translate complicated concepts into web pages that are easy to use. The team's commitment to comprehending our brand and goals has produced websites that are an ideal representation of us. Their superb post-launch assistance makes them the ideal long-term partner. I am quite pleased with their services.</p>
+                                <p className="text-[12px] leading-[18px] text-justify">For years, Web Developers Hub has been our dependable website development partner, and they never cease to wow us. It's amazing how well they can translate complicated concepts into web pages that are easy to use. The team's commitment to comprehending our brand and goals has produced websites that are an ideal representation of us. Their superb post-launch assistance makes them the ideal long-term partner. I am quite pleased with their services.</p>
                                 {/* <span className="text-xs">Digital Marketing Consultant of Asia School of Business</span> */}
                             </div>
                             <div className="relative right-[190px] -bottom-[10px] w-6 h-6 -mt-2 -rotate-45 bg-white"></div>
@@ -115,7 +115,7 @@ const Testimonial = () => {
                                     </div>
                                 </div>
                                 <h4 className="text-xl font-bold my-1">John Mitchell</h4>
-                                <p className="text-[12px] leading-[18px] text-justify">The experience of working with Web Design Hub has been wonderful. They have surpassed our expectations at every turn, starting with the initial consultation and ending with the launch. Their team's dedication to detail, originality, and technological expertise were essential to realizing our vision. Due to their dedication to quality, our website not only looks amazing but also runs without a hitch. Anyone looking for top-notch web development services should get in contact with them immediately.</p>
+                                <p className="text-[12px] leading-[18px] text-justify">The experience of working with Web Developers Hub has been wonderful. They have surpassed our expectations at every turn, starting with the initial consultation and ending with the launch. Their team's dedication to detail, originality, and technological expertise were essential to realizing our vision. Due to their dedication to quality, our website not only looks amazing but also runs without a hitch. Anyone looking for top-notch web development services should get in contact with them immediately.</p>
                                 {/* <span className="text-xs">Digital Marketing Consultant of Asia School of Business</span> */}
                             </div>
                             <div className="relative right-[190px] -bottom-[10px] w-6 h-6 -mt-2 -rotate-45 bg-white"></div>

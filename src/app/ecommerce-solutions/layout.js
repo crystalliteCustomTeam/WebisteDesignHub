@@ -19,7 +19,7 @@ export const metadata = {
         title: 'Expert Ecommerce Website Design Company | WebDesignHub',
         description: 'Crafting top-tier ecommerce website design at WebDesignHub. Turn visitors into buyers with a responsive, user-friendly online store. Start your success today!',
         url: 'https://www.webdevelopershub.co/ecommerce-solutions',
-        siteName: 'Web Design Hub',
+        siteName: 'Web Developers Hub',
         locale: 'en_US',
         type: 'website',
     },
